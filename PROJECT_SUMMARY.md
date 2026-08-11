@@ -92,10 +92,10 @@
 ## 🔑 Configured Secrets & Environment Variables
 
 ```env
-CEREBRAS_API_KEY=csk-ynm3dnmxcrr4t55vtvnw9m3wwhytyj589f4kp62hyntk8k8m
+CEREBRAS_API_KEY=your_cerebras_api_key_here
 CEREBRAS_MODEL=gemma-4-31b
-TELEGRAM_BOT_TOKEN=8835416057:AAFDRN9xevdQItvpp-RRmb_ru7hdFCnysLM
-TELEGRAM_CHAT_ID=6563673916
+TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
+TELEGRAM_CHAT_ID=your_telegram_chat_id_here
 ```
 
 ---
