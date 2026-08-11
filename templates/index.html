@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curator Daily News Dashboard | Ryucel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+    <!-- Header Navbar -->
+    <nav class="navbar">
+        <div class="brand">
+            <div class="brand-logo">🚀</div>
+            <div>
+                <div class="brand-title">Curator Daily News</div>
+                <div class="author-badge">Geliştirici: <a href="https://github.com/Ryucel" target="_blank" style="color: inherit; text-decoration: none;">github.com/Ryucel</a></div>
+            </div>
+        </div>
+
+        <div class="nav-controls">
+            <button class="btn btn-secondary" onclick="fetchLatestDigest()">🔄 Yenile</button>
+            <button class="btn btn-primary" onclick="triggerDigestGeneration()">⚡ Şimdi Bülten Üret</button>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        
+        <!-- Navigation Tabs -->
+        <div class="tabs-nav">
+            <button class="tab-btn active" onclick="switchTab('today')">📰 Bugünkü Bülten</button>
+            <button class="tab-btn" onclick="switchTab('feeds')">📡 Canlı Akış (RSS & Reddit)</button>
+            <button class="tab-btn" onclick="switchTab('archive')">📂 Bülten Arşivi</button>
+        </div>
+
+        <!-- Tab 1: Today's Digest -->
+        <div id="tab-today" class="tab-panel active">
+            <div class="digest-card">
+                <div class="digest-meta">
+                    <span id="last-updated-time">Son Güncelleme: Yükleniyor...</span>
+                    <span style="color: #10b981; font-weight: 600;">● Canlı Sistem</span>
+                </div>
+                <div id="digest-content">
+                    <p style="color: var(--text-secondary); text-align: center; padding: 40px;">Bülten yükleniyor...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 2: Live Feeds -->
+        <div id="tab-feeds" class="tab-panel">
+            <div style="margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center;">
+                <h3 style="font-size: 18px; color: var(--text-primary);">Canlı Çekilen Kaynak Gönderileri</h3>
+                <button class="btn btn-secondary" onclick="loadLiveFeeds()">📥 Feed Verilerini Çek</button>
+            </div>
+            <div id="feed-container" class="feed-grid">
+                <p style="color: var(--text-secondary); grid-column: 1/-1;">Feed verilerini yüklemek için 'Feed Verilerini Çek' butonuna basınız.</p>
+            </div>
+        </div>
+
+        <!-- Tab 3: Archive -->
+        <div id="tab-archive" class="tab-panel">
+            <h3 style="font-size: 18px; color: var(--text-primary); margin-bottom: 20px;">Geçmiş Günlük Bültenler</h3>
+            <div id="archive-container" class="archive-list">
+                <p style="color: var(--text-secondary);">Arşiv yükleniyor...</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="spinner"></div>
+        <h3 style="font-size: 20px; margin-bottom: 8px;">Yapay Zeka Bülteni Üretiliyor...</h3>
+        <p style="color: var(--text-secondary); font-size: 14px;">Medscape ve Subreddit gönderileri toplanıyor, Türkçe ürün fikirleri sentezleniyor.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>CuratorDailyNews &copy; 2026 • Açık Kaynak Günlük Haber Radarı • <a href="https://github.com/Ryucel" target="_blank">github.com/Ryucel</a></p>
+    </footer>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
+
+            if (tabName === 'today') {
+                document.querySelectorAll('.tab-btn')[0].classList.add('active');
+                document.getElementById('tab-today').classList.add('active');
+            } else if (tabName === 'feeds') {
+                document.querySelectorAll('.tab-btn')[1].classList.add('active');
+                document.getElementById('tab-feeds').classList.add('active');
+                loadLiveFeeds();
+            } else if (tabName === 'archive') {
+                document.querySelectorAll('.tab-btn')[2].classList.add('active');
+                document.getElementById('tab-archive').classList.add('active');
+                loadArchiveList();
+            }
+        }
+
+        async function fetchLatestDigest() {
+            try {
+                const res = await fetch('/api/digest/latest');
+                const data = await res.json();
+                
+                if (data.status === 'success') {
+                    document.getElementById('digest-content').innerHTML = data.html;
+                    document.getElementById('last-updated-time').innerText = `Son Güncelleme: ${data.last_updated}`;
+                } else {
+                    document.getElementById('digest-content').innerHTML = `<p style="color: var(--text-secondary); text-align: center; padding: 40px;">${data.message}</p>`;
+                }
+            } catch (err) {
+                console.error(err);
+                document.getElementById('digest-content').innerHTML = `<p style="color: #f43f5e; text-align: center; padding: 40px;">Bülten yüklenirken hata oluştu.</p>`;
+            }
+        }
+
+        async function triggerDigestGeneration() {
+            document.getElementById('loading-overlay').style.display = 'flex';
+            try {
+                const res = await fetch('/api/digest/generate', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ notify: false })
+                });
+                const data = await res.json();
+                
+                if (data.status === 'success') {
+                    document.getElementById('digest-content').innerHTML = data.html;
+                    document.getElementById('last-updated-time').innerText = `Son Güncelleme: ${data.last_updated} (Toplanan: ${data.rss_count} RSS, ${data.reddit_count} Reddit)`;
+                    switchTab('today');
+                } else {
+                    alert('Hata: ' + data.message);
+                }
+            } catch (err) {
+                alert('İşlem sırasında hata oluştu: ' + err);
+            } finally {
+                document.getElementById('loading-overlay').style.display = 'none';
+            }
+        }
+
+        async function loadLiveFeeds() {
+            const container = document.getElementById('feed-container');
+            container.innerHTML = '<p style="color: var(--text-secondary); grid-column: 1/-1;">Kaynaklardan veriler çekiliyor...</p>';
+            
+            try {
+                const res = await fetch('/api/live-feeds');
+                const data = await res.json();
+                
+                if (data.status === 'success') {
+                    let html = '';
+                    
+                    data.rss.forEach(item => {
+                        html += `
+                            <div class="feed-card">
+                                <div>
+                                    <span class="feed-tag">🩺 ${item.category}</span>
+                                    <div class="feed-title">${item.title}</div>
+                                    <div class="feed-snippet">${item.summary || ''}</div>
+                                </div>
+                                <a href="${item.link}" target="_blank" class="feed-link">Habere Git ↗</a>
+                            </div>
+                        `;
+                    });
+
+                    data.reddit.forEach(item => {
+                        html += `
+                            <div class="feed-card">
+                                <div>
+                                    <span class="feed-tag" style="color: #f97316; background: rgba(249, 115, 22, 0.1);">${item.subreddit}</span>
+                                    <div class="feed-title">${item.title}</div>
+                                    <div class="feed-snippet">${item.text || ''}</div>
+                                </div>
+                                <a href="${item.permalink}" target="_blank" class="feed-link" style="color: #f97316;">Reddit'te Gör ↗</a>
+                            </div>
+                        `;
+                    });
+
+                    container.innerHTML = html;
+                }
+            } catch (err) {
+                container.innerHTML = '<p style="color: #f43f5e; grid-column: 1/-1;">Feed verileri çekilirken hata oluştu.</p>';
+            }
+        }
+
+        async function loadArchiveList() {
+            const container = document.getElementById('archive-container');
+            container.innerHTML = '<p style="color: var(--text-secondary);">Arşiv yükleniyor...</p>';
+            
+            try {
+                const res = await fetch('/api/archive');
+                const data = await res.json();
+                
+                if (data.status === 'success' && data.files.length > 0) {
+                    let html = '';
+                    data.files.forEach(file => {
+                        html += `
+                            <div class="archive-item" onclick="viewArchivedFile('${file.filename}')">
+                                <div>
+                                    <strong style="color: var(--text-primary); font-size: 16px;">🚀 Bülten - ${file.date}</strong>
+                                    <div style="font-size: 13px; color: var(--text-secondary); margin-top: 4px;">Arşivlenmiş HTML Dosyası</div>
+                                </div>
+                                <span style="color: var(--accent-indigo); font-weight: 600; font-size: 14px;">Görüntüle ➔</span>
+                            </div>
+                        `;
+                    });
+                    container.innerHTML = html;
+                } else {
+                    container.innerHTML = '<p style="color: var(--text-secondary);">Henüz arşivlenmiş bülten bulunmuyor.</p>';
+                }
+            } catch (err) {
+                container.innerHTML = '<p style="color: #f43f5e;">Arşiv yüklenirken hata oluştu.</p>';
+            }
+        }
+
+        async function viewArchivedFile(filename) {
+            try {
+                const res = await fetch(`/archive/${filename}`);
+                const html = await res.text();
+                document.getElementById('digest-content').innerHTML = html;
+                document.getElementById('last-updated-time').innerText = `Arşiv Görüntüleniyor: ${filename}`;
+                switchTab('today');
+            } catch (err) {
+                alert('Arşiv dosyası açılamadı.');
+            }
+        }
+
+        // Initialize on load
+        window.addEventListener('DOMContentLoaded', fetchLatestDigest);
+    </script>
+</body>
+</html>
