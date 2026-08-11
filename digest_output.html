@@ -1,54 +1,248 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curator Daily News - Türkçe Bülten</title>
-</head>
-<body style="background-color: #0f172a; color: #e2e8f0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; padding: 20px; margin: 0;">
-    <div style="max-width: 680px; margin: 0 auto; background-color: #1e293b; padding: 30px; border-radius: 12px; border: 1px solid #334155; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
-        <div style="text-align: center; padding-bottom: 15px; margin-bottom: 20px; border-bottom: 1px solid #334155;">
-            <span style="background: linear-gradient(135deg, #6366f1, #a855f7); padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; color: white; letter-spacing: 1px; text-transform: uppercase;">Curator Daily News</span>
+
+    <!-- BRIEFING HEADER -->
+    <header class="briefing-header">
+        <div class="briefing-date">11 AUGUST 2026</div>
+        <h1 class="briefing-title">TODAY'S BRIEFING</h1>
+        <p class="briefing-exec">Kardiyovasküler sağlıkta dijital dönüşüm ve AI destekli tanı araçları yükselişe geçerken, donanım tarafında ESP32 tabanlı uç cihazların yetenekleri genişliyor. Yazılım dünyasında ise küçük parametreli ama yüksek performanslı yerel AI modelleri ve Android tabanlı AI Copilot'lar ürünleştirme trendlerini domine ediyor.</p>
+    </header>
+
+    <!-- AT A GLANCE STATS -->
+    <div class="briefing-stats">
+        <div class="stat-col">
+            <span class="stat-num">10</span>
+            <span class="stat-label">STORIES</span>
         </div>
-        
-        <h1 style="color: #6366f1; border-bottom: 2px solid #374151; padding-bottom: 8px; font-size: 24px;">🚀 Günlük Teknoloji, Donanım & Sağlık Bülteni</h1>
-<em style="color: #9ca3af;">Tarih: 11.08.2026</em>
-<hr style="border: 0; border-top: 1px solid #374151; margin: 20px 0;" />
-<h2 style="color: #38bdf8; margin-top: 24px; font-size: 18px; font-weight: 600;">💡 1. Öne Çıkan Ürün & İş Fikirleri (Side Hustle, ProductHunt & Business Ideas)</h2>
-<ul style="padding-left: 20px; margin: 12px 0;"><li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">Gotcha (AI Android Copilot):</strong> Sesle komut alan ve Android üzerinde aksiyon alan bir AI asistanı. </li>
-</ul>    - <em style="color: #9ca3af;">Ticarileştirme:</em> Bu konsept, özellikle yaşlılar veya görme engelliler için "erişilebilirlik odaklı" özelleştirilmiş bir arayüzle sağlık sektörüne entegre edilebilir (Örn: "İlaçlarımı hatırlat ve eczaneye sipariş ver").
-<ul style="padding-left: 20px; margin: 12px 0;"><li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">Cerenovus (Kurumsal Bilgi Yönetimi):</strong> Dağınık şirket bilgilerini güvenilir kararlara dönüştüren bir yapı.</li>
-</ul>    - <em style="color: #9ca3af;">Ticarileştirme:</em> Türkiye'deki KOBİ'lerin dijital dönüşüm süreçlerinde, kurum içi dokümantasyonu (PDF, Word, E-posta) tek bir "kurumsal beyin" haline getiren yerelleştirilmiş bir SaaS modeli olarak sunulabilir.
-<ul style="padding-left: 20px; margin: 12px 0;"><li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">Lüks Ev Otomasyon ve Bakım Servisleri (Reddit Fikri):</strong> Varlıklı kişiler için evde rahatlama ve düzenleme servisleri.</li>
-</ul>    - <em style="color: #9ca3af;">Ticarileştirme:</em> Bunu fiziksel bir hizmetten çıkarıp, "Akıllı Ev Wellness Paketleri"ne dönüştürebilirsiniz. Belirli saatlerde ışıklandırma, koku ve sıcaklık ayarlarını yapan donanım kitleri + abonelik tabanlı bakım hizmeti hibrit bir model oluşturabilir.
-<ul style="padding-left: 20px; margin: 12px 0;"><li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">Podcast Özetleme ve Arşivleme İş Akışı:</strong> Farklı platformlardan gelen ses verilerini yapılandırılmış bilgiye dönüştürme ihtiyacı.</li>
-</ul>    - <em style="color: #9ca3af;">Ticarileştirme:</em> İçerik üreticileri için "Multi-Platform Content Repurposing" (İçeriği Yeniden Amaçlandırma) ajansı kurulabilir; uzun videoları otomatik olarak Twitter flood'larına, LinkedIn makalelerine ve özet bültenlere dönüştüren bir otomasyon servisi satılabilir.
-<hr style="border: 0; border-top: 1px solid #374151; margin: 20px 0;" />
-<h2 style="color: #38bdf8; margin-top: 24px; font-size: 18px; font-weight: 600;">🛠️ 2. Donanım, IoT & Otomasyon Trendleri (ESP32, Raspberry Pi, Arduino, Automation)</h2>
-<ul style="padding-left: 20px; margin: 12px 0;"><li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">NL-to-SQL (Doğal Dilden SQL'e) Agent İş Akışları:</strong> Kullanıcıların düz metinle veritabanı sorgulaması yapabildiği sistemler (Databricks Genie örneği).</li>
-</ul>    - <strong style="color: #f3f4f6;">Proje Fikri:</strong> Küçük işletmeler için "Konuşan Stok Takip Sistemi". İşletme sahibi "Geçen hafta en çok hangi ürün satıldı?" dediğinde, arka planda SQL sorgusu çalıştırıp sonucu sesli olarak dönen bir ESP32 + LLM entegrasyonu.
-<ul style="padding-left: 20px; margin: 12px 0;"><li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">Yaratıcı Mekatronik Uygulamalar:</strong> Kendi kendine bağlanan ayakkabılar (Nike Mag) ve robotik gitar çalma sistemleri.</li>
-</ul>    - <strong style="color: #f3f4f6;">Nasıl Kullanılır?</strong> Bu tip projeler, "Interaktif Müze Sergileri" veya "Tanıtım Standları" için yüksek etkileşimli ürünlere dönüştürülebilir. Özellikle perakende sektöründe ürünlerin kendi kendine hareket ettiği ilgi çekici teşhir üniteleri tasarlanabilir.
-<ul style="padding-left: 20px; margin: 12px 0;"><li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">Dashboard Yorgunluğu ve "Sessiz Hatalar":</strong> İzleme panellerinin (Grafana vb.) bazen gürültü yarattığı ve asıl sorunları gizlediği tespiti.</li>
-</ul>    - <strong style="color: #f3f4f6;">Proje Fikri:</strong> "Exception-Only" (Sadece İstisna Odaklı) bildirim sistemleri. Sürekli veri akışı yerine, sadece anomali tespit edildiğinde tetiklenen ve çözüm önerisi sunan minimalistik bir izleme modülü geliştirilebilir.
-<hr style="border: 0; border-top: 1px solid #374151; margin: 20px 0;" />
-<h2 style="color: #38bdf8; margin-top: 24px; font-size: 18px; font-weight: 600;">🩺 3. Sağlık & Medikal Teknolojilerindeki Son Gelişmeler (Medscape & Kardiyoloji)</h2>
-<ul style="padding-left: 20px; margin: 12px 0;"><li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">Kalsiyum Skorlaması ve Statin Kararları:</strong> Koroner arter kalsiyum skorlamasının, kalp riski tahminlerini netleştirdiği ve ilaç (statin) kullanım kararlarını optimize ettiği vurgulanıyor.</li>
-<li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">Hava Kirliliği ve Kalp Sağlığı:</strong> Sıcak günlerdeki dumanlı havanın kalp üzerindeki tehlikeyi artırdığına dair kritik bulgular mevcut.</li>
-<li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">Kanser Tedavilerinin Kardiyovasküler Etkileri:</strong> Kanser tedavilerinin yan etkisi olarak ortaya çıkan kalp sorunlarının bir "tsunami" şeklinde gelmesi bekleniyor (Kardiyo-Onkoloji yükselen bir alan).</li>
-<li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">Plaque-IQ™ Teknolojisi:</strong> Plak analizinde yeni bir dönemi başlatan bu çözüm, 2026'nın en iyi kardiyoloji teknolojisi seçildi.</li>
-</ul>
-<strong style="color: #f3f4f6;">Girişimciler için Not:</strong> "Kardiyo-Onkoloji" ve "Çevresel Kalp Riskleri" alanları büyük boşluklar barındırıyor. Hava kalitesi sensörleri ile kalp ritmi takibini birleştiren ve riskli hava durumlarında hastayı uyaran "akıllı uyarı sistemleri" veya kanser hastaları için özel kardiyovasküler takip cihazları ciddi bir pazar potansiyeline sahip.
-<hr style="border: 0; border-top: 1px solid #374151; margin: 20px 0;" />
-<h2 style="color: #38bdf8; margin-top: 24px; font-size: 18px; font-weight: 600;">⚡ 4. Günün Aksiyon İpuçları & İlham Notu</h2>
-<ul style="padding-left: 20px; margin: 12px 0;"><li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">Somut Proje Fikri 1:</strong> Hava kirliliği (AQI) verilerini anlık takip eden ve kalp hastalarına "Bugün dışarı çıkma veya maske kullan" uyarısı gönderen, basit bir mobil uygulama/IoT cihazı geliştirin.</li>
-<li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">Somut Proje Fikri 2:</strong> Kurumsal bilgi yönetimini (Cerenovus tarzı) yerel sağlık klinikleri için özelleştirin; doktorların hasta geçmişlerini ve tıbbi literatürü hızla sorgulayabileceği bir "Klinik AI Asistanı" tasarlayın.</li>
-<li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">İlham Notu:</strong> <em style="color: #9ca3af;">Donanım sadece devrelerden ibaret değildir; gerçek değer, karmaşık bir tıbbi veriyi veya kurumsal bilgi yığınını, son kullanıcının hayatını kolaylaştıran basit bir "aksiyona" dönüştürdüğünüzde ortaya çıkar.</em></li></ul>
-        
-        <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #334155; text-align: center; font-size: 12px; color: #64748b;">
-            <p>Bu bülten GitHub Actions & AI tarafından otomatik olarak oluşturulmuştur.</p>
-            <p>© 2026 CuratorDailyNews Digest</p>
+        <div class="stat-divider"></div>
+        <div class="stat-col">
+            <span class="stat-num">3</span>
+            <span class="stat-label">HIGH SIGNAL</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-col">
+            <span class="stat-num">3</span>
+            <span class="stat-label">OPPORTUNITIES</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-col">
+            <span class="stat-num">4</span>
+            <span class="stat-label">TRENDS</span>
         </div>
     </div>
-</body>
-</html>
+
+    <!-- MAIN SIGNAL FEED -->
+    <section class="signal-feed">
+        <h3 class="section-label">TODAY'S SIGNAL</h3>
+        <div class="feed-list">
+            
+        <article class="story-item">
+            <div class="story-header">
+                <span class="story-num">01</span>
+                <span class="story-cat">SAĞLIK</span>
+                <span class="story-sep">·</span>
+                <span class="story-priority"><span class="priority-dot">●</span> HIGH SIGNAL</span>
+            </div>
+            <h2 class="story-title">Koroner Arter Kalsiyum Skorlaması ile Risk Analizi</h2>
+            <p class="story-summary">Kalsiyum skorlamasının, kalp riski tahminlerini rafine ettiği ve statin ilaç kullanımı kararlarını daha kesin hale getirdiği vurgulanıyor.</p>
+            
+            <div class="story-why-box">
+                <div class="why-label">WHY IT MATTERS</div>
+                <p class="why-text">Kişiselleştirilmiş tıp ve önleyici kardiyoloji alanında, tanı kitleri ve analiz yazılımları için yüksek ticari potansiyel sunmaktadır.</p>
+            </div>
+            
+            <div class="story-meta">
+                Medscape · 4s önce · 2 kaynak
+            </div>
+        </article>
+        <hr class="story-divider" />
+
+        <article class="story-item">
+            <div class="story-header">
+                <span class="story-num">02</span>
+                <span class="story-cat">TEKNOLOJİ</span>
+                <span class="story-sep">·</span>
+                <span class="story-priority"><span class="priority-dot">●</span> HIGH SIGNAL</span>
+            </div>
+            <h2 class="story-title">LFM2.5: Küçük Boyutlu Dev Performanslı AI Modeli</h2>
+            <p class="story-summary">LiquidAI tarafından geliştirilen 2.6B parametreli LFM2.5 modeli, kendisinden 4 kat daha büyük modellerle rekabet edebilecek kapasiteye sahip.</p>
+            
+            <div class="story-why-box">
+                <div class="why-label">WHY IT MATTERS</div>
+                <p class="why-text">Edge AI ve yerel cihazlarda yüksek performanslı LLM çalıştırma maliyetlerini düşürerek donanım bağımlılığını azaltır.</p>
+            </div>
+            
+            <div class="story-meta">
+                Hacker News · 6s önce · 1 kaynak
+            </div>
+        </article>
+        <hr class="story-divider" />
+
+        <article class="story-item">
+            <div class="story-header">
+                <span class="story-num">03</span>
+                <span class="story-cat">ÜRÜN</span>
+                <span class="story-sep">·</span>
+                <span class="story-priority"><span class="priority-dot">●</span> OPPORTUNITY</span>
+            </div>
+            <h2 class="story-title">Gotcha: Android İçin İlk AI Copilot</h2>
+            <p class="story-summary">Kullanıcının sesli komutlarını doğrudan Android işletim sistemi üzerinde eyleme dönüştüren bir AI asistanı.</p>
+            
+            <div class="story-why-box">
+                <div class="why-label">WHY IT MATTERS</div>
+                <p class="why-text">Mobil cihazlarda 'action-oriented' AI ajanlarına olan talebi karşılayan, yüksek büyüme potansiyelli bir SaaS/Uygulama modelidir.</p>
+            </div>
+            
+            <div class="story-meta">
+                Product Hunt · 8s önce · 1 kaynak
+            </div>
+        </article>
+        <hr class="story-divider" />
+
+        <article class="story-item">
+            <div class="story-header">
+                <span class="story-num">04</span>
+                <span class="story-cat">DONANIM</span>
+                <span class="story-sep">·</span>
+                <span class="story-priority"><span class="priority-dot">●</span> TREND</span>
+            </div>
+            <h2 class="story-title">ESP32-P4 Üzerinde DOOM Çalıştırma Başarısı</h2>
+            <p class="story-summary">Geliştiriciler, ESP32-P4 işlemcisinin grafik ve işlem gücünü kanıtlamak adına DOOM oyununu başarıyla çalıştırdı.</p>
+            
+            <div class="story-why-box">
+                <div class="why-label">WHY IT MATTERS</div>
+                <p class="why-text">ESP32 serisinin sadece basit otomasyon değil, kompleks arayüzler ve hafif uygulamalar için de uygun olduğunu kanıtlar.</p>
+            </div>
+            
+            <div class="story-meta">
+                Reddit · 10s önce · 1 kaynak
+            </div>
+        </article>
+        <hr class="story-divider" />
+
+        <article class="story-item">
+            <div class="story-header">
+                <span class="story-num">05</span>
+                <span class="story-cat">SAĞLIK</span>
+                <span class="story-sep">·</span>
+                <span class="story-priority"><span class="priority-dot">●</span> ANALYSIS</span>
+            </div>
+            <h2 class="story-title">Kanser Tedavilerinin Kardiyak Etkileri: 'Tsunami' Etkisi</h2>
+            <p class="story-summary">Modern kanser tedavilerinin kalp sağlığı üzerinde yarattığı yan etkilerin, gelecekte büyük bir hasta yükü (tsunami) oluşturacağı öngörülüyor.</p>
+            
+            <div class="story-why-box">
+                <div class="why-label">WHY IT MATTERS</div>
+                <p class="why-text">Onko-kardiyoloji alanında yeni izleme cihazları ve spesifik tedavi protokolleri için pazar boşluğu oluşmaktadır.</p>
+            </div>
+            
+            <div class="story-meta">
+                Medscape · 12s önce · 1 kaynak
+            </div>
+        </article>
+        <hr class="story-divider" />
+
+        <article class="story-item">
+            <div class="story-header">
+                <span class="story-num">06</span>
+                <span class="story-cat">İŞ FİKİRİ</span>
+                <span class="story-sep">·</span>
+                <span class="story-priority"><span class="priority-dot">●</span> OPPORTUNITY</span>
+            </div>
+            <h2 class="story-title">Yüksek Gelir Grubuna Yönelik Lüks Ev Hizmetleri</h2>
+            <p class="story-summary">Zengin bölgelerde yaşayan, yoğun çalışan kişiler için evde rahatlama ve kişisel bakım kurulum hizmetleri önerisi.</p>
+            
+            <div class="story-why-box">
+                <div class="why-label">WHY IT MATTERS</div>
+                <p class="why-text">Yüksek marjlı, düşük teknoloji gerektiren ancak yüksek operasyonel kalite odaklı bir yerel hizmet modeli fırsatıdır.</p>
+            </div>
+            
+            <div class="story-meta">
+                Reddit · 15s önce · 1 kaynak
+            </div>
+        </article>
+        <hr class="story-divider" />
+
+        <article class="story-item">
+            <div class="story-header">
+                <span class="story-num">07</span>
+                <span class="story-cat">TEKNOLOJİ</span>
+                <span class="story-sep">·</span>
+                <span class="story-priority"><span class="priority-dot">●</span> TREND</span>
+            </div>
+            <h2 class="story-title">Apple Silicon İçin Native MiniMax-H3 Çıkarımı</h2>
+            <p class="story-summary">H3-metal projesi ile Apple Silicon işlemciler üzerinde optimize edilmiş native inference imkanı sağlanıyor.</p>
+            
+            <div class="story-why-box">
+                <div class="why-label">WHY IT MATTERS</div>
+                <p class="why-text">Mac ekosisteminde yerel AI geliştirme süreçlerini hızlandırarak bulut maliyetlerini minimize eder.</p>
+            </div>
+            
+            <div class="story-meta">
+                Hacker News · 18s önce · 1 kaynak
+            </div>
+        </article>
+        <hr class="story-divider" />
+
+        <article class="story-item">
+            <div class="story-header">
+                <span class="story-num">08</span>
+                <span class="story-cat">SAĞLIK</span>
+                <span class="story-sep">·</span>
+                <span class="story-priority"><span class="priority-dot">●</span> PRODUCT</span>
+            </div>
+            <h2 class="story-title">Plaque-IQ™: En İyi Yeni Kardiyoloji Çözümü</h2>
+            <p class="story-summary">Elucid'in geliştirdiği Plaque-IQ, 2026 MedTech Breakthrough ödüllerinde en iyi teknoloji çözümü seçildi.</p>
+            
+            <div class="story-why-box">
+                <div class="why-label">WHY IT MATTERS</div>
+                <p class="why-text">Plak analizinde standartlaşma getiren bu tür araçlar, klinik karar destek sistemleri pazarını domine edecektir.</p>
+            </div>
+            
+            <div class="story-meta">
+                Business Wire · 20s önce · 1 kaynak
+            </div>
+        </article>
+        <hr class="story-divider" />
+
+        <article class="story-item">
+            <div class="story-header">
+                <span class="story-num">09</span>
+                <span class="story-cat">ÜRÜN</span>
+                <span class="story-sep">·</span>
+                <span class="story-priority"><span class="priority-dot">●</span> DISCUSSION</span>
+            </div>
+            <h2 class="story-title">BetterClaw: 60 Saniyede Ücretsiz AI Ajanı Dağıtımı</h2>
+            <p class="story-summary">Sıfır maliyetle ve çok hızlı bir şekilde AI ajanları deploy etmeyi sağlayan yeni bir platform.</p>
+            
+            <div class="story-why-box">
+                <div class="why-label">WHY IT MATTERS</div>
+                <p class="why-text">AI ajanlarının demokratikleşmesi ve mikro-servis olarak sunulması trendini hızlandırır.</p>
+            </div>
+            
+            <div class="story-meta">
+                Product Hunt · 22s önce · 1 kaynak
+            </div>
+        </article>
+        <hr class="story-divider" />
+
+        <article class="story-item">
+            <div class="story-header">
+                <span class="story-num">10</span>
+                <span class="story-cat">SAĞLIK</span>
+                <span class="story-sep">·</span>
+                <span class="story-priority"><span class="priority-dot">●</span> TREND</span>
+            </div>
+            <h2 class="story-title">GLP-1 Hastalarında Odak Kayması: Tartıdan Sağlığa</h2>
+            <p class="story-summary">Zayıflama ilaçları (GLP-1) kullanan hastalarda başarının sadece kilo kaybı değil, genel sağlık metrikleri üzerinden ölçülmesi gerektiği tartışılıyor.</p>
+            
+            <div class="story-why-box">
+                <div class="why-label">WHY IT MATTERS</div>
+                <p class="why-text">Kilo takip uygulamalarının 'sağlık ve yaşam kalitesi' odaklı yeni metrikler geliştirmesi için bir fırsattır.</p>
+            </div>
+            
+            <div class="story-meta">
+                Medscape · 24s önce · 1 kaynak
+            </div>
+        </article>
+        
+        </div>
+    </section>
+    

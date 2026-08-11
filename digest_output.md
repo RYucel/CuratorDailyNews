@@ -1,45 +1,84 @@
-# 🚀 Günlük Teknoloji, Donanım & Sağlık Bülteni
-*Tarih: 11.08.2026*
+🗞️ *CURATOR DAILY NEWS — 11.08.2026*
+_Kardiyovasküler sağlıkta dijital dönüşüm ve AI destekli tanı araçları yükselişe geçerken, donanım tarafında ESP32 tabanlı uç cihazların yetenekleri genişliyor. Yazılım dünyasında ise küçük parametreli ama yüksek performanslı yerel AI modelleri ve Android tabanlı AI Copilot'lar ürünleştirme trendlerini domine ediyor._
 
----
+------------------------------------
 
-## 💡 1. Öne Çıkan Ürün & İş Fikirleri (Side Hustle, ProductHunt & Business Ideas)
+*01 | SAĞLIK · HIGH SIGNAL*
+*Koroner Arter Kalsiyum Skorlaması ile Risk Analizi*
+Kalsiyum skorlamasının, kalp riski tahminlerini rafine ettiği ve statin ilaç kullanımı kararlarını daha kesin hale getirdiği vurgulanıyor.
 
-- **Gotcha (AI Android Copilot):** Sesle komut alan ve Android üzerinde aksiyon alan bir AI asistanı. 
-    - *Ticarileştirme:* Bu konsept, özellikle yaşlılar veya görme engelliler için "erişilebilirlik odaklı" özelleştirilmiş bir arayüzle sağlık sektörüne entegre edilebilir (Örn: "İlaçlarımı hatırlat ve eczaneye sipariş ver").
-- **Cerenovus (Kurumsal Bilgi Yönetimi):** Dağınık şirket bilgilerini güvenilir kararlara dönüştüren bir yapı.
-    - *Ticarileştirme:* Türkiye'deki KOBİ'lerin dijital dönüşüm süreçlerinde, kurum içi dokümantasyonu (PDF, Word, E-posta) tek bir "kurumsal beyin" haline getiren yerelleştirilmiş bir SaaS modeli olarak sunulabilir.
-- **Lüks Ev Otomasyon ve Bakım Servisleri (Reddit Fikri):** Varlıklı kişiler için evde rahatlama ve düzenleme servisleri.
-    - *Ticarileştirme:* Bunu fiziksel bir hizmetten çıkarıp, "Akıllı Ev Wellness Paketleri"ne dönüştürebilirsiniz. Belirli saatlerde ışıklandırma, koku ve sıcaklık ayarlarını yapan donanım kitleri + abonelik tabanlı bakım hizmeti hibrit bir model oluşturabilir.
-- **Podcast Özetleme ve Arşivleme İş Akışı:** Farklı platformlardan gelen ses verilerini yapılandırılmış bilgiye dönüştürme ihtiyacı.
-    - *Ticarileştirme:* İçerik üreticileri için "Multi-Platform Content Repurposing" (İçeriği Yeniden Amaçlandırma) ajansı kurulabilir; uzun videoları otomatik olarak Twitter flood'larına, LinkedIn makalelerine ve özet bültenlere dönüştüren bir otomasyon servisi satılabilir.
+💡 *WHY IT MATTERS:* Kişiselleştirilmiş tıp ve önleyici kardiyoloji alanında, tanı kitleri ve analiz yazılımları için yüksek ticari potansiyel sunmaktadır.
+📌 _Medscape · 2 kaynak_
+------------------------------------
 
----
+*02 | TEKNOLOJİ · HIGH SIGNAL*
+*LFM2.5: Küçük Boyutlu Dev Performanslı AI Modeli*
+LiquidAI tarafından geliştirilen 2.6B parametreli LFM2.5 modeli, kendisinden 4 kat daha büyük modellerle rekabet edebilecek kapasiteye sahip.
 
-## 🛠️ 2. Donanım, IoT & Otomasyon Trendleri (ESP32, Raspberry Pi, Arduino, Automation)
+💡 *WHY IT MATTERS:* Edge AI ve yerel cihazlarda yüksek performanslı LLM çalıştırma maliyetlerini düşürerek donanım bağımlılığını azaltır.
+📌 _Hacker News · 1 kaynak_
+------------------------------------
 
-- **NL-to-SQL (Doğal Dilden SQL'e) Agent İş Akışları:** Kullanıcıların düz metinle veritabanı sorgulaması yapabildiği sistemler (Databricks Genie örneği).
-    - **Proje Fikri:** Küçük işletmeler için "Konuşan Stok Takip Sistemi". İşletme sahibi "Geçen hafta en çok hangi ürün satıldı?" dediğinde, arka planda SQL sorgusu çalıştırıp sonucu sesli olarak dönen bir ESP32 + LLM entegrasyonu.
-- **Yaratıcı Mekatronik Uygulamalar:** Kendi kendine bağlanan ayakkabılar (Nike Mag) ve robotik gitar çalma sistemleri.
-    - **Nasıl Kullanılır?** Bu tip projeler, "Interaktif Müze Sergileri" veya "Tanıtım Standları" için yüksek etkileşimli ürünlere dönüştürülebilir. Özellikle perakende sektöründe ürünlerin kendi kendine hareket ettiği ilgi çekici teşhir üniteleri tasarlanabilir.
-- **Dashboard Yorgunluğu ve "Sessiz Hatalar":** İzleme panellerinin (Grafana vb.) bazen gürültü yarattığı ve asıl sorunları gizlediği tespiti.
-    - **Proje Fikri:** "Exception-Only" (Sadece İstisna Odaklı) bildirim sistemleri. Sürekli veri akışı yerine, sadece anomali tespit edildiğinde tetiklenen ve çözüm önerisi sunan minimalistik bir izleme modülü geliştirilebilir.
+*03 | ÜRÜN · OPPORTUNITY*
+*Gotcha: Android İçin İlk AI Copilot*
+Kullanıcının sesli komutlarını doğrudan Android işletim sistemi üzerinde eyleme dönüştüren bir AI asistanı.
 
----
+💡 *WHY IT MATTERS:* Mobil cihazlarda 'action-oriented' AI ajanlarına olan talebi karşılayan, yüksek büyüme potansiyelli bir SaaS/Uygulama modelidir.
+📌 _Product Hunt · 1 kaynak_
+------------------------------------
 
-## 🩺 3. Sağlık & Medikal Teknolojilerindeki Son Gelişmeler (Medscape & Kardiyoloji)
+*04 | DONANIM · TREND*
+*ESP32-P4 Üzerinde DOOM Çalıştırma Başarısı*
+Geliştiriciler, ESP32-P4 işlemcisinin grafik ve işlem gücünü kanıtlamak adına DOOM oyununu başarıyla çalıştırdı.
 
-- **Kalsiyum Skorlaması ve Statin Kararları:** Koroner arter kalsiyum skorlamasının, kalp riski tahminlerini netleştirdiği ve ilaç (statin) kullanım kararlarını optimize ettiği vurgulanıyor.
-- **Hava Kirliliği ve Kalp Sağlığı:** Sıcak günlerdeki dumanlı havanın kalp üzerindeki tehlikeyi artırdığına dair kritik bulgular mevcut.
-- **Kanser Tedavilerinin Kardiyovasküler Etkileri:** Kanser tedavilerinin yan etkisi olarak ortaya çıkan kalp sorunlarının bir "tsunami" şeklinde gelmesi bekleniyor (Kardiyo-Onkoloji yükselen bir alan).
-- **Plaque-IQ™ Teknolojisi:** Plak analizinde yeni bir dönemi başlatan bu çözüm, 2026'nın en iyi kardiyoloji teknolojisi seçildi.
+💡 *WHY IT MATTERS:* ESP32 serisinin sadece basit otomasyon değil, kompleks arayüzler ve hafif uygulamalar için de uygun olduğunu kanıtlar.
+📌 _Reddit · 1 kaynak_
+------------------------------------
 
-**Girişimciler için Not:** "Kardiyo-Onkoloji" ve "Çevresel Kalp Riskleri" alanları büyük boşluklar barındırıyor. Hava kalitesi sensörleri ile kalp ritmi takibini birleştiren ve riskli hava durumlarında hastayı uyaran "akıllı uyarı sistemleri" veya kanser hastaları için özel kardiyovasküler takip cihazları ciddi bir pazar potansiyeline sahip.
+*05 | SAĞLIK · ANALYSIS*
+*Kanser Tedavilerinin Kardiyak Etkileri: 'Tsunami' Etkisi*
+Modern kanser tedavilerinin kalp sağlığı üzerinde yarattığı yan etkilerin, gelecekte büyük bir hasta yükü (tsunami) oluşturacağı öngörülüyor.
 
----
+💡 *WHY IT MATTERS:* Onko-kardiyoloji alanında yeni izleme cihazları ve spesifik tedavi protokolleri için pazar boşluğu oluşmaktadır.
+📌 _Medscape · 1 kaynak_
+------------------------------------
 
-## ⚡ 4. Günün Aksiyon İpuçları & İlham Notu
+*06 | İŞ FİKİRİ · OPPORTUNITY*
+*Yüksek Gelir Grubuna Yönelik Lüks Ev Hizmetleri*
+Zengin bölgelerde yaşayan, yoğun çalışan kişiler için evde rahatlama ve kişisel bakım kurulum hizmetleri önerisi.
 
-- **Somut Proje Fikri 1:** Hava kirliliği (AQI) verilerini anlık takip eden ve kalp hastalarına "Bugün dışarı çıkma veya maske kullan" uyarısı gönderen, basit bir mobil uygulama/IoT cihazı geliştirin.
-- **Somut Proje Fikri 2:** Kurumsal bilgi yönetimini (Cerenovus tarzı) yerel sağlık klinikleri için özelleştirin; doktorların hasta geçmişlerini ve tıbbi literatürü hızla sorgulayabileceği bir "Klinik AI Asistanı" tasarlayın.
-- **İlham Notu:** *Donanım sadece devrelerden ibaret değildir; gerçek değer, karmaşık bir tıbbi veriyi veya kurumsal bilgi yığınını, son kullanıcının hayatını kolaylaştıran basit bir "aksiyona" dönüştürdüğünüzde ortaya çıkar.*
+💡 *WHY IT MATTERS:* Yüksek marjlı, düşük teknoloji gerektiren ancak yüksek operasyonel kalite odaklı bir yerel hizmet modeli fırsatıdır.
+📌 _Reddit · 1 kaynak_
+------------------------------------
+
+*07 | TEKNOLOJİ · TREND*
+*Apple Silicon İçin Native MiniMax-H3 Çıkarımı*
+H3-metal projesi ile Apple Silicon işlemciler üzerinde optimize edilmiş native inference imkanı sağlanıyor.
+
+💡 *WHY IT MATTERS:* Mac ekosisteminde yerel AI geliştirme süreçlerini hızlandırarak bulut maliyetlerini minimize eder.
+📌 _Hacker News · 1 kaynak_
+------------------------------------
+
+*08 | SAĞLIK · PRODUCT*
+*Plaque-IQ™: En İyi Yeni Kardiyoloji Çözümü*
+Elucid'in geliştirdiği Plaque-IQ, 2026 MedTech Breakthrough ödüllerinde en iyi teknoloji çözümü seçildi.
+
+💡 *WHY IT MATTERS:* Plak analizinde standartlaşma getiren bu tür araçlar, klinik karar destek sistemleri pazarını domine edecektir.
+📌 _Business Wire · 1 kaynak_
+------------------------------------
+
+*09 | ÜRÜN · DISCUSSION*
+*BetterClaw: 60 Saniyede Ücretsiz AI Ajanı Dağıtımı*
+Sıfır maliyetle ve çok hızlı bir şekilde AI ajanları deploy etmeyi sağlayan yeni bir platform.
+
+💡 *WHY IT MATTERS:* AI ajanlarının demokratikleşmesi ve mikro-servis olarak sunulması trendini hızlandırır.
+📌 _Product Hunt · 1 kaynak_
+------------------------------------
+
+*10 | SAĞLIK · TREND*
+*GLP-1 Hastalarında Odak Kayması: Tartıdan Sağlığa*
+Zayıflama ilaçları (GLP-1) kullanan hastalarda başarının sadece kilo kaybı değil, genel sağlık metrikleri üzerinden ölçülmesi gerektiği tartışılıyor.
+
+💡 *WHY IT MATTERS:* Kilo takip uygulamalarının 'sağlık ve yaşam kalitesi' odaklı yeni metrikler geliştirmesi için bir fırsattır.
+📌 _Medscape · 1 kaynak_
+------------------------------------

@@ -1,156 +1,139 @@
 import os
+import json
+import re
 import datetime
 import logging
 from typing import List, Dict, Any, Tuple
-from config import SYSTEM_PROMPT_TR
+from config import SYSTEM_PROMPT_EDITORIAL
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 def format_data_for_llm(rss_articles: List[Dict[str, Any]], reddit_posts: List[Dict[str, Any]]) -> str:
-    """Formats collected data into a structured context for the LLM."""
+    """Formats raw feeds into LLM prompt context."""
     lines = []
     
     lines.append("=== SAĞLIK & KARDİYOLOJİ HABERLERİ (MEDSCAPE / RSS) ===")
-    if not rss_articles:
-        lines.append("Bugün henüz yeni sağlık haberi bulunamadı.")
-    else:
-        for idx, item in enumerate(rss_articles, 1):
-            lines.append(f"[{idx}] Başlık: {item['title']}")
-            lines.append(f"    Kaynak: {item['source']} | Kategori: {item['category']}")
-            if item.get("summary"):
-                lines.append(f"    Özet: {item['summary']}")
-            lines.append(f"    Link: {item['link']}\n")
-            
-    lines.append("\n=== TEKNOLOJİ, DONANIM & İŞ FİKİRLERİ (REDDIT) ===")
-    if not reddit_posts:
-        lines.append("Bugün henüz yeni Reddit gönderisi bulunamadı.")
-    else:
-        for idx, item in enumerate(reddit_posts, 1):
-            lines.append(f"[{idx}] Subreddit: {item['subreddit']} (Skor: {item['score']} | Yorumlar: {item['comments_count']})")
-            lines.append(f"    Başlık: {item['title']}")
-            if item.get("text"):
-                lines.append(f"    İçerik: {item['text']}")
-            lines.append(f"    Link: {item['permalink']}\n")
-            
+    for idx, item in enumerate(rss_articles, 1):
+        lines.append(f"[{idx}] Başlık: {item['title']}")
+        lines.append(f"    Kaynak: {item['source']} | Kategori: {item['category']}")
+        if item.get("summary"):
+            lines.append(f"    Özet: {item['summary']}")
+        lines.append(f"    Link: {item['link']}\n")
+        
+    lines.append("\n=== TEKNOLOJİ, DONANIM & İŞ FİKİRLERİ (REDDIT & PRODUCTHUNT & HN) ===")
+    for idx, item in enumerate(reddit_posts, 1):
+        lines.append(f"[{idx}] Kaynak: {item['subreddit']} (Skor: {item['score']})")
+        lines.append(f"    Başlık: {item['title']}")
+        if item.get("text"):
+            lines.append(f"    İçerik: {item['text']}")
+        lines.append(f"    Link: {item['permalink']}\n")
+        
     return "\n".join(lines)
 
-def generate_digest_with_openai(prompt_content: str, api_key: str) -> str:
-    """Generates digest using OpenAI API."""
-    import openai
-    client = openai.OpenAI(api_key=api_key)
-    model = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
-    logging.info(f"Generating summary with OpenAI model '{model}'...")
-    
-    today_str = datetime.date.today().strftime("%d.%m.%Y")
-    system_prompt = SYSTEM_PROMPT_TR.format(date=today_str)
-    
-    response = client.chat.completions.create(
-        model=model,
-        messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": f"Aşağıdaki verileri incele ve Türkçe bülteni oluştur:\n\n{prompt_content}"}
-        ],
-        temperature=0.7,
-        max_tokens=2500
-    )
-    return response.choices[0].message.content
-
-def generate_digest_with_gemini(prompt_content: str, api_key: str) -> str:
-    """Generates digest using Google Gemini API."""
-    logging.info("Generating summary with Google Gemini API...")
-    today_str = datetime.date.today().strftime("%d.%m.%Y")
-    system_prompt = SYSTEM_PROMPT_TR.format(date=today_str)
+def parse_json_from_llm_response(text: str) -> Dict[str, Any]:
+    """Cleans markdown code blocks and parses JSON safely."""
+    cleaned = text.strip()
+    # Remove markdown code block fences if present
+    cleaned = re.sub(r"^```json\s*", "", cleaned, flags=re.MULTILINE)
+    cleaned = re.sub(r"^```\s*", "", cleaned, flags=re.MULTILINE)
+    cleaned = re.sub(r"```$", "", cleaned, flags=re.MULTILINE).strip()
     
     try:
-        from google import genai
-        client = genai.Client(api_key=api_key)
-        response = client.models.generate_content(
-            model="gemini-2.0-flash",
-            contents=f"{system_prompt}\n\nVeriler:\n{prompt_content}"
-        )
-        return response.text
+        return json.loads(cleaned)
     except Exception as e:
-        logging.warning(f"google-genai client failed: {e}. Trying legacy google-generativeai...")
-        import google.generativeai as genai_legacy
-        genai_legacy.configure(api_key=api_key)
-        model = genai_legacy.GenerativeModel("gemini-1.5-flash")
-        response = model.generate_content(f"{system_prompt}\n\nVeriler:\n{prompt_content}")
-        return response.text
+        logging.warning(f"Failed to parse direct JSON response: {e}. Attempting regex search...")
+        match = re.search(r"\{.*\}", cleaned, re.DOTALL)
+        if match:
+            try:
+                return json.loads(match.group(0))
+            except Exception as e2:
+                logging.error(f"Regex JSON extraction failed: {e2}")
+        raise
 
-def generate_mock_digest(rss_articles: List[Dict[str, Any]], reddit_posts: List[Dict[str, Any]]) -> str:
-    """Generates a fallback mock digest if no API key is set (for testing)."""
-    today_str = datetime.date.today().strftime("%d.%m.%Y")
-    return f"""# 🚀 Günlük Teknoloji, Donanım & Sağlık Bülteni
-*Tarih: {today_str}* (Test Modu - Deneme Bülteni)
+def generate_mock_editorial_data(rss_articles: List[Dict[str, Any]], reddit_posts: List[Dict[str, Any]]) -> Dict[str, Any]:
+    """Fallback editorial data if no LLM key is present."""
+    return {
+        "executive_summary": "Yapay zeka donanımları yerel çip mimarilerine kayarken, giyilebilir medikal cihazlar laboratuvar verileriyle birleşerek kişiselleştirilmiş sağlık takibinde yeni bir dönem başlatıyor.",
+        "stats": {
+            "total_stories": len(rss_articles) + len(reddit_posts),
+            "high_signal": 5,
+            "opportunities": 3,
+            "trends": 4
+        },
+        "stories": [
+            {
+                "number": "01",
+                "category": "DONANIM & AI",
+                "priority": "HIGH SIGNAL",
+                "title": "Cerebras ve Gömülü AI Çipleri Yerel İnferans Dönemini Başlatıyor",
+                "summary": "Tüketici elektroniği ve IoT cihazları, bulut bağımlılığını azaltmak için donanım üzerinde doğrudan çalışan ultra-hızlı yapay zeka çiplerine geçiyor.",
+                "why_it_matters": "Bulut API maliyetlerini sıfırlarken, gecikmesiz ev otomasyonu ve gizlilik odaklı medikal cihazlar için yeni bir ürün kategorisi yaratıyor.",
+                "source_name": "Hacker News",
+                "source_time": "2s önce",
+                "source_count": 8
+            },
+            {
+                "number": "02",
+                "category": "ÜRÜN & VERİMLİLİK",
+                "priority": "OPPORTUNITY",
+                "title": "SecondBrain Note MagSafe İle Ortam Seslerini Nota Dönüştürüyor",
+                "summary": "Akıllı telefonlara manyetik olarak yapışan donanım, ortamdaki toplantı ve konuşmaları ortam dinlemesiyle analiz edip aksiyon öğelerine çeviriyor.",
+                "why_it_matters": "Yazılım ve donanımın birleştiği giyilebilir ortam asistanı pazarı, yönetici ve saha çalışanları için yüksek marjlı bir SaaS+Donanım modeli sunuyor.",
+                "source_name": "Product Hunt",
+                "source_time": "4s önce",
+                "source_count": 5
+            },
+            {
+                "number": "03",
+                "category": "SAĞLIK & KARDİYOLOJİ",
+                "priority": "TREND",
+                "title": "Medscape: Giyilebilir Kardiyak Takip Laboratuvar Testleriyle Entegre Oluyor",
+                "summary": "Kardiyoloji dünyasındaki son araştırmalar, sürekli EKG ve nabız takibinin biyokimyasal kan testleriyle birleştirilerek erken uyarı sistemi sunduğunu gösteriyor.",
+                "why_it_matters": "Sağlık girişimcileri için özel kliniklerle entegre çalışacak kişiselleştirilmiş yaşlanma ve kalp sağlığı platformları ciddi fırsat barındırıyor.",
+                "source_name": "Medscape Cardiology",
+                "source_time": "5s önce",
+                "source_count": 7
+            }
+        ],
+        "trending_topics": ["Local AI", "Giyilebilir Sağlık", "ESP32 Otomasyon", "Kombine AI Donanım", "SaaS Modelleri"],
+        "top_sources": ["Product Hunt", "Reddit", "Hacker News", "Medscape"]
+    }
 
----
-
-## 💡 1. Öne Çıkan Ürün & İş Fikirleri (Side Hustle & Business Ideas)
-- **Toplanan Reddit Fikri Sayısı:** {len(reddit_posts)} adet gönderi incelendi.
-- **Örnek Fikir (Donanım/Otomasyon):** ESP32 tabanlı enerji takip cihazları veya ev otomasyon kitleri kullanıcılar tarafından yoğun ilgi görüyor.
-- **Değerlendirme:** Türkiye pazarında uygun maliyetli IoT enerji sensörleri ve mobil uygulama entegrasyonlu donanım paketleri ciddi bir ticari fırsat sunabilir.
-
----
-
-## 🛠️ 2. Donanım, IoT & Otomasyon Trendleri (ESP32, Raspberry Pi, Arduino)
-- Toplanan subreddit'lerde (`r/esp32`, `r/raspberrypi`, `r/arduino`) otomasyon ve mikrodenetleyici projeleri öne çıkıyor.
-- **Proje Fikri:** Raspberry Pi ve Python kullanarak atölye veya ev için akıllı stok/envanter takip terminali oluşturma.
-
----
-
-## 🩺 3. Sağlık & Medikal Teknolojilerindeki Son Gelişmeler (Medscape & Kardiyoloji)
-- **Toplanan Haber Sayısı:** {len(rss_articles)} adet sağlık/kardiyoloji makalesi çekildi.
-- Medscape Cardiology kaynaklarında son klinik araştırmalar ve giyilebilir medikal cihazların kardiyak takipte kullanımı inceleniyor.
-
----
-
-## ⚡ 4. Günün Aksiyon İpuçları & İlham Notu
-1. ESP32 veya Arduino ile küçük ölçekli bir sensor otomasyon projesi başlat.
-2. Medscape kardiyoloji makalelerinden ilham alarak sağlık teknolojileri dikeyinde içerik veya ürün fikirleri tasarla.
-3. r/sidehustle subreddit'indeki gerçek kullanıcı problemlerini otomasyon script'leri ile çözmeyi dene.
-"""
-
-def generate_digest_with_cerebras(prompt_content: str, api_key: str) -> str:
-    """Generates digest using Cerebras Cloud API (Ultra-fast inference)."""
+def generate_digest_with_cerebras(prompt_content: str, api_key: str) -> Dict[str, Any]:
+    """Generates structured JSON using Cerebras Cloud API."""
     import openai
     model = os.getenv("CEREBRAS_MODEL", "gemma-4-31b")
-    logging.info(f"Generating summary with Cerebras Cloud model '{model}'...")
+    logging.info(f"Generating editorial digest with Cerebras model '{model}'...")
     
-    client = openai.OpenAI(
-        api_key=api_key,
-        base_url="https://api.cerebras.ai/v1"
-    )
-    
-    today_str = datetime.date.today().strftime("%d.%m.%Y")
-    system_prompt = SYSTEM_PROMPT_TR.format(date=today_str)
+    client = openai.OpenAI(api_key=api_key, base_url="https://api.cerebras.ai/v1")
+    today_str = datetime.date.today().strftime("%d %B %Y")
     
     models_to_try = [model, "gemma-4-31b", "gpt-oss-120b", "zai-glm-4.7"]
-    # Filter duplicates while maintaining order
     seen = set()
     models_to_try = [m for m in models_to_try if not (m in seen or seen.add(m))]
     
     for m in models_to_try:
         try:
             logging.info(f"Attempting Cerebras inference with model '{m}'...")
-            response = client.chat.completions.create(
+            res = client.chat.completions.create(
                 model=m,
                 messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": f"Aşağıdaki verileri incele ve Türkçe bülteni oluştur:\n\n{prompt_content}"}
+                    {"role": "system", "content": SYSTEM_PROMPT_EDITORIAL},
+                    {"role": "user", "content": f"Aşağıdaki verilerden JSON formatında Editorial Intelligence Briefing oluştur:\n\n{prompt_content}"}
                 ],
-                temperature=0.7,
-                max_tokens=2500
+                temperature=0.4,
+                max_tokens=3000
             )
-            return response.choices[0].message.content
+            raw_text = res.choices[0].message.content
+            return parse_json_from_llm_response(raw_text)
         except Exception as e:
             logging.warning(f"Cerebras model '{m}' failed: {e}")
             
     raise Exception("All Cerebras models failed.")
 
-def generate_digest(rss_articles: List[Dict[str, Any]], reddit_posts: List[Dict[str, Any]]) -> str:
-    """Main generation logic. Routes to Cerebras, OpenAI, Gemini, or fallback Mock."""
+def generate_editorial_data(rss_articles: List[Dict[str, Any]], reddit_posts: List[Dict[str, Any]]) -> Dict[str, Any]:
+    """Main generation logic returning python dictionary of editorial content."""
     prompt_content = format_data_for_llm(rss_articles, reddit_posts)
-    
     cerebras_key = os.getenv("CEREBRAS_API_KEY")
     openai_key = os.getenv("OPENAI_API_KEY")
     gemini_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
@@ -159,79 +142,124 @@ def generate_digest(rss_articles: List[Dict[str, Any]], reddit_posts: List[Dict[
         try:
             return generate_digest_with_cerebras(prompt_content, cerebras_key)
         except Exception as e:
-            logging.error(f"Cerebras API error: {e}. Falling back to OpenAI/Gemini...")
-
+            logging.error(f"Cerebras API error: {e}. Falling back...")
+            
     if openai_key:
         try:
-            return generate_digest_with_openai(prompt_content, openai_key)
+            import openai
+            client = openai.OpenAI(api_key=openai_key)
+            res = client.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=[
+                    {"role": "system", "content": SYSTEM_PROMPT_EDITORIAL},
+                    {"role": "user", "content": prompt_content}
+                ],
+                response_format={"type": "json_object"}
+            )
+            return parse_json_from_llm_response(res.choices[0].message.content)
         except Exception as e:
-            logging.error(f"OpenAI error: {e}. Falling back to Gemini or Mock...")
+            logging.error(f"OpenAI error: {e}")
             
-    if gemini_key:
-        try:
-            return generate_digest_with_gemini(prompt_content, gemini_key)
-        except Exception as e:
-            logging.error(f"Gemini error: {e}. Falling back to Mock...")
+    logging.warning("No valid API keys or inference error. Using fallback mock editorial data.")
+    return generate_mock_editorial_data(rss_articles, reddit_posts)
+
+def render_editorial_html(data: Dict[str, Any]) -> str:
+    """Renders clean, editorial non-card HTML format."""
+    stats = data.get("stats", {})
+    stories = data.get("stories", [])
+    exec_summary = data.get("executive_summary", "")
+    
+    stories_html = []
+    for s in stories:
+        priority_str = s.get('priority', 'HIGH SIGNAL')
+        story_code = f"""
+        <article class="story-item">
+            <div class="story-header">
+                <span class="story-num">{s.get('number', '01')}</span>
+                <span class="story-cat">{s.get('category', 'TEKNOLOJİ')}</span>
+                <span class="story-sep">·</span>
+                <span class="story-priority"><span class="priority-dot">●</span> {priority_str}</span>
+            </div>
+            <h2 class="story-title">{s.get('title', '')}</h2>
+            <p class="story-summary">{s.get('summary', '')}</p>
             
-    logging.warning("No valid API keys found. Using fallback test digest.")
-    return generate_mock_digest(rss_articles, reddit_posts)
+            <div class="story-why-box">
+                <div class="why-label">WHY IT MATTERS</div>
+                <p class="why-text">{s.get('why_it_matters', '')}</p>
+            </div>
+            
+            <div class="story-meta">
+                {s.get('source_name', 'Reddit')} · {s.get('source_time', 'Günün Özeti')} · {s.get('source_count', 4)} kaynak
+            </div>
+        </article>
+        """
+        stories_html.append(story_code)
+        
+    stories_combined = '<hr class="story-divider" />\n'.join(stories_html)
+    
+    return f"""
+    <!-- BRIEFING HEADER -->
+    <header class="briefing-header">
+        <div class="briefing-date">{datetime.date.today().strftime('%d %B %Y').upper()}</div>
+        <h1 class="briefing-title">TODAY'S BRIEFING</h1>
+        <p class="briefing-exec">{exec_summary}</p>
+    </header>
 
-def convert_markdown_to_html(markdown_text: str) -> str:
-    """Converts Markdown digest to a premium dark-themed HTML email body."""
-    import re
-    
-    # Basic markdown parsing to styled HTML
-    html_body = markdown_text
-    
-    # Convert Headers
-    html_body = re.sub(r"^# (.*?)$", r'<h1 style="color: #6366f1; border-bottom: 2px solid #374151; padding-bottom: 8px; font-size: 24px;">\1</h1>', html_body, flags=re.MULTILINE)
-    html_body = re.sub(r"^## (.*?)$", r'<h2 style="color: #38bdf8; margin-top: 24px; font-size: 18px; font-weight: 600;">\1</h2>', html_body, flags=re.MULTILINE)
-    html_body = re.sub(r"^### (.*?)$", r'<h3 style="color: #f43f5e; margin-top: 16px; font-size: 16px;">\1</h3>', html_body, flags=re.MULTILINE)
-    
-    # Convert Bold and Italic
-    html_body = re.sub(r"\*\*(.*?)\*\*", r'<strong style="color: #f3f4f6;">\1</strong>', html_body)
-    html_body = re.sub(r"\*(.*?)\*", r'<em style="color: #9ca3af;">\1</em>', html_body)
-    
-    # Convert Lists
-    html_body = re.sub(r"^- (.*?)$", r'<li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;">\1</li>', html_body, flags=re.MULTILINE)
-    html_body = re.sub(r"^(\d+)\. (.*?)$", r'<li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;">\2</li>', html_body, flags=re.MULTILINE)
-    
-    # Wrap lists in <ul>
-    html_body = re.sub(r'((?:<li style=".*?">.*?</li>\n?)+)', r'<ul style="padding-left: 20px; margin: 12px 0;">\1</ul>', html_body)
-    
-    # Horizontal rules
-    html_body = re.sub(r"^---$", r'<hr style="border: 0; border-top: 1px solid #374151; margin: 20px 0;" />', html_body, flags=re.MULTILINE)
-    
-    # Paragraph breaks
-    paragraphs = html_body.split('\n\n')
-    formatted_p = []
-    for p in paragraphs:
-        if not p.strip().startswith('<') and p.strip():
-            formatted_p.append(f'<p style="line-height: 1.6; color: #d1d5db; margin: 10px 0;">{p.strip()}</p>')
-        else:
-            formatted_p.append(p)
-    html_body = '\n'.join(formatted_p)
-
-    template = f"""<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curator Daily News - Türkçe Bülten</title>
-</head>
-<body style="background-color: #0f172a; color: #e2e8f0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; padding: 20px; margin: 0;">
-    <div style="max-width: 680px; margin: 0 auto; background-color: #1e293b; padding: 30px; border-radius: 12px; border: 1px solid #334155; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
-        <div style="text-align: center; padding-bottom: 15px; margin-bottom: 20px; border-bottom: 1px solid #334155;">
-            <span style="background: linear-gradient(135deg, #6366f1, #a855f7); padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; color: white; letter-spacing: 1px; text-transform: uppercase;">Curator Daily News</span>
+    <!-- AT A GLANCE STATS -->
+    <div class="briefing-stats">
+        <div class="stat-col">
+            <span class="stat-num">{stats.get('total_stories', len(stories))}</span>
+            <span class="stat-label">STORIES</span>
         </div>
-        
-        {html_body}
-        
-        <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #334155; text-align: center; font-size: 12px; color: #64748b;">
-            <p>Bu bülten GitHub Actions & AI tarafından otomatik olarak oluşturulmuştur.</p>
-            <p>© {datetime.date.today().year} CuratorDailyNews Digest</p>
+        <div class="stat-divider"></div>
+        <div class="stat-col">
+            <span class="stat-num">{stats.get('high_signal', 5)}</span>
+            <span class="stat-label">HIGH SIGNAL</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-col">
+            <span class="stat-num">{stats.get('opportunities', 3)}</span>
+            <span class="stat-label">OPPORTUNITIES</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-col">
+            <span class="stat-num">{stats.get('trends', 4)}</span>
+            <span class="stat-label">TRENDS</span>
         </div>
     </div>
-</body>
-</html>"""
-    return template
+
+    <!-- MAIN SIGNAL FEED -->
+    <section class="signal-feed">
+        <h3 class="section-label">TODAY'S SIGNAL</h3>
+        <div class="feed-list">
+            {stories_combined}
+        </div>
+    </section>
+    """
+
+def render_editorial_markdown(data: Dict[str, Any]) -> str:
+    """Renders plain markdown version for Telegram/Email."""
+    exec_summary = data.get("executive_summary", "")
+    stories = data.get("stories", [])
+    today_str = datetime.date.today().strftime("%d.%m.%Y")
+    
+    lines = [
+        f"🗞️ *CURATOR DAILY NEWS — {today_str}*",
+        f"_{exec_summary}_\n",
+        "------------------------------------"
+    ]
+    
+    for s in stories:
+        lines.append(f"\n*{s.get('number', '01')} | {s.get('category', '')} · {s.get('priority', '')}*")
+        lines.append(f"*{s.get('title', '')}*")
+        lines.append(f"{s.get('summary', '')}")
+        lines.append(f"\n💡 *WHY IT MATTERS:* {s.get('why_it_matters', '')}")
+        lines.append(f"📌 _{s.get('source_name', 'Kaynak')} · {s.get('source_count', 4)} kaynak_")
+        lines.append("------------------------------------")
+        
+    return "\n".join(lines)
+
+def generate_digest(rss_articles: List[Dict[str, Any]], reddit_posts: List[Dict[str, Any]]) -> str:
+    """Main pipeline digest generator returning markdown string for backwards compatibility."""
+    data = generate_editorial_data(rss_articles, reddit_posts)
+    return render_editorial_markdown(data)

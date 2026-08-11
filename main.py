@@ -6,7 +6,7 @@ import logging
 from dotenv import load_dotenv
 
 from collectors import fetch_rss_articles, fetch_reddit_posts
-from summarizer import generate_digest, convert_markdown_to_html
+from summarizer import generate_editorial_data, render_editorial_html, render_editorial_markdown
 from notifier import send_email, send_telegram, send_notion, save_local_files
 
 if hasattr(sys.stdout, 'reconfigure'):
@@ -31,9 +31,11 @@ def run_pipeline(dry_run: bool = False):
     
     logging.info(f"Collected total: {len(rss_articles)} RSS items and {len(reddit_posts)} Reddit posts.")
     
-    # 2. Generate Digest via LLM
-    markdown_digest = generate_digest(rss_articles, reddit_posts)
-    html_digest = convert_markdown_to_html(markdown_digest)
+    # 2. Generate Editorial Digest via LLM
+    from summarizer import generate_editorial_data, render_editorial_html, render_editorial_markdown
+    editorial_data = generate_editorial_data(rss_articles, reddit_posts)
+    markdown_digest = render_editorial_markdown(editorial_data)
+    html_digest = render_editorial_html(editorial_data)
     
     # 3. Save output to local files & Build GitHub Pages Portal
     md_path, html_path = save_local_files(markdown_digest, html_digest)

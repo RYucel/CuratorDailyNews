@@ -50,15 +50,16 @@ def generate_fresh_digest():
         rss_articles = fetch_rss_articles()
         reddit_posts = fetch_reddit_posts()
         
-        markdown_digest = generate_digest(rss_articles, reddit_posts)
-        html_digest = convert_markdown_to_html(markdown_digest)
+        editorial_data = generate_editorial_data(rss_articles, reddit_posts)
+        markdown_digest = render_editorial_markdown(editorial_data)
+        html_digest = render_editorial_html(editorial_data)
         
         md_path, html_path = save_local_files(markdown_digest, html_digest)
         build_github_pages_site(html_digest)
         
         # Automatically dispatch Telegram, Email and Notion if credentials exist
         today_str = datetime.date.today().strftime("%d.%m.%Y")
-        subject = f"🚀 Günlük Teknoloji, Donanım & Sağlık Bülteni - {today_str}"
+        subject = f"🚀 Curator Daily News Briefing - {today_str}"
         send_telegram(markdown_digest)
         send_email(subject, html_digest, markdown_digest)
         send_notion(markdown_digest)

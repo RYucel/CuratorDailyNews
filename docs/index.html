@@ -3,169 +3,834 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curator Daily News | Ryucel</title>
+    <title>Curator Daily News — Daily Intelligence Briefing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --bg-main: #0b0f19;
-            --bg-card: #151c2c;
-            --border-card: #26334d;
-            --accent-purple: #8b5cf6;
-            --accent-blue: #38bdf8;
-            --accent-pink: #f43f5e;
-            --text-primary: #f8fafc;
-            --text-secondary: #94a3b8;
-        }
+        /* ==========================================================================
+   CURATOR DAILY NEWS — EDITORIAL INTELLIGENCE DESIGN SYSTEM
+   ========================================================================== */
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-        }
+:root {
+    --bg-main: #0f1115;
+    --bg-surface: #151922;
+    --text-primary: #f1f2f4;
+    --text-secondary: #a5aab4;
+    --text-muted: #64748b;
+    --border-subtle: #282d36;
+    --accent: #3157d5;
+    --accent-hover: #436cf0;
+    
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-mono: "SF Mono", "Roboto Mono", Consolas, monospace;
+    
+    --radius-sm: 4px;
+    --header-height: 60px;
+}
 
-        body {
-            background-color: var(--bg-main);
-            color: var(--text-primary);
-            min-height: 100vh;
-            padding: 40px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-sans);
+}
 
-        .header {
-            max-width: 800px;
-            width: 100%;
-            text-align: center;
-            margin-bottom: 30px;
-        }
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
 
-        .badge {
-            display: inline-block;
-            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(56, 189, 248, 0.2));
-            border: 1px solid rgba(139, 92, 246, 0.4);
-            color: #a78bfa;
-            font-size: 13px;
-            font-weight: 600;
-            padding: 6px 16px;
-            border-radius: 30px;
-            margin-bottom: 12px;
-            letter-spacing: 0.5px;
-        }
+/* ==========================================================================
+   1. HEADER NAVIGATION (Compact 56-64px, zero gradients, text-only nav)
+   ========================================================================== */
 
-        .title {
-            font-size: 32px;
-            font-weight: 800;
-            background: linear-gradient(135deg, #ffffff, #94a3b8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 8px;
-        }
+.header-nav {
+    height: var(--header-height);
+    background-color: var(--bg-main);
+    border-bottom: 1px solid var(--border-subtle);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+}
 
-        .subtitle {
-            color: var(--text-secondary);
-            font-size: 15px;
-        }
+.header-left {
+    display: flex;
+    flex-direction: column;
+}
 
-        .container {
-            max-width: 800px;
-            width: 100%;
-            background-color: var(--bg-card);
-            border: 1px solid var(--border-card);
-            border-radius: 16px;
-            padding: 35px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-        }
+.header-brand {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: -0.2px;
+    text-decoration: none;
+}
 
-        .footer {
-            margin-top: 40px;
-            text-align: center;
-            color: var(--text-secondary);
-            font-size: 13px;
-        }
+.header-sub {
+    font-size: 11px;
+    color: var(--text-secondary);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
 
-        .footer a {
-            color: var(--accent-blue);
-            text-decoration: none;
-            font-weight: 500;
-        }
+.header-center {
+    display: flex;
+    gap: 28px;
+}
 
-        .footer a:hover {
-            text-decoration: underline;
-        }
+.nav-link {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 18px 0;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.15s ease;
+}
+
+.nav-link:hover {
+    color: var(--text-primary);
+}
+
+.nav-link.active {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-timestamp {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.btn-editorial {
+    background: transparent;
+    border: 1px solid var(--border-subtle);
+    color: var(--text-primary);
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.btn-editorial:hover {
+    background-color: var(--bg-surface);
+    border-color: var(--text-secondary);
+}
+
+.btn-primary-editorial {
+    background-color: var(--accent);
+    border: 1px solid var(--accent);
+    color: #ffffff;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.btn-primary-editorial:hover {
+    background-color: var(--accent-hover);
+}
+
+/* ==========================================================================
+   2. MAIN CONTAINER & 2-COLUMN LAYOUT
+   ========================================================================== */
+
+.app-container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 32px 32px 60px 32px;
+    flex: 1;
+}
+
+.editorial-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 800px) 280px;
+    gap: 56px;
+}
+
+/* ==========================================================================
+   3. BRIEFING HEADER & EXECUTIVE SUMMARY (No container card!)
+   ========================================================================== */
+
+.briefing-header {
+    margin-bottom: 28px;
+}
+
+.briefing-date {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    letter-spacing: 1.2px;
+    margin-bottom: 8px;
+}
+
+.briefing-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--text-primary);
+    letter-spacing: -0.8px;
+    margin-bottom: 12px;
+    line-height: 1.15;
+}
+
+.briefing-exec {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    max-width: 780px;
+    margin-bottom: 24px;
+}
+
+/* ==========================================================================
+   4. AT-A-GLANCE STATS STRIP (Simple columns with vertical line dividers)
+   ========================================================================== */
+
+.briefing-stats {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    border-top: 1px solid var(--border-subtle);
+    border-bottom: 1px solid var(--border-subtle);
+    margin-bottom: 40px;
+}
+
+.stat-col {
+    display: flex;
+    flex-direction: column;
+    padding-right: 32px;
+}
+
+.stat-num {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--text-primary);
+    line-height: 1;
+    margin-bottom: 4px;
+    font-family: var(--font-mono);
+}
+
+.stat-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    letter-spacing: 0.8px;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 36px;
+    background-color: var(--border-subtle);
+    margin-right: 32px;
+}
+
+/* ==========================================================================
+   5. EDITORIAL SIGNAL FEED & STORY ITEMS (Zero floating cards!)
+   ========================================================================== */
+
+.section-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-secondary);
+    letter-spacing: 1.5px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.feed-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.story-item {
+    padding-bottom: 28px;
+}
+
+.story-divider {
+    border: 0;
+    border-top: 1px solid var(--border-subtle);
+    margin: 28px 0;
+}
+
+.story-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.story-num {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.story-cat {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-secondary);
+    letter-spacing: 1px;
+}
+
+.story-sep {
+    color: var(--border-subtle);
+    font-size: 14px;
+}
+
+.story-priority {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: 0.8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.priority-dot {
+    color: var(--accent);
+    font-size: 10px;
+}
+
+.story-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.35;
+    margin-bottom: 10px;
+    letter-spacing: -0.3px;
+}
+
+.story-summary {
+    font-size: 16px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+/* WHY IT MATTERS section */
+.story-why-box {
+    border-left: 2px solid var(--accent);
+    padding-left: 14px;
+    margin-bottom: 14px;
+}
+
+.why-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+}
+
+.why-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-primary);
+    line-height: 1.5;
+}
+
+.story-meta {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+/* ==========================================================================
+   6. RIGHT SIDEBAR (Editorial modules, no cards, thin line dividers)
+   ========================================================================== */
+
+.editorial-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.sidebar-module {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-secondary);
+    letter-spacing: 1.5px;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.sidebar-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-list-item {
+    font-size: 14px;
+    color: var(--text-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-list-item span.count {
+    font-size: 12px;
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+}
+
+/* ==========================================================================
+   7. ARCHIVE & LIVE FEED VIEWS
+   ========================================================================== */
+
+.archive-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border-subtle);
+    cursor: pointer;
+    transition: color 0.15s ease;
+}
+
+.archive-row:hover .archive-date {
+    color: var(--accent);
+}
+
+.archive-date {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+}
+
+.archive-topics {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.live-item {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border-subtle);
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 16px;
+    align-items: baseline;
+}
+
+.live-time {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.live-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.live-title:hover {
+    color: var(--accent);
+}
+
+/* ==========================================================================
+   8. LOADING OVERLAY & FOOTER
+   ========================================================================== */
+
+.loading-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(15, 17, 21, 0.9);
+    z-index: 999;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner-editorial {
+    width: 32px;
+    height: 32px;
+    border: 2px solid var(--border-subtle);
+    border-top: 2px solid var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin-bottom: 16px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+footer {
+    border-top: 1px solid var(--border-subtle);
+    padding: 24px 32px;
+    font-size: 12px;
+    color: var(--text-secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--accent);
+}
+
+/* Responsive Rules */
+@media (max-width: 992px) {
+    .editorial-layout {
+        grid-template-columns: 1fr;
+    }
+    .editorial-sidebar {
+        margin-top: 40px;
+    }
+}
+
     </style>
 </head>
 <body>
 
-    <div class="header">
-        <span class="badge">AI GÜNLÜK BÜLTEN RADARI</span>
-        <h1 class="title">Curator Daily News</h1>
-        <p class="subtitle">Teknoloji, Donanım, Otomasyon & Sağlık Gelişmeleri • Güncelleme: 11.08.2026</p>
-    </div>
-
-    <div class="container">
-        <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curator Daily News - Türkçe Bülten</title>
-</head>
-<body style="background-color: #0f172a; color: #e2e8f0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; padding: 20px; margin: 0;">
-    <div style="max-width: 680px; margin: 0 auto; background-color: #1e293b; padding: 30px; border-radius: 12px; border: 1px solid #334155; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
-        <div style="text-align: center; padding-bottom: 15px; margin-bottom: 20px; border-bottom: 1px solid #334155;">
-            <span style="background: linear-gradient(135deg, #6366f1, #a855f7); padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; color: white; letter-spacing: 1px; text-transform: uppercase;">Curator Daily News</span>
+    <header class="header-nav">
+        <div class="header-left">
+            <a href="/" class="header-brand">Curator Daily News</a>
+            <span class="header-sub">Daily Intelligence Briefing</span>
         </div>
-        
-        <h1 style="color: #6366f1; border-bottom: 2px solid #374151; padding-bottom: 8px; font-size: 24px;">🚀 Günlük Teknoloji, Donanım & Sağlık Bülteni</h1>
-<em style="color: #9ca3af;">Tarih: 11.08.2026</em>
-<hr style="border: 0; border-top: 1px solid #374151; margin: 20px 0;" />
-<h2 style="color: #38bdf8; margin-top: 24px; font-size: 18px; font-weight: 600;">💡 1. Öne Çıkan Ürün & İş Fikirleri (Side Hustle, ProductHunt & Business Ideas)</h2>
-<ul style="padding-left: 20px; margin: 12px 0;"><li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">Gotcha (AI Android Copilot):</strong> Sesle komut alan ve Android üzerinde aksiyon alan bir AI asistanı. </li>
-</ul>    - <em style="color: #9ca3af;">Ticarileştirme:</em> Bu konsept, özellikle yaşlılar veya görme engelliler için "erişilebilirlik odaklı" özelleştirilmiş bir arayüzle sağlık sektörüne entegre edilebilir (Örn: "İlaçlarımı hatırlat ve eczaneye sipariş ver").
-<ul style="padding-left: 20px; margin: 12px 0;"><li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">Cerenovus (Kurumsal Bilgi Yönetimi):</strong> Dağınık şirket bilgilerini güvenilir kararlara dönüştüren bir yapı.</li>
-</ul>    - <em style="color: #9ca3af;">Ticarileştirme:</em> Türkiye'deki KOBİ'lerin dijital dönüşüm süreçlerinde, kurum içi dokümantasyonu (PDF, Word, E-posta) tek bir "kurumsal beyin" haline getiren yerelleştirilmiş bir SaaS modeli olarak sunulabilir.
-<ul style="padding-left: 20px; margin: 12px 0;"><li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">Lüks Ev Otomasyon ve Bakım Servisleri (Reddit Fikri):</strong> Varlıklı kişiler için evde rahatlama ve düzenleme servisleri.</li>
-</ul>    - <em style="color: #9ca3af;">Ticarileştirme:</em> Bunu fiziksel bir hizmetten çıkarıp, "Akıllı Ev Wellness Paketleri"ne dönüştürebilirsiniz. Belirli saatlerde ışıklandırma, koku ve sıcaklık ayarlarını yapan donanım kitleri + abonelik tabanlı bakım hizmeti hibrit bir model oluşturabilir.
-<ul style="padding-left: 20px; margin: 12px 0;"><li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">Podcast Özetleme ve Arşivleme İş Akışı:</strong> Farklı platformlardan gelen ses verilerini yapılandırılmış bilgiye dönüştürme ihtiyacı.</li>
-</ul>    - <em style="color: #9ca3af;">Ticarileştirme:</em> İçerik üreticileri için "Multi-Platform Content Repurposing" (İçeriği Yeniden Amaçlandırma) ajansı kurulabilir; uzun videoları otomatik olarak Twitter flood'larına, LinkedIn makalelerine ve özet bültenlere dönüştüren bir otomasyon servisi satılabilir.
-<hr style="border: 0; border-top: 1px solid #374151; margin: 20px 0;" />
-<h2 style="color: #38bdf8; margin-top: 24px; font-size: 18px; font-weight: 600;">🛠️ 2. Donanım, IoT & Otomasyon Trendleri (ESP32, Raspberry Pi, Arduino, Automation)</h2>
-<ul style="padding-left: 20px; margin: 12px 0;"><li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">NL-to-SQL (Doğal Dilden SQL'e) Agent İş Akışları:</strong> Kullanıcıların düz metinle veritabanı sorgulaması yapabildiği sistemler (Databricks Genie örneği).</li>
-</ul>    - <strong style="color: #f3f4f6;">Proje Fikri:</strong> Küçük işletmeler için "Konuşan Stok Takip Sistemi". İşletme sahibi "Geçen hafta en çok hangi ürün satıldı?" dediğinde, arka planda SQL sorgusu çalıştırıp sonucu sesli olarak dönen bir ESP32 + LLM entegrasyonu.
-<ul style="padding-left: 20px; margin: 12px 0;"><li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">Yaratıcı Mekatronik Uygulamalar:</strong> Kendi kendine bağlanan ayakkabılar (Nike Mag) ve robotik gitar çalma sistemleri.</li>
-</ul>    - <strong style="color: #f3f4f6;">Nasıl Kullanılır?</strong> Bu tip projeler, "Interaktif Müze Sergileri" veya "Tanıtım Standları" için yüksek etkileşimli ürünlere dönüştürülebilir. Özellikle perakende sektöründe ürünlerin kendi kendine hareket ettiği ilgi çekici teşhir üniteleri tasarlanabilir.
-<ul style="padding-left: 20px; margin: 12px 0;"><li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">Dashboard Yorgunluğu ve "Sessiz Hatalar":</strong> İzleme panellerinin (Grafana vb.) bazen gürültü yarattığı ve asıl sorunları gizlediği tespiti.</li>
-</ul>    - <strong style="color: #f3f4f6;">Proje Fikri:</strong> "Exception-Only" (Sadece İstisna Odaklı) bildirim sistemleri. Sürekli veri akışı yerine, sadece anomali tespit edildiğinde tetiklenen ve çözüm önerisi sunan minimalistik bir izleme modülü geliştirilebilir.
-<hr style="border: 0; border-top: 1px solid #374151; margin: 20px 0;" />
-<h2 style="color: #38bdf8; margin-top: 24px; font-size: 18px; font-weight: 600;">🩺 3. Sağlık & Medikal Teknolojilerindeki Son Gelişmeler (Medscape & Kardiyoloji)</h2>
-<ul style="padding-left: 20px; margin: 12px 0;"><li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">Kalsiyum Skorlaması ve Statin Kararları:</strong> Koroner arter kalsiyum skorlamasının, kalp riski tahminlerini netleştirdiği ve ilaç (statin) kullanım kararlarını optimize ettiği vurgulanıyor.</li>
-<li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">Hava Kirliliği ve Kalp Sağlığı:</strong> Sıcak günlerdeki dumanlı havanın kalp üzerindeki tehlikeyi artırdığına dair kritik bulgular mevcut.</li>
-<li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">Kanser Tedavilerinin Kardiyovasküler Etkileri:</strong> Kanser tedavilerinin yan etkisi olarak ortaya çıkan kalp sorunlarının bir "tsunami" şeklinde gelmesi bekleniyor (Kardiyo-Onkoloji yükselen bir alan).</li>
-<li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">Plaque-IQ™ Teknolojisi:</strong> Plak analizinde yeni bir dönemi başlatan bu çözüm, 2026'nın en iyi kardiyoloji teknolojisi seçildi.</li>
-</ul>
-<strong style="color: #f3f4f6;">Girişimciler için Not:</strong> "Kardiyo-Onkoloji" ve "Çevresel Kalp Riskleri" alanları büyük boşluklar barındırıyor. Hava kalitesi sensörleri ile kalp ritmi takibini birleştiren ve riskli hava durumlarında hastayı uyaran "akıllı uyarı sistemleri" veya kanser hastaları için özel kardiyovasküler takip cihazları ciddi bir pazar potansiyeline sahip.
-<hr style="border: 0; border-top: 1px solid #374151; margin: 20px 0;" />
-<h2 style="color: #38bdf8; margin-top: 24px; font-size: 18px; font-weight: 600;">⚡ 4. Günün Aksiyon İpuçları & İlham Notu</h2>
-<ul style="padding-left: 20px; margin: 12px 0;"><li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">Somut Proje Fikri 1:</strong> Hava kirliliği (AQI) verilerini anlık takip eden ve kalp hastalarına "Bugün dışarı çıkma veya maske kullan" uyarısı gönderen, basit bir mobil uygulama/IoT cihazı geliştirin.</li>
-<li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">Somut Proje Fikri 2:</strong> Kurumsal bilgi yönetimini (Cerenovus tarzı) yerel sağlık klinikleri için özelleştirin; doktorların hasta geçmişlerini ve tıbbi literatürü hızla sorgulayabileceği bir "Klinik AI Asistanı" tasarlayın.</li>
-<li style="margin-bottom: 8px; line-height: 1.6; color: #d1d5db;"><strong style="color: #f3f4f6;">İlham Notu:</strong> <em style="color: #9ca3af;">Donanım sadece devrelerden ibaret değildir; gerçek değer, karmaşık bir tıbbi veriyi veya kurumsal bilgi yığınını, son kullanıcının hayatını kolaylaştıran basit bir "aksiyona" dönüştürdüğünüzde ortaya çıkar.</em></li></ul>
-        
-        <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #334155; text-align: center; font-size: 12px; color: #64748b;">
-            <p>Bu bülten GitHub Actions & AI tarafından otomatik olarak oluşturulmuştur.</p>
-            <p>© 2026 CuratorDailyNews Digest</p>
+        <div class="header-right">
+            <span class="header-timestamp">Updated 10:26</span>
+        </div>
+    </header>
+
+    <main class="app-container">
+        <div class="editorial-layout">
+            <div class="feed-column">
+                
+    <!-- BRIEFING HEADER -->
+    <header class="briefing-header">
+        <div class="briefing-date">11 AUGUST 2026</div>
+        <h1 class="briefing-title">TODAY'S BRIEFING</h1>
+        <p class="briefing-exec">Kardiyovasküler sağlıkta dijital dönüşüm ve AI destekli tanı araçları yükselişe geçerken, donanım tarafında ESP32 tabanlı uç cihazların yetenekleri genişliyor. Yazılım dünyasında ise küçük parametreli ama yüksek performanslı yerel AI modelleri ve Android tabanlı AI Copilot'lar ürünleştirme trendlerini domine ediyor.</p>
+    </header>
+
+    <!-- AT A GLANCE STATS -->
+    <div class="briefing-stats">
+        <div class="stat-col">
+            <span class="stat-num">10</span>
+            <span class="stat-label">STORIES</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-col">
+            <span class="stat-num">3</span>
+            <span class="stat-label">HIGH SIGNAL</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-col">
+            <span class="stat-num">3</span>
+            <span class="stat-label">OPPORTUNITIES</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-col">
+            <span class="stat-num">4</span>
+            <span class="stat-label">TRENDS</span>
         </div>
     </div>
-</body>
-</html>
-    </div>
 
-    <div class="footer">
-        <p>CuratorDailyNews &copy; 2026 • Geliştirici: <a href="https://github.com/Ryucel" target="_blank">Ryucel</a></p>
-    </div>
+    <!-- MAIN SIGNAL FEED -->
+    <section class="signal-feed">
+        <h3 class="section-label">TODAY'S SIGNAL</h3>
+        <div class="feed-list">
+            
+        <article class="story-item">
+            <div class="story-header">
+                <span class="story-num">01</span>
+                <span class="story-cat">SAĞLIK</span>
+                <span class="story-sep">·</span>
+                <span class="story-priority"><span class="priority-dot">●</span> HIGH SIGNAL</span>
+            </div>
+            <h2 class="story-title">Koroner Arter Kalsiyum Skorlaması ile Risk Analizi</h2>
+            <p class="story-summary">Kalsiyum skorlamasının, kalp riski tahminlerini rafine ettiği ve statin ilaç kullanımı kararlarını daha kesin hale getirdiği vurgulanıyor.</p>
+            
+            <div class="story-why-box">
+                <div class="why-label">WHY IT MATTERS</div>
+                <p class="why-text">Kişiselleştirilmiş tıp ve önleyici kardiyoloji alanında, tanı kitleri ve analiz yazılımları için yüksek ticari potansiyel sunmaktadır.</p>
+            </div>
+            
+            <div class="story-meta">
+                Medscape · 4s önce · 2 kaynak
+            </div>
+        </article>
+        <hr class="story-divider" />
+
+        <article class="story-item">
+            <div class="story-header">
+                <span class="story-num">02</span>
+                <span class="story-cat">TEKNOLOJİ</span>
+                <span class="story-sep">·</span>
+                <span class="story-priority"><span class="priority-dot">●</span> HIGH SIGNAL</span>
+            </div>
+            <h2 class="story-title">LFM2.5: Küçük Boyutlu Dev Performanslı AI Modeli</h2>
+            <p class="story-summary">LiquidAI tarafından geliştirilen 2.6B parametreli LFM2.5 modeli, kendisinden 4 kat daha büyük modellerle rekabet edebilecek kapasiteye sahip.</p>
+            
+            <div class="story-why-box">
+                <div class="why-label">WHY IT MATTERS</div>
+                <p class="why-text">Edge AI ve yerel cihazlarda yüksek performanslı LLM çalıştırma maliyetlerini düşürerek donanım bağımlılığını azaltır.</p>
+            </div>
+            
+            <div class="story-meta">
+                Hacker News · 6s önce · 1 kaynak
+            </div>
+        </article>
+        <hr class="story-divider" />
+
+        <article class="story-item">
+            <div class="story-header">
+                <span class="story-num">03</span>
+                <span class="story-cat">ÜRÜN</span>
+                <span class="story-sep">·</span>
+                <span class="story-priority"><span class="priority-dot">●</span> OPPORTUNITY</span>
+            </div>
+            <h2 class="story-title">Gotcha: Android İçin İlk AI Copilot</h2>
+            <p class="story-summary">Kullanıcının sesli komutlarını doğrudan Android işletim sistemi üzerinde eyleme dönüştüren bir AI asistanı.</p>
+            
+            <div class="story-why-box">
+                <div class="why-label">WHY IT MATTERS</div>
+                <p class="why-text">Mobil cihazlarda 'action-oriented' AI ajanlarına olan talebi karşılayan, yüksek büyüme potansiyelli bir SaaS/Uygulama modelidir.</p>
+            </div>
+            
+            <div class="story-meta">
+                Product Hunt · 8s önce · 1 kaynak
+            </div>
+        </article>
+        <hr class="story-divider" />
+
+        <article class="story-item">
+            <div class="story-header">
+                <span class="story-num">04</span>
+                <span class="story-cat">DONANIM</span>
+                <span class="story-sep">·</span>
+                <span class="story-priority"><span class="priority-dot">●</span> TREND</span>
+            </div>
+            <h2 class="story-title">ESP32-P4 Üzerinde DOOM Çalıştırma Başarısı</h2>
+            <p class="story-summary">Geliştiriciler, ESP32-P4 işlemcisinin grafik ve işlem gücünü kanıtlamak adına DOOM oyununu başarıyla çalıştırdı.</p>
+            
+            <div class="story-why-box">
+                <div class="why-label">WHY IT MATTERS</div>
+                <p class="why-text">ESP32 serisinin sadece basit otomasyon değil, kompleks arayüzler ve hafif uygulamalar için de uygun olduğunu kanıtlar.</p>
+            </div>
+            
+            <div class="story-meta">
+                Reddit · 10s önce · 1 kaynak
+            </div>
+        </article>
+        <hr class="story-divider" />
+
+        <article class="story-item">
+            <div class="story-header">
+                <span class="story-num">05</span>
+                <span class="story-cat">SAĞLIK</span>
+                <span class="story-sep">·</span>
+                <span class="story-priority"><span class="priority-dot">●</span> ANALYSIS</span>
+            </div>
+            <h2 class="story-title">Kanser Tedavilerinin Kardiyak Etkileri: 'Tsunami' Etkisi</h2>
+            <p class="story-summary">Modern kanser tedavilerinin kalp sağlığı üzerinde yarattığı yan etkilerin, gelecekte büyük bir hasta yükü (tsunami) oluşturacağı öngörülüyor.</p>
+            
+            <div class="story-why-box">
+                <div class="why-label">WHY IT MATTERS</div>
+                <p class="why-text">Onko-kardiyoloji alanında yeni izleme cihazları ve spesifik tedavi protokolleri için pazar boşluğu oluşmaktadır.</p>
+            </div>
+            
+            <div class="story-meta">
+                Medscape · 12s önce · 1 kaynak
+            </div>
+        </article>
+        <hr class="story-divider" />
+
+        <article class="story-item">
+            <div class="story-header">
+                <span class="story-num">06</span>
+                <span class="story-cat">İŞ FİKİRİ</span>
+                <span class="story-sep">·</span>
+                <span class="story-priority"><span class="priority-dot">●</span> OPPORTUNITY</span>
+            </div>
+            <h2 class="story-title">Yüksek Gelir Grubuna Yönelik Lüks Ev Hizmetleri</h2>
+            <p class="story-summary">Zengin bölgelerde yaşayan, yoğun çalışan kişiler için evde rahatlama ve kişisel bakım kurulum hizmetleri önerisi.</p>
+            
+            <div class="story-why-box">
+                <div class="why-label">WHY IT MATTERS</div>
+                <p class="why-text">Yüksek marjlı, düşük teknoloji gerektiren ancak yüksek operasyonel kalite odaklı bir yerel hizmet modeli fırsatıdır.</p>
+            </div>
+            
+            <div class="story-meta">
+                Reddit · 15s önce · 1 kaynak
+            </div>
+        </article>
+        <hr class="story-divider" />
+
+        <article class="story-item">
+            <div class="story-header">
+                <span class="story-num">07</span>
+                <span class="story-cat">TEKNOLOJİ</span>
+                <span class="story-sep">·</span>
+                <span class="story-priority"><span class="priority-dot">●</span> TREND</span>
+            </div>
+            <h2 class="story-title">Apple Silicon İçin Native MiniMax-H3 Çıkarımı</h2>
+            <p class="story-summary">H3-metal projesi ile Apple Silicon işlemciler üzerinde optimize edilmiş native inference imkanı sağlanıyor.</p>
+            
+            <div class="story-why-box">
+                <div class="why-label">WHY IT MATTERS</div>
+                <p class="why-text">Mac ekosisteminde yerel AI geliştirme süreçlerini hızlandırarak bulut maliyetlerini minimize eder.</p>
+            </div>
+            
+            <div class="story-meta">
+                Hacker News · 18s önce · 1 kaynak
+            </div>
+        </article>
+        <hr class="story-divider" />
+
+        <article class="story-item">
+            <div class="story-header">
+                <span class="story-num">08</span>
+                <span class="story-cat">SAĞLIK</span>
+                <span class="story-sep">·</span>
+                <span class="story-priority"><span class="priority-dot">●</span> PRODUCT</span>
+            </div>
+            <h2 class="story-title">Plaque-IQ™: En İyi Yeni Kardiyoloji Çözümü</h2>
+            <p class="story-summary">Elucid'in geliştirdiği Plaque-IQ, 2026 MedTech Breakthrough ödüllerinde en iyi teknoloji çözümü seçildi.</p>
+            
+            <div class="story-why-box">
+                <div class="why-label">WHY IT MATTERS</div>
+                <p class="why-text">Plak analizinde standartlaşma getiren bu tür araçlar, klinik karar destek sistemleri pazarını domine edecektir.</p>
+            </div>
+            
+            <div class="story-meta">
+                Business Wire · 20s önce · 1 kaynak
+            </div>
+        </article>
+        <hr class="story-divider" />
+
+        <article class="story-item">
+            <div class="story-header">
+                <span class="story-num">09</span>
+                <span class="story-cat">ÜRÜN</span>
+                <span class="story-sep">·</span>
+                <span class="story-priority"><span class="priority-dot">●</span> DISCUSSION</span>
+            </div>
+            <h2 class="story-title">BetterClaw: 60 Saniyede Ücretsiz AI Ajanı Dağıtımı</h2>
+            <p class="story-summary">Sıfır maliyetle ve çok hızlı bir şekilde AI ajanları deploy etmeyi sağlayan yeni bir platform.</p>
+            
+            <div class="story-why-box">
+                <div class="why-label">WHY IT MATTERS</div>
+                <p class="why-text">AI ajanlarının demokratikleşmesi ve mikro-servis olarak sunulması trendini hızlandırır.</p>
+            </div>
+            
+            <div class="story-meta">
+                Product Hunt · 22s önce · 1 kaynak
+            </div>
+        </article>
+        <hr class="story-divider" />
+
+        <article class="story-item">
+            <div class="story-header">
+                <span class="story-num">10</span>
+                <span class="story-cat">SAĞLIK</span>
+                <span class="story-sep">·</span>
+                <span class="story-priority"><span class="priority-dot">●</span> TREND</span>
+            </div>
+            <h2 class="story-title">GLP-1 Hastalarında Odak Kayması: Tartıdan Sağlığa</h2>
+            <p class="story-summary">Zayıflama ilaçları (GLP-1) kullanan hastalarda başarının sadece kilo kaybı değil, genel sağlık metrikleri üzerinden ölçülmesi gerektiği tartışılıyor.</p>
+            
+            <div class="story-why-box">
+                <div class="why-label">WHY IT MATTERS</div>
+                <p class="why-text">Kilo takip uygulamalarının 'sağlık ve yaşam kalitesi' odaklı yeni metrikler geliştirmesi için bir fırsattır.</p>
+            </div>
+            
+            <div class="story-meta">
+                Medscape · 24s önce · 1 kaynak
+            </div>
+        </article>
+        
+        </div>
+    </section>
+    
+            </div>
+
+            <aside class="editorial-sidebar">
+                <div class="sidebar-module">
+                    <h4 class="sidebar-title">TRENDING</h4>
+                    <ul class="sidebar-list">
+                        <li class="sidebar-list-item"><span>AI Hardware</span> <span class="count">01</span></li>
+                        <li class="sidebar-list-item"><span>Wearable Health</span> <span class="count">02</span></li>
+                        <li class="sidebar-list-item"><span>Local Inference</span> <span class="count">03</span></li>
+                        <li class="sidebar-list-item"><span>Ambient Audio</span> <span class="count">04</span></li>
+                        <li class="sidebar-list-item"><span>ESP32 Automation</span> <span class="count">05</span></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-module">
+                    <h4 class="sidebar-title">TOP SOURCES</h4>
+                    <ul class="sidebar-list">
+                        <li class="sidebar-list-item"><span>Reddit</span> <span class="count">11</span></li>
+                        <li class="sidebar-list-item"><span>Product Hunt</span> <span class="count">6</span></li>
+                        <li class="sidebar-list-item"><span>Hacker News</span> <span class="count">6</span></li>
+                        <li class="sidebar-list-item"><span>Medscape</span> <span class="count">7</span></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div>Curator Daily News &copy; 2026 — Daily Intelligence Briefing</div>
+        <div>Editor: <a href="https://github.com/Ryucel" target="_blank">Ryucel</a></div>
+    </footer>
 
 </body>
 </html>
