@@ -8,7 +8,7 @@ from config import SYSTEM_PROMPT_EDITORIAL
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
-def format_data_for_llm(rss_articles: List[Dict[str, Any]], reddit_posts: List[Dict[str, Any]]) -> str:
+def format_data_for_llm(rss_articles: List[Dict[str, Any]], reddit_posts: List[Dict[str, Any]], twitter_posts: List[Dict[str, Any]] = [], github_items: List[Dict[str, Any]] = []) -> str:
     """Formats raw feeds into LLM prompt context."""
     lines = []
     
@@ -28,6 +28,25 @@ def format_data_for_llm(rss_articles: List[Dict[str, Any]], reddit_posts: List[D
             lines.append(f"    İçerik: {item['text']}")
         lines.append(f"    Link: {item['permalink']}\n")
         
+    lines.append("\n=== TWITTER / X HESAPLARI (@tom_doerr, @cocktailpeanut, @aakashgupta) ===")
+    if not twitter_posts:
+        lines.append("Henüz yeni tweet bulunamadı.")
+    else:
+        for idx, item in enumerate(twitter_posts, 1):
+            lines.append(f"[{idx}] Hesap: {item['handle']} ({item['name']})")
+            lines.append(f"    Tweet/Gönderi: {item['title']}")
+            if item.get("text"):
+                lines.append(f"    İçerik: {item['text']}")
+            lines.append(f"    Link: {item['url']}\n")
+
+    lines.append("\n=== GITHUB TRENDING & RELEASES ===")
+    if not github_items:
+        lines.append("Henüz yeni GitHub güncellemesi bulunamadı.")
+    else:
+        for idx, item in enumerate(github_items, 1):
+            lines.append(f"[{idx}] Proje/Release: {item['title']}")
+            lines.append(f"    Link: {item['link']}\n")
+
     return "\n".join(lines)
 
 def parse_json_from_llm_response(text: str) -> Dict[str, Any]:
@@ -131,9 +150,9 @@ def generate_digest_with_cerebras(prompt_content: str, api_key: str) -> Dict[str
             
     raise Exception("All Cerebras models failed.")
 
-def generate_editorial_data(rss_articles: List[Dict[str, Any]], reddit_posts: List[Dict[str, Any]]) -> Dict[str, Any]:
+def generate_editorial_data(rss_articles: List[Dict[str, Any]], reddit_posts: List[Dict[str, Any]], twitter_posts: List[Dict[str, Any]] = [], github_items: List[Dict[str, Any]] = []) -> Dict[str, Any]:
     """Main generation logic returning python dictionary of editorial content."""
-    prompt_content = format_data_for_llm(rss_articles, reddit_posts)
+    prompt_content = format_data_for_llm(rss_articles, reddit_posts, twitter_posts, github_items)
     cerebras_key = os.getenv("CEREBRAS_API_KEY")
     openai_key = os.getenv("OPENAI_API_KEY")
     gemini_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")

@@ -5,7 +5,7 @@ import datetime
 import logging
 from dotenv import load_dotenv
 
-from collectors import fetch_rss_articles, fetch_reddit_posts
+from collectors import fetch_rss_articles, fetch_reddit_posts, fetch_twitter_posts, fetch_github_sources
 from summarizer import generate_editorial_data, render_editorial_html, render_editorial_markdown
 from notifier import send_email, send_telegram, send_notion, save_local_files
 
@@ -23,17 +23,19 @@ def run_pipeline(dry_run: bool = False):
     load_dotenv()
     
     today_str = datetime.date.today().strftime("%d.%m.%Y")
-    subject = f"🚀 Günlük Teknoloji, Donanım & Sağlık Bülteni - {today_str}"
+    subject = f"🚀 Curator Daily News Briefing - {today_str}"
     
-    # 1. Collect Data
+    # 1. Collect Data across all Horizon sources
     rss_articles = fetch_rss_articles()
     reddit_posts = fetch_reddit_posts()
+    twitter_posts = fetch_twitter_posts()
+    github_items = fetch_github_sources()
     
-    logging.info(f"Collected total: {len(rss_articles)} RSS items and {len(reddit_posts)} Reddit posts.")
+    logging.info(f"Collected: {len(rss_articles)} RSS, {len(reddit_posts)} Reddit, {len(twitter_posts)} Twitter/X, {len(github_items)} GitHub.")
     
     # 2. Generate Editorial Digest via LLM
     from summarizer import generate_editorial_data, render_editorial_html, render_editorial_markdown
-    editorial_data = generate_editorial_data(rss_articles, reddit_posts)
+    editorial_data = generate_editorial_data(rss_articles, reddit_posts, twitter_posts, github_items)
     markdown_digest = render_editorial_markdown(editorial_data)
     html_digest = render_editorial_html(editorial_data)
     

@@ -1,84 +1,84 @@
 🗞️ *CURATOR DAILY NEWS — 11.08.2026*
-_Kardiyovasküler sağlıkta dijital dönüşüm ve AI destekli tanı araçları yükselişe geçerken, donanım tarafında ESP32 tabanlı uç cihazların yetenekleri genişliyor. Yazılım dünyasında ise küçük parametreli ama yüksek performanslı yerel AI modelleri ve Android tabanlı AI Copilot'lar ürünleştirme trendlerini domine ediyor._
+_Yapay zeka modellerinde yerelleşme (Apple Silicon optimizasyonu) ve ajan orkestrasyonu ön plana çıkarken, sağlık tarafında kardiyovasküler tanı teknolojilerinde dijital dönüşüm hızlanıyor. Donanım dünyasında ESP32-P4 ile sınırların zorlandığı, yazılımda ise 'kendi kendini inşa eden IDE'ler gibi radikal ürün yaklaşımlarının yükseldiği bir gün._
 
 ------------------------------------
 
-*01 | SAĞLIK · HIGH SIGNAL*
-*Koroner Arter Kalsiyum Skorlaması ile Risk Analizi*
-Kalsiyum skorlamasının, kalp riski tahminlerini rafine ettiği ve statin ilaç kullanımı kararlarını daha kesin hale getirdiği vurgulanıyor.
+*01 | TEKNOLOJİ · HIGH SIGNAL*
+*H3-Metal: Apple Silicon için Yerel MiniMax-H3 Çıkarımı*
+Apple Silicon işlemciler üzerinde native MiniMax-H3 çıkarımı sağlayan H3-metal projesi dikkat çekiyor. @cocktailpeanut'ın analizine göre modelin hikaye anlatıcılığı kapasitesi yüksek ancak akıl yürütme (reasoning) yetenekleri hala tartışmalı.
 
-💡 *WHY IT MATTERS:* Kişiselleştirilmiş tıp ve önleyici kardiyoloji alanında, tanı kitleri ve analiz yazılımları için yüksek ticari potansiyel sunmaktadır.
-📌 _Medscape · 2 kaynak_
+💡 *WHY IT MATTERS:* Yapay zekanın buluttan yerel donanıma kayması, gizlilik odaklı kurumsal uygulamalar ve düşük gecikmeli tüketici ürünleri için kritik bir fırsat sunuyor.
+📌 _Hacker News / Twitter (@cocktailpeanut) · 2 kaynak_
 ------------------------------------
 
-*02 | TEKNOLOJİ · HIGH SIGNAL*
-*LFM2.5: Küçük Boyutlu Dev Performanslı AI Modeli*
-LiquidAI tarafından geliştirilen 2.6B parametreli LFM2.5 modeli, kendisinden 4 kat daha büyük modellerle rekabet edebilecek kapasiteye sahip.
+*02 | TWITTER / X · HIGH SIGNAL*
+*Agent Orchestrator ile Paralel AI Kodlama Ajanları*
+@tom_doerr tarafından paylaşılan ComposioHQ projesi, izole çalışma alanlarını koordine eden ve CI hataları ile merge çatışmalarını otomatize eden bir ajan orkestratörü sunuyor.
 
-💡 *WHY IT MATTERS:* Edge AI ve yerel cihazlarda yüksek performanslı LLM çalıştırma maliyetlerini düşürerek donanım bağımlılığını azaltır.
-📌 _Hacker News · 1 kaynak_
+💡 *WHY IT MATTERS:* Yazılım geliştirme süreçlerinde 'tekil ajan'dan 'ajan ekipleri'ne geçiş, SaaS geliştirme hızını dramatik şekilde artırabilecek bir ürün mimarisidir.
+📌 _Twitter / X (@tom_doerr) · 1 kaynak_
 ------------------------------------
 
-*03 | ÜRÜN · OPPORTUNITY*
-*Gotcha: Android İçin İlk AI Copilot*
-Kullanıcının sesli komutlarını doğrudan Android işletim sistemi üzerinde eyleme dönüştüren bir AI asistanı.
+*03 | SAĞLIK · TREND*
+*Kardiyovasküler Bakımda Dijital Dönüşüm ve Plaque-IQ™*
+Elucid'in Plaque-IQ™ çözümü 2026 MedTech ödüllerinde öne çıkarken, kalp riski tahminlerinde Koroner Arter Kalsiyum Skorlaması'nın statin kararlarını optimize ettiği vurgulanıyor.
 
-💡 *WHY IT MATTERS:* Mobil cihazlarda 'action-oriented' AI ajanlarına olan talebi karşılayan, yüksek büyüme potansiyelli bir SaaS/Uygulama modelidir.
-📌 _Product Hunt · 1 kaynak_
+💡 *WHY IT MATTERS:* Hassas tanı araçlarının dijitalleşmesi, Türkiye gibi yaşlanan nüfusa sahip pazarlarda önleyici tıp odaklı yeni sağlık girişimleri için alan açıyor.
+📌 _Medscape / Business Wire · 3 kaynak_
 ------------------------------------
 
-*04 | DONANIM · TREND*
+*04 | DONANIM · ANALYSIS*
 *ESP32-P4 Üzerinde DOOM Çalıştırma Başarısı*
-Geliştiriciler, ESP32-P4 işlemcisinin grafik ve işlem gücünü kanıtlamak adına DOOM oyununu başarıyla çalıştırdı.
+ESP32 topluluğu, yeni P4 varyantı üzerinde DOOM oyununu çalıştırmayı başararak donanımın hesaplama gücünü kanıtladı.
 
-💡 *WHY IT MATTERS:* ESP32 serisinin sadece basit otomasyon değil, kompleks arayüzler ve hafif uygulamalar için de uygun olduğunu kanıtlar.
-📌 _Reddit · 1 kaynak_
+💡 *WHY IT MATTERS:* Düşük maliyetli mikrodenetleyicilerin grafik ve işlem kapasitesindeki artış, daha karmaşık edge-AI ve interaktif IoT arayüzlerinin önünü açıyor.
+📌 _Reddit (r/esp32) · 1 kaynak_
 ------------------------------------
 
-*05 | SAĞLIK · ANALYSIS*
-*Kanser Tedavilerinin Kardiyak Etkileri: 'Tsunami' Etkisi*
-Modern kanser tedavilerinin kalp sağlığı üzerinde yarattığı yan etkilerin, gelecekte büyük bir hasta yükü (tsunami) oluşturacağı öngörülüyor.
+*05 | ÜRÜN · OPPORTUNITY*
+*bb: Kendi Kendini İnşa Eden IDE*
+ProductHunt'ta tanıtılan 'bb', geliştiricinin ihtiyaçlarına göre kendini yapılandıran ve inşa eden yeni nesil bir IDE olarak konumlanıyor.
 
-💡 *WHY IT MATTERS:* Onko-kardiyoloji alanında yeni izleme cihazları ve spesifik tedavi protokolleri için pazar boşluğu oluşmaktadır.
-📌 _Medscape · 1 kaynak_
-------------------------------------
-
-*06 | İŞ FİKİRİ · OPPORTUNITY*
-*Yüksek Gelir Grubuna Yönelik Lüks Ev Hizmetleri*
-Zengin bölgelerde yaşayan, yoğun çalışan kişiler için evde rahatlama ve kişisel bakım kurulum hizmetleri önerisi.
-
-💡 *WHY IT MATTERS:* Yüksek marjlı, düşük teknoloji gerektiren ancak yüksek operasyonel kalite odaklı bir yerel hizmet modeli fırsatıdır.
-📌 _Reddit · 1 kaynak_
-------------------------------------
-
-*07 | TEKNOLOJİ · TREND*
-*Apple Silicon İçin Native MiniMax-H3 Çıkarımı*
-H3-metal projesi ile Apple Silicon işlemciler üzerinde optimize edilmiş native inference imkanı sağlanıyor.
-
-💡 *WHY IT MATTERS:* Mac ekosisteminde yerel AI geliştirme süreçlerini hızlandırarak bulut maliyetlerini minimize eder.
-📌 _Hacker News · 1 kaynak_
-------------------------------------
-
-*08 | SAĞLIK · PRODUCT*
-*Plaque-IQ™: En İyi Yeni Kardiyoloji Çözümü*
-Elucid'in geliştirdiği Plaque-IQ, 2026 MedTech Breakthrough ödüllerinde en iyi teknoloji çözümü seçildi.
-
-💡 *WHY IT MATTERS:* Plak analizinde standartlaşma getiren bu tür araçlar, klinik karar destek sistemleri pazarını domine edecektir.
-📌 _Business Wire · 1 kaynak_
-------------------------------------
-
-*09 | ÜRÜN · DISCUSSION*
-*BetterClaw: 60 Saniyede Ücretsiz AI Ajanı Dağıtımı*
-Sıfır maliyetle ve çok hızlı bir şekilde AI ajanları deploy etmeyi sağlayan yeni bir platform.
-
-💡 *WHY IT MATTERS:* AI ajanlarının demokratikleşmesi ve mikro-servis olarak sunulması trendini hızlandırır.
+💡 *WHY IT MATTERS:* Geliştirici araçlarında (DevTools) statik yapılardan dinamik, AI destekli yapılara geçiş, yazılım üretim maliyetlerini düşüren bir trenddir.
 📌 _Product Hunt · 1 kaynak_
 ------------------------------------
 
-*10 | SAĞLIK · TREND*
-*GLP-1 Hastalarında Odak Kayması: Tartıdan Sağlığa*
-Zayıflama ilaçları (GLP-1) kullanan hastalarda başarının sadece kilo kaybı değil, genel sağlık metrikleri üzerinden ölçülmesi gerektiği tartışılıyor.
+*06 | GITHUB · PRODUCT*
+*llmfit: Donanım Odaklı Model Seçim Aracı*
+Yüzlerce model ve sağlayıcı arasından, kullanıcının mevcut donanımında hangi modelin çalışabileceğini tek komutla bulan llmfit aracı yayınlandı.
 
-💡 *WHY IT MATTERS:* Kilo takip uygulamalarının 'sağlık ve yaşam kalitesi' odaklı yeni metrikler geliştirmesi için bir fırsattır.
+💡 *WHY IT MATTERS:* Donanım kısıtları nedeniyle model seçimi yapan geliştiriciler için 'donanım-model eşleştirme' kritik bir darboğazdır; bu araç süreci optimize eder.
+📌 _GitHub Trending · 1 kaynak_
+------------------------------------
+
+*07 | ÜRÜN · OPPORTUNITY*
+*Gotcha: Android için İlk AI Copilot*
+Kullanıcının sesli komutlarıyla Android işletim sistemi üzerinde aksiyon alan 'Gotcha' adlı AI Copilot piyasaya sürüldü.
+
+💡 *WHY IT MATTERS:* Mobil cihazlarda 'app-centric' yapıdan 'action-centric' yapıya geçiş, mobil uygulama ekosistemini tamamen değiştirebilir.
+📌 _Product Hunt · 1 kaynak_
+------------------------------------
+
+*08 | TEKNOLOJİ · DISCUSSION*
+*AI'nın Web'i Tüketmesi ve Kolektif Bellek Kaybı*
+Hacker News'te tartışılan bir makale, AI'nın web içeriğini tüketerek internetin kolektif hafızasını sildiğini ve Google arama deneyiminin öldüğünü iddia ediyor.
+
+💡 *WHY IT MATTERS:* Bilgiye erişim yöntemlerinin değişmesi, içerik üreticileri için yeni monetizasyon modelleri ve 'doğrulanmış bilgi' servisleri ihtiyacını doğuruyor.
+📌 _Hacker News · 1 kaynak_
+------------------------------------
+
+*09 | SAĞLIK · ANALYSIS*
+*GLP-1 Hastalarında Odak Kayması: Tartıdan Sağlığa*
+GLP-1 bazlı kilo verme ilaçları kullanan hastalarda, başarının sadece tartıdaki rakamla değil, kas kütlesinin korunması ve metabolik sağlıkla ölçülmesi gerektiği vurgulanıyor.
+
+💡 *WHY IT MATTERS:* Kilo verme ilaçları pazarı büyürken, 'kas koruyucu' takviyeler ve takip yazılımları için yan pazar fırsatları oluşuyor.
 📌 _Medscape · 1 kaynak_
+------------------------------------
+
+*10 | TEKNOLOJİ · TREND*
+*LFM2.5: Küçük Modellerin Büyük Performansı*
+LiquidAI'nın 2.6B parametreli LFM2.5 modeli, kendisinden 4 kat daha büyük modellerle rekabet edebilen bir performans sergiliyor.
+
+💡 *WHY IT MATTERS:* Parametre verimliliği, mobil cihazlarda yüksek performanslı AI çalıştırmayı mümkün kılarak 'Edge AI' ürünlerini demokratize ediyor.
+📌 _Hacker News · 1 kaynak_
 ------------------------------------

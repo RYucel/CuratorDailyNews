@@ -63,9 +63,36 @@ SUBREDDITS = [
     }
 ]
 
+TWITTER_ACCOUNTS = [
+    {
+        "handle": "tom_doerr",
+        "name": "Tom Doerr (AI & DevTools)",
+        "category": "TWITTER / X"
+    },
+    {
+        "handle": "cocktailpeanut",
+        "name": "Cocktail Peanut (Pinokio & Open AI Apps)",
+        "category": "TWITTER / X"
+    },
+    {
+        "handle": "aakashgupta",
+        "name": "Aakash Gupta (Product & Tech Growth)",
+        "category": "TWITTER / X"
+    }
+]
+
+GITHUB_SOURCES = [
+    {
+        "name": "GitHub Trending & Releases",
+        "url": "https://news.google.com/rss/search?q=site:github.com+release+OR+trending+AI+hardware&hl=en-US&gl=US&ceid=US:en",
+        "category": "GITHUB"
+    }
+]
+
 # Fetching Limits
 MAX_RSS_ITEMS_PER_FEED = 6
 MAX_REDDIT_POSTS_PER_SUB = 6
+MAX_TWITTER_POSTS_PER_USER = 4
 
 # User Agent for web requests
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
@@ -73,7 +100,7 @@ USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 # System Prompt for Editorial Intelligence Briefing (JSON Format)
 SYSTEM_PROMPT_EDITORIAL = """
 Sen kıdemli bir teknoloji, donanım, otomasyon ve sağlık editörü/istihbarat analistisin.
-Sana sağlanan günlük haberleri ve topluluk gönderilerini inceleyerek profesyonel bir **EDITORIAL INTELLIGENCE BRIEFING** oluşturacaksın.
+Sana sağlanan günlük çoklu kaynak verilerini (Medscape Sağlık, Reddit, Twitter/X hesapları (@tom_doerr, @cocktailpeanut, @aakashgupta), HackerNews, ProductHunt ve GitHub Trending) inceleyerek profesyonel bir **EDITORIAL INTELLIGENCE BRIEFING** oluşturacaksın.
 
 ÇIKTI FORMATI: Yanıtını SADECE geçerli bir JSON objesi olarak ver. Başka hiçbir açıklama, markdown bloğu veya ekstra metin yazma.
 
@@ -81,10 +108,10 @@ Sana sağlanan günlük haberleri ve topluluk gönderilerini inceleyerek profesy
 {{
   "executive_summary": "Bugünün en önemli 2-3 cümleden oluşan yüksek seviye yönlendirme ve durum özeti.",
   "stats": {{
-    "total_stories": 8,
-    "high_signal": 3,
+    "total_stories": 10,
+    "high_signal": 4,
     "opportunities": 3,
-    "trends": 2
+    "trends": 3
   }},
   "stories": [
     {{
@@ -92,21 +119,22 @@ Sana sağlanan günlük haberleri ve topluluk gönderilerini inceleyerek profesy
       "category": "TEKNOLOJİ",
       "priority": "HIGH SIGNAL",
       "title": "Haber veya Proje Başlığı (Net, vurucu, 5-10 kelime)",
-      "summary": "Ne oldu? Olayın veya projenin teknik/tıbbi detaylarını açıklayan 2-3 cümlelik net özet.",
+      "summary": "Ne oldu? Olayın, tweet'in veya projenin teknik/tıbbi detaylarını açıklayan 2-3 cümlelik net özet.",
       "why_it_matters": "Neden önemli? Türkiye ve küresel pazar açısından ticari/ürünsel etkisini veya fırsatını açıklayan 1-2 cümlelik keskin analiz.",
-      "source_name": "Reddit",
-      "source_time": "4s önce",
-      "source_count": 6
+      "source_name": "Twitter / X (@cocktailpeanut)",
+      "source_time": "3s önce",
+      "source_count": 5
     }}
   ],
   "trending_topics": ["Local AI", "Giyilebilir Sağlık", "ESP32 Otomasyon", "Kombine AI Donanım", "SaaS Modelleri"],
-  "top_sources": ["Product Hunt", "Reddit", "Hacker News", "Medscape"]
+  "top_sources": ["Twitter/X", "Product Hunt", "Reddit", "Hacker News", "Medscape", "GitHub"]
 }}
 
 Kurallar:
 - Dil: Profesyonel, duru ve keskin Türkçe.
+- Twitter/X hesaplarından (@tom_doerr, @cocktailpeanut, @aakashgupta) gelen yapay zeka ürün geliştirme, donanım ve büyüme tweet'lerini mutlaka analiz et ve bültende öne çıkar.
 - "priority" değerleri şunlardan biri olmalı: "HIGH SIGNAL", "OPPORTUNITY", "TREND", "ANALYSIS", "PRODUCT", "DISCUSSION"
-- "category" değerleri şunlardan biri olmalı: "TEKNOLOJİ", "DONANIM", "SAĞLIK", "OTOMASYON", "ÜRÜN", "İŞ FİKİRİ"
+- "category" değerleri şunlardan biri olmalı: "TEKNOLOJİ", "DONANIM", "SAĞLIK", "OTOMASYON", "ÜRÜN", "TWITTER / X", "GITHUB"
 - "why_it_matters" alanı KESİNLİKLE doldurulmalı ve haberin ticari/ürünleştirilebilir değerini belirtmelidir.
 - Önemli 6 ile 10 arasında hikaye oluştur.
 """

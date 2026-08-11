@@ -4,7 +4,7 @@ import datetime
 import logging
 from flask import Flask, render_template, jsonify, request
 
-from collectors import fetch_rss_articles, fetch_reddit_posts
+from collectors import fetch_rss_articles, fetch_reddit_posts, fetch_twitter_posts, fetch_github_sources
 from summarizer import generate_editorial_data, render_editorial_html, render_editorial_markdown
 from notifier import save_local_files, send_email, send_telegram, send_notion
 from site_builder import build_github_pages_site
@@ -39,7 +39,7 @@ def get_latest_digest():
     else:
         return jsonify({
             "status": "empty",
-            "message": "Henüz bülten üretilmedi. 'Şimdi Bülten Üret' butonuna basarak yeni bir bülten oluşturabilirsiniz."
+            "message": "Henüz bülten üretilmedi. 'Generate Briefing' butonuna basarak yeni bir bülten oluşturabilirsiniz."
         })
 
 @app.route("/api/digest/generate", methods=["POST"])
@@ -49,8 +49,10 @@ def generate_fresh_digest():
         logging.info("Web Dashboard triggered live digest generation...")
         rss_articles = fetch_rss_articles()
         reddit_posts = fetch_reddit_posts()
+        twitter_posts = fetch_twitter_posts()
+        github_items = fetch_github_sources()
         
-        editorial_data = generate_editorial_data(rss_articles, reddit_posts)
+        editorial_data = generate_editorial_data(rss_articles, reddit_posts, twitter_posts, github_items)
         markdown_digest = render_editorial_markdown(editorial_data)
         html_digest = render_editorial_html(editorial_data)
         
@@ -82,10 +84,14 @@ def get_live_feeds():
     try:
         rss = fetch_rss_articles()
         reddit = fetch_reddit_posts()
+        twitter = fetch_twitter_posts()
+        github = fetch_github_sources()
         return jsonify({
             "status": "success",
             "rss": rss,
-            "reddit": reddit
+            "reddit": reddit,
+            "twitter": twitter,
+            "github": github
         })
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 500
