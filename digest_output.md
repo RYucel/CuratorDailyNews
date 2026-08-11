@@ -1,84 +1,73 @@
 🗞️ *CURATOR DAILY NEWS — 11.08.2026*
-_Yapay zeka modellerinde yerelleşme (Apple Silicon optimizasyonu) ve ajan orkestrasyonu ön plana çıkarken, sağlık tarafında kardiyovasküler tanı teknolojilerinde dijital dönüşüm hızlanıyor. Donanım dünyasında ESP32-P4 ile sınırların zorlandığı, yazılımda ise 'kendi kendini inşa eden IDE'ler gibi radikal ürün yaklaşımlarının yükseldiği bir gün._
+_Kardiyovasküler risk analizinde kalsiyum skorlamanın önemi artarken, medikal teknoloji alanında plak analiz sistemleri ödüllendiriliyor. Teknoloji tarafında ise Apple Silicon için optimize edilmiş yerel çıkarım modelleri ve AI ajan orkestrasyonu ön plana çıkıyor._
 
+====================================
+🩺 *SAĞLIK & KARDİYOLOJİ GELİŞMELERİ*
+====================================
+
+*H01 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
+*Koroner Arter Kalsiyum Skorlaması ve Statin Kararları*
+Kalsiyum skorlamasının, kalp riski tahminlerini rafine etmede ve statin kullanımıyla ilgili klinik kararları optimize etmede kritik bir rol oynadığı vurgulanıyor.
+💡 *WHY IT MATTERS:* Kişiselleştirilmiş tıp trendiyle birlikte, risk skorlama algoritmalarının giyilebilir cihaz verileriyle entegrasyonu için büyük bir fırsat sunuyor.
+📌 _Medscape · 2 kaynak_
 ------------------------------------
 
-*01 | TEKNOLOJİ · HIGH SIGNAL*
-*H3-Metal: Apple Silicon için Yerel MiniMax-H3 Çıkarımı*
-Apple Silicon işlemciler üzerinde native MiniMax-H3 çıkarımı sağlayan H3-metal projesi dikkat çekiyor. @cocktailpeanut'ın analizine göre modelin hikaye anlatıcılığı kapasitesi yüksek ancak akıl yürütme (reasoning) yetenekleri hala tartışmalı.
-
-💡 *WHY IT MATTERS:* Yapay zekanın buluttan yerel donanıma kayması, gizlilik odaklı kurumsal uygulamalar ve düşük gecikmeli tüketici ürünleri için kritik bir fırsat sunuyor.
-📌 _Hacker News / Twitter (@cocktailpeanut) · 2 kaynak_
+*H02 | SAĞLIK & KARDİYOLOJİ · OPPORTUNITY*
+*Elucid Plaque-IQ™: En İyi Yeni Kardiyoloji Teknolojisi*
+Plaque-IQ™ sistemi, 2026 MedTech Breakthrough Ödülleri'nde en iyi yeni kardiyoloji teknoloji çözümü seçildi.
+💡 *WHY IT MATTERS:* Görüntüleme teknolojilerinin AI ile analiz edilerek plak karakterizasyonunun yapılması, erken teşhis cihazları pazarında yeni standartlar belirleyebilir.
+📌 _Business Wire · 1 kaynak_
 ------------------------------------
 
-*02 | TWITTER / X · HIGH SIGNAL*
-*Agent Orchestrator ile Paralel AI Kodlama Ajanları*
-@tom_doerr tarafından paylaşılan ComposioHQ projesi, izole çalışma alanlarını koordine eden ve CI hataları ile merge çatışmalarını otomatize eden bir ajan orkestratörü sunuyor.
-
-💡 *WHY IT MATTERS:* Yazılım geliştirme süreçlerinde 'tekil ajan'dan 'ajan ekipleri'ne geçiş, SaaS geliştirme hızını dramatik şekilde artırabilecek bir ürün mimarisidir.
-📌 _Twitter / X (@tom_doerr) · 1 kaynak_
-------------------------------------
-
-*03 | SAĞLIK · TREND*
-*Kardiyovasküler Bakımda Dijital Dönüşüm ve Plaque-IQ™*
-Elucid'in Plaque-IQ™ çözümü 2026 MedTech ödüllerinde öne çıkarken, kalp riski tahminlerinde Koroner Arter Kalsiyum Skorlaması'nın statin kararlarını optimize ettiği vurgulanıyor.
-
-💡 *WHY IT MATTERS:* Hassas tanı araçlarının dijitalleşmesi, Türkiye gibi yaşlanan nüfusa sahip pazarlarda önleyici tıp odaklı yeni sağlık girişimleri için alan açıyor.
-📌 _Medscape / Business Wire · 3 kaynak_
-------------------------------------
-
-*04 | DONANIM · ANALYSIS*
-*ESP32-P4 Üzerinde DOOM Çalıştırma Başarısı*
-ESP32 topluluğu, yeni P4 varyantı üzerinde DOOM oyununu çalıştırmayı başararak donanımın hesaplama gücünü kanıtladı.
-
-💡 *WHY IT MATTERS:* Düşük maliyetli mikrodenetleyicilerin grafik ve işlem kapasitesindeki artış, daha karmaşık edge-AI ve interaktif IoT arayüzlerinin önünü açıyor.
-📌 _Reddit (r/esp32) · 1 kaynak_
-------------------------------------
-
-*05 | ÜRÜN · OPPORTUNITY*
-*bb: Kendi Kendini İnşa Eden IDE*
-ProductHunt'ta tanıtılan 'bb', geliştiricinin ihtiyaçlarına göre kendini yapılandıran ve inşa eden yeni nesil bir IDE olarak konumlanıyor.
-
-💡 *WHY IT MATTERS:* Geliştirici araçlarında (DevTools) statik yapılardan dinamik, AI destekli yapılara geçiş, yazılım üretim maliyetlerini düşüren bir trenddir.
-📌 _Product Hunt · 1 kaynak_
-------------------------------------
-
-*06 | GITHUB · PRODUCT*
-*llmfit: Donanım Odaklı Model Seçim Aracı*
-Yüzlerce model ve sağlayıcı arasından, kullanıcının mevcut donanımında hangi modelin çalışabileceğini tek komutla bulan llmfit aracı yayınlandı.
-
-💡 *WHY IT MATTERS:* Donanım kısıtları nedeniyle model seçimi yapan geliştiriciler için 'donanım-model eşleştirme' kritik bir darboğazdır; bu araç süreci optimize eder.
-📌 _GitHub Trending · 1 kaynak_
-------------------------------------
-
-*07 | ÜRÜN · OPPORTUNITY*
-*Gotcha: Android için İlk AI Copilot*
-Kullanıcının sesli komutlarıyla Android işletim sistemi üzerinde aksiyon alan 'Gotcha' adlı AI Copilot piyasaya sürüldü.
-
-💡 *WHY IT MATTERS:* Mobil cihazlarda 'app-centric' yapıdan 'action-centric' yapıya geçiş, mobil uygulama ekosistemini tamamen değiştirebilir.
-📌 _Product Hunt · 1 kaynak_
-------------------------------------
-
-*08 | TEKNOLOJİ · DISCUSSION*
-*AI'nın Web'i Tüketmesi ve Kolektif Bellek Kaybı*
-Hacker News'te tartışılan bir makale, AI'nın web içeriğini tüketerek internetin kolektif hafızasını sildiğini ve Google arama deneyiminin öldüğünü iddia ediyor.
-
-💡 *WHY IT MATTERS:* Bilgiye erişim yöntemlerinin değişmesi, içerik üreticileri için yeni monetizasyon modelleri ve 'doğrulanmış bilgi' servisleri ihtiyacını doğuruyor.
-📌 _Hacker News · 1 kaynak_
-------------------------------------
-
-*09 | SAĞLIK · ANALYSIS*
-*GLP-1 Hastalarında Odak Kayması: Tartıdan Sağlığa*
-GLP-1 bazlı kilo verme ilaçları kullanan hastalarda, başarının sadece tartıdaki rakamla değil, kas kütlesinin korunması ve metabolik sağlıkla ölçülmesi gerektiği vurgulanıyor.
-
-💡 *WHY IT MATTERS:* Kilo verme ilaçları pazarı büyürken, 'kas koruyucu' takviyeler ve takip yazılımları için yan pazar fırsatları oluşuyor.
+*H03 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
+*Kanser Terapilerinin Kardiyak Etkileri: Yaklaşan Tsunami*
+Kanser tedavilerinin kalp sağlığı üzerindeki yan etkilerinin, gelecekte kardiyoloji alanında ciddi bir hasta yükü (tsunami) oluşturacağı öngörülüyor.
+💡 *WHY IT MATTERS:* Onko-kardiyoloji disiplini için yeni izleme araçları ve spesifik takip yazılımları geliştirme ihtiyacını doğuruyor.
 📌 _Medscape · 1 kaynak_
 ------------------------------------
 
-*10 | TEKNOLOJİ · TREND*
-*LFM2.5: Küçük Modellerin Büyük Performansı*
-LiquidAI'nın 2.6B parametreli LFM2.5 modeli, kendisinden 4 kat daha büyük modellerle rekabet edebilen bir performans sergiliyor.
+*H04 | SAĞLIK & KARDİYOLOJİ · TREND*
+*Hava Kirliliği ve Sıcak Günlerin Kalp Sağlığına Etkisi*
+Sıcak günlerdeki dumanlı havanın, kalp krizi ve diğer kardiyovasküler olaylar için riski belirgin şekilde artırdığına dair bulgular paylaşılıyor.
+💡 *WHY IT MATTERS:* Çevresel veri sensörleri ile kalp ritmi izleme cihazlarının korelasyonu, proaktif sağlık uyarı sistemleri için temel oluşturabilir.
+📌 _Medscape · 1 kaynak_
+------------------------------------
 
-💡 *WHY IT MATTERS:* Parametre verimliliği, mobil cihazlarda yüksek performanslı AI çalıştırmayı mümkün kılarak 'Edge AI' ürünlerini demokratize ediyor.
-📌 _Hacker News · 1 kaynak_
+====================================
+⚡ *TEKNOLOJİ, DONANIM & İŞ FİKİRLERİ*
+====================================
+
+*T01 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
+*H3-metal: Apple Silicon için Native MiniMax-H3 Çıkarımı*
+Apple Silicon işlemciler üzerinde yüksek performanslı yerel çıkarım yapabilen H3-metal projesi GitHub üzerinden paylaşıldı.
+💡 *WHY IT MATTERS:* Edge AI ve yerel LLM kullanımı için donanım optimizasyonunun önemi artıyor; gizlilik odaklı yerel uygulamalar için kritik.
+📌 _Hacker News / GitHub · 2 kaynak_
+------------------------------------
+
+*T02 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
+*Agent Orchestrator: Paralel AI Kodlama Ajanları*
+İzole çalışma alanlarını koordine eden ve CI hataları ile merge çatışmalarını otomatik yöneten bir ajan orkestrasyon sistemi tanıtıldı.
+💡 *WHY IT MATTERS:* Yazılım geliştirme süreçlerinin tamamen otonom hale gelmesi, SaaS modellerinde 'insan-denetimli AI'dan 'AI-yönetimli' süreçlere geçişi hızlandırıyor.
+📌 _Twitter/X (@tom_doerr) · 1 kaynak_
+------------------------------------
+
+*T03 | TEKNOLOJİ & DONANIM · TREND*
+*LFM2.5: Küçük Model, Büyük Performans*
+2.6B parametreli LFM2.5 modelinin, kendisinden 4 kat daha büyük modellerle rekabet edebildiği gözlemlendi.
+💡 *WHY IT MATTERS:* Model boyutlarının küçülmesi, ESP32 veya Raspberry Pi gibi kısıtlı donanımlarda daha yetenekli AI çalıştırma imkanı tanıyor.
+📌 _Hacker News / HuggingFace · 1 kaynak_
+------------------------------------
+
+*T04 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
+*Arduino ile Robotik Entegrasyonlar: Gitar ve Perde Sistemleri*
+Arduino kullanılarak geliştirilen gerçek gitarda çalan robotlar ve zamanlanmış perde açma sistemleri topluluk tarafından paylaşıldı.
+💡 *WHY IT MATTERS:* Hobi elektroniğinin ticari ürünlere (akıllı ev otomasyonu, müzik teknolojileri) dönüşme potansiyeli devam ediyor.
+📌 _Reddit (r/arduino) · 3 kaynak_
+------------------------------------
+
+*T05 | TEKNOLOJİ & DONANIM · TREND*
+*Gotcha: Android için İlk AI Copilot*
+Kullanıcının konuşmasıyla Android işletim sistemi üzerinde aksiyon alan yeni bir AI Copilot uygulaması piyasaya sürüldü.
+💡 *WHY IT MATTERS:* Mobil işletim sistemlerinde uygulama içi navigasyonun yerini 'doğal dil komutlarının' alması, uygulama tasarım paradigmalarını değiştirecek.
+📌 _ProductHunt · 1 kaynak_
 ------------------------------------

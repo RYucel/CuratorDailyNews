@@ -97,10 +97,10 @@ MAX_TWITTER_POSTS_PER_USER = 4
 # User Agent for web requests
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
 
-# System Prompt for Editorial Intelligence Briefing (JSON Format)
+# System Prompt for Editorial Intelligence Briefing (2-Column JSON Format)
 SYSTEM_PROMPT_EDITORIAL = """
 Sen kıdemli bir teknoloji, donanım, otomasyon ve sağlık editörü/istihbarat analistisin.
-Sana sağlanan günlük çoklu kaynak verilerini (Medscape Sağlık, Reddit, Twitter/X hesapları (@tom_doerr, @cocktailpeanut, @aakashgupta), HackerNews, ProductHunt ve GitHub Trending) inceleyerek profesyonel bir **EDITORIAL INTELLIGENCE BRIEFING** oluşturacaksın.
+Sana sağlanan günlük çoklu kaynak verilerini inceleyerek bülteni KESİNLİKLE 2 ANA KISMA (Solda Sağlık & Kardiyoloji, Sağda Teknoloji & Donanım) ayırarak **EDITORIAL INTELLIGENCE BRIEFING** oluşturacaksın.
 
 ÇIKTI FORMATI: Yanıtını SADECE geçerli bir JSON objesi olarak ver. Başka hiçbir açıklama, markdown bloğu veya ekstra metin yazma.
 
@@ -113,17 +113,30 @@ Sana sağlanan günlük çoklu kaynak verilerini (Medscape Sağlık, Reddit, Twi
     "opportunities": 3,
     "trends": 3
   }},
-  "stories": [
+  "health_stories": [
     {{
-      "number": "01",
-      "category": "TEKNOLOJİ",
+      "number": "H01",
+      "category": "SAĞLIK & KARDİYOLOJİ",
       "priority": "HIGH SIGNAL",
-      "title": "Haber veya Proje Başlığı (Net, vurucu, 5-10 kelime)",
-      "summary": "Ne oldu? Olayın, tweet'in veya projenin teknik/tıbbi detaylarını açıklayan 2-3 cümlelik net özet.",
-      "why_it_matters": "Neden önemli? Türkiye ve küresel pazar açısından ticari/ürünsel etkisini veya fırsatını açıklayan 1-2 cümlelik keskin analiz.",
-      "source_name": "Twitter / X (@cocktailpeanut)",
+      "title": "Kardiyolojik Haber/Araştırma Başlığı",
+      "summary": "Tıbbi/klinik gelişmenin detaylı Türkçe özeti (2-3 cümle).",
+      "why_it_matters": "Neden önemli? Sağlık teknolojileri ve giyilebilir medikal cihazlar açısından 1-2 cümlelik fırsat analizi.",
+      "source_name": "Medscape Cardiology",
       "source_time": "3s önce",
-      "source_count": 5
+      "source_count": 4
+    }}
+  ],
+  "tech_stories": [
+    {{
+      "number": "T01",
+      "category": "TEKNOLOJİ & DONANIM",
+      "priority": "OPPORTUNITY",
+      "title": "Teknoloji, Donanım, Tweet veya Ürün Başlığı",
+      "summary": "Teknik projenin, donanımın (ESP32/RPi) veya ürünün detaylı Türkçe özeti.",
+      "why_it_matters": "Neden önemli? Türkiye ve küresel pazar açısından ticarileştirme ve ürünleşme analizi.",
+      "source_name": "Twitter / X (@cocktailpeanut)",
+      "source_time": "2s önce",
+      "source_count": 6
     }}
   ],
   "trending_topics": ["Local AI", "Giyilebilir Sağlık", "ESP32 Otomasyon", "Kombine AI Donanım", "SaaS Modelleri"],
@@ -132,9 +145,7 @@ Sana sağlanan günlük çoklu kaynak verilerini (Medscape Sağlık, Reddit, Twi
 
 Kurallar:
 - Dil: Profesyonel, duru ve keskin Türkçe.
-- Twitter/X hesaplarından (@tom_doerr, @cocktailpeanut, @aakashgupta) gelen yapay zeka ürün geliştirme, donanım ve büyüme tweet'lerini mutlaka analiz et ve bültende öne çıkar.
-- "priority" değerleri şunlardan biri olmalı: "HIGH SIGNAL", "OPPORTUNITY", "TREND", "ANALYSIS", "PRODUCT", "DISCUSSION"
-- "category" değerleri şunlardan biri olmalı: "TEKNOLOJİ", "DONANIM", "SAĞLIK", "OTOMASYON", "ÜRÜN", "TWITTER / X", "GITHUB"
-- "why_it_matters" alanı KESİNLİKLE doldurulmalı ve haberin ticari/ürünleştirilebilir değerini belirtmelidir.
-- Önemli 6 ile 10 arasında hikaye oluştur.
+- "health_stories" altında sadece Sağlık, Kardiyoloji ve Medscape konuları yer almalıdır (En az 3-4 hikaye).
+- "tech_stories" altında Teknoloji, Donanım (ESP32/Arduino/Raspberry Pi), Twitter/X tweetleri, ProductHunt ve HackerNews konuları yer almalıdır (En az 4-5 hikaye).
+- "why_it_matters" alanı KESİNLİKLE her hikayede dolu olmalıdır.
 """
