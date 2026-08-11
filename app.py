@@ -5,7 +5,7 @@ import logging
 from flask import Flask, render_template, jsonify, request
 
 from collectors import fetch_rss_articles, fetch_reddit_posts
-from summarizer import generate_digest, convert_markdown_to_html
+from summarizer import generate_editorial_data, render_editorial_html, render_editorial_markdown
 from notifier import save_local_files, send_email, send_telegram, send_notion
 from site_builder import build_github_pages_site
 
