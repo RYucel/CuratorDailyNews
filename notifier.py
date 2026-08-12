@@ -11,8 +11,9 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 
 def send_email(subject: str, html_content: str, markdown_content: str) -> bool:
     """Sends HTML email via SMTP if configured."""
-    smtp_server = os.getenv("SMTP_SERVER", "smtp.gmail.com")
-    smtp_port = int(os.getenv("SMTP_PORT", "587"))
+    smtp_server = os.getenv("SMTP_SERVER") or "smtp.gmail.com"
+    smtp_port_raw = (os.getenv("SMTP_PORT") or "587").strip()
+    smtp_port = int(smtp_port_raw) if smtp_port_raw.isdigit() else 587
     sender_email = os.getenv("SENDER_EMAIL")
     sender_password = os.getenv("SENDER_PASSWORD")
     receiver_email = os.getenv("RECEIVER_EMAIL") or sender_email
