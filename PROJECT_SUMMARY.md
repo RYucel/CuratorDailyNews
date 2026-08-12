@@ -39,11 +39,13 @@
                                       ▼
  ┌─────────────────────────────────────────────────────────────────────────┐
  │                     DELIVERY & PORTAL DISTRIBUTION                      │
- │  1. Telegram Bot (@CuratorNewsRYBot -> Chat ID: 6563673916)             │
- │  2. Flask Web Dashboard (app.py -> http://127.0.0.1:5000)                │
- │  3. GitHub Pages Static Portal Generator (site_builder.py -> docs/)     │
- │  4. HTML Email SMTP Dispatcher & Notion API Exporter                    │
- │  5. GitHub Actions Daily CRON Workflow (.github/workflows/)             │
+ │  1. Cloudflare Worker Cron Trigger (wispy-grass-5ba7.stevevaius.workers) │
+ │     -> Triggers GitHub Actions API via workflow_dispatch at 08:00 TSI   │
+ │  2. Telegram Bot (@CuratorNewsRYBot -> Chat ID: 6563673916)             │
+ │  3. Flask Web Dashboard (app.py -> http://127.0.0.1:5000)                │
+ │  4. GitHub Pages Static Portal Generator (site_builder.py -> docs/)     │
+ │  5. HTML Email SMTP Dispatcher & Notion API Exporter                    │
+ │  6. GitHub Actions Pipeline (.github/workflows/daily_digest.yml)        │
  └─────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -97,6 +99,15 @@ CEREBRAS_MODEL=gemma-4-31b
 TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
 TELEGRAM_CHAT_ID=your_telegram_chat_id_here
 ```
+
+---
+
+## ⚡ Recent Milestones & Verified Status (12 August 2026)
+
+- **Cloudflare Worker Cron Trigger:** Deployed `wispy-grass-5ba7.stevevaius.workers.dev` running at 05:00 UTC (08:00 TSI) to trigger GitHub Actions `workflow_dispatch` API with zero execution delays.
+- **GitHub Classic PAT Authentication:** Authenticated with GitHub Classic Token (`repo` + `workflow` scopes) returning `204 No Content` HTTP status on dispatch.
+- **Pipeline Bugfix:** Resolved `ValueError` on empty `SMTP_PORT` environment variables in `notifier.py`.
+- **End-to-End Pipeline Verification:** Verified full execution run `31567640448` completing with `status: completed` and `conclusion: success`, delivering live editorial briefings to Telegram and deploying static portal to GitHub Pages.
 
 ---
 
