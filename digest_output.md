@@ -1,35 +1,35 @@
-🗞️ *CURATOR DAILY NEWS — 12.08.2026*
-_Kardiyolojide kalsiyum skorlama ve dijital takip çözümleri ön plana çıkarken, teknoloji tarafında yerel AI (Local AI) modellerinin düşük donanımlarda çalışabilirliği ve otonom ajan orkestrasyonu kritik ivme kazanıyor._
+🗞️ *CURATOR DAILY NEWS — 11.08.2026*
+_Kardiyolojide kalsiyum skorlama ve dijital dönüşüm hız kazanırken, teknoloji dünyasında yerel AI çıkarımları (inference) ve otonom ajan orkestrasyonu ön plana çıkıyor. Sağlıkta kişiselleştirilmiş risk analizleri, donanımda ise AI destekli uç cihazların entegrasyonu kritik fırsat alanları olarak görülüyor._
 
 ====================================
 🩺 *SAĞLIK & KARDİYOLOJİ GELİŞMELERİ*
 ====================================
 
 *H01 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
-*Koroner Arter Kalsiyum Skorlaması ve Statin Kararları*
-Kalsiyum skorlamasının kalp riski tahminlerini rafine ettiği ve statin kullanımıyla ilgili klinik karar verme süreçlerini optimize ettiği belirtiliyor.
-💡 *WHY IT MATTERS:* Kişiselleştirilmiş tıp uygulamaları için veri odaklı bir yaklaşım sunar; risk skorlama algoritmalarının medikal yazılımlara entegrasyonu için fırsat yaratır.
-📌 _Medscape · 2 kaynak_
+*Koroner Arter Kalsiyum Skorlaması ile Risk Analizi*
+Kalsiyum skorlamasının kalp riski tahminlerini optimize ettiği ve statin ilaç kullanım kararlarını daha kesin hale getirdiği vurgulanıyor.
+💡 *WHY IT MATTERS:* Giyilebilir cihazlar ve AI tabanlı tanı araçları için kalsiyum skorlama verilerinin entegrasyonu, erken teşhis yazılımları geliştirme fırsatı sunar.
+📌 _Medscape Cardiology · 2 kaynak_
 ------------------------------------
 
 *H02 | SAĞLIK & KARDİYOLOJİ · OPPORTUNITY*
-*Kardiyovasküler Bakımda Dijital İnovasyonlar*
-Kardiyovasküler bakımı dönüştürmek için geliştirilen dijital çözümler ve yeni nesil kalp sağlığı inovasyonlarını destekleyen hızlandırıcı programlar yaygınlaşıyor.
-💡 *WHY IT MATTERS:* Uzaktan hasta izleme (RPM) ve dijital sağlık platformları için pazar genişlemesi ve yatırım potansiyeli artıyor.
+*Kardiyovasküler Bakımda Dijital Çözümler ve İnovasyon*
+Kalp sağlığı inovasyonlarını hızlandırmak için yeni hızlandırıcı programlar (Mussallem Accelerator) ve dijital sağlık çözümleri tanıtıldı.
+💡 *WHY IT MATTERS:* Kardiyoloji odaklı MedTech girişimleri için küresel fonlama ve hızlandırma programlarına erişim, ticarileşme sürecini hızlandırabilir.
 📌 _Heart.org / GlobeNewswire · 3 kaynak_
 ------------------------------------
 
-*H03 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
-*Plaque-IQ™: En İyi Yeni Kardiyoloji Teknolojisi*
-Elucid'in Plaque-IQ™ çözümü, 2026 MedTech Breakthrough ödüllerinde en iyi yeni kardiyoloji teknoloji çözümü seçildi.
-💡 *WHY IT MATTERS:* Plak analizinde yüksek hassasiyetli görüntüleme teknolojilerinin klinik standart haline gelme eğilimini gösterir.
-📌 _Business Wire · 1 kaynak_
+*H03 | SAĞLIK & KARDİYOLOJİ · TREND*
+*Yaşlanan Nüfus ve Kardiyolojik Zorluklar*
+ABD'de yaşlı nüfusun artışıyla birlikte kardiyolojinin karşılaştığı yeni klinik zorluklar ve tedavi yaklaşımları analiz ediliyor.
+💡 *WHY IT MATTERS:* Geriatrik kardiyolojiye yönelik özel takip cihazları ve uzaktan izleme (remote monitoring) sistemlerine olan talep artacaktır.
+📌 _Medscape · 1 kaynak_
 ------------------------------------
 
-*H04 | SAĞLIK & KARDİYOLOJİ · TREND*
-*Hava Kirliliği ve Kalp Sağlığı İlişkisi*
-Sıcak günlerde dumanlı havanın kalp üzerindeki tehlikeleri artırdığına dair yeni bulgular paylaşılıyor.
-💡 *WHY IT MATTERS:* Çevresel verilerin giyilebilir sağlık cihazları ile entegre edilerek kullanıcıya anlık risk uyarısı verilmesi şeklinde ürünleşebilir.
+*H04 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
+*Kanser Tedavilerinin Kardiyak Etkileri: 'Tsunami' Etkisi*
+Kanser tedavilerinin kalp sağlığı üzerindeki yan etkilerinin gelecekte büyük bir hasta yükü oluşturacağı öngörülüyor.
+💡 *WHY IT MATTERS:* Onko-kardiyoloji alanı, spesifik izleme yazılımları ve yan etki takip donanımları için yeni bir niş pazar oluşturmaktadır.
 📌 _Medscape · 1 kaynak_
 ------------------------------------
 
@@ -38,36 +38,36 @@ Sıcak günlerde dumanlı havanın kalp üzerindeki tehlikeleri artırdığına 
 ====================================
 
 *T01 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
-*MiniMax H3: Yerel Video Üretimi Devrimi*
-MiniMax H3 modelinin düşük VRAM'li PC'lerde bile yüksek kaliteli videolar üretebildiği ve yerel kurulumların mümkün olduğu belirtiliyor.
-💡 *WHY IT MATTERS:* Bulut bağımlılığını azaltan 'local-first' AI trendini hızlandırır; donanım optimize edilmiş AI yazılımları için büyük pazar açar.
-📌 _Twitter / X (@cocktailpeanut) · 4 kaynak_
+*Apple Silicon için H3-Metal Yerel Çıkarım*
+Apple Silicon işlemciler üzerinde MiniMax-H3 modelinin yerel (native) çalışmasını sağlayan H3-metal projesi yayınlandı.
+💡 *WHY IT MATTERS:* Bulut bağımlılığını azaltan yerel AI modelleri, gizlilik odaklı kurumsal uygulamalar ve yüksek performanslı yerel araçlar için kritik öneme sahiptir.
+📌 _Hacker News / GitHub · 2 kaynak_
 ------------------------------------
 
 *T02 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
-*Agent Orchestrator: Paralel AI Kodlama Ajanları*
-İzole çalışma alanlarını koordine eden ve CI hataları ile merge çatışmalarını otomatize eden ajan orkestrasyon sistemleri geliştiriliyor.
-💡 *WHY IT MATTERS:* Yazılım geliştirme yaşam döngüsünü (SDLC) tamamen otonom hale getiren araçların ticarileşme potansiyeli yüksektir.
+*AI Kodlama Ajanları için Orkestrasyon Sistemi*
+Paralel çalışan AI ajanlarını koordine eden, izole çalışma alanları ve CI hata döngülerini otomatize eden Agent Orchestrator tanıtıldı.
+💡 *WHY IT MATTERS:* Yazılım geliştirme süreçlerinde 'AI-native' iş akışlarının kurulması, geliştirme maliyetlerini düşüren SaaS modellerine kapı açar.
 📌 _Twitter / X (@tom_doerr) · 1 kaynak_
 ------------------------------------
 
 *T03 | TEKNOLOJİ & DONANIM · TREND*
-*Uncensored Local AI Studio*
-Windows, Linux ve macOS için GGUF LLM'ler, görüntü üretimi ve TTS/STT özelliklerini içeren kurulumsuz bir yerel AI stüdyosu yayınlandı.
-💡 *WHY IT MATTERS:* Gizlilik odaklı kurumsal AI çözümleri ve sansürsüz model ihtiyacı olan niş pazarlar için ürün şablonu sunar.
-📌 _GitHub · 1 kaynak_
+*LFM2.5: Küçük Boyutlu Yüksek Performanslı Model*
+2.6B parametreli LFM2.5 modelinin, kendisinden 4 kat daha büyük modellerle rekabet edebildiği gözlemlendi.
+💡 *WHY IT MATTERS:* Küçük modellerin (SLM) başarısı, ESP32 veya Raspberry Pi gibi uç donanımlarda AI çalıştırma (Edge AI) olasılığını artırır.
+📌 _Hacker News / HuggingFace · 1 kaynak_
 ------------------------------------
 
 *T04 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
-*Arduino Tabanlı Robotik Uygulamalar*
-Kendi kendine bağlanan ayakkabılardan gitar çalan robotlara ve otomatik perde sistemlerine kadar çeşitli Arduino projeleri toplulukta trend.
-💡 *WHY IT MATTERS:* Basit donanım bileşenlerinin (ESP32/Arduino) spesifik ev otomasyonu ürünlerine dönüştürülerek mikro-SaaS veya fiziksel ürün olarak satılma potansiyeli.
-📌 _Reddit (r/arduino) · 5 kaynak_
+*Arduino ile Robotik Uygulamalar ve IoT*
+Kendi kendine bağlanan ayakkabılardan gitar çalan robotlara kadar çeşitli Arduino tabanlı donanım projeleri toplulukta dikkat çekti.
+💡 *WHY IT MATTERS:* Hobi elektroniğinin ticari ürünlere (smart home/wearables) dönüşme potansiyeli, özellikle niş tüketici elektroniği pazarında fırsatlar sunar.
+📌 _Reddit (r/arduino) · 4 kaynak_
 ------------------------------------
 
-*T05 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
-*Claude Modellerinde Görünmez Filigran (Watermarking)*
-Anthropic, yeni Claude modellerinde üretilen metinlere kopyalansa dahi takip edilebilen görünmez filigranlar eklemeye başladı.
-💡 *WHY IT MATTERS:* AI içeriğinin doğrulanması ve telif hakları yönetimi konusunda yeni bir standart belirler; AI dedektörleri pazarını etkiler.
-📌 _Twitter / X (@aakashgupta) · 1 kaynak_
+*T05 | TEKNOLOJİ & DONANIM · TREND*
+*Android için İlk AI Copilot: Gotcha*
+Kullanıcıyla konuşarak Android işletim sistemi üzerinde eylemler gerçekleştiren yeni bir AI Copilot ürünü piyasaya sürüldü.
+💡 *WHY IT MATTERS:* Sadece sohbet eden değil, cihaz üzerinde işlem yapan (action-oriented) AI ajanları, mobil uygulama etkileşim modelini tamamen değiştirecektir.
+📌 _ProductHunt · 1 kaynak_
 ------------------------------------
