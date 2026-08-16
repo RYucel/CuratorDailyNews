@@ -1,5 +1,5 @@
-🗞️ *CURATOR DAILY NEWS — 15.08.2026*
-_Kardiyolojide ilaç odaklı komplikasyon azaltma ve dijital tanı araçları ön plana çıkarken, teknoloji dünyasında yerel AI modellerinin (Local-first AI) düşük donanımlarda çalıştırılması ve açık kaynaklı bilgi tabanı araçları yükselişte._
+🗞️ *CURATOR DAILY NEWS — 16.08.2026*
+_Kardiyovasküler bakımda dijital dönüşüm ve AI destekli tanı araçları yükselişe geçerken, teknoloji tarafında 'Local-First AI' (yerel çalışan yapay zeka) ve düşük VRAM optimizasyonları donanım bariyerlerini yıkıyor. Sağlıkta ilaç odaklı klinik sonuçlar ile teknoloji dünyasındaki otonom ajan orkestrasyonu ön plana çıkıyor._
 
 ====================================
 🩺 *SAĞLIK & KARDİYOLOJİ GELİŞMELERİ*
@@ -7,30 +7,30 @@ _Kardiyolojide ilaç odaklı komplikasyon azaltma ve dijital tanı araçları ö
 
 *H01 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
 *Dapagliflozin'in Kardiyak Cerrahi Sonrası AKI Üzerindeki Etkisi*
-Dapagliflozin kullanımının, kalp cerrahisi sonrası gelişen Akut Böbrek Hasarını (AKI) azalttığına dair klinik bulgular raporlanmıştır.
-💡 *WHY IT MATTERS:* Cerrahi sonrası komplikasyon yönetiminde farmakolojik müdahale standartlarını değiştirebilir; hastane sonrası takip sistemleri için veri giriş parametrelerini etkiler.
+Yapılan araştırmalar, Dapagliflozin kullanımının kalp cerrahisi sonrası gelişen Akut Böbrek Hasarını (AKI) azalttığını göstermektedir.
+💡 *WHY IT MATTERS:* Cerrahi sonrası komplikasyon yönetiminde farmakolojik optimizasyon, hastanede kalış süresini azaltan dijital takip sistemleri için yeni veri parametreleri sunar.
 📌 _Medscape · 2 kaynak_
 ------------------------------------
 
 *H02 | SAĞLIK & KARDİYOLOJİ · OPPORTUNITY*
-*Koroner Arter Kalsiyum Skorlaması ile Risk Analizi*
-Kalsiyum skorlamasının, kalp riski tahminlerini rafine ettiği ve statin kullanım kararlarını daha isabetli hale getirdiği belirtilmektedir.
-💡 *WHY IT MATTERS:* Kişiselleştirilmiş tıp ve tanısal görüntüleme yazılımları için yeni algoritmik geliştirme fırsatları sunar.
-📌 _Medscape · 1 kaynak_
-------------------------------------
-
-*H03 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
-*Elucid Plaque-IQ™: En İyi Yeni Kardiyoloji Teknolojisi*
-Plaque-IQ™ sistemi, 2026 MedTech Breakthrough ödüllerinde en iyi yeni kardiyoloji teknoloji çözümü seçilmiştir.
-💡 *WHY IT MATTERS:* Plak analizinde dijitalleşme ve AI destekli görüntüleme, girişimsel kardiyolojide yeni bir standart oluşturmaktadır.
+*Plaque-IQ™: En İyi Yeni Kardiyoloji Teknoloji Çözümü*
+Elucid tarafından geliştirilen Plaque-IQ™, 2026 MedTech Breakthrough ödüllerinde en iyi yeni kardiyoloji teknoloji çözümü seçildi.
+💡 *WHY IT MATTERS:* Plak analizinin dijitalleşmesi, girişimsel kardiyolojide kişiselleştirilmiş tedavi planlaması yapan yazılımların pazar payını artıracaktır.
 📌 _Business Wire · 1 kaynak_
 ------------------------------------
 
-*H04 | SAĞLIK & KARDİYOLOJİ · OPPORTUNITY*
-*Mussallem Kardiyovasküler Hızlandırıcı Programı*
-Octane, kalp sağlığı inovasyonlarını hızlandırmak amacıyla yeni nesil bir hızlandırıcı program başlatmıştır.
-💡 *WHY IT MATTERS:* MedTech startupları için finansman ve mentorluk kanallarının açıldığını, sektöre yeni girişimlerin gireceğini gösterir.
-📌 _GlobeNewswire · 1 kaynak_
+*H03 | SAĞLIK & KARDİYOLOJİ · TREND*
+*Kardiyovasküler Bakımda Dijital İnovasyonlar*
+Kardiyovasküler bakımı dönüştürmek amacıyla geliştirilen üç yeni dijital çözüm ve Mussallem Kardiyovasküler Hızlandırıcı programı tanıtıldı.
+💡 *WHY IT MATTERS:* MedTech hızlandırıcılarının artışı, kalp sağlığı için giyilebilir cihazların ve uzaktan izleme (remote monitoring) SaaS modellerinin hızlanacağını gösteriyor.
+📌 _heart.org / GlobeNewswire · 2 kaynak_
+------------------------------------
+
+*H04 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
+*Semaglutide ve Demans Riski İlişkisi*
+Yeni veriler, Semaglutide kullanımının öngörülen demans riskini düşürebileceğine işaret ediyor.
+💡 *WHY IT MATTERS:* Metabolik ilaçların nörolojik etkileri, çok disiplinli sağlık takip cihazları ve biyobelirteç analiz yazılımları için yeni bir dikey oluşturuyor.
+📌 _Hacker News / Wiley · 1 kaynak_
 ------------------------------------
 
 ====================================
@@ -38,36 +38,36 @@ Octane, kalp sağlığı inovasyonlarını hızlandırmak amacıyla yeni nesil b
 ====================================
 
 *T01 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
-*MiniMax H3 ve LTX-2.5 Yerel Çalıştırma*
-Düşük VRAM'li PC'lerde yüksek kaliteli video üretimi sağlayan MiniMax H3 ve LTX-2.5 modellerinin Pinokio üzerinden tek tıkla kurulumu mümkün hale geldi.
-💡 *WHY IT MATTERS:* AI video üretiminin demokratikleşmesi, bulut maliyetlerini düşürerek yerel içerik üretim stüdyoları için ticarileşme fırsatı yaratır.
+*Local-First AI: MiniMax H3 ve LTX-2.5 Düşük VRAM Optimizasyonu*
+MiniMax H3 ve LTX-2.5 modelleri artık düşük VRAM'li tüketici PC'lerinde yerel olarak çalıştırılabiliyor, yüksek kaliteli video üretimi demokratikleşiyor.
+💡 *WHY IT MATTERS:* Bulut bağımlılığının azalması, gizlilik odaklı yerel AI donanımlarına ve optimize edilmiş GPU workstation talebini artıracaktır.
 📌 _Twitter / X (@cocktailpeanut) · 4 kaynak_
 ------------------------------------
 
 *T02 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
-*ESP32-Cam ile Evcil Hayvan İzleme Sistemi*
-Reddit topluluğunda ESP32-Cam kullanılarak düşük maliyetli, gerçek zamanlı evcil hayvan izleme projeleri geliştirilmektedir.
-💡 *WHY IT MATTERS:* Türkiye pazarında uygun maliyetli IoT güvenlik ve izleme ürünleri geliştirmek için hızlı prototipleme örneğidir.
-📌 _Reddit (r/arduino) · 1 kaynak_
+*AI Ajan Orkestrasyonu ve Paralel Kodlama*
+Agent Orchestrator ile paralel çalışan AI kodlama ajanlarının izole çalışma alanları yönetimi ve CI/CD geri bildirim döngüleri otomatikleştiriliyor.
+💡 *WHY IT MATTERS:* Yazılım geliştirme süreçlerinde 'insan-denetimli ajan' modelleri, geliştirici verimliliğini artıran yeni B2B SaaS araçlarının önünü açıyor.
+📌 _Twitter / X (@tom_doerr) · 1 kaynak_
 ------------------------------------
 
-*T03 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
-*Yerel Bilgi Tabanı ve AI Varlık Çıkarımı*
-X yer imlerini, Instagram postlarını ve YouTube videolarını analiz ederek yerel, aranabilir bir bilgi tabanına dönüştüren açık kaynaklı araçlar yaygınlaşıyor.
-💡 *WHY IT MATTERS:* Veri gizliliği odaklı 'Local-first' yazılımlara olan talep artıyor; kurumsal bilgi yönetimi için yeni SaaS modelleri geliştirilebilir.
-📌 _Twitter / X (@tom_doerr) · 3 kaynak_
+*T03 | TEKNOLOJİ & DONANIM · TREND*
+*ESP32-Cam ile Evcil Hayvan İzleme ve IoT Projeleri*
+Reddit topluluğunda ESP32-Cam kullanılarak düşük maliyetli evcil hayvan monitörleri ve zamanlanmış perde açma robotları gibi projeler trend.
+💡 *WHY IT MATTERS:* ESP32'nin düşük maliyeti ve kamera entegrasyonu, Türkiye pazarında niş ev otomasyon ürünleri geliştirmek için ideal bir donanım tabanıdır.
+📌 _Reddit (r/arduino) · 3 kaynak_
 ------------------------------------
 
-*T04 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
-*Claude Modellerinde Görünmez Filigran (Watermarking)*
-Anthropic, AI tarafından üretilen metinlerin tespit edilebilmesi için görünmez filigranlar eklemeye başladı.
-💡 *WHY IT MATTERS:* AI içerik doğrulama araçları ve akademik dürüstlük yazılımları için yeni bir pazar alanı oluşmaktadır.
-📌 _Twitter / X (@aakashgupta) · 1 kaynak_
+*T04 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
+*Model Context Protocol (MCP) Güvenlik Kırılma Noktası*
+21.000'den fazla MCP sunucusunun açıkta olması, protokolün hızla yayıldığını ancak ciddi güvenlik açıklarının oluştuğunu gösteriyor.
+💡 *WHY IT MATTERS:* AI ajanları için standartlaşan protokollerin güvenliği, siber güvenlik firmaları için yeni bir 'AI-Security' ürün segmenti yaratıyor.
+📌 _Hacker News · 1 kaynak_
 ------------------------------------
 
-*T05 | TEKNOLOJİ & DONANIM · TREND*
-*ODS: PC'yi AI Sunucusuna Dönüştürme*
-GitHub'da popülerleşen ODS projesi; LLM çıkarımı, RAG ve görüntü üretimi için standart donanımları AI sunucusuna dönüştürüyor.
-💡 *WHY IT MATTERS:* Donanım bağımlılığının optimize edilmesi, KOBİ'lerin kendi AI altyapılarını kurmalarını kolaylaştırır.
-📌 _GitHub · 1 kaynak_
+*T05 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
+*Local Knowledge Base: X ve Sosyal Medya Veri Madenciliği*
+X yer imlerini ve sosyal medya içeriklerini AI varlık çıkarımı ve semantik etiketleme ile yerel, aranabilir bilgi tabanlarına dönüştüren araçlar geliştiriliyor.
+💡 *WHY IT MATTERS:* Kişisel bilgi yönetimi (PKM) araçlarının AI ile entegrasyonu, kurumsal hafıza yönetimi yazılımları için ticarileştirilebilir bir modeldir.
+📌 _Twitter / X (@tom_doerr) · 2 kaynak_
 ------------------------------------
