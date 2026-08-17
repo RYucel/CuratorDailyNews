@@ -1,36 +1,29 @@
-🗞️ *CURATOR DAILY NEWS — 16.08.2026*
-_Kardiyovasküler bakımda dijital dönüşüm ve AI destekli tanı araçları yükselişe geçerken, teknoloji tarafında 'Local-First AI' (yerel çalışan yapay zeka) ve düşük VRAM optimizasyonları donanım bariyerlerini yıkıyor. Sağlıkta ilaç odaklı klinik sonuçlar ile teknoloji dünyasındaki otonom ajan orkestrasyonu ön plana çıkıyor._
+🗞️ *CURATOR DAILY NEWS — 17.08.2026*
+_Bugünün raporu, LLM modellerindeki 'aşırı düşünme' eğilimleri ve RISC-V mimarisinin gelişimi gibi kritik teknolojik tartışmalar ile giyilebilir teknolojilerin sağlık skorlamasına entegrasyonu arasındaki kesişime odaklanıyor. Yapay zeka ajanlarının dikey sektörlere (inşaat, dokümantasyon) yayılımı hız kazanmış durumda._
 
 ====================================
 🩺 *SAĞLIK & KARDİYOLOJİ GELİŞMELERİ*
 ====================================
 
 *H01 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
-*Dapagliflozin'in Kardiyak Cerrahi Sonrası AKI Üzerindeki Etkisi*
-Yapılan araştırmalar, Dapagliflozin kullanımının kalp cerrahisi sonrası gelişen Akut Böbrek Hasarını (AKI) azalttığını göstermektedir.
-💡 *WHY IT MATTERS:* Cerrahi sonrası komplikasyon yönetiminde farmakolojik optimizasyon, hastanede kalış süresini azaltan dijital takip sistemleri için yeni veri parametreleri sunar.
-📌 _Medscape · 2 kaynak_
+*Vidaya: Giyilebilir Cihazlar ve DNA Tabanlı Sağlık Skorlaması*
+Giyilebilir cihaz verilerini, laboratuvar sonuçlarını ve DNA analizlerini birleştirerek kişiselleştirilmiş bir 'sağlık ömrü' (healthspan) skoru sunan yeni bir platform.
+💡 *WHY IT MATTERS:* Kardiyolojik verilerin (nabız, HRV) genetik verilerle korelasyonu, önleyici tıp ve erken teşhis sistemleri için büyük bir ticari fırsat sunmaktadır.
+📌 _ProductHunt · 1 kaynak_
 ------------------------------------
 
 *H02 | SAĞLIK & KARDİYOLOJİ · OPPORTUNITY*
-*Plaque-IQ™: En İyi Yeni Kardiyoloji Teknoloji Çözümü*
-Elucid tarafından geliştirilen Plaque-IQ™, 2026 MedTech Breakthrough ödüllerinde en iyi yeni kardiyoloji teknoloji çözümü seçildi.
-💡 *WHY IT MATTERS:* Plak analizinin dijitalleşmesi, girişimsel kardiyolojide kişiselleştirilmiş tedavi planlaması yapan yazılımların pazar payını artıracaktır.
-📌 _Business Wire · 1 kaynak_
+*AI Video Ajanları ve Uzaktan Sağlık Takibi (Chert)*
+FaceTime benzeri arayüzlerle çalışan, birkaç satır kodla entegre edilebilen yapay zeka tabanlı video ajanları.
+💡 *WHY IT MATTERS:* Kardiyoloji hastalarının evde takibi ve triyaj süreçlerinde, insan müdahalesi öncesi AI video asistanlarının kullanımı operasyonel maliyetleri düşürebilir.
+📌 _ProductHunt · 1 kaynak_
 ------------------------------------
 
 *H03 | SAĞLIK & KARDİYOLOJİ · TREND*
-*Kardiyovasküler Bakımda Dijital İnovasyonlar*
-Kardiyovasküler bakımı dönüştürmek amacıyla geliştirilen üç yeni dijital çözüm ve Mussallem Kardiyovasküler Hızlandırıcı programı tanıtıldı.
-💡 *WHY IT MATTERS:* MedTech hızlandırıcılarının artışı, kalp sağlığı için giyilebilir cihazların ve uzaktan izleme (remote monitoring) SaaS modellerinin hızlanacağını gösteriyor.
-📌 _heart.org / GlobeNewswire · 2 kaynak_
-------------------------------------
-
-*H04 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
-*Semaglutide ve Demans Riski İlişkisi*
-Yeni veriler, Semaglutide kullanımının öngörülen demans riskini düşürebileceğine işaret ediyor.
-💡 *WHY IT MATTERS:* Metabolik ilaçların nörolojik etkileri, çok disiplinli sağlık takip cihazları ve biyobelirteç analiz yazılımları için yeni bir dikey oluşturuyor.
-📌 _Hacker News / Wiley · 1 kaynak_
+*Kişiselleştirilmiş Sağlık Veri Analitiği*
+Veri odaklı sağlık skorlaması ve biyometrik izleme araçlarının, genel sağlık yönetiminden spesifik klinik takiplere evrilmesi.
+💡 *WHY IT MATTERS:* Medikal cihaz üreticileri için ham veri sağlamaktan ziyade, anlamlandırılmış 'skorlar' sunan yazılımların entegrasyonu kritik önem taşıyor.
+📌 _ProductHunt / General · 2 kaynak_
 ------------------------------------
 
 ====================================
@@ -38,36 +31,36 @@ Yeni veriler, Semaglutide kullanımının öngörülen demans riskini düşüreb
 ====================================
 
 *T01 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
-*Local-First AI: MiniMax H3 ve LTX-2.5 Düşük VRAM Optimizasyonu*
-MiniMax H3 ve LTX-2.5 modelleri artık düşük VRAM'li tüketici PC'lerinde yerel olarak çalıştırılabiliyor, yüksek kaliteli video üretimi demokratikleşiyor.
-💡 *WHY IT MATTERS:* Bulut bağımlılığının azalması, gizlilik odaklı yerel AI donanımlarına ve optimize edilmiş GPU workstation talebini artıracaktır.
-📌 _Twitter / X (@cocktailpeanut) · 4 kaynak_
+*Qwen 3.8 27B: LLM'lerde 'Overthinking' Problemi*
+Yeni Qwen modelinin yüksek performans göstermesine rağmen, basit sorulara gereğinden fazla karmaşık yanıtlar verme (overthinking) eğilimi analiz edildi.
+💡 *WHY IT MATTERS:* Yerel AI kurulumlarında (Local AI), modelin yanıt süresini ve token maliyetini optimize etmek için 'düşünme' süreçlerinin kontrol altına alınması gerekmektedir.
+📌 _Hacker News / Simon Willison · 1 kaynak_
 ------------------------------------
 
-*T02 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
-*AI Ajan Orkestrasyonu ve Paralel Kodlama*
-Agent Orchestrator ile paralel çalışan AI kodlama ajanlarının izole çalışma alanları yönetimi ve CI/CD geri bildirim döngüleri otomatikleştiriliyor.
-💡 *WHY IT MATTERS:* Yazılım geliştirme süreçlerinde 'insan-denetimli ajan' modelleri, geliştirici verimliliğini artıran yeni B2B SaaS araçlarının önünü açıyor.
-📌 _Twitter / X (@tom_doerr) · 1 kaynak_
+*T02 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
+*RISC-V Mimarisi ve Gelişmekte Olan Pazarlar*
+RISC-V açık kaynak donanım mimarisinin, özellikle gelişmekte olan ülkelerdeki mühendisler tarafından benimsenme süreçleri ve teknik eleştiriler tartışılıyor.
+💡 *WHY IT MATTERS:* Türkiye'deki yerli işlemci ve gömülü sistem projeleri için ARM bağımlılığını azaltan RISC-V, stratejik bir donanım alternatifi sunmaktadır.
+📌 _Hacker News / rvembedded · 1 kaynak_
 ------------------------------------
 
-*T03 | TEKNOLOJİ & DONANIM · TREND*
-*ESP32-Cam ile Evcil Hayvan İzleme ve IoT Projeleri*
-Reddit topluluğunda ESP32-Cam kullanılarak düşük maliyetli evcil hayvan monitörleri ve zamanlanmış perde açma robotları gibi projeler trend.
-💡 *WHY IT MATTERS:* ESP32'nin düşük maliyeti ve kamera entegrasyonu, Türkiye pazarında niş ev otomasyon ürünleri geliştirmek için ideal bir donanım tabanıdır.
-📌 _Reddit (r/arduino) · 3 kaynak_
+*T03 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
+*CostLogic: İnşaat Sektörü İçin AI Tahminleme*
+İnşaat projelerinde metraj çıkarma, maliyet tahmini ve faturalandırma süreçlerini otomatize eden yapay zeka aracı.
+💡 *WHY IT MATTERS:* Dikey AI (Vertical AI) uygulamalarının, geleneksel sektörlerdeki (inşaat, lojistik) verimsizliği gidermesi yüksek ticarileşme potansiyeli taşır.
+📌 _ProductHunt · 1 kaynak_
 ------------------------------------
 
-*T04 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
-*Model Context Protocol (MCP) Güvenlik Kırılma Noktası*
-21.000'den fazla MCP sunucusunun açıkta olması, protokolün hızla yayıldığını ancak ciddi güvenlik açıklarının oluştuğunu gösteriyor.
-💡 *WHY IT MATTERS:* AI ajanları için standartlaşan protokollerin güvenliği, siber güvenlik firmaları için yeni bir 'AI-Security' ürün segmenti yaratıyor.
-📌 _Hacker News · 1 kaynak_
+*T04 | TEKNOLOJİ & DONANIM · TREND*
+*HarnessRouter: Açık Kaynak Ajan Arayüzleri*
+Yapay zeka ajanlarının yönetimi ve koordinasyonu için geliştirilmiş açık kaynaklı bir birleşik arayüz.
+💡 *WHY IT MATTERS:* Çoklu ajan (Multi-agent) sistemlerinin yönetimi, kurumsal otomasyon projelerinde standartlaşma ihtiyacını ortaya koymaktadır.
+📌 _ProductHunt · 1 kaynak_
 ------------------------------------
 
 *T05 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
-*Local Knowledge Base: X ve Sosyal Medya Veri Madenciliği*
-X yer imlerini ve sosyal medya içeriklerini AI varlık çıkarımı ve semantik etiketleme ile yerel, aranabilir bilgi tabanlarına dönüştüren araçlar geliştiriliyor.
-💡 *WHY IT MATTERS:* Kişisel bilgi yönetimi (PKM) araçlarının AI ile entegrasyonu, kurumsal hafıza yönetimi yazılımları için ticarileştirilebilir bir modeldir.
-📌 _Twitter / X (@tom_doerr) · 2 kaynak_
+*Blume: Markdown Odaklı AI Dokümantasyon Sistemi*
+Yapay zeka ile uyumlu, Markdown tabanlı yeni nesil bir dokümantasyon çerçevesi.
+💡 *WHY IT MATTERS:* Teknik dokümantasyonun AI tarafından okunabilir ve güncellenebilir olması, yazılım geliştirme yaşam döngüsünü (SDLC) hızlandıran bir faktördür.
+📌 _ProductHunt · 1 kaynak_
 ------------------------------------
