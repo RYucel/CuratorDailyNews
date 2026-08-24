@@ -1,4 +1,4 @@
-🗞️ *CURATOR DAILY NEWS — 23.08.2026*
+🗞️ *CURATOR DAILY NEWS — 24.08.2026*
 _Bugünün bülteninde solda Medscape ve kardiyovasküler sağlık araştırmaları, sağda ise yerel AI çipleri, ESP32 otomasyon ve mikro-donanım girişimleri yer alıyor._
 
 ====================================
