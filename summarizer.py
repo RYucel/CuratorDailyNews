@@ -68,77 +68,110 @@ def parse_json_from_llm_response(text: str) -> Dict[str, Any]:
                 logging.error(f"Regex JSON extraction failed: {e2}")
         raise
 
-def generate_mock_editorial_data(rss_articles: List[Dict[str, Any]], reddit_posts: List[Dict[str, Any]]) -> Dict[str, Any]:
-    """Fallback 2-column editorial data if no LLM key is present."""
+def generate_mock_editorial_data(rss_articles: List[Dict[str, Any]], reddit_posts: List[Dict[str, Any]], twitter_posts: List[Dict[str, Any]] = [], github_items: List[Dict[str, Any]] = []) -> Dict[str, Any]:
+    """Fallback 2-column editorial data built from the actually fetched items.
+
+    Used when no LLM key/quota is available. Pulls directly from today's fetched
+    RSS/Reddit/Twitter/GitHub items instead of static text, so the digest still
+    changes day to day even without an LLM call.
+    """
+    def clip(text: str, n: int) -> str:
+        text = (text or "").strip()
+        return text[:n] + "..." if len(text) > n else text
+
+    health_source_items = [a for a in rss_articles if a.get("category") in ("SAĞLIK", "SAĞLIK TEKNOLOJİLERİ")]
+    if not health_source_items:
+        health_source_items = rss_articles
+
+    tech_source_items = (
+        [a for a in rss_articles if a.get("category") not in ("SAĞLIK", "SAĞLIK TEKNOLOJİLERİ")]
+        + reddit_posts + twitter_posts + github_items
+    )
+
+    health_stories = []
+    for idx, item in enumerate(health_source_items[:4], 1):
+        health_stories.append({
+            "number": f"H0{idx}",
+            "category": item.get("category", "SAĞLIK"),
+            "priority": "HIGH SIGNAL" if idx == 1 else "TREND",
+            "title": item.get("title", ""),
+            "summary": clip(item.get("summary", ""), 300) or "Detaylar için kaynak bağlantısını inceleyin.",
+            "why_it_matters": "Bu gelişme sağlık/kardiyoloji alanındaki güncel araştırma ve ürün akışını temsil ediyor.",
+            "source_name": item.get("source", "Medscape"),
+            "source_time": "Bugün",
+            "source_count": len(health_source_items),
+            "link": item.get("link", "")
+        })
+
+    tech_stories = []
+    for idx, item in enumerate(tech_source_items[:5], 1):
+        title = item.get("title", "")
+        text_val = item.get("summary") or item.get("text") or ""
+        source_name = item.get("source") or item.get("subreddit") or item.get("handle") or "GitHub Trending"
+        link = item.get("link") or item.get("permalink") or item.get("url") or ""
+        tech_stories.append({
+            "number": f"T0{idx}",
+            "category": item.get("category", "TEKNOLOJİ"),
+            "priority": "HIGH SIGNAL" if idx == 1 else "OPPORTUNITY",
+            "title": title,
+            "summary": clip(text_val, 300) or "Detaylar için kaynak bağlantısını inceleyin.",
+            "why_it_matters": "Bu içerik teknoloji/donanım/otomasyon gündeminde bugün öne çıkan gelişmelerden biri.",
+            "source_name": source_name,
+            "source_time": "Bugün",
+            "source_count": len(tech_source_items),
+            "link": link
+        })
+
     return {
-        "executive_summary": "Bugünün bülteninde solda Medscape ve kardiyovasküler sağlık araştırmaları, sağda ise yerel AI çipleri, ESP32 otomasyon ve mikro-donanım girişimleri yer alıyor.",
+        "executive_summary": "Bugünün bülteninde solda sağlık & kardiyoloji gelişmeleri, sağda teknoloji, donanım ve otomasyon gündemi yer alıyor. (Not: LLM özetleme şu an devre dışı, başlıklar doğrudan kaynaklardan derlendi.)",
         "stats": {
-            "total_stories": len(rss_articles) + len(reddit_posts),
-            "high_signal": 5,
-            "opportunities": 4,
-            "trends": 3
+            "total_stories": len(health_stories) + len(tech_stories),
+            "high_signal": sum(1 for s in health_stories + tech_stories if s["priority"] == "HIGH SIGNAL"),
+            "opportunities": sum(1 for s in tech_stories if s["priority"] == "OPPORTUNITY"),
+            "trends": sum(1 for s in health_stories if s["priority"] == "TREND")
         },
-        "health_stories": [
-            {
-                "number": "H01",
-                "category": "SAĞLIK & KARDİYOLOJİ",
-                "priority": "HIGH SIGNAL",
-                "title": "Koroner Arter Kalsiyum Skorlaması ile Kalp Riski Tahmini",
-                "summary": "Kalsiyum skorlamasının EKG ve kan basıncı ölçümleriyle birleştirilmesi, kardiyak risk tahminlerini rafine ediyor ve erken müdahale şansını artırıyor.",
-                "why_it_matters": "Önleyici kardiyoloji alanında kişiselleştirilmiş tanı kitleri ve mobil sağlık analiz platformları için yüksek ticari değer taşır.",
-                "source_name": "Medscape Cardiology",
-                "source_time": "3s önce",
-                "source_count": 5
-            },
-            {
-                "number": "H02",
-                "category": "SAĞLIK TEKNOLOJİLERİ",
-                "priority": "TREND",
-                "title": "Giyilebilir Biyo-Sensörler Sürekli Kan Analizi Sunuyor",
-                "summary": "Yeni nesil giyilebilir yamalar, ter ve doku sıvısından glikoz ve laktat seviyelerini eşzamanlı takip ederek mobil uygulamaya aktarıyor.",
-                "why_it_matters": "Sporcu sağlığı ve diyabet yönetiminde donanım + SaaS abonelik modeli yaratma fırsatı sunar.",
-                "source_name": "MedTech News",
-                "source_time": "5s önce",
-                "source_count": 4
-            }
-        ],
-        "tech_stories": [
-            {
-                "number": "T01",
-                "category": "DONANIM & AI",
-                "priority": "HIGH SIGNAL",
-                "title": "Cerebras ve Yerel Çip Mimarisi Cihaz Üstü AI İnferansını Hızlandırıyor",
-                "summary": "Tüketici elektroniği ve otomasyon kitleri, bulut bağımlılığını ortadan kaldırarak cihaz üzerinde çalışan yerel yapay zeka modellerine geçiyor.",
-                "why_it_matters": "Sıfır gecikmeli ev otomasyonu ve gizlilik odaklı medikal cihazlar için yeni bir ürün kategorisi doğuyor.",
-                "source_name": "Hacker News",
-                "source_time": "2s önce",
-                "source_count": 8
-            },
-            {
-                "number": "T02",
-                "category": "ÜRÜN & YAZILIM",
-                "priority": "OPPORTUNITY",
-                "title": "SecondBrain Note MagSafe İle Ortam Seslerini Nota Dönüştürüyor",
-                "summary": "Manyetik olarak telefona tutunan ortam ses kayıt donanımı, toplantıları analiz edip yapılacaklar listesine dönüştürüyor.",
-                "why_it_matters": "Donanım + Yazılım bileşimi ile yüksek marjlı profesyonel verimlilik cihazı pazarı sunuyor.",
-                "source_name": "Product Hunt",
-                "source_time": "4s önce",
-                "source_count": 6
-            }
-        ],
-        "trending_topics": ["Local AI", "Giyilebilir Sağlık", "ESP32 Otomasyon", "Kombine AI Donanım", "SaaS Modelleri"],
-        "top_sources": ["Twitter/X", "Product Hunt", "Reddit", "Hacker News", "Medscape", "GitHub"]
+        "health_stories": health_stories,
+        "tech_stories": tech_stories,
+        "trending_topics": list({s["category"] for s in tech_stories + health_stories})[:5],
+        "top_sources": list({s["source_name"] for s in tech_stories + health_stories})[:6]
     }
+
+def generate_digest_with_openrouter(prompt_content: str, api_key: str) -> Dict[str, Any]:
+    """Generates structured JSON using OpenRouter (default: free Nvidia Nemotron model)."""
+    import openai
+    model = os.getenv("OPENROUTER_MODEL") or "nvidia/nemotron-3-ultra-550b-a55b:free"
+    logging.info(f"Generating editorial digest with OpenRouter model '{model}'...")
+
+    client = openai.OpenAI(api_key=api_key, base_url="https://openrouter.ai/api/v1")
+
+    try:
+        res = client.chat.completions.create(
+            model=model,
+            messages=[
+                {"role": "system", "content": SYSTEM_PROMPT_EDITORIAL},
+                {"role": "user", "content": f"Aşağıdaki verilerden 2 KISIMLI (Solda Sağlık, Sağda Teknoloji) JSON formatında Editorial Intelligence Briefing oluştur:\n\n{prompt_content}"}
+            ],
+            temperature=0.4,
+            max_tokens=3500,
+            extra_headers={
+                "HTTP-Referer": "https://github.com/RYucel/CuratorDailyNews",
+                "X-Title": "CuratorDailyNews"
+            }
+        )
+        raw_text = res.choices[0].message.content
+        return parse_json_from_llm_response(raw_text)
+    except Exception as e:
+        raise Exception(f"OpenRouter model '{model}' failed: {e}")
 
 def generate_digest_with_cerebras(prompt_content: str, api_key: str) -> Dict[str, Any]:
     """Generates structured JSON using Cerebras Cloud API."""
     import openai
-    model = os.getenv("CEREBRAS_MODEL", "gemma-4-31b")
+    model = os.getenv("CEREBRAS_MODEL") or "llama-3.3-70b"
     logging.info(f"Generating editorial digest with Cerebras model '{model}'...")
-    
+
     client = openai.OpenAI(api_key=api_key, base_url="https://api.cerebras.ai/v1")
-    
-    models_to_try = [model, "gemma-4-31b", "gpt-oss-120b", "zai-glm-4.7"]
+
+    models_to_try = [model, "llama-3.3-70b", "gpt-oss-120b", "qwen-3-32b"]
     seen = set()
     models_to_try = [m for m in models_to_try if not (m in seen or seen.add(m))]
     
@@ -164,16 +197,23 @@ def generate_digest_with_cerebras(prompt_content: str, api_key: str) -> Dict[str
 def generate_editorial_data(rss_articles: List[Dict[str, Any]], reddit_posts: List[Dict[str, Any]], twitter_posts: List[Dict[str, Any]] = [], github_items: List[Dict[str, Any]] = []) -> Dict[str, Any]:
     """Main generation logic returning python dictionary of editorial content."""
     prompt_content = format_data_for_llm(rss_articles, reddit_posts, twitter_posts, github_items)
+    openrouter_key = os.getenv("OPENROUTER_API_KEY")
     cerebras_key = os.getenv("CEREBRAS_API_KEY")
     openai_key = os.getenv("OPENAI_API_KEY")
     gemini_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
-    
+
+    if openrouter_key:
+        try:
+            return generate_digest_with_openrouter(prompt_content, openrouter_key)
+        except Exception as e:
+            logging.error(f"OpenRouter API error: {e}. Falling back...")
+
     if cerebras_key:
         try:
             return generate_digest_with_cerebras(prompt_content, cerebras_key)
         except Exception as e:
             logging.error(f"Cerebras API error: {e}. Falling back...")
-            
+
     if openai_key:
         try:
             import openai
@@ -191,7 +231,7 @@ def generate_editorial_data(rss_articles: List[Dict[str, Any]], reddit_posts: Li
             logging.error(f"OpenAI error: {e}")
             
     logging.warning("No valid API keys or inference error. Using fallback mock editorial data.")
-    return generate_mock_editorial_data(rss_articles, reddit_posts)
+    return generate_mock_editorial_data(rss_articles, reddit_posts, twitter_posts, github_items)
 
 def render_story_item(s: Dict[str, Any]) -> str:
     """Renders single story item HTML."""
