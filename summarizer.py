@@ -96,7 +96,7 @@ def generate_mock_editorial_data(rss_articles: List[Dict[str, Any]], reddit_post
             "priority": "HIGH SIGNAL" if idx == 1 else "TREND",
             "title": item.get("title", ""),
             "summary": clip(item.get("summary", ""), 300) or "Detaylar için kaynak bağlantısını inceleyin.",
-            "why_it_matters": "Bu gelişme sağlık/kardiyoloji alanındaki güncel araştırma ve ürün akışını temsil ediyor.",
+            "why_it_matters": "",
             "source_name": item.get("source", "Medscape"),
             "source_time": "Bugün",
             "source_count": len(health_source_items),
@@ -115,7 +115,7 @@ def generate_mock_editorial_data(rss_articles: List[Dict[str, Any]], reddit_post
             "priority": "HIGH SIGNAL" if idx == 1 else "OPPORTUNITY",
             "title": title,
             "summary": clip(text_val, 300) or "Detaylar için kaynak bağlantısını inceleyin.",
-            "why_it_matters": "Bu içerik teknoloji/donanım/otomasyon gündeminde bugün öne çıkan gelişmelerden biri.",
+            "why_it_matters": "",
             "source_name": source_name,
             "source_time": "Bugün",
             "source_count": len(tech_source_items),
@@ -123,7 +123,7 @@ def generate_mock_editorial_data(rss_articles: List[Dict[str, Any]], reddit_post
         })
 
     return {
-        "executive_summary": "Bugünün bülteninde solda sağlık & kardiyoloji gelişmeleri, sağda teknoloji, donanım ve otomasyon gündemi yer alıyor. (Not: LLM özetleme şu an devre dışı, başlıklar doğrudan kaynaklardan derlendi.)",
+        "executive_summary": "Bugünün bülteninde solda sağlık & kardiyoloji gelişmeleri, sağda teknoloji, donanım ve otomasyon gündemi yer alıyor. (Not: AI özetleme şu an kullanılamadı, başlıklar ve özetler doğrudan kaynaklardan derlendi.)",
         "stats": {
             "total_stories": len(health_stories) + len(tech_stories),
             "high_signal": sum(1 for s in health_stories + tech_stories if s["priority"] == "HIGH SIGNAL"),
@@ -239,6 +239,14 @@ def generate_editorial_data(rss_articles: List[Dict[str, Any]], reddit_posts: Li
 def render_story_item(s: Dict[str, Any]) -> str:
     """Renders single story item HTML."""
     priority_str = s.get('priority', 'HIGH SIGNAL')
+    why_box = ""
+    if s.get('why_it_matters'):
+        why_box = f"""
+        <div class="story-why-box">
+            <div class="why-label">WHY IT MATTERS</div>
+            <p class="why-text">{s['why_it_matters']}</p>
+        </div>"""
+    link_line = f'<p class="story-link"><a href="{s["link"]}" target="_blank">{s["link"]}</a></p>' if s.get('link') else ""
     return f"""
     <article class="story-item">
         <div class="story-header">
@@ -249,12 +257,8 @@ def render_story_item(s: Dict[str, Any]) -> str:
         </div>
         <h2 class="story-title">{s.get('title', '')}</h2>
         <p class="story-summary">{s.get('summary', '')}</p>
-        
-        <div class="story-why-box">
-            <div class="why-label">WHY IT MATTERS</div>
-            <p class="why-text">{s.get('why_it_matters', '')}</p>
-        </div>
-        
+        {link_line}
+        {why_box}
         <div class="story-meta">
             {s.get('source_name', 'Kaynak')} · {s.get('source_time', 'Günün Özeti')} · {s.get('source_count', 4)} kaynak
         </div>
@@ -348,7 +352,10 @@ def render_editorial_markdown(data: Dict[str, Any]) -> str:
         lines.append(f"\n*{s.get('number', 'H01')} | {s.get('category', 'SAĞLIK')} · {s.get('priority', '')}*")
         lines.append(f"*{s.get('title', '')}*")
         lines.append(f"{s.get('summary', '')}")
-        lines.append(f"💡 *WHY IT MATTERS:* {s.get('why_it_matters', '')}")
+        if s.get('why_it_matters'):
+            lines.append(f"💡 *WHY IT MATTERS:* {s['why_it_matters']}")
+        if s.get('link'):
+            lines.append(f"🔗 {s['link']}")
         lines.append(f"📌 _{s.get('source_name', 'Medscape')} · {s.get('source_count', 4)} kaynak_")
         lines.append("------------------------------------")
         
@@ -360,7 +367,10 @@ def render_editorial_markdown(data: Dict[str, Any]) -> str:
         lines.append(f"\n*{s.get('number', 'T01')} | {s.get('category', 'TEKNOLOJİ')} · {s.get('priority', '')}*")
         lines.append(f"*{s.get('title', '')}*")
         lines.append(f"{s.get('summary', '')}")
-        lines.append(f"💡 *WHY IT MATTERS:* {s.get('why_it_matters', '')}")
+        if s.get('why_it_matters'):
+            lines.append(f"💡 *WHY IT MATTERS:* {s['why_it_matters']}")
+        if s.get('link'):
+            lines.append(f"🔗 {s['link']}")
         lines.append(f"📌 _{s.get('source_name', 'Twitter/Reddit')} · {s.get('source_count', 4)} kaynak_")
         lines.append("------------------------------------")
         

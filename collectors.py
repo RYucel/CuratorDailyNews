@@ -1,6 +1,7 @@
 import logging
 import time
 import re
+import html
 import feedparser
 import requests
 from typing import List, Dict, Any
@@ -31,7 +32,10 @@ def fetch_rss_articles() -> List[Dict[str, Any]]:
             for entry in entries:
                 title = entry.get("title", "").strip()
                 summary = entry.get("summary", entry.get("description", "")).strip()
-                summary_clean = summary[:300] + "..." if len(summary) > 300 else summary
+                summary_text = re.sub(r'<[^>]+>', ' ', summary)
+                summary_text = html.unescape(summary_text)
+                summary_text = ' '.join(summary_text.split())
+                summary_clean = summary_text[:300] + "..." if len(summary_text) > 300 else summary_text
                 link = entry.get("link", "")
                 published = entry.get("published", entry.get("updated", ""))
                 
