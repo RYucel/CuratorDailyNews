@@ -142,7 +142,7 @@ def generate_digest_with_openrouter(prompt_content: str, api_key: str) -> Dict[s
     model = os.getenv("OPENROUTER_MODEL") or "nvidia/nemotron-3-ultra-550b-a55b:free"
     logging.info(f"Generating editorial digest with OpenRouter model '{model}'...")
 
-    client = openai.OpenAI(api_key=api_key, base_url="https://openrouter.ai/api/v1")
+    client = openai.OpenAI(api_key=api_key, base_url="https://openrouter.ai/api/v1", timeout=60.0, max_retries=1)
 
     try:
         res = client.chat.completions.create(
@@ -169,7 +169,7 @@ def generate_digest_with_cerebras(prompt_content: str, api_key: str) -> Dict[str
     model = os.getenv("CEREBRAS_MODEL") or "llama-3.3-70b"
     logging.info(f"Generating editorial digest with Cerebras model '{model}'...")
 
-    client = openai.OpenAI(api_key=api_key, base_url="https://api.cerebras.ai/v1")
+    client = openai.OpenAI(api_key=api_key, base_url="https://api.cerebras.ai/v1", timeout=30.0, max_retries=1)
 
     models_to_try = [model, "llama-3.3-70b", "gpt-oss-120b", "qwen-3-32b"]
     seen = set()
@@ -217,7 +217,7 @@ def generate_editorial_data(rss_articles: List[Dict[str, Any]], reddit_posts: Li
     if openai_key:
         try:
             import openai
-            client = openai.OpenAI(api_key=openai_key)
+            client = openai.OpenAI(api_key=openai_key, timeout=60.0, max_retries=1)
             res = client.chat.completions.create(
                 model="gpt-4o-mini",
                 messages=[
