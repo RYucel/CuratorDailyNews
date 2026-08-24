@@ -136,6 +136,33 @@ def generate_mock_editorial_data(rss_articles: List[Dict[str, Any]], reddit_post
         "top_sources": list({s["source_name"] for s in tech_stories + health_stories})[:6]
     }
 
+def generate_digest_with_openrouter(prompt_content: str, api_key: str) -> Dict[str, Any]:
+    """Generates structured JSON using OpenRouter (default: free Nvidia Nemotron model)."""
+    import openai
+    model = os.getenv("OPENROUTER_MODEL") or "nvidia/nemotron-3-ultra-550b-a55b:free"
+    logging.info(f"Generating editorial digest with OpenRouter model '{model}'...")
+
+    client = openai.OpenAI(api_key=api_key, base_url="https://openrouter.ai/api/v1")
+
+    try:
+        res = client.chat.completions.create(
+            model=model,
+            messages=[
+                {"role": "system", "content": SYSTEM_PROMPT_EDITORIAL},
+                {"role": "user", "content": f"Aşağıdaki verilerden 2 KISIMLI (Solda Sağlık, Sağda Teknoloji) JSON formatında Editorial Intelligence Briefing oluştur:\n\n{prompt_content}"}
+            ],
+            temperature=0.4,
+            max_tokens=3500,
+            extra_headers={
+                "HTTP-Referer": "https://github.com/RYucel/CuratorDailyNews",
+                "X-Title": "CuratorDailyNews"
+            }
+        )
+        raw_text = res.choices[0].message.content
+        return parse_json_from_llm_response(raw_text)
+    except Exception as e:
+        raise Exception(f"OpenRouter model '{model}' failed: {e}")
+
 def generate_digest_with_cerebras(prompt_content: str, api_key: str) -> Dict[str, Any]:
     """Generates structured JSON using Cerebras Cloud API."""
     import openai
@@ -170,16 +197,23 @@ def generate_digest_with_cerebras(prompt_content: str, api_key: str) -> Dict[str
 def generate_editorial_data(rss_articles: List[Dict[str, Any]], reddit_posts: List[Dict[str, Any]], twitter_posts: List[Dict[str, Any]] = [], github_items: List[Dict[str, Any]] = []) -> Dict[str, Any]:
     """Main generation logic returning python dictionary of editorial content."""
     prompt_content = format_data_for_llm(rss_articles, reddit_posts, twitter_posts, github_items)
+    openrouter_key = os.getenv("OPENROUTER_API_KEY")
     cerebras_key = os.getenv("CEREBRAS_API_KEY")
     openai_key = os.getenv("OPENAI_API_KEY")
     gemini_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
-    
+
+    if openrouter_key:
+        try:
+            return generate_digest_with_openrouter(prompt_content, openrouter_key)
+        except Exception as e:
+            logging.error(f"OpenRouter API error: {e}. Falling back...")
+
     if cerebras_key:
         try:
             return generate_digest_with_cerebras(prompt_content, cerebras_key)
         except Exception as e:
             logging.error(f"Cerebras API error: {e}. Falling back...")
-            
+
     if openai_key:
         try:
             import openai
