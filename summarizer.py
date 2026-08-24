@@ -152,13 +152,16 @@ def generate_digest_with_openrouter(prompt_content: str, api_key: str) -> Dict[s
                 {"role": "user", "content": f"Aşağıdaki verilerden 2 KISIMLI (Solda Sağlık, Sağda Teknoloji) JSON formatında Editorial Intelligence Briefing oluştur:\n\n{prompt_content}"}
             ],
             temperature=0.4,
-            max_tokens=3500,
+            max_tokens=8000,
             extra_headers={
                 "HTTP-Referer": "https://github.com/RYucel/CuratorDailyNews",
                 "X-Title": "CuratorDailyNews"
             }
         )
         raw_text = res.choices[0].message.content
+        finish_reason = res.choices[0].finish_reason
+        if finish_reason == "length":
+            raise Exception("response truncated by max_tokens before completing JSON")
         return parse_json_from_llm_response(raw_text)
     except Exception as e:
         raise Exception(f"OpenRouter model '{model}' failed: {e}")
