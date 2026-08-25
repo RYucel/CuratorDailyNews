@@ -1,43 +1,43 @@
-🗞️ *CURATOR DAILY NEWS — 24.08.2026*
-_Bugün klinik kardiyolojide 2026 Kalp Yetersizliği Konsensüs Tanımı ve Dapagliflozin'in cerrahi AKI önleme verileri pratik değiştiren HIGH SIGNİAL oluştururken, MedTech ekosisteminde AHA/Octane hızlandırıcıları ve Elucid Plaque-IQ ödülü yatırım akışını işaret ediyor. Teknoloji tarafında Pinokio 5.0 'Localhost Cloud' vizyonu ve openpilot'un 300+ araçta robotik OS olgunluğu, yerel AI altyapısı ve otonom sistemlerde kritik bir olgunluk eşiğine ulaşıldığını gösteriyor; AI geliştirme araçları (CLAUDE.md, Harness, AIUsage) ise 'vibe coding'den 'mühendislik disiplinli ajanlara' geçişi hızlandırıyor._
+🗞️ *CURATOR DAILY NEWS — 25.08.2026*
+_Yapay zeka altyapısı 'buluttan yerel'e (Pinokio 5.0, Gemma 4 LiteRT, openpilot) doğru kayarken, kardiyolojide 'kardiyo-onkoloji tsunami' ve erken kalp yetmezliği tespiti klinik öncelikler oluşturuyor. Donanım tarafında ESP32-C3 tasarım hatası riski, yazılım tarafında ise AI ajan yönetimi (Decawork) ve self-hosted sağlık uygulamaları (OpenGym) yeni fırsat alanlarını işaret ediyor._
 
 ====================================
 🩺 *SAĞLIK & KARDİYOLOJİ GELİŞMELERİ*
 ====================================
 
 *H01 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
-*Dapagliflozin, Kalp Cerrahisi Sonrası Akut Böbrek Hasarını (AKI) Azaltıyor*
-Medscape verilerine göre SGLT2 inhibitörü Dapagliflozin, kalp cerrahisi geçiren hastalarda post-operatif akut böbrek hasarı (AKI) riskini anlamlı derecede düşürüyor. Bu bulgu, cerrahi perioperatif dönemde böbrek koruması için yeni bir farmakolojik strateji kapısı açıyor.
-💡 *WHY IT MATTERS:* Kardiyak cerrahi yoğun bakım maliyetlerinin ve mortalitenin en büyük sürücüsü AKI'dir. Bu veri, SGLT2'lerin diyabet/İY dışında cerrahi perioperatif protokollere entegrasyonu için güçlü kanıt sunarak, giyilebilir böbrek fonksiyonu takip cihazları ve klinik karar destek sistemleri (CDS) için yeni bir entegrasyon noktası yaratır.
+*Kalp Yetmezliğinde Erken Teşhis İçin Beş Adımlı Yeni Yaklaşım*
+Medscape'in öne çıkardığı kliniğe rehber makale, kalp yetmezliğini (HF) daha erken evrelerde (Stadya B/C) yakalamak için NP/BNP testleri, ekokardiyografi kriterleri ve risk skorlamasının sistematik entegrasyonunu vurguluyor. Klinik pratikte 'bekle ve izle' stratejisinden 'proaktif tarama' modeline geçişi öngörüyor.
+💡 *WHY IT MATTERS:* Giyilebilir cihazlarda (PPG/ECG) sürekli damar yaşını ve ritim analizi yapan algoritmalar için bu yeni klinik yol haritası, 'erken uyarı' tetikleme eşiklerini ve raporlama standartlarını yeniden şekillendirecek. SaaS tabanlı uzaktan hasta takip platformları bu kriterleri entegre ederek klinik doğrulama alabilir.
 📌 _Medscape Cardiology · 1 kaynak_
 ------------------------------------
 
 *H02 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
-*2026 AHA/ACC/ESC/WHF Kalp Yetersizliği Konsensüs Tanımı Yayımlandı*
-Dört büyük kardiyoloji derneği (AHA, ACC, ESC, WHF) 2026 yılında evrensel bir Kalp Yetersizliği tanımı ve sınıflandırması üzerinde uzlaştı. Yeni tanım, fraksiyon kategorileri (HFrEF, HFmrEF, HFpEF) ve stadileme (A-B-C-D) üzerine güncellenmiş kriterler içeriyor.
-💡 *WHY IT MATTERS:* Küresel standartlaşma, klinik çalışma uç noktalarını, sigorta ödemelerini ve yapay zeka tabanlı tanı algoritmalarını (EHR/ECG AI) yeniden kalibre edecek. Türkiye'deki uzaktan hasta takip (RPM) ve dijital hastane platformları bu yeni kodlama/stanvasyona (ICD-11 uyumu) anında uyum sağlamak zorunda kalacak.
-📌 _Medscape Reference · 1 kaynak_
+*Kanser Tedavisinin Kalp Üzerindeki 'Tsunami' Etkisi: Kardiyo-Onkoloji Krizi*
+Uzmanlar, iyileşen kanser hasta sayısının artışıyla birlikte antrasiklin ve radyasyon kaynaklı kardiyotoksisite epidemisini 'tsunami' olarak tanımlıyor. Mevcut takip protokolleri (LVEF tabanlı) yetersiz kalmakta; global longitudinal strain (GLS) ve biyobelirteç tabanlı erken algılama standartlaştırılıyor.
+💡 *WHY IT MATTERS:* Bu hasta grubu (milyonlarca survivorship) sürekli, hassas ve non-invazif kalp izleme gerektiriyor. Giyilebilir EKG/PCG sensörleri ve AI destekli strain tahmini yapan edge modelleri (TensorFlow Lite/PyTorch Mobile), bu 'tsunami' için ölçeklenebilir tek teknolojik çözüm olabilir.
+📌 _Medscape Cardiology · 1 kaynak_
 ------------------------------------
 
-*H03 | SAĞLIK & KARDİYOLOJİ · OPPORTUNITY*
-*AHA ve Octane ile Kardiyovasküler MedTech Hızlandırıcı Ekosistemi Genişliyor*
-American Heart Association (AHA) 'Global Health Tech Competition' kazananlarını açıklarken, Octane 'Mussallem Cardiovascular Accelerator' programını başlattı. Her iki girişim de erken aşamalı kardiyovasküler ve beyin sağlığı startup'larına klinik doğrulama, reglümans ve yatırım erişimi sunuyor.
-💡 *WHY IT MATTERS:* Türkiye'de TÜBİTAK/KOBİGEL ve TTO ekosistemi bu modeli takip ederek yerel Kardiyoloji MedTech startup'larını (örn. giyilebilir EKG, AI ekokardiyografi) global pazarlara hazırlayabilir. 'Clinical Validation as a Service' modelleri yatırımcılar için riski düşürür.
-📌 _Heart.org / GlobeNewswire / Bioengineer.org · 3 kaynak_
+*H03 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
+*İnhale Edilen Kannabis, Yetişkinlerde Daha Az Kardiyak Ektopi ile İlişkili*
+Beklentinin tersine, büyük bir kohort çalışması inhale kannabis kullanımının ventriküler/atriyal ektopik atış sayısında azalma gösterdiğini, ancak tütün kullanımının artırdığığını ortaya koydu. Mekanizma kanabinoid reseptörleri üzerinden otoinomik modülasyon olabilir.
+💡 *WHY IT MATTERS:* Giyilebilir ritim izleme cihazları (Apple Watch, Kardia, Withings) kullanıcı verilerinde 'kannabis etkisi' bir konfounder (karıştırıcı değişken) olarak ortaya çıkabilir. Algoritmaların yanlış pozitif AFib/aritmi alarmlarını azaltmak için yaşam tarzı verisi (kannabis/tütün) entegrasyonu kritik hale geliyor.
+📌 _Medscape Medical News · 1 kaynak_
 ------------------------------------
 
 *H04 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
-*Elucid Plaque-IQ™, 2026 MedTech Breakthrough Ödülünü Kazandı*
-Elucid Bioimaging'in Plaque-IQ teknolojisi, koroner tomografi anjiyografisi (CCTA) verilerinden plak kompozisyonunu ve vulnerebiliği (lipid çekirdek,ファイbrous cap) non-invazif olarak nicelendirerek 'En Yeni Kardiyoloji Teknolojisi' ödülünü aldı.
-💡 *WHY IT MATTERS:* İnvazif IVUS/OCT yerini AI tabanlı non-invazif plak analizi almaya başlıyor. Bu, erken risk stratifikasyonunda (Framingham/SCORE2 üzeri) paradigm değişimi yaratır; Türkiye'de CCTA erişiminin yaygınlığı bu yazılımın (SaaS modeli) hızla benimsenmesi için uygun pazar yaratır.
-📌 _Business Wire · 1 kaynak_
+*Elucid Plaque-IQ™, 2026 MedTech Breakthrough Ödüllünde 'En İyi Yeni Kardiyoloji Teknolojisi' Seçildi*
+AI destekli koroner tomografi anjiyografi (CCTA) analiz platformu Plaque-IK, plak karakterizasyonu (lipid çekirdek, lifir kapak) ve stenoz şiddetini invaziv FFR/IVUS alternatifi olarak non-invazif quantification sağlayarak FDA onaylı klinik karar desteği sundu.
+💡 *WHY IT MATTERS:* Bu, 'Yazılım Olarak Tıbbi Cihaz' (SaMD) kategorisinde AI tabanlı görüntüleme biyo-markırlarının (plak fenotipi) klinik rutine girişinin somut bir kanıtı. Türkiye'deki teleradyoloji ve özel hastane zincirleri için CCTA tabanlı risk katmanlaması yeni bir gelir hattı ve farklılaştırma aracı yaratır.
+📌 _Business Wire / MedTech Innovations · 1 kaynak_
 ------------------------------------
 
-*H05 | SAĞLIK & KARDİYOLOJİ · TREND*
-*Erken Kalp Yetersizliği Tespiti İçin 5 Adımlı Klinik Yol Haritası*
-Medscape, primer bakım ve kardiyoloji uzmanları için NF-proBNP/EKG taraması, risk skorlaması (Framingham/SCORE2), komorbidite yönetimi ve hastaya özel eğitimi içeren 5 adımlı bir erken tespit protokolü özetledi.
-💡 *WHY IT MATTERS:* Bu protokol, giyilebilir cihazlardan (Akıllı Saat EKG, PPG) gelen verilerin klinik iş akışına (EHR entegrasyonu) nasıl besleneceğini tanımlar. 'Alarm Yorgunluğunu' önlemek için AI tabanlı filtreleme ve klinik karar destek (CDS) hook'ları geliştirilmesi gerekiyor.
-📌 _Medscape · 1 kaynak_
+*H05 | SAĞLIK & KARDİYOLOJİ · OPPORTUNITY*
+*Octane ve AHA: Müsallem Kardiyovasküler Hızlandırıcı ve Global Yarışma ile Girişim Ekosistemi Canlanıyor*
+Octane, 10 milyon dolar lik Müsallem Kardiyovasküler Hızlandırıcıyı başlattı; AHA ise 'Global Health Tech Competition' ile beyin ve kalp sağlığı için startup'ları ödüllendiriyor. Seçilen startup'lar: AI tabanlı EKG analizi, uzaktan rehabilitasyon, damar yaşını ölçen giyilebilirler.
+💡 *WHY IT MATTERS:* Kardiyoloji dijital sağlık yatırımları 2024-25'te rekor seviyelere ulaştı. Türkiye'de TÜBİTAK 1512/1507 ve KOSGEB destekleriyle bu global hızlandırıcılara (Octane, AHA) başvuru yapan yerel medtech startup'lar (örn. AI-ECG, giyilebilir hemodinamik) hem mentorluk hem ABD pazarı giriş kapısı kazanabilir.
+📌 _GlobeNewswire / AHA / Bioengineer.org · 3 kaynak_
 ------------------------------------
 
 ====================================
@@ -45,43 +45,43 @@ Medscape, primer bakım ve kardiyoloji uzmanları için NF-proBNP/EKG taraması,
 ====================================
 
 *T01 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
-*Pinokio 5.0: '1-Click Localhost Cloud' Yerel AI Altyapısını Yeniden Tanımlıyor*
-Cocktail Peanut (@cocktailpeanut) tarafından geliştirilen Pinokio 5.0, Mac/Windows/Linux makineleri tek tıkla web sunucuları, AI modelleri (LLM, Diffusion), CLI araçları çalıştıran kişisel 'localhost bulutuna' dönüştürüyor. Düşük VRAM'li makineler için de optimize edilmiş tek tıklamalı launcher'lar sunuyor.
-💡 *WHY IT MATTERS:* Hugging Face modellerini, ComfyUI'yi veya özel ajanları Docker/Kubernetes karmaşası olmadan yerel donanıma dağıtma engelini kaldırıyor. Türkiye'deki yazılım ekipleri ve B2B SaaS firmaları, veri gizliliği (KVKK/GDPR) gerektiren müşterilere 'on-premise AI' çözümleri satmak için bu altyapıyı white-label yapabilir.
-📌 _Twitter / X (@cocktailpeanut) · 4 kaynak_
+*Pinokio 5.0: '1-Tıklamalı Localhost Cloud' ile Yerel AI Orkestrasyonu Masaüstüne Geldi*
+Cocktail Peanut (@cocktailpeanut) tarafından geliştirilen Pinokio 5.0, Mac/Win/Linux makineleri tek tıkla web sunucusu, LLM inference motoru (llama.cpp, Ollama), ComfyUI, Stable Diffusion ve CLI araçlarını çalıştıran izole bir 'kişisel internet'e dönüştürüyor. Docker/WSL karmaşası ortadan kaldırıldı.
+💡 *WHY IT MATTERS:* Hassas veri (sağlık, finans, IP) buluta gitmeden yerelde LLM/RAG çalıştırmak isteyen kurumsal/SME pazarı için 'kurulum maliyeti sıfır' bir çözüm. Türkiye'deki yazılım firmaları Pinokio 'receipt' (tarif) formatında ürünlerini dağıtarak müşteriye 'kendi sunucusunda çalışan AI' satış modeli (On-prem SaaS) kurabilir.
+📌 _Twitter / X (@cocktailpeanut) · 1 kaynak_
 ------------------------------------
 
 *T02 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
-*openpilot: 300+ Araçta Üretimde Çalışan Robotik İşletim Sistemi*
-Comma.ai'nin openpilot projesi, GitHub Trending'de öne çıkarken; 300+ araç modelinde gelişmiş sürücü destek sistemleri (ADAS) için üretim kalitesinde robotik OS olarak güncellendi. Donanım soyutlaması, güvenlik kritik yazılım standartları ve OTA güncelleme altyapısı içeriyor.
-💡 *WHY IT MATTERS:* Bu, 'Hobiist Robotik'ten 'Sertifikalı Otomotiv Yazılımı'na geçişin somut kanıtı. Türkiye otomotiv yan sanayi (OEM/Tier-1) için, kapalı kaynaklı Tier-1 tedarikçilerine bağımlılığı kırıp kendi ADAS/AD özelliklerini geliştirme fırsatı sunar. Donanım (Comma 3X) + Yazılım paketi modeli kopyalanabilir.
+*Gemma 4 ve LiteRT-LM ile Tamamen Çevrimdışı, Cihaz İçi Sesli Çevirmen Gerçekleşti*
+Google Gemma ekibi (@tom_doerr paylaştı), 2-9B parametreli modelleri LiteRT (eski TensorFlow Lite) ile mobil/edge cihazlarda (CPU/GPU/NPU) çalıştırarak mikrofon sesini yakalayıp çeviri yapan, internet gerektirmeyen bir demo yayınladı. Model boyutları <1GB seviyesine indirildi.
+💡 *WHY IT MATTERS:* Sağlık turizmi, acil servisler, göçmen sağlık hizmetleri ve askerî/tactical alanlarda veri gizliliği (KVKK/HIPAA) ve bağlantısızlık (offline) zorunluluğu olan senaryolarda 'hazır ürün' potansiyeli taşıyor. ESP32-S3 / Raspberry Pi 5 / Jetson Orin Nano hedeflı gömülü çevirmen cihazı prototipleme fırsatı.
+📌 _Twitter / X (@tom_doerr) · 1 kaynak_
+------------------------------------
+
+*T03 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
+*Uyarı: ESP32-C3 Super Mini Kartlarda WiFi/BT'yi Bozan Tasarım Hatası (Anten Uyumsuzluğu)*
+Reddit r/esp32 topluluğunda, popüler düşük maliyetli ESP32-C3 Super Mini kartların belirli partijenlerde anten eşleştirme devresi (matching network) hatası nedeniyle RF performansının (WiFi/BLE menzil/sinyal) dramatik düzeyde düştüğü tespit edildi. Donanım revizyonu (PCB layout) gerekiyor.
+💡 *WHY IT MATTERS:* Türkiye'de binlerce IoT prototip ve küçük seri üretim (akıllı ev, tarım sensörü, lojistik takip) bu kart üzerine kurulmuş olabilir. Alan arızası riski (OTA güncelleme yapamama, bağlantı kopması) yüksek. Tedarik zinciri denetimi (Incoming QC: VNA/S11 ölçümü) ve alternatif modül (ESP32-C6, ESP32-H2) stoklaması acil stratejik aksiyon.
+📌 _Reddit (r/esp32) · 1 kaynak_
+------------------------------------
+
+*T04 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
+*openpilot: 300+ Araçta Sürücü Asistanını 'Robotik İşletim Sistemi' ile Yükselten Açık Kaynak ADAS*
+comma.ai'nin openpilot projesi, desteklenen araçların OEM kamera/radar donanımına CAN bus üzerinden erişip, end-to-end sinir ağları (Transformer tabanlı) ile L2+ otopilot yeteneği sunuyor. GitHub'da 45k+ yıldız, aktif topluluk ve sürekli model güncellemeleri (openpilot 0.9.x) var.
+💡 *WHY IT MATTERS:* OEM yazılım kilidini (vendor lock-in) kıran bu proje, 'Software Defined Vehicle' (SDV) geçişinde aftermarket ve flot yönetimi için dev bir fırsat. Türkiye'de araç kiralama/flot şirketleri (örn. TIR, servis araçları) için 'retrofit ADAS' paketi (donanım: comma 3X + yazılım: openpilot fork) sigorta primi düşürme ve güvenlik artırma ürünü olarak paketlenebilir.
 📌 _GitHub Trending · 1 kaynak_
-------------------------------------
-
-*T03 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
-*Construct Computer: AI İş Arkadaşına 'Bilgisayar' Veriliyor (Product Hunt)*
-Product Hunt'ta öne çıkan Construct, AI ajanına sanal bir masaüstü/bilgisayar ortamı (VM/Container) vererek kod yazma, tarayıcı kullanma, dosya yönetimi gibi görevleri insan gibi yürütmesini sağlıyor. 'Gününüzü size iade ediyor' pozisyonlaması ile B2B odaklı.
-💡 *WHY IT MATTERS:* RPA (Robotik Süreç Otomasyonu) ve Kod Asistanları (Copilot/Cursor) birleşiyor. Türk B2B SaaS firmaları, müşterilerinin 'eski sistemler (legacy)' üzerinde API'siz otomasyon yapabilen ajanlar satabilir. Fiyatlandırma: Seat-based değil, Task/Outcome-based modele kayma sinyali veriyor.
-📌 _Product Hunt · 1 kaynak_
-------------------------------------
-
-*T04 | TEKNOLOJİ & DONANIM · TREND*
-*AI Geliştirme Disiplini: CLAUDE.md, Harness Engineering ve AIUsage Araçları*
-Tom Doerr (@tom_doerr) paylaşımlarında; Andrej Karpathy prensiplerine dayalı CLAUDE.md (sistem promptu), güvenilir ajanlar için 'Harness Engineering' kursu ve 10+ sağlayıcıyı (OpenAI, Anthropic vb.) tek havuzda yöneten AIUsage (maliyet/kota/hesap yönetimi) araçları öne çıktı.
-💡 *WHY IT MATTERS:* Sektör 'Prompt Engineering'den 'Agent Infrastructure Engineering'e kaydı. Türk yazılım danışmanlık firmaları ve dahili platform ekipleri, bu araç setini (AIUsage vb.) iç platformlarına entegre ederek geliştirici verimliliğini %30-50 artırabilir ve 'Shadow AI' maliyet riskini kontrol altına alabilir.
-📌 _Twitter / X (@tom_doerr) · 4 kaynak_
 ------------------------------------
 
 *T05 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
-*llmfit: Donanımınıza Uyan Modeli Tek Komutla Bulun*
-AlexsJones/llmfit aracı (GitHub), yüzlerce model ve sağlayıcı (Ollama, vLLM, llama.cpp) arasından kullanıcının GPU/VRAM/RAM donanımına uyacak en iyi modeli tek komutla (llmfit) tarıyor ve öneriyor.
-💡 *WHY IT MATTERS:* Yerel AI dağıtımındaki en büyük engel 'Hangi model benim 8GB/12GB/24GB VRAM'ime uygun ve ne kadarı performans verir?' sorusudur. Bu araç, donanım satıcıları (Nvidia/AMD/Intel) ve sistem integratörleri için 'Benchmark-as-a-Service' ürünü potansiyeli taşır. Türkiye'de GPU kiralama firmaları (GPU Cloud) müşteri onboarding'inde bunu kullanabilir.
-📌 _GitHub Trending · 1 kaynak_
+*ESP32-S3 Aerospace Tracker: Gömülü Sistemlerde Yüksek Performans Konumlandırma ve Telemetri*
+Reddit'te paylaşılan proje, ESP32-S3'in (Xtensa LX7, 240MHz, 512KB SRAM, PSRAM desteği) GPS/GNSS (RTK uyumlu), LoRa/LoRaWAN, IMU (ICM-20948) ve barometre entegrasyonu ile roket/uydu modeli telemetrisi ve konumlandırma yaptığını gösteriyor. FreeRTOS SMP (Çift çekirdek) kullanımı öne çıkıyor.
+💡 *WHY IT MATTERS:* S3'in vektör işlemci (ESP-DSP) ve AI hızlandırıcı (ESP-NN) yetenekleri, sensör füzyonu (Kalman filtresi) ve anomali tespitini (motor arızası, yapısal titreşim) edge'de yapmaya müsait. Türkiye'de TÜBİTAK/UZAY, RoketSan, THY R&D ve üniversite uzay toplulukları (ITU, ODTÜ, METU) için düşük maliyetli, açık kaynaklı bir referans tasarım (reference design) oluşturuyor.
+📌 _Reddit (r/esp32) · 1 kaynak_
 ------------------------------------
 
 *T06 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
-*MakeMoneyWithAI: Açık Kaynak Gelir Modelleri Listesi (GitHub)*
-garylab/MakeMoneyWithAI reposu, geliştiricilerin kendi donanımlarında veya ucuz bulut GPU'larda çalıştırarak gelir elde edebilecekleri açık kaynak AI projelerini (inference API'leri, veri etiketleme, model fine-tuning, niche SaaS) kurat edilmiş bir liste halinde sunuyor.
-💡 *WHY IT MATTERS:* GPU yatırımı yapan (veya kiralayan) Türk girişimciler/hesapçılar için 'CapEx'i OpEx'e çevirme' rehberi. Liste sadece modelleri değil, pazar yerlerini (RunPod, Vast.ai) ve talep odaklı niche'leri (örn. yasal metin analizi, tıp kodlama) hedef alıyor.
-📌 _GitHub Trending · 1 kaynak_
+*OpenGym: React/Docker ile Self-Hosted, Veri Gizliliği Odaklı Fitness Takip Uygulaması*
+@tom_doerr tarafından paylaşılan açık kaynak proje, antrenman planlarını (animate demo ile), vücut ölçümlerini ve ilerlemeyi tamamen kullanıcının kendi sunucusunda (VPS/Raspberry Pi/HomeLab) tutuyor. Strava/Garmin/Fitbit alternatifi olarak 'veri egemenliği' sunuyor.
+💡 *WHY IT MATTERS:* KVKK/GDPR uyumlu, abonelik maliyeti sıfır, özelleştirilebilir (fizyoterapi protokolleri, sporcu takibi) bir SaaS altyapısı. Türkiye'deki spor salonları, fizyoterapi klinikleri veya kişisel antrenörler için 'beyaz etiketli (white-label) OpenGym' kurulum ve yönetim servisi (Managed Service) sunulabilir. Pinokio 5.0 ile 1-tık kurulum hedeflenebilir.
+📌 _Twitter / X (@tom_doerr) / GitHub · 1 kaynak_
 ------------------------------------
