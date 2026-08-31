@@ -201,9 +201,7 @@ def generate_digest_with_openrouter(prompt_content: str, api_key: str) -> Dict[s
     configured_model = os.getenv("OPENROUTER_MODEL")
     models_to_try = [configured_model] if configured_model else [
         "nvidia/nemotron-3-ultra-550b-a55b:free",
-        "meta-llama/llama-3.3-70b-instruct:free",
-        "deepseek/deepseek-chat:free",
-        "qwen/qwen-2.5-72b-instruct:free",
+        "minimax/minimax-m3:free",
     ]
 
     request_timeout_s = 45

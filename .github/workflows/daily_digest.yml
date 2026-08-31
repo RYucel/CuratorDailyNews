@@ -30,18 +30,6 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: TEMP Probe OpenRouter free models
-        run: |
-          curl -s "https://openrouter.ai/api/v1/models" | python3 -c "
-import json, sys
-data = json.load(sys.stdin)
-models = data.get('data', [])
-free = [m['id'] for m in models if m['id'].endswith(':free')]
-print(len(free), 'free models found')
-for m in free:
-    print(m)
-"
-
       - name: Run Daily Digest Pipeline
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
