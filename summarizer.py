@@ -195,16 +195,22 @@ def generate_digest_with_openrouter(prompt_content: str, api_key: str) -> Dict[s
     HTTP 200 with an empty response body after streaming for minutes), so this
     tries a few candidates in order rather than betting the whole digest on
     one model. If OPENROUTER_MODEL is set explicitly, only that model is used.
+
+    Large free/promotional models are commonly queued behind paid traffic on
+    OpenRouter, so a 200 status often arrives in seconds while the actual
+    completion body trickles in for a couple of minutes; the timeout below is
+    sized for that (not for a broken/hung connection, which would fail well
+    before it).
     """
     import openai
 
     configured_model = os.getenv("OPENROUTER_MODEL")
     models_to_try = [configured_model] if configured_model else [
-        "nvidia/nemotron-3-ultra-550b-a55b:free",
         "minimax/minimax-m3:free",
+        "nvidia/nemotron-3-ultra-550b-a55b:free",
     ]
 
-    request_timeout_s = 45
+    request_timeout_s = 150
     client = openai.OpenAI(api_key=api_key, base_url="https://openrouter.ai/api/v1", timeout=request_timeout_s, max_retries=0)
 
     errors = []
@@ -225,7 +231,7 @@ def generate_digest_with_openrouter(prompt_content: str, api_key: str) -> Dict[s
                         "X-Title": "CuratorDailyNews"
                     }
                 ),
-                timeout_s=request_timeout_s + 15,
+                timeout_s=request_timeout_s + 30,
             )
             raw_text = extract_chat_completion_text(res)
             return parse_json_from_llm_response(raw_text)
