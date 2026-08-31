@@ -1,4 +1,4 @@
-🗞️ *CURATOR DAILY NEWS — 30.08.2026*
+🗞️ *CURATOR DAILY NEWS — 31.08.2026*
 _Bugünün bülteninde solda sağlık & kardiyoloji gelişmeleri, sağda teknoloji, donanım ve otomasyon gündemi yer alıyor. (Not: AI özetleme şu an kullanılamadı, başlıklar ve özetler doğrudan kaynaklardan derlendi.)_
 
 ====================================
@@ -13,23 +13,23 @@ Phase 3 Eplontersen Trial Results Disappoint Medscape
 ------------------------------------
 
 *H02 | SAĞLIK · TREND*
-*Inhaling Cannabis Tied to Less Cardiac Ectopy in Adults - Medscape*
-Inhaling Cannabis Tied to Less Cardiac Ectopy in Adults Medscape
-🔗 https://news.google.com/rss/articles/CBMiqwFBVV95cUxNV2VRZVFPeFVRVWFCNGFWeFNfcnNyYzVNdDc1QTY4NmRXa01YYnBUbXd1YlRvZHRVYmNTZ1BQMXFRVE12TUdpdmY4YlZrN3ZnNEZia2RoRmxxVUpiMkFNMlIxY3ozMWhBaElqOTk4UUdrMmdJYm5zaWhvdkJIOVlmRHJWREF3TjE5T1REdkduQ0llY1EtbmtYSkZEeHh1YW5QVlQtbVpzOXlodUU?oc=5
+*Does AF Ablation Work? That’s in Question After PVI-SHAM-AF - Medscape*
+Does AF Ablation Work? That’s in Question After PVI-SHAM-AF Medscape
+🔗 https://news.google.com/rss/articles/CBMiogFBVV95cUxNaDZ3cGgxQkhHcjF1VldfYVJfM180ZU1rbnJsRVlpbnJtMHQxOWQyanRybWdmUjhXRm1jWFRjWW1rRHpvX21nMktNbUFuekQtVVhwVWU2N29nb1FQeHdRNWhhM3VIcTJ1bzE4bTUxMFRfSHBYY1U1TWJabVRJNkVSUmE3TFc4MmpPaUVWUWIwcE56akVjb1EzSXZNVmYzVjNXcFE?oc=5
 📌 _Medscape & Cardiology (Google News) · 18 kaynak_
 ------------------------------------
 
 *H03 | SAĞLIK · TREND*
-*ESC 2026: Clinical Trials That Could Change Practice - Medscape*
-ESC 2026: Clinical Trials That Could Change Practice Medscape
-🔗 https://news.google.com/rss/articles/CBMinAFBVV95cUxOR1hQSkpiUXlkaklfY3AwaDJ5Qi12cU43ZGJTSXViVWJkd0lJcGZScDhzU3p0aV8wRDdfSklWTmNsNThnN0xjR0JJTFc3LVlsM19aU2gzcUFEMmRGSmR3ZUhHVmV1Z3NSUENpU1llVWoyTTU5WVZZaDhleHJnRlBoZEJ6LXFUT00yWkh0VzhZRFBDNF90cEJSVmk0a1o?oc=5
+*Faster 1-Hour MI Rule-Out Is Safe but Doesn’t Shorten Stay in Emergency Department - Medscape*
+Faster 1-Hour MI Rule-Out Is Safe but Doesn’t Shorten Stay in Emergency Department Medscape
+🔗 https://news.google.com/rss/articles/CBMirwFBVV95cUxQRy1OODhJTmJwS3Z0aWNoMWYwX2w5WXByU0ZQOHA0ajNQUmZ4TmR1emVlajhsdzVMVnh3M0hXSElRY3BSdzBla3FCZEZBdjlJODdwWHdXRmVtU19ubldNdW9xYzZ1cEZhanVWUnNRZ2h6eVp4VmUtYk1aVHlwREM4UG9hSjMzV3pZVGpEbHl3UGpoc0xZLVdnaGJydXl4cC1TbzFXUnh5LVg2QVFJS1Mw?oc=5
 📌 _Medscape & Cardiology (Google News) · 18 kaynak_
 ------------------------------------
 
 *H04 | SAĞLIK · TREND*
-*DOACs Benefit AF Patients With Intermediate Stroke Risk - Medscape*
-DOACs Benefit AF Patients With Intermediate Stroke Risk Medscape
-🔗 https://news.google.com/rss/articles/CBMirwFBVV95cUxPRDhoekF4SkxzWlZMY2ZBOHowUkMycUhncDJNRVBFM1JNOFV1QTQybXlNRDlGMGN6NWplMkpvZVN0TVdmYVpRNFkwOEpVUXpkOHZ6X0xHR1NCOWoyWHVDbnJ1ZUprZzJjN01WSXdrS1g3d0psN1hvWkY1NV84ZVFLTmZraENHdU94Ry11XzRHclVsdGx3NWVDdmM4T18wR1NFOXVhSVJhZlNNcmdmSmp3?oc=5
+*ESC 2026: Clinical Trials That Could Change Practice - Medscape*
+ESC 2026: Clinical Trials That Could Change Practice Medscape
+🔗 https://news.google.com/rss/articles/CBMinAFBVV95cUxOR1hQSkpiUXlkaklfY3AwaDJ5Qi12cU43ZGJTSXViVWJkd0lJcGZScDhzU3p0aV8wRDdfSklWTmNsNThnN0xjR0JJTFc3LVlsM19aU2gzcUFEMmRGSmR3ZUhHVmV1Z3NSUENpU1llVWoyTTU5WVZZaDhleHJnRlBoZEJ6LXFUT00yWkh0VzhZRFBDNF90cEJSVmk0a1o?oc=5
 📌 _Medscape & Cardiology (Google News) · 18 kaynak_
 ------------------------------------
 
@@ -38,36 +38,36 @@ DOACs Benefit AF Patients With Intermediate Stroke Risk Medscape
 ====================================
 
 *T01 | TEKNOLOJİ · HIGH SIGNAL*
-*Longest Straight Line Paths on Water or Land on the Earth (2018)*
+*OpenShot 4.0: Record, Edit, and Color Like Never Before*
 Comments
-🔗 https://arxiv.org/abs/1804.07389
-📌 _Hacker News Top Stories · 39 kaynak_
+🔗 https://www.openshot.org/blog/2026/08/30/openshot-40-record-edit-color-like-never-before/
+📌 _Hacker News Top Stories · 32 kaynak_
 ------------------------------------
 
 *T02 | TEKNOLOJİ · OPPORTUNITY*
-*Arbitrary code execution in QubesOS via copy-to-VM error reporting backchannel*
+*“I just chose words carefully”*
 Comments
-🔗 https://www.qubes-os.org/news/2026/08/29/qsb-118/
-📌 _Hacker News Top Stories · 39 kaynak_
+🔗 https://unsung.aresluna.org/i-just-chose-words-carefully/
+📌 _Hacker News Top Stories · 32 kaynak_
 ------------------------------------
 
 *T03 | TEKNOLOJİ · OPPORTUNITY*
-*RISC-V is now officially supported by CPython*
+*Breaking Claude Code Opus 5 Auto Mode*
 Comments
-🔗 https://blog.python.org/2026/08/riscv-now-officially-supported/
-📌 _Hacker News Top Stories · 39 kaynak_
+🔗 https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/
+📌 _Hacker News Top Stories · 32 kaynak_
 ------------------------------------
 
 *T04 | TEKNOLOJİ · OPPORTUNITY*
-*Xcena and Samsung's Near Memory Compute CXL Device*
+*Creepy Crawlies*
 Comments
-🔗 https://chipsandcheese.com/p/hot-chips-2026-xcena-and-samsungs
-📌 _Hacker News Top Stories · 39 kaynak_
+🔗 https://people.kernel.org/monsieuricon/creepy-crawlies
+📌 _Hacker News Top Stories · 32 kaynak_
 ------------------------------------
 
 *T05 | TEKNOLOJİ · OPPORTUNITY*
-*Hy4 preview*
+*P99 0 ms* autocomplete for 240M domain names*
 Comments
-🔗 https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/
-📌 _Hacker News Top Stories · 39 kaynak_
+🔗 https://ruurtjan.com/articles/p99-0ms-autocomplete-for-240-million-domain-names
+📌 _Hacker News Top Stories · 32 kaynak_
 ------------------------------------
