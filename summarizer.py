@@ -272,6 +272,43 @@ def generate_digest_with_cerebras(prompt_content: str, api_key: str) -> Dict[str
             
     raise Exception("All Cerebras models failed.")
 
+def generate_digest_with_gemini(prompt_content: str, api_key: str) -> Dict[str, Any]:
+    """Generates structured JSON using Google's Gemini API.
+
+    Unlike OpenRouter's free-tier models (which share pooled capacity across
+    every OpenRouter user and can end up queued or rate-limited), this uses
+    Google's own per-account free quota, which is far more than this pipeline
+    needs at one request/day.
+    """
+    from google import genai
+    from google.genai import types
+
+    model = os.getenv("GEMINI_MODEL") or "gemini-2.0-flash"
+    logging.info(f"Generating editorial digest with Gemini model '{model}'...")
+
+    client = genai.Client(api_key=api_key)
+
+    def _call():
+        return client.models.generate_content(
+            model=model,
+            contents=f"Aşağıdaki verilerden 2 KISIMLI (Solda Sağlık, Sağda Teknoloji) JSON formatında Editorial Intelligence Briefing oluştur:\n\n{prompt_content}",
+            config=types.GenerateContentConfig(
+                system_instruction=SYSTEM_PROMPT_EDITORIAL,
+                temperature=0.4,
+                response_mime_type="application/json",
+            ),
+        )
+
+    try:
+        res = call_with_hard_timeout(_call, timeout_s=60)
+    except Exception as e:
+        raise Exception(f"Gemini model '{model}' failed: {e}")
+
+    raw_text = getattr(res, "text", None)
+    if not raw_text or not raw_text.strip():
+        raise Exception(f"Gemini model '{model}' returned empty content (raw={res!r})")
+    return parse_json_from_llm_response(raw_text)
+
 def generate_editorial_data(rss_articles: List[Dict[str, Any]], reddit_posts: List[Dict[str, Any]], twitter_posts: List[Dict[str, Any]] = [], github_items: List[Dict[str, Any]] = []) -> Dict[str, Any]:
     """Main generation logic returning python dictionary of editorial content."""
     prompt_content = format_data_for_llm(rss_articles, reddit_posts, twitter_posts, github_items)
@@ -279,6 +316,12 @@ def generate_editorial_data(rss_articles: List[Dict[str, Any]], reddit_posts: Li
     cerebras_key = os.getenv("CEREBRAS_API_KEY")
     openai_key = os.getenv("OPENAI_API_KEY")
     gemini_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
+
+    if gemini_key:
+        try:
+            return generate_digest_with_gemini(prompt_content, gemini_key)
+        except Exception as e:
+            logging.error(f"Gemini API error: {e}. Falling back...")
 
     if openrouter_key:
         try:
