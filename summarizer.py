@@ -3,7 +3,9 @@ import json
 import re
 import datetime
 import logging
-from typing import List, Dict, Any, Tuple
+import queue
+import threading
+from typing import List, Dict, Any, Tuple, Callable
 from config import SYSTEM_PROMPT_EDITORIAL
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -48,6 +50,55 @@ def format_data_for_llm(rss_articles: List[Dict[str, Any]], reddit_posts: List[D
             lines.append(f"    Link: {item['link']}\n")
 
     return "\n".join(lines)
+
+def call_with_hard_timeout(fn: Callable[[], Any], timeout_s: float) -> Any:
+    """Runs fn() with a real wall-clock deadline.
+
+    Some OpenRouter free models trickle the response body slowly enough that
+    httpx's per-chunk read timeout never fires, so a request can hang for
+    minutes despite a configured client timeout. A daemon thread lets us give
+    up on the wall clock without blocking process exit (unlike
+    ThreadPoolExecutor, whose worker threads are joined at interpreter exit
+    even after shutdown(wait=False)).
+    """
+    result_q: "queue.Queue[Tuple[str, Any]]" = queue.Queue(maxsize=1)
+
+    def _target():
+        try:
+            result_q.put(("ok", fn()))
+        except Exception as e:
+            result_q.put(("err", e))
+
+    t = threading.Thread(target=_target, daemon=True)
+    t.start()
+    try:
+        status, payload = result_q.get(timeout=timeout_s)
+    except queue.Empty:
+        raise TimeoutError(f"call timed out after {timeout_s}s")
+    if status == "err":
+        raise payload
+    return payload
+
+def extract_chat_completion_text(res: Any) -> str:
+    """Validates an OpenAI-compatible chat completion response and returns its text.
+
+    Providers occasionally answer with HTTP 200 but no usable content (e.g. an
+    empty/None `choices` list, or an inline error payload) instead of raising.
+    Surface that as a clear error rather than letting a raw AttributeError/
+    TypeError bubble up.
+    """
+    err = getattr(res, "error", None)
+    if err:
+        raise Exception(f"provider returned an error payload: {err}")
+    choices = getattr(res, "choices", None)
+    if not choices:
+        raise Exception(f"response contained no choices (raw={res!r})")
+    if choices[0].finish_reason == "length":
+        raise Exception("response truncated by max_tokens before completing JSON")
+    content = choices[0].message.content if choices[0].message else None
+    if not content or not content.strip():
+        raise Exception("response message content was empty")
+    return content
 
 def parse_json_from_llm_response(text: str) -> Dict[str, Any]:
     """Cleans markdown code blocks and parses JSON safely."""
@@ -137,34 +188,54 @@ def generate_mock_editorial_data(rss_articles: List[Dict[str, Any]], reddit_post
     }
 
 def generate_digest_with_openrouter(prompt_content: str, api_key: str) -> Dict[str, Any]:
-    """Generates structured JSON using OpenRouter (default: free Nvidia Nemotron model)."""
+    """Generates structured JSON using OpenRouter, trying a short list of free models.
+
+    A single free model can be slow, overloaded, or quietly deprecated on any
+    given day (observed: 'nvidia/nemotron-3-ultra-550b-a55b:free' returning
+    HTTP 200 with an empty response body after streaming for minutes), so this
+    tries a few candidates in order rather than betting the whole digest on
+    one model. If OPENROUTER_MODEL is set explicitly, only that model is used.
+    """
     import openai
-    model = os.getenv("OPENROUTER_MODEL") or "nvidia/nemotron-3-ultra-550b-a55b:free"
-    logging.info(f"Generating editorial digest with OpenRouter model '{model}'...")
 
-    client = openai.OpenAI(api_key=api_key, base_url="https://openrouter.ai/api/v1", timeout=60.0, max_retries=1)
+    configured_model = os.getenv("OPENROUTER_MODEL")
+    models_to_try = [configured_model] if configured_model else [
+        "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "meta-llama/llama-3.3-70b-instruct:free",
+        "deepseek/deepseek-chat:free",
+        "qwen/qwen-2.5-72b-instruct:free",
+    ]
 
-    try:
-        res = client.chat.completions.create(
-            model=model,
-            messages=[
-                {"role": "system", "content": SYSTEM_PROMPT_EDITORIAL},
-                {"role": "user", "content": f"Aşağıdaki verilerden 2 KISIMLI (Solda Sağlık, Sağda Teknoloji) JSON formatında Editorial Intelligence Briefing oluştur:\n\n{prompt_content}"}
-            ],
-            temperature=0.4,
-            max_tokens=8000,
-            extra_headers={
-                "HTTP-Referer": "https://github.com/RYucel/CuratorDailyNews",
-                "X-Title": "CuratorDailyNews"
-            }
-        )
-        raw_text = res.choices[0].message.content
-        finish_reason = res.choices[0].finish_reason
-        if finish_reason == "length":
-            raise Exception("response truncated by max_tokens before completing JSON")
-        return parse_json_from_llm_response(raw_text)
-    except Exception as e:
-        raise Exception(f"OpenRouter model '{model}' failed: {e}")
+    request_timeout_s = 45
+    client = openai.OpenAI(api_key=api_key, base_url="https://openrouter.ai/api/v1", timeout=request_timeout_s, max_retries=0)
+
+    errors = []
+    for model in models_to_try:
+        logging.info(f"Generating editorial digest with OpenRouter model '{model}'...")
+        try:
+            res = call_with_hard_timeout(
+                lambda model=model: client.chat.completions.create(
+                    model=model,
+                    messages=[
+                        {"role": "system", "content": SYSTEM_PROMPT_EDITORIAL},
+                        {"role": "user", "content": f"Aşağıdaki verilerden 2 KISIMLI (Solda Sağlık, Sağda Teknoloji) JSON formatında Editorial Intelligence Briefing oluştur:\n\n{prompt_content}"}
+                    ],
+                    temperature=0.4,
+                    max_tokens=8000,
+                    extra_headers={
+                        "HTTP-Referer": "https://github.com/RYucel/CuratorDailyNews",
+                        "X-Title": "CuratorDailyNews"
+                    }
+                ),
+                timeout_s=request_timeout_s + 15,
+            )
+            raw_text = extract_chat_completion_text(res)
+            return parse_json_from_llm_response(raw_text)
+        except Exception as e:
+            logging.warning(f"OpenRouter model '{model}' failed: {e}")
+            errors.append(f"{model}: {e}")
+
+    raise Exception(f"All OpenRouter models failed: {'; '.join(errors)}")
 
 def generate_digest_with_cerebras(prompt_content: str, api_key: str) -> Dict[str, Any]:
     """Generates structured JSON using Cerebras Cloud API."""
