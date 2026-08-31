@@ -41,33 +41,33 @@ ESC 2026: Clinical Trials That Could Change Practice Medscape
 *OpenShot 4.0: Record, Edit, and Color Like Never Before*
 Comments
 🔗 https://www.openshot.org/blog/2026/08/30/openshot-40-record-edit-color-like-never-before/
-📌 _Hacker News Top Stories · 44 kaynak_
+📌 _Hacker News Top Stories · 38 kaynak_
 ------------------------------------
 
 *T02 | TEKNOLOJİ · OPPORTUNITY*
 *“I just chose words carefully”*
 Comments
 🔗 https://unsung.aresluna.org/i-just-chose-words-carefully/
-📌 _Hacker News Top Stories · 44 kaynak_
+📌 _Hacker News Top Stories · 38 kaynak_
 ------------------------------------
 
 *T03 | TEKNOLOJİ · OPPORTUNITY*
 *Breaking Claude Code Opus 5 Auto Mode*
 Comments
 🔗 https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/
-📌 _Hacker News Top Stories · 44 kaynak_
+📌 _Hacker News Top Stories · 38 kaynak_
 ------------------------------------
 
 *T04 | TEKNOLOJİ · OPPORTUNITY*
 *Creepy Crawlies*
 Comments
 🔗 https://people.kernel.org/monsieuricon/creepy-crawlies
-📌 _Hacker News Top Stories · 44 kaynak_
+📌 _Hacker News Top Stories · 38 kaynak_
 ------------------------------------
 
 *T05 | TEKNOLOJİ · OPPORTUNITY*
 *P99 0 ms* autocomplete for 240M domain names*
 Comments
 🔗 https://ruurtjan.com/articles/p99-0ms-autocomplete-for-240-million-domain-names
-📌 _Hacker News Top Stories · 44 kaynak_
+📌 _Hacker News Top Stories · 38 kaynak_
 ------------------------------------
