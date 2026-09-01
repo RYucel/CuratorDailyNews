@@ -1,73 +1,101 @@
-🗞️ *CURATOR DAILY NEWS — 31.08.2026*
-_Bugünün bülteninde solda sağlık & kardiyoloji gelişmeleri, sağda teknoloji, donanım ve otomasyon gündemi yer alıyor. (Not: AI özetleme şu an kullanılamadı, başlıklar ve özetler doğrudan kaynaklardan derlendi.)_
+🗞️ *CURATOR DAILY NEWS — 01.09.2026*
+_Kardiyoloji cephesinde ESC 2026'nın yaklaşmasıyla klinik pratikleri değiştirebilecek kritik Faz 3 sonuçları (Eplontersen, Milvexian) gündemde; AF ablasyonunun gerçek etkinliği ise PVI-SHAM-AF ile sorgulanıyor. MedTech tarafında ise kalp-beyin sağlığına yönelik 8 start-up'lık küresel ivme hızlanırken, FDA onaylı yeni nesil 'Glukoz + Keton Sürekli Monitör' cihazı giyilebilir medikal donanım pazarında çıtayı yükseltiyor. Teknoloji arenasında Nvidia'nın 12.9 milyar dolarlık Hugging Face satın alması yapay zekâ ekosistemini konsolide ederken, yerel yapay zekâ için OX Alpha'nın CUDA'dan bağımsız çalışması ve GitHub'da yükselen 'llmfit' gibi yerel model katalizörleri Türkiye dahil bireysel geliştiriciler için yeni ürünleştirme fırsatları yaratıyor._
 
 ====================================
 🩺 *SAĞLIK & KARDİYOLOJİ GELİŞMELERİ*
 ====================================
 
-*H01 | SAĞLIK · HIGH SIGNAL*
-*Phase 3 Eplontersen Trial Results Disappoint - Medscape*
-Phase 3 Eplontersen Trial Results Disappoint Medscape
-🔗 https://news.google.com/rss/articles/CBMingFBVV95cUxPam9Db2d6RGJkemx2MDczN0pvZ1FqWHllQy01ZDk1SGpXVHYtdlJ6VVgxNkFXMFR1R1VXZ2hKQVZvc3lkNUlTLWd2ZGIzWDRveHhlcThwWXowNjloWldtQW1OZUMtNXN4eVBEOXUyYUg0b0pYR0lhZkE5cWUzdmpYNk5UMG1iT0F1ejVtbFg0UVFQR19jMDhHTngwNXM5dw?oc=5
-📌 _Medscape & Cardiology (Google News) · 18 kaynak_
+*H01 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
+*FDA Onaylı Sürekli Glukoz + Keton Monitör Cihazı Piyasada*
+FDA, diyabet ve ketojenik diyet takibi için devrim niteliğinde bir adım atarak tek bir cihazla hem glukoz hem de keton seviyesini sürekli izleyen yeni nesil bir monitörü onayladı. Bu hibrit sensör, hastaların metabolik durumunu gerçek zamanlı takip etmesine olanak tanıyarak diyabetik ketoasidoz riskinin erken tespitinde kritik bir rol oynayacak.
+💡 *WHY IT MATTERS:* Bu onay, giyilebilir medikal cihaz pazarında yeni bir segmentin kapısını aralıyor. Türkiye'deki yerli medikal donanım üreticileri için IoT tabanlı metabolik sensörler ve mobil sağlık uygulamaları geliştirmek adına doğrudan bir ilham kaynağı ve düzenleyici çerçeve örneği sunuyor.
+📌 _Medscape Medical News · 4 kaynak_
 ------------------------------------
 
-*H02 | SAĞLIK · TREND*
-*Does AF Ablation Work? That’s in Question After PVI-SHAM-AF - Medscape*
-Does AF Ablation Work? That’s in Question After PVI-SHAM-AF Medscape
-🔗 https://news.google.com/rss/articles/CBMiogFBVV95cUxNaDZ3cGgxQkhHcjF1VldfYVJfM180ZU1rbnJsRVlpbnJtMHQxOWQyanRybWdmUjhXRm1jWFRjWW1rRHpvX21nMktNbUFuekQtVVhwVWU2N29nb1FQeHdRNWhhM3VIcTJ1bzE4bTUxMFRfSHBYY1U1TWJabVRJNkVSUmE3TFc4MmpPaUVWUWIwcE56akVjb1EzSXZNVmYzVjNXcFE?oc=5
-📌 _Medscape & Cardiology (Google News) · 18 kaynak_
+*H02 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
+*AF Ablasyonunun Gerçek Etkinliği PVI-SHAM-AF ile Sorgulanıyor*
+Atriyal Fibrilasyon (AF) tedavisinde altın standart olarak görülen pulmoner ven izolasyonu (PVI) ablasyonunun klinik faydası, yeni yayınlanan PVI-SHAM-AF çalışmasıyla ciddi şekilde tartışmaya açıldı. Sham (plasebo) kontrollü çalışma, ablasyonun objektif faydalarının beklendiği kadar güçlü olmayabileceğini ortaya koyuyor.
+💡 *WHY IT MATTERS:* Ablasyon teknolojisi üreticileri ve kardiyoloji klinikleri için bu veriler, cihaz etkinliğinin yeniden kanıtlanması gerekliliğini doğuruyor. Haritalama sistemleri ve kateter teknolojilerinde daha hassas ve kanıta dayalı yazılım/donanım iyileştirmelerine olan talebi artıracak.
+📌 _Medscape Cardiology · 3 kaynak_
 ------------------------------------
 
-*H03 | SAĞLIK · TREND*
-*Faster 1-Hour MI Rule-Out Is Safe but Doesn’t Shorten Stay in Emergency Department - Medscape*
-Faster 1-Hour MI Rule-Out Is Safe but Doesn’t Shorten Stay in Emergency Department Medscape
-🔗 https://news.google.com/rss/articles/CBMirwFBVV95cUxQRy1OODhJTmJwS3Z0aWNoMWYwX2w5WXByU0ZQOHA0ajNQUmZ4TmR1emVlajhsdzVMVnh3M0hXSElRY3BSdzBla3FCZEZBdjlJODdwWHdXRmVtU19ubldNdW9xYzZ1cEZhanVWUnNRZ2h6eVp4VmUtYk1aVHlwREM4UG9hSjMzV3pZVGpEbHl3UGpoc0xZLVdnaGJydXl4cC1TbzFXUnh5LVg2QVFJS1Mw?oc=5
-📌 _Medscape & Cardiology (Google News) · 18 kaynak_
+*H03 | SAĞLIK & KARDİYOLOJİ · TREND*
+*ESC 2026: Klinik Pratiği Değiştirebilecek Kritik Çalışmalar*
+Avrupa Kardiyoloji Derneği (ESC) 2026 kongresi öncesinde, kardiyoloji pratiğini köklü şekilde değiştirebilecek birçok yeni klinik çalışma sonucunun paylaşılması bekleniyor. Özellikle obez olmayan Hipertrofik Kardiyomiyopati (HCM) tedavisinde görülen ilaç faydaları ve DOAC'ların orta riskli AF hastalarındaki etkinliği ön plana çıkıyor.
+💡 *WHY IT MATTERS:* ESC 2026, kardiyolojik ilaç ve cihaz şirketleri için en büyük küresel vitrin olma özelliğini koruyor. Türkiye'deki sağlık teknolojisi girişimleri, bu eğilimleri takip ederek entegre tanı ve tedavi çözümleri için Ar-Ge rotalarını güncelleyebilir.
+📌 _Medscape Cardiology · 3 kaynak_
 ------------------------------------
 
-*H04 | SAĞLIK · TREND*
-*ESC 2026: Clinical Trials That Could Change Practice - Medscape*
-ESC 2026: Clinical Trials That Could Change Practice Medscape
-🔗 https://news.google.com/rss/articles/CBMinAFBVV95cUxOR1hQSkpiUXlkaklfY3AwaDJ5Qi12cU43ZGJTSXViVWJkd0lJcGZScDhzU3p0aV8wRDdfSklWTmNsNThnN0xjR0JJTFc3LVlsM19aU2gzcUFEMmRGSmR3ZUhHVmV1Z3NSUENpU1llVWoyTTU5WVZZaDhleHJnRlBoZEJ6LXFUT00yWkh0VzhZRFBDNF90cEJSVmk0a1o?oc=5
-📌 _Medscape & Cardiology (Google News) · 18 kaynak_
+*H04 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
+*Elucid'in Plak IQ Teknolojisi 'En İyi Kardiyoloji Çözümü' Ödülünü Aldı*
+Elucid tarafından geliştirilen Plaque-IQ™ yazılımı, 2026 MedTech Breakthrough Awards programında 'En İyi Yeni Kardiyoloji Teknolojisi Çözümü' ödülüne layık görüldü. Teknoloji, kardiyovasküler görüntülemede plak analizi ve karakterizasyonunda yapay zekâ destekli yeni bir standart belirliyor.
+💡 *WHY IT MATTERS:* Yapay zekâ destekli kardiyak görüntüleme, tanısal doğruluğu artıran ve radyolog iş yükünü azaltan kritik bir segment. Türk girişimciler için yerel veri setleriyle eğitilmiş kardiyak AI SaaS modelleri geliştirmek, hem B2B hem de B2C pazarlarında yüksek ticari potansiyel taşıyor.
+📌 _Business Wire · 5 kaynak_
+------------------------------------
+
+*H05 | SAĞLIK & KARDİYOLOJİ · OPPORTUNITY*
+*Kalp ve Beyin Sağlığı Teknolojileri İçin 8 Start-up Hızlandırma Programında*
+Küresel sağlık teknolojisi yarışması, kardiyovasküler ve beyin sağlığını iyileştirmeye yönelik inovasyonları hızlandırmak amacıyla 8 start-up'ı seçtiğini duyurdu. Octane ayrıca, ünlü kardiyolog Dr. Mussallem'in liderliğinde yeni bir Kardiyovasküler Hızlandırıcı (Accelerator) programını hayata geçirdi.
+💡 *WHY IT MATTERS:* Bu hızlandırma programları, yapay zekâ ve giyilebilir teknolojilerle kalp-beyin sağlığını birleştiren çözümler için ciddi yatırım fırsatları ve mentorluk imkanları sunuyor. Türk yapay zekâ tabanlı sağlık girişimleri için uluslararası görünürlük ve fonlama kapısı açıyor.
+📌 _News-Medical / www.heart.org · 4 kaynak_
+------------------------------------
+
+*H06 | SAĞLIK & KARDİYOLOJİ · TREND*
+*LIBREXIA: Milvexian ACS Sonrası Kardiyovasküler Olayları Azaltmada Başarısız*
+Akut Koroner Sendrom (ACS) sonrası Milvexian'ın (LIBREXIA çalışması) kardiyovasküler olayları azaltmadaki etkinliği beklentileri karşılamadı. Bununla birlikte ilaç, beklenen antikoagülasyon etkisini başarıyla gösterdi; ancak klinik sonlanım noktalarında anlamlı bir iyileşme sağlayamadı.
+💡 *WHY IT MATTERS:* Büyük çaplı Faz 3 başarısızlıkları, pazar dinamiklerini hızla değiştirir. Farmakovijilans ve advers etki takibi yapan dijital sağlık platformları için yeni bir veri akışı ve AI destekli yan etki tahminleme yazılımları için fırsat yaratır.
+📌 _Medscape Medical News · 2 kaynak_
 ------------------------------------
 
 ====================================
 ⚡ *TEKNOLOJİ, DONANIM & İŞ FİKİRLERİ*
 ====================================
 
-*T01 | TEKNOLOJİ · HIGH SIGNAL*
-*OpenShot 4.0: Record, Edit, and Color Like Never Before*
-Comments
-🔗 https://www.openshot.org/blog/2026/08/30/openshot-40-record-edit-color-like-never-before/
-📌 _Hacker News Top Stories · 38 kaynak_
+*T01 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
+*Pinokio'nun OX Alpha'sı CUDA'dan Tamamen Bağımsız Çalışıyor*
+Cocktail Peanut tarafından duyurulan OX Alpha projesi, herhangi bir NVIDIA CUDA bağımlılığı olmadan çalışan yerel yapay zekâ (Local AI) altyapısı için dönüm noktası oldu. Bu gelişme, GPU tedarik kısıtlamalarını aşarak bireysel geliştiricilere düşük maliyetli yerel inference imkanı sunuyor.
+💡 *WHY IT MATTERS:* CUDA'sız yerel AI, demokratikleşen yapay zekâ trendinin en net göstergesi. Türkiye'deki maker'lar ve start-up'lar için bulut bağımlılığı olmadan kendi ürünlerini (görüntü işleme, sesli asistan) geliştirebilecekleri sürdürülebilir bir donanım yolu açıyor.
+📌 _Twitter / X (@cocktailpeanut) · 6 kaynak_
 ------------------------------------
 
-*T02 | TEKNOLOJİ · OPPORTUNITY*
-*“I just chose words carefully”*
-Comments
-🔗 https://unsung.aresluna.org/i-just-chose-words-carefully/
-📌 _Hacker News Top Stories · 38 kaynak_
+*T02 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
+*Nvidia, Hugging Face'i 12.9 Milyar Dolara Satın Aldı*
+Nvidia, açık kaynak yapay zekâ modellerinin ana merkezi olan Hugging Face'i tam 12.9 milyar dolara satın alarak yapay zekâ ekosisteminde devasa bir konsolidasyona imza attı. Geçen yıl 7 milyar dolarlık bir yatırımı reddeden şirket, neredeyse iki katına yakın bir değerlemeyle Nvidia çatısı altına girdi.
+💡 *WHY IT MATTERS:* Bu satın alma, açık kaynak AI modellerinin geleceği ve lisanslama politikaları üzerinde büyük bir belirsizlik yaratıyor. Türk girişimcilerin model bağımlılık stratejilerini gözden geçirmeleri ve yerel/hybrid modellere yönelmeleri için güçlü bir ticari uyarıcı.
+📌 _Twitter / X (@aakashgupta) · 8 kaynak_
 ------------------------------------
 
-*T03 | TEKNOLOJİ · OPPORTUNITY*
-*Breaking Claude Code Opus 5 Auto Mode*
-Comments
-🔗 https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/
-📌 _Hacker News Top Stories · 38 kaynak_
+*T03 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
+*GitHub Trending: 'llmfit' ile Donanımınıza Uygun Yapay Zekâ Modelini Bulun*
+AlexsJones tarafından geliştirilen 'llmfit' aracı, yüzlerce LLM (Büyük Dil Modeli) ve sağlayıcıyı analiz ederek geliştiricinin kendi donanımında optimum performans verecek modeli tek bir komutla bulmasını sağlıyor. Yerel yapay zekâ kurulumundaki en büyük engel olan model-donanım uyumsuzluğunu çözüyor.
+💡 *WHY IT MATTERS:* Kısıtlı GPU kaynaklarına sahip Türk geliştiriciler ve KOBİ'ler için muazzam bir değer önerisi. Bu tür CLI (komut satırı) araçları, SaaS olarak paketlenip 'AI donanım danışmanı' şeklinde ticarileştirilebilir; özellikle bireysel gaming PC veya Mac sahiplerine yönelik bir ürün haline getirilebilir.
+📌 _GitHub Trending · 7 kaynak_
 ------------------------------------
 
-*T04 | TEKNOLOJİ · OPPORTUNITY*
-*Creepy Crawlies*
-Comments
-🔗 https://people.kernel.org/monsieuricon/creepy-crawlies
-📌 _Hacker News Top Stories · 38 kaynak_
+*T04 | TEKNOLOJİ & DONANIM · TREND*
+*OpenKB: Vektör Veritabanı Kullanmayan RAG Tabanlı Wiki Motoru*
+OpenKB, ham dokümanları yapılandırılmış viki tarzı bir bilgi tabanına dönüştüren açık kaynaklı bir sistem olarak dikkat çekiyor. PageIndex altyapısıyla vektörsüz, akıl yürütmeye dayalı (reasoning-based) retrieval yaparak geleneksel RAG sistemlerine düşük maliyetli bir alternatif sunuyor.
+💡 *WHY IT MATTERS:* Vektör veritabanı kurma ve sürdürme maliyeti, küçük ölçekli firmalar için büyük bir engel. Bu tür çözümler, kurumsal bilgi yönetimi ve iç dokümantasyon için Türkiye pazarında düşük bütçeyle satılabilecek B2B SaaS fırsatlarına dönüştürülebilir.
+📌 _Twitter / X (@tom_doerr) · 4 kaynak_
 ------------------------------------
 
-*T05 | TEKNOLOJİ · OPPORTUNITY*
-*P99 0 ms* autocomplete for 240M domain names*
-Comments
-🔗 https://ruurtjan.com/articles/p99-0ms-autocomplete-for-240-million-domain-names
-📌 _Hacker News Top Stories · 38 kaynak_
+*T05 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
+*Raspberry Pi için Otomatik Watchdog ile Çökme Kurtarma Rehberi*
+Raspberry Pi geliştirici topluluğunda, cihaz çöktüğünde otomatik yeniden başlatma sağlayan watchdog (bekçi köpeği) sistemlerinin kurulumu popüler bir konu haline geldi. r/raspberrypi'de paylaşılan yöntemler, endüstriyel kullanım için kesintisiz çalışan Pi tabanlı sistemlerin temelini oluşturuyor.
+💡 *WHY IT MATTERS:* Türkiye'deki IoT ve endüstriyel otomasyon pazarı için Raspberry Pi tabanlı watchdog çözümleri, kiosk ekranlar, uzaktan izleme sistemleri ve akıllı tarım cihazları için yüksek talep görüyor. Hazır watchdog modülleri veya ürünleştirilmiş watchdog HAT'ları geliştirmek ciddi bir niş pazar fırsatı.
+📌 _Reddit (r/raspberrypi) · 5 kaynak_
+------------------------------------
+
+*T06 | TEKNOLOJİ & DONANIM · TREND*
+*Intel AI Playground ve Audacity için OpenVINO Eklentileri Yayında*
+Intel, AI Playground platformunu sürekli güncellerken, popüler ses düzenleme yazılımı Audacity için OpenVINO eklentilerini de yayınladı. Bu gelişmeler, Intel CPU ve GPU'lar üzerinde optimize edilmiş yerel yapay zekâ inference yeteneklerini son kullanıcıya taşıyor.
+💡 *WHY IT MATTERS:* NVIDIA dışındaki donanımlarda (özellikle Intel Arc GPU ve modern CPU'lar) yerel AI çalıştırabilmek, Türkiye gibi ülkelerde uygun fiyatlı AI PC segmentini canlandırıyor. Intel destekli yerel AI uygulamaları geliştirmek, donanım tedariği konusunda alternatif bir yol sunuyor.
+📌 _GitHub Releases · 3 kaynak_
+------------------------------------
+
+*T07 | TEKNOLOJİ & DONANIM · TREND*
+*openpilot: 300'den Fazla Araç İçin Robotik Sürüş Asistanı OS*
+GitHub'da hızla yükselen openpilot, 300'den fazla desteklenen araçta sürücü destek sistemini (ADAS) yükselten açık kaynaklı bir robotik işletim sistemi olarak öne çıkıyor. Proje, otonom sürüş teknolojisini demokratikleştirme vizyonuyla büyümeye devam ediyor.
+💡 *WHY IT MATTERS:* Otonom sürüş ekosistemi küresel ölçekte büyürken, Türkiye'deki otomotiv yan sanayi ve yazılım şirketleri için openpilot gibi platformlara katkıda bulunmak veya bu alanda kendi niş çözümlerini üretmek stratejik bir konumlandırma fırsatı sunuyor.
+📌 _GitHub Trending · 4 kaynak_
 ------------------------------------
