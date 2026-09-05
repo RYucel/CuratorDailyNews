@@ -1,129 +1,108 @@
-🗞️ *CURATOR DAILY NEWS — 04.09.2026*
-_Kardiyoloji cephesinde STATIN tedavisinde STAREE, MI rule-out algoritmaları ve kardiyovasküler sağlık teknolojisi inkübatörleri öne çıkarken; teknoloji tarafında GPT-6 Astra, ESP32/Arduino/Raspberry Pi tabanlı otomasyon, Local AI (llmfit, Qwen 3.8) ve Pinokio Disk Saver gibi yeni nesil araçlar gündemde. Özellikle sağlık teknolojileri ile AI ajan orkestrasyonunun (Squad, Loop engineering) kesişimi, yeni ürün fırsatları için yüksek sinyal veriyor. Giyilebilir kardiyak cihazlar, edge AI ve maker ekonomisi Türkiye pazarı için en sıcak alanlar._
+🗞️ *CURATOR DAILY NEWS — 05.09.2026*
+_Sağlık gündeminde kardiyovasküler ilaç araştırmaları ve yaşlı popülasyonda statin tedavisinin (STAREE) etkinliği öne çıkarken, sekiz MedTech start-up'ı kalp ve beyin sağlığı için inovasyon yarışında bir araya geldi. Teknoloji cephesinde ise tamamen yerel ve açık kaynaklı robot süpürge (OOMWOO), Raspberry Pi watchdog konfigürasyonları ve MiniMax H3 ile düşük bütçeli yapay zekâ video üretimi dikkat çekiyor; OpenAI ajanları ve formal matematik alanında da yeni gelişmeler gündemde. Yerel yapay zekâ çalıştırma, Edge AI donanımları ve SaaS otomasyon araçları hem ticarileştirme hem de maker ekosistemi açısından net fırsat penceresi oluşturuyor._
 
 ====================================
 🩺 *SAĞLIK & KARDİYOLOJİ GELİŞMELERİ*
 ====================================
 
 *H01 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
-*STAREE: Yaşlılarda Atorvastatin Majör Kardiyovasküler Olayları %30 Azalttı*
-STAREE çalışması, ileri yaş grubunda Atorvastatin'in majör kardiyovasküler olayları %30 oranında azalttığını, etkinin büyük ölçüde nonfatal olaylardan kaynaklandığını ortaya koydu. Primer koruma stratejilerinde yaş sınırı tartışmasını yeniden gündeme getiren çalışma, ESC 2026 öncesi önemli bir referans noktası oluşturuyor.
-💡 *WHY IT MATTERS:* Sonuçlar, yaşlı popülasyona yönelik giyilebilir kardiyak monitör ve lipid takip cihazlarına olan ihtiyacı doğruluyor. Türkiye'de kronik hasta yönetimi SaaS + wearable modeli için doğrudan fırsat penceresi açıyor.
+*STAREE: Atorvastatin Yaşlılarda Majör Kardiyovasküler Olayları %30 Azaltıyor*
+75 yaş üstü sağlıklı yetişkinlerde yürütülen STAREE Faz 3 çalışması, atorvastatinin majör kardiyovasküler olayları ağırlıklı olarak ölümcül olmayan vakalarda olmak üzere %30 oranında azalttığını ortaya koydu. Bu bulgular, ileri yaş grubunda primer koruma stratejilerini yeniden şekillendirebilecek güçte kanıt sunuyor. Çalışmanın güçlü endpoint tasarımı, klinik pratikte reçeteleme eğilimlerini değiştirecek nitelikte değerlendiriliyor.
+💡 *WHY IT MATTERS:* Yaşlı popülasyona yönelik giyilebilir EKG ve lipid takip cihazlarına talep artışı bekleniyor; Türkiye'de kronik hasta izleme platformları için doğrudan fırsat penceresi açılıyor.
 📌 _Medscape Medical News · 4 kaynak_
 ------------------------------------
 
 *H02 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
-*Acil Serviste 1 Saatlik MI Rule-Out Protokolü Güvenli Ancak Yatış Süresini Kısaltmıyor*
-Yeni araştırma, 1 saatlik miyokard enfarktüsü dışlama algoritmasının klinik olarak güvenli olduğunu ancak acil serviste toplam kalış süresini beklenenin aksine azaltmadığını gösterdi. Hızlı troponin protokollerinin iş akışına entegrasyonu yeniden değerlendirilmek zorunda.
-💡 *WHY IT MATTERS:* Point-of-care troponin test cihazları ve AI-destekli EKG triyaj yazılımları için pazar ihtiyacı netleşiyor. Hastane içi IoT sensör entegrasyonu yapan sağlık teknolojisi girişimleri için kritik işaret.
-📌 _Medscape Cardiology · 3 kaynak_
+*Nonobstruktif HCM İçin Yeni Bir İlaç Sınıfı Sahnede*
+Hipertrofik kardiyomiyopatinin (HCM) nonobstruktif alt grubunda yeni bir ilaç adayının klinik fayda sağladığı bildirildi. Şu ana kadar tedavi seçeneği sınırlı olan bu hasta grubunda semptom kontrolü ve fonksiyonel kapasitede iyileşme gözlendi. Sonuçlar, miyokardiyal mekanizmaları hedefleyen yeni nesil terapötiklerin öncüsü olarak yorumlanıyor.
+💡 *WHY IT MATTERS:* Taşınabilir kardiyak ultrason ve yapay zekâ destekli EKG analiz cihazları, bu hasta alt grubunun evde takibi için kritik bir ihtiyaç haline geliyor; özellikle Avrupa'da düzenleyici süreç hızlanabilir.
+📌 _Medscape & Cardiology · 3 kaynak_
 ------------------------------------
 
-*H03 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
-*Phase 3 Eplontersen Denemesi Hayal Kırıklığı Yarattı*
-Eplontersen'in Faz 3 klinik denemesi, birincil sonlanım noktalarını karşılamada başarısız oldu ve kardiyoloji/amiloidoz topluluğunda önemli bir hayal kırıklığı yarattı. Nadir hastalık tedavilerinde yatırımcı beklentileri yeniden revize edilecek.
-💡 *WHY IT MATTERS:* Nadir hastalık tanı kitleri ve genetik kardiyomiyopati tespitinde kullanılan AI tabanlı görüntüleme çözümlerine olan ihtiyacı artırıyor. Erken tanı odaklı medical device fırsatları için yeni alan.
+*H03 | SAĞLIK & KARDİYOLOJİ · OPPORTUNITY*
+*Eplontersen Faz 3 Sonuçları Hayal Kırıklığı Yarattı*
+Transthyretin amiloidozuna yönelik geliştirilen eplontersenin Faz 3 çalışması birincil sonlanım noktasında beklenen etkinliği gösteremedi. Pazar beklentilerinin aksine sonuçlanan çalışma, nadir hastalıklar alanında yatırımcı iştahını yeniden değerlendirecek. Rekabetçi pipeline'daki diğer ajanlar için stratejik bir avantaj ortaya çıkıyor.
+💡 *WHY IT MATTERS:* Amiloidoz ve kardiyomiyopati taramasında kullanılan yapay zekâ destekli görüntüleme ve biomarker test platformlarına olan ilgi korunuyor; Türkiye'deki dijital sağlık girişimleri için erken tarama ürünleri fırsatı doğuruyor.
 📌 _Medscape Medical News · 2 kaynak_
 ------------------------------------
 
-*H04 | SAĞLIK & KARDİYOLOJİ · OPPORTUNITY*
-*Octane, Mussallem Kardiyovasküler Hızlandırıcısını Başlattı*
-Octane, yeni nesil kalp sağlığı inovasyonlarını hızlandırmak için Mussallem Kardiyovasküler Accelerator programını hayata geçirdi. Program; AI, dijital sağlık ve kardiyak cihaz startuplarını fonlama ve mentorluk ile destekleyecek.
-💡 *WHY IT MATTERS:* Türkiye'den bir health-tech girişiminin bu accelerator'a başvurması, ABD pazarına açılma ve yatırım alma açısından stratejik bir kapı. Wearable + AI kardiyak teşhis ürünleri için global networking fırsatı.
-📌 _GlobeNewswire · 3 kaynak_
+*H04 | SAĞLIK & TEKNOLOJİLERİ · HIGH SIGNAL*
+*Sekiz Start-up Kalp ve Beyin Sağlığı Teknolojilerinde Hızlandırma Programına Seçildi*
+American Heart Association öncülüğünde düzenlenen küresel sağlık teknolojisi yarışması, kardiyovasküler ve nörolojik sağlık alanlarında sekiz girişimi finale taşıdı. Seçilen ekipler, hastane dışı hasta takibi, erken tanı algoritmaları ve giyilebilir sensör platformları gibi projeleriyle dikkat çekiyor. Program, bu start-up'lara düzenleyici danışmanlık ve klinik doğrulama imkânı sunacak.
+💡 *WHY IT MATTERS:* Türkiye merkezli MedTech girişimleri için ABD pazarına açılma ve FDA süreç danışmanlığı talep eden hızlandırma modelleri ticarileştirme açısından yüksek potansiyel taşıyor.
+📌 _News-Medical · 3 kaynak_
 ------------------------------------
 
-*H05 | SAĞLIK & KARDİYOLOJİ · OPPORTUNITY*
-*Elucid'in Plaque-IQ™ 2026 MedTech Breakthrough Ödülünü Kazandı*
-Elucid'in Plaque-IQ™ platformu, 'En İyi Yeni Kardiyoloji Teknoloji Çözümü' kategorisinde 2026 MedTech Breakthrough ödülüne layık görüldü. Plak analizinde AI tabanlı görüntüleme teknolojisi klinik karar destek süreçlerinde devrim yaratıyor.
-💡 *WHY IT MATTERS:* Türkiye kardiyoloji merkezleri için Plaque-IQ entegrasyonu, premium SaaS lisanslama modeliyle yüksek gelir potansiyeli taşıyor. Aynı zamanda yerli rakipler için ürün geliştirme benchmarkı sunuyor.
+*H05 | SAĞLIK & TEKNOLOJİLERİ · TREND*
+*Elucid'in Plaque-IQ™ 2026 MedTech Breakthrough'da 'En İyi Kardiyoloji Çözümü' Seçildi*
+Elucid tarafından geliştirilen Plaque-IQ™ platformu, plak bileşimini non-invaziv olarak analiz eden algoritmasıyla 2026 MedTech Breakthrough ödüllerinde en iyi yeni kardiyoloji teknolojisi ödülünü aldı. Platform, BT anjiyografi görüntülerini yapay zekâ ile işleyerek klinik karar destek çıktısı üretiyor. Ödül, kardiyak görüntüleme yapay zekâsının endüstri standartlarına girmeye başladığının güçlü bir göstergesi.
+💡 *WHY IT MATTERS:* Türkiye'de radyoloji ve kardiyoloji kliniklerinin dijital dönüşümünde görüntü işleme SaaS modelleri için pazar açılıyor; yerli girişimler için lisanslama ve entegrasyon fırsatları doğuyor.
 📌 _Business Wire · 2 kaynak_
 ------------------------------------
 
 *H06 | SAĞLIK & KARDİYOLOJİ · TREND*
-*8 Startup Kalp ve Beyin Sağlığı Teknolojilerini İleri Taşımak İçin Seçildi*
-News-Medical'in raporuna göre kalp ve beyin sağlığı odağında çalışan 8 startup, mentorluk ve fonlama programına dahil edildi. Seçilen girişimler dijital kardiyoloji, nöroteknoloji ve giyilebilir sağlık cihazları kategorilerinde faaliyet gösteriyor.
-💡 *WHY IT MATTERS:* Bu girişimlerin çoğu ESP32/RPi tabanlı prototipler kullanıyor; Türkiye'deki maker topluluğu için işbirliği ve distribütörlük fırsatları yaratıyor. EdTech + MedTech kesişiminde yeni iş modelleri için referans.
-📌 _News-Medical · 2 kaynak_
-------------------------------------
-
-*H07 | SAĞLIK & KARDİYOLOJİ · TREND*
-*Mandrola'nın ESC 2026 Seçimleri: Yılın Kardiyoloji Konferansı Öne Çıkanları*
-Medscape editörü Dr. Mandrola'nın ESC 2026 konferansı için belirlediği öne çıkan çalışmalar, bu yılın kardiyoloji trendlerini şekillendirecek. Seçilen sunumlar arasında yeni antikoagülanlar, AI tabanlı görüntüleme ve lipit yönetimi başlıkları yer alıyor.
-💡 *WHY IT MATTERS:* Türkiye kardiyoloji camiası için hangi tedavi yaklaşımlarına ve teknoloji entegrasyonlarına yatırım yapılacağı konusunda yol haritası sunuyor. Erken adapte olan klinikler rekabet avantajı elde edecek.
-📌 _Medscape · 2 kaynak_
+*Lipid Düşürücü İlaçlar Venom Anafilaksisini Ağırlaştırıyor Olabilir*
+Yeni bir gözlemsel analiz, lipid düşürücü tedavi altındaki hastalarda venom kaynaklı anafilaktik reaksiyonların daha şiddetli seyrettiğini ortaya koydu. Kardiyovasküler koruma sağlayan bu yaygın ilaçların nadir ama kritik bir güvenlik sinyali taşıdığı bildirildi. Hekimlerin reçeteleme kararlarında hasta öyküsü ve alerji durumunu daha yakın sorgulaması gerektiği vurgulandı.
+💡 *WHY IT MATTERS:* Akıllı ilaç etkileşimi ve alerji uyarı sistemleri, dijital sağlık kayıtları için yüksek talep görecek; Türkiye'deki EHR sağlayıcıları için entegre farmakovijilans modülleri fırsatı yaratıyor.
+📌 _Medscape Medical News · 2 kaynak_
 ------------------------------------
 
 ====================================
 ⚡ *TEKNOLOJİ, DONANIM & İŞ FİKİRLERİ*
 ====================================
 
-*T01 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
-*GPT-6 Astra Piyasada: OpenAI'nin En Yetenekli Modeli Tanıtıldı*
-OpenAI, GPT-6 Astra'yı uçtan uca iş akışları için en gelişmiş modeli olarak duyurdu. Kodlama odağı ile geliştirilen model, Artificial Analysis Coding Agent Index'te Anthropic'in gerisinde kaldı; coding alanında Anthropic liderliğini sürdürüyor.
-💡 *WHY IT MATTERS:* Kurumsal SaaS ürünlerinde GPT-6 entegrasyonu için fiyat/performans değerlendirmesi kritik. Türkiye'de AI tabanlı yazılım ihracatı yapan ekipler için Anthropic API ile hibrit mimari daha rasyonel görünüyor.
-📌 _ProductHunt & Twitter/X (@aakashgupta) · 8 kaynak_
-------------------------------------
-
-*T02 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
-*Squad: Terminalde SQLite ile Çoklu AI Ajanlarını Koordine Ediyor*
-Yeni açık kaynak araç 'Squad', geliştiricilerin shell komutları ve SQLite üzerinden birden fazla AI ajanını eşzamanlı olarak koordine etmesini sağlıyor. Loop engineering ile birlikte AI agent orkestrasyonunda pratik patternler ortaya çıkıyor.
-💡 *WHY IT MATTERS:* Türkiye'de AI otomasyon hizmeti veren ajanslar ve freelancer'lar için düşük maliyetli, satılabilir bir agentic workflow ürününe dönüştürme potansiyeli taşıyor. B2B SaaS modeli ile hızlı monetizasyon mümkün.
+*T01 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
+*OOMWOO: Tamamen Yerel, Açık Kaynak Robot Süpürge Projesi (Raspberry Pi + LiDAR)*
+@tom_doerr tarafından paylaşılan OOMWOO, 3D baskı donanım, Raspberry Pi ve 2D LiDAR'ı ROS2 üzerinde birleştirerek bulut bağımlılığı olmayan bir robot süpürge sunuyor. Cihaz, otonom navigasyon ve haritalama işlemlerini tamamen cihaz üzerinde gerçekleştirerek kullanıcı gizliliğini koruyor. Proje, açık kaynak kod deposuyla maker topluluğuna doğrudan katkı sağlıyor.
+💡 *WHY IT MATTERS:* Türkiye'deki 3D baskı hizmetleri ve LiDAR dağıtıcıları için ticari bir alt-segment açılıyor; ayrıca B2B temizlik robotları üreticilerine lisanslama ve OEM fırsatları doğuruyor.
 📌 _Twitter / X (@tom_doerr) · 6 kaynak_
 ------------------------------------
 
-*T03 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
-*llmfit: Donanımınıza Uygun LLM Modelini Tek Komutla Bulun*
-AlexsJones/llmfit, yüzlerce model ve sağlayıcı arasından kullanıcının mevcut donanımında çalışabilecek en uygun LLM'i tek bir komutla tespit ediyor. Local AI trendinin en pratik araçlarından biri olarak hızla yayılıyor.
-💡 *WHY IT MATTERS:* Türkiye'de girişim seviyesinde Local AI danışmanlığı ve model deployment hizmetleri için 'hangi GPU/edge cihazda hangi model?' sorusunu çözen wrapper servisler yüksek talep görecek. Eğitim içerik ürünü olarak da satılabilir.
+*T02 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
+*MiniMax H3 ile $100K'lık Startup Lansman Videolarına Son: 8GB VRAM Yeterli*
+@cocktailpeanut, MiniMax H3 modeliyle 8GB+ VRAM'a sahip bir PC veya Mac üzerinden sınırsız varyasyonda startup tanıtım videosu üretilebileceğini duyurdu. Model, stüdyo ve özel efekt ihtiyacını ortadan kaldırarak maliyeti dramatik şekilde düşürüyor. Hugging Face üzerinde ücretsiz deneme imkânı sunulması, erişilebilirliği artırıyor.
+💡 *WHY IT MATTERS:* Türkiye'deki KOBİ ve içerik üreticileri için düşük bütçeli pazarlama otomasyonu mümkün hale geliyor; yerel SaaS video üretim ajansları hızla entegre çözümler sunabilir.
+📌 _Twitter / X (@cocktailpeanut) · 5 kaynak_
+------------------------------------
+
+*T03 | TEKNOLOJİ & YAZILIM · OPPORTUNITY*
+*llmfit: Donanımınıza Uygun LLM'i Tek Komutla Bulan CLI Aracı*
+AlexsJones/llmfit, yüzlerce model ve sağlayıcıyı tarayarak kullanıcının sahip olduğu donanımda optimum performansla çalışacak dil modelini tek bir komutla öneriyor. Araç, Edge AI ve yerel inference dalgasının en kritik darboğazını çözüyor: model seçimi. Açık kaynak yapısı, kurumsal kullanım için de özelleştirme imkânı sağlıyor.
+💡 *WHY IT MATTERS:* Türkiye'de Edge AI danışmanlığı ve model küratörlüğü hizmetleri için yeni bir iş kolu doğuyor; kurumsal satıcılar için white-label versiyon geliştirme potansiyeli yüksek.
+📌 _GitHub Trending · 4 kaynak_
+------------------------------------
+
+*T04 | TEKNOLOJİ & DONANIM · TREND*
+*Raspberry Pi için Watchdog Konfigürasyonu: Çökmelerde Otomatik Yeniden Başlatma*
+r/raspberrypi topluluğunda öne çıkan bu rehber, watchdog servisini etkinleştirerek cihazın donanım seviyesinde çökme durumlarında otomatik olarak yeniden başlatılmasını sağlıyor. Endüstriyel ve uzak konumlandırılmış Pi projelerinde kritik güvenilirlik katmanı sunuyor. Konfigürasyonun systemd ve donanım watchdog arasındaki farkları detaylı şekilde karşılaştırılıyor.
+💡 *WHY IT MATTERS:* Türkiye'deki IoT ve endüstriyel otomasyon entegratörleri için SLA taahhütlerini güçlendiren bir bileşen; özellikle uzaktan izleme istasyonları ve dijital tabela projelerinde fark yaratıyor.
+📌 _r/raspberrypi · 3 kaynak_
+------------------------------------
+
+*T05 | TEKNOLOJİ & YAZILIM · HIGH SIGNAL*
+*Osmantic/ODS: PC, Mac ve Linux'u Tam Yığın Yapay Zekâ Sunucusuna Dönüştürün*
+ODS (Open Dev Stack), kullanıcının mevcut bilgisayarını LLM inference, sohbet arayüzü, ses, ajanlar, iş akışları, RAG ve görsel üretim için uçtan uca bir yapay zekâ sunucusuna çeviriyor. Proje, bulut maliyetlerini sıfıra indirerek yerel yapay zekâ ekosisteminin demokratikleşmesini hedefliyor. Tek kurulumla çoklu kullanım senaryosu desteklemesi öne çıkıyor.
+💡 *WHY IT MATTERS:* Türkiye'deki küçük işletmeler ve eğitim kurumları için düşük bütçeli yapay zekâ altyapısı mümkün hale geliyor; eğitim teknolojisi girişimleri için dağıtım modelini basitleştiriyor.
 📌 _GitHub Trending · 5 kaynak_
 ------------------------------------
 
-*T04 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
-*Pinokio Disk Saver: Yüzlerce GB Alan Otomatik Kurtarıyor*
-Cocktail Peanut'in yeni aracı Pinokio Disk Saver, kullanıcıların farkında olmadığı duplicate model, runtime, DLL ve binary dosyaları tespit ederek terabaytlarca disk alanı boşaltıyor. AI geliştirici kitlesinin disk yönetimi sorununa radikal çözüm.
-💡 *WHY IT MATTERS:* Hedef kitle yüksek gelirli AI developers ve ML engineers; Türkiye'de lokalize sürüm ve kurumsal lisanslama için doğrudan pazar var. Freemium + Pro subscription modeli ile hızlı ölçeklenebilir.
-📌 _Twitter / X (@cocktailpeanut) · 6 kaynak_
+*T06 | TEKNOLOJİ & YAZILIM · OPPORTUNITY*
+*Experiential Labs: Trafiği Model Geliştirmeye Çeviren Açık Kaynak AI Ağ Geçidi*
+Product Hunt'ta öne çıkan Experiential Labs, açık kaynak yapay zekâ ağ geçidi olarak gelen trafiği model eğitimi için geri bildirim döngüsüne çeviriyor. Platform, kullanıcı etkileşimlerinden öğrenen ve sürekli iyileşen bir inference katmanı sunuyor. Açık kaynak lisanslama sayesinde özelleştirme esnekliği yüksek.
+💡 *WHY IT MATTERS:* Türkiye'deki yapay zekâ girişimleri için fine-tuning ve RLHF döngüsünü ürünleştiren bir altyapı bileşeni; B2B SaaS lisanslaması için net go-to-market yolu barındırıyor.
+📌 _Product Hunt · 3 kaynak_
 ------------------------------------
 
-*T05 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
-*Raspberry Pi Watchdog Ayarı: Çöken Sistemleri Otomatik Yeniden Başlatma*
-Reddit r/raspberrypi'de öne çıkan konu, Raspberry Pi sistemlerinde watchdog timer kurarak çökme durumunda otomatik yeniden başlatma konfigürasyonu. Endüstriyel ve IoT kullanım senaryoları için temel güvenilirlik katmanı.
-💡 *WHY IT MATTERS:* Türkiye'deki kiosk, dijital tabela ve küçük ölçekli endüstriyel otomasyon projelerinde RPi watchdog çözümleri hizmet olarak sunulabilir. ESP32 ile birlikte hibrit edge cihaz paketleri oluşturma fırsatı.
-📌 _Reddit r/raspberrypi · 3 kaynak_
+*T07 | TEKNOLOJİ & YAZILIM · TREND*
+*openpilot: 300+ Araçta Sürücü Asistanını Açık Kaynaklı OS ile Yükseltiyor*
+GitHub'da trend listesine giren openpilot, robotik alanında bir işletim sistemi olarak konumlanıyor ve 300'den fazla desteklenen araçta sürücü asistan sistemini modernize ediyor. Proje, otomotiv yazılımının açık kaynak yaklaşımıyla nasıl dönüştürülebileceğini kanıtlıyor. Topluluk katkısıyla hızla büyüyen araç uyumluluk listesi dikkat çekiyor.
+💡 *WHY IT MATTERS:* Türkiye'de filo yönetimi ve araç telemetri girişimleri için openpilot uyumlu donanım ve retrofit kit pazarı büyüyor; otomotiv aftermarket segmentinde fırsat yaratıyor.
+📌 _GitHub Trending · 4 kaynak_
 ------------------------------------
 
-*T06 | TEKNOLOJİ & DONANIM · TREND*
-*Arduino vs ESP32 Tartışması: Yeni Başlayanlar İçin Hangisi Daha İyi?*
-Arduino topluluğunda 'Arduino Uno R3 ile mi başlanmalı yoksa doğrudan ESP32'ye mi geçilmeli?' tartışması yoğun şekilde sürüyor. Wi-Fi/Bluetooth entegrasyonu gereksinimi ESP32'yi avantajlı kılarken, Arduino'nun sadelik avantajı korunuyor.
-💡 *WHY IT MATTERS:* Türkiye maker eğitim pazarında net bir bilgi açığı var; Udemy/YouTube tabanlı 'ESP32 ile IoT' eğitim setleri yüksek talep görecek. Starter kit satışı için pazar doğrulandı.
-📌 _Reddit r/arduino · 4 kaynak_
-------------------------------------
-
-*T07 | TEKNOLOJİ & DONANIM · TREND*
-*Qwen 3.8 27B Cerebras Üzerinde 1500 token/s Hızla Erişilebilir*
-Cerebras Inference platformu, Qwen 3.8 27B modelini saniyede 1500 token hızla çalıştırarak açık kaynak LLM'lerin production-ready kullanımına yeni bir standart getiriyor. Edge AI donanım benchmark'ları için referans noktası.
-💡 *WHY IT MATTERS:* Türkiye'de gerçek zamanlı Türkçe AI asistan servisleri için altyapı maliyetini dramatik düşürebilir. SaaS fiyatlamasında yeni nesil açık kaynak modellerle rekabet edebilecek ürünler için zemin hazırlıyor.
+*T08 | TEKNOLOJİ & GÜVENLİK · HIGH SIGNAL*
+*Chromium Tüm Versiyonlarında Aktif İstismar Edilen Sandbox RCE Açığı*
+Hacker News'ün öne çıkardığı güvenlik bildirimi, Chromium tabanlı tüm tarayıcılarda sandbox kaçışına izin veren uzaktan kod çalıştırma açığının aktif olarak istismar edildiğini doğruluyor. CVE-2026-85046 olarak kayıt altına alınan zafiyet, NVD üzerinden yüksek öncelik seviyesiyle yayımlandı. Kurumsal kullanıcıların acil güncelleme yapması öneriliyor.
+💡 *WHY IT MATTERS:* Türkiye'deki bankacılık ve e-ticaret sektörü başta olmak üzere tüm Chromium tabanlı sistemler için acil patch yönetimi ihtiyacı doğuruyor; siber güvenlik hizmet sağlayıcıları için danışmanlık fırsatı yaratıyor.
 📌 _Hacker News · 2 kaynak_
-------------------------------------
-
-*T08 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
-*omi: Ekranınızı ve Konuşmalarınızı Dinleyip Yönlendiren AI Asistan*
-BasedHardware/omi, kullanıcının ekranını gören, konuşmaları dinleyen ve gerçek zamanlı yönlendirme yapan AI asistanı geliştiriyor. Always-on context-aware computing konsepti, personal productivity için yeni bir kategori yaratıyor.
-💡 *WHY IT MATTERS:* Türkiye B2B pazarında satış ekipleri ve müşteri hizmetleri için 'omi benzeri' konuşma koçluğu ürünleri hızlı satılabilecek niş bir alan. Edge AI + ses işleme know-how'sı ile önemli fırsat.
-📌 _GitHub Trending · 3 kaynak_
-------------------------------------
-
-*T09 | TEKNOLOJİ & DONANIM · TREND*
-*TrackMCP: MCP Sunucuları İçin Google Analytics*
-ProductHunt'ta öne çıkan TrackMCP, MCP (Model Context Protocol) sunucuları için analytics ve kullanım takibi sunan 'Google Analytics' konumunda bir araç. AI ajan ekosistemi büyüdükçe observability ihtiyacı kritik hale geliyor.
-💡 *WHY IT MATTERS:* Türkiye'de AI ajanları geliştiren ekiplerin ölçüm ve optimizasyon ihtiyacına yönelik white-label versiyonu veya tamamlayıcı dashboard ürünü geliştirilebilir. Enterprise satış fırsatı yüksek.
-📌 _ProductHunt · 2 kaynak_
-------------------------------------
-
-*T10 | TEKNOLOJİ & DONANIM · TREND*
-*NetWatch: Wireshark'a Sıfır Konfigürasyonlu Alternatif*
-NetWatch, Wireshark'a hafif bir alternatif olarak encrypted trafiği okuyarak process isimlendirme ve malware beacon tespiti yapıyor. Sıfır konfigürasyon ile network triage süreçlerini hızlandırıyor.
-💡 *WHY IT MATTERS:* Türkiye'de KOBİ'lere yönelik uygun fiyatlı ağ güvenliği SaaS çözümü olarak paketlenebilir. ESP32/RPi tabanlı edge güvenlik kutularıyla birlikte satış modeli kurgulanabilir.
-📌 _Twitter / X (@tom_doerr) · 2 kaynak_
 ------------------------------------
