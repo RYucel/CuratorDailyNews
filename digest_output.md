@@ -1,43 +1,43 @@
-🗞️ *CURATOR DAILY NEWS — 14.09.2026*
-_Günün baskın teması 'Yerel AI ve Donanım Bütünleşmesi' olmaktadır; @cocktailpeanut'un 20GB VRAM ile lokal video üretimi ve Intel'in AI Playground'u, modellerin buluttan masaüstüne inişini somutlaştırıyor. Sağlık tarafında ise Tirzepatide'in güvenlik profili ve AI destekli koroner görüntüleme (Elucid Plaque-IQ), kardiyometabolik hastalık yönetiminde paradigma değişimini ve MedTech'te klinik doğrulamayı işaret ediyor._
+🗞️ *CURATOR DAILY NEWS — 15.09.2026*
+_Bugün kardiyolojide global MI tanımının üç kategoriye ayrılması ve tirzepatid'in semaglutide'e karşı üstünlüğü ancak güvenlik maliyetiyle geldiği klinik veriler pratik değiştiren HIGH SİGNAL yaratıyor. MedTech'te Elucid'in Plaque-IQ ödülü ve global kardiyovasküler inovasyon yarışmaları, AI destekli görüntüleme ve erken teşhis ekosisteminin olgunlaştığını gösteriyor. Teknoloji tarafında açık kaynak humanoid kol (OpenArm) ve Intel'in yerel AI Playground/llmfit araçları, robotik ve LLM'in tüketici donanımına (edge) inmesini hızlandırıyor; Sam Altman'ın 1 trilyon dolarlık IPO'dan vazgeçmesi ise AI güvenliği ve yönetişiminin ticari stratejileri nasıl yeniden şekillendirdiğinin en net göstergesi._
 
 ====================================
 🩺 *SAĞLIK & KARDİYOLOJİ GELİŞMELERİ*
 ====================================
 
 *H01 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
-*Tirzepatide, Semaglutide'e Kilo Veriminde Üstün Ama Güvenlikte Geride*
-Medscape verilerine göre Tirzepatide (Mounjaro/Zepbound), Semaglutide (Ozempic/Wegovy)'a göre anlamlı derecede daha fazla kilo kaybı sağlarken, gastrointestinal yan etkiler ve doz artırım toleransı açısından daha zayıf bir güvenlik profili sergiliyor. Bu durum 'etkinlik vs tolerans' dengesini klinik karar verme merkeze oturtuyor.
-💡 *WHY IT MATTERS:* Obezite piyasası 2030'da 100 Milyar $'ı bulacak; bu veri, ilaç geliştiricileri ve dijital sağlık platformları için 'kilo kaybı hızı' ile 'hasta tutunma (retention)' arasındaki ticari dengeleri optimize eden algoritmik protokoller (dijital ilaç eşlikçileri) fırsatı yaratıyor.
+*Tirzepatid, Semaglutide'a Kilo Veriminde Üstün Ama Güvenlikte Riskli*
+Medscape verilerine göre tirzepatid, semaglutide göre daha etkili kilo kaybı sağlarken, gastrointestinal yan etkiler ve doz ajüstman zorlukları nedeniyle güvenlik profilinde geride kalıyor. Bu durum obezite tedavisinde 'etkinlik vs tolerans' dengesini klinik karar mekanizmasının merkezine oturtuyor.
+💡 *WHY IT MATTERS:* Giyilebilir metabolik takip cihazları ve AI destekli dozaj optimizasyon algoritmaları (CGM entegreli) için klinik ihtiyacın kanıtı; Türkiye'deki dijital terapötik girişimler bu güvenlik boşluğunu hedef almalı.
 📌 _Medscape Medical News · 1 kaynak_
 ------------------------------------
 
 *H02 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
-*Elucid Plaque-IQ, 2026 MedTech Breakthrough Ödülünü Kazandı: AI Koroner Plak Karakterizasyonu Klinik Standard Oldu*
-Elucid Bioimaging'in Plaque-IQ teknolojisi, CTA (Koroner Tomografi Anjiyografisi) görüntülerinden plak kompozisyonunu (lipid çekirdek, lifroz kapak) non-invazif olarak nicelendirerek 'En Yeni Kardiyoloji Teknolojisi' ödülünü aldı. Bu, invaziv IVUS/OCT standardını sorguluyor.
-💡 *WHY IT MATTERS:* Kardiyolojide 'Vulnerable Plaque' tespiti kaza öncesi risk stratifikasyonu için Kutsal Kale'dir. Bu FDA onaylı AI aracı, Türkiye'deki özel hastane ve teleradyoloji merkezleri için 'Kalp Check-up' paketlerini farklılaştıran, yüksek marjlı bir MedTech satış fırsatı sunuyor.
-📌 _Business Wire / Cardiology MedTech · 1 kaynak_
-------------------------------------
-
-*H03 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
-*Kannabis İnhalasyonu Yetişkinlerde Kardiyak Ektopiyi Azaltıyor (Şaşırtıcı Bulgular)*
-Medscape'te yayımlanan çalışma, kannabis inhale eden yetişkinlerde ventriküler ve supraventriküler ektopik atışların (PVC/PAC) istatistiksel olarak anlamlı derecede daha düşük olduğunu ortaya koydu. Mekanizma kanabinoid reseptörleri üzerinden otonom dengeye etki ile açıklanıyor.
-💡 *WHY IT MATTERS:* Bu kontr-intuitif bulgu, arritmi yönetiminde 'life-style' modülasyonu ve kanabinoid tabanlı anti-aritmik araştirma kapılarını aralıyor. Giyilebilir EKG/HRV sensörleri (Apple Watch, Withings) verileri ile kannabis kullanım korelasyonu analizi yapan SaaS modelleri için erken veri fırsatı.
+*Global MI Tanımı Güncellendi: Üç Klinik Kategoriye Ayrıldı*
+Uluslararası kardiyoloji dernekleri konsensüsüyle miyokard enfarktüsü tanımı, troponin yükselmesi etiyolojisine göre Tip 1 (spontan), Tip 2 (hıpooksi/ talep) ve Tip 3 (patolojik kanıt) olarak yeniden sınıflandırıldı. Bu, tanı kodlaması, tedavi yolları ve klinik çalışma uç noktalarını kökten değiştiriyor.
+💡 *WHY IT MATTERS:* Yapay zeka tabanlı EKG/troponin yorumlama yazılımları (CDS) bu yeni sınıflandırmaya acil uyumlu hale getirilmeli; Türkiye'de e-nabız ve hastane bilgi sistemleri entegrasyonu için kritik bir güncelleme penceresi açıldı.
 📌 _Medscape Cardiology · 1 kaynak_
 ------------------------------------
 
-*H04 | SAĞLIK & KARDİYOLOJİ · OPPORTUNITY*
-*AHA Global Sağlık Teknolojisi Yarışması: Kardiyovasküler ve Beyin Sağlığı İçin Yenilik Hızlandırıcısı*
-American Heart Association (AHA), kardiyovasküler ve beyin sağlığını iyileştiren erken aşamalı sağlık teknolojileri (AI, giyilebilirler, uzaktan izleme) için küresel bir yarışma ve hızlandırma programı başlattı. Mentorluk, finansman ve klinik doğrulama yolları sunuluyor.
-💡 *WHY IT MATTERS:* Türkiye'de TÜBİTAK/KOBİ destekleri ile geliştirilen kardiyoloji SaaS/Donanım hibrit projeleri (örn. AFib erken uyarı, HF dekompanzasyon tahmini) için küresel görünürlük, ABD klinik deneyi girişi ve AHA marka güvenilirliği kazandırma 'soft-landing' kapısı.
-📌 _American Heart Association (heart.org) · 1 kaynak_
+*H03 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
+*Elucid Plaque-IQ, 2026 MedTech Breakthrough Ödülünü Kazandı*
+AI tabanlı koroner tomografi anjiyo analizi yapan Plaque-IQ, plak karakterizasyonu ve risk stratifikasyonunda 'En İyi Yeni Kardiyoloji Teknolojisi' ödülünü aldı. FDA onaylı bu yazılım, plak kompozisyonunu (lipidli, lifli, kalsifiye) non-invazif haritalıyor.
+💡 *WHY IT MATTERS:* Türkiye'de yaygınlaşan koroner CT anjiyo laboratuvarları için raporlama standardizasyonu ve reembürsman argümanı sağlıyor; yerel yazılım geliştiriciler (FDA/CE yolu) bu 'AI + Görüntüleme' şablonunu takip edebilir.
+📌 _Business Wire / Cardiology MedTech · 1 kaynak_
 ------------------------------------
 
-*H05 | SAĞLIK & KARDİYOLOJİ · OPPORTUNITY*
-*MUHC'da Atrial Fibrillasyon Tedavisinde Yeni Teknoloji (PFA) Klinik Kullanıma Girdi*
-McGill Üniversitesi Sağlık Merkezi (MUHC), atrial fibrilasyon ablasyonunda termal hasar riskini (özofaj-perikard fistülü, sinir hasarı) minimize eden Pulsed Field Ablation (PFA) teknolojisini rutin klinik praktiklerine entegre etti.
-💡 *WHY IT MATTERS:* PFA, EP laboratuvarlarının standart haline geliyor. Türkiye'de EP laboratuvarı yoğunluğu yüksek; PFA sistemleri (Farapulse, Varipulse) için 'prosedür başına maliyet' ve 'hasta akışı optimizasyonu' yapan operasyonel yazılım/lojistik çözümleri satmak nitelikli bir B2B fırsatı.
-📌 _McGill University Health Centre · 1 kaynak_
+*H04 | SAĞLIK & KARDİYOLOJİ · OPPORTUNITY*
+*Global Kardiyovasküler/Beyin Sağlığı Teknoloji Yarışması ve Octane Hızlandırıcı Başladı*
+American Heart Association ve Octane'ın ortaklığıyla 'Mussallem Cardiovascular Accelerator' ve global sağlık teknolojisi yarışması başlatıldı. Erken evre girişimlere klinik validasyon, reglümans ve yatırım erişimi sağlanıyor.
+💡 *WHY IT MATTERS:* Türkiye'deki kardiyoloji odaklı SaaS, giyilebilir EKG/PCG cihazları ve hasta izleme platformları için uluslararası pilot ve yatırım kapısı; TÜBİTAK/AR-GE teşvikleriyle eşleştirilebilir stratejik fırsat.
+📌 _GlobeNewswire / heart.org · 2 kaynak_
+------------------------------------
+
+*H05 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
+*Kök Hücre Terapisi Görmeyi İyileştirdi, Yeniden Jeneratif Tıp Kapılarını Araladı*
+Medscape'de yayımlanan çalışmada, retinal distrofili hastalara uygulanan kök hücre enjeksiyonları görsel akıtte anlamlı iyileşme sağladı. Güvenlik profili uygun bulunarak faz 2/3 çalışmalarına yol açtı.
+💡 *WHY IT MATTERS:* Oftalmoloji dışında nöroloji ve kardiyoloji (iskemik hasar) için homoloj modellendirme fırsatı; Türkiye'deki kök hücre bankaları ve GMP tesisleri için klinik pipeline genişleme sinyali.
+📌 _Medscape Medical News · 1 kaynak_
 ------------------------------------
 
 ====================================
@@ -45,50 +45,43 @@ McGill Üniversitesi Sağlık Merkezi (MUHC), atrial fibrilasyon ablasyonunda te
 ====================================
 
 *T01 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
-*Lokal AI Video Üretimi Tüketici Donanımına İndi: WanGP + Viggle-Animate (20GB VRAM)*
-@cocktailpeanut (Pinokio geliştiricisi), NVIDIA A4500 20GB VRAM'li bir iş istasyonunda Minimax H3 fine-tune modeli (Viggle-Animate) ve WanGP kullanarak yüksek kaliteli karakter animasyonu/video üretimi başardı. Pinokio ekosistemi bu pipeline'ı 'tek tıkla' kurulumlu hale getirdi.
-💡 *WHY IT MATTERS:* Bu, 'AI Video = Bulut/API maliyeti' denkimini kırıyor. Türkiye'deki yaratıcı ajanslar, oyun stüdyoları ve eğitim içerik üreticileri için 'Şirket İçi AI Video Stüdyosu' kurulum danışmanlığı ve donanım optimizasyonu (RTX 4090/6000 Ada stratejisi) yüksek talep görecek bir hizmet alanı.
-📌 _Twitter / X (@cocktailpeanut) · 1 kaynak_
+*OpenArm: 7 Serbestlik Dereceli Açık Kaynak Humanoid Robot Kolu*
+GitHub'da yayınlanan OpenArm projesi, 3D baskı parçalar ve standart servomotorlar ile üretilen, ROS 2 uyumlu, 7 DOF humanoid bir kol tasarımı sunuyor. Donanım listesi, yazılım stack'i ve simülasyon ortamı tamamen açık kaynak.
+💡 *WHY IT MATTERS:* Türkiye'deki robotik laboratuvarları, üniversite spin-off'ları ve endüstriyel otomasyon girişimleri için R&D maliyetini %90 düşüren bir referans tasarım; 'Robotics as a Service' modelleri için donanım standardizasyonu fırsatı.
+📌 _Hacker News / GitHub (enactic/OpenArm) · 1 kaynak_
 ------------------------------------
 
 *T02 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
-*'Understand Anything': Agentik AI ile Kod Tabanını Bilgi Grafiğine Dönüştürme*
-@tom_doerr tarafından paylaşılan araç, bir agent pipeline'ı kullanarak kod depolarını (codebases) interaktif bilgi grafiklerine (knowledge graphs) çeviriyor; her dosya, fonksiyon ve bağımlılık haritalanıyor. Geliştirici 'onboarding' ve legacy kod anlama sürecini otomatize ediyor.
-💡 *WHY IT MATTERS:* Kurumsal yazılım modernizasyonu (Legacy Modernization) trilyon dolar piyasa. Bu tür araçlar, Türkiye yazılım ihracatçılarının (örn. bankacılık çekirdek sistemleri) 'kod anlama -> dokümantasyon -> test -> refactor' döngüsünü kısaltarak proje marjlarını artıracak 'AI-Augmented Engineering' hizmet paketlerinin çekirdeği olacak.
-📌 _Twitter / X (@tom_doerr) · 1 kaynak_
-------------------------------------
-
-*T03 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
-*OpenPilot (comma.ai): 300+ Araçta Çalışan Robotik İşletim Sistemi ve Uçtan Uca Sürüş*
-GitHub trendlerde yer alan OpenPilot, sadece bir ADAS değil, robotik için bir işletim sistemi olarak konumlanıyor. 300+ araç modelini destekleyen, kameralı uçtan uca öğrenme tabanlı sürüş yazılımı, donanım (comma 3X) ile entegre satılıyor.
-💡 *WHY IT MATTERS:* Tesla FSD dışındaki en gelişmiş 'uçtan uca' sürüş yazılımı açık kaynaklıdır. Türkiye otomotiv yan sanayi (TOGG, OEM tedarikçileri) ve üniversite robotik labları için 'veri toplama aracı' ve 'algoritma benchmark platformu' olarak stratejik öneme sahip. Donanım+yazılım entegrasyonu yeteneği test edilebilir.
-📌 _GitHub Trending (commaai/openpilot) · 1 kaynak_
-------------------------------------
-
-*T04 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
-*Bootstrapper Gerçeği: Yıllık $225K Uygulama Geliri Neden 'Az' Geliyor?*
-Reddit r/sidehustle'da bir geliştirici, yıllık $225K geliren (muhtemelen B2B SaaS) uygulamasının, vergi, sunucu, araç abonelikleri, destek yükü ve fırsat maliyeti sonrası 'el kalanın' hayal kırıklığı yarattığını anlattı. 'Tek başına geliştirici' modelinin ölçeklenemeyen operasyonel maliyetleri vurgulandı.
-💡 *WHY IT MATTERS:* Türkiye'de 'Micro-SaaS' yapıp satma stratejisi popüler. Bu hikaye, 'Satış öncesi operasyonel maturite' (billing, tax compliance, support automation, churn management) sağlayan 'SaaS-in-a-Box' altyapı araçları (veya danışmanlığı) satmanın, uygulama geliştirmekten daha karlı ve az riskli bir B2B modeli olduğunu kanıtlıyor.
-📌 _Reddit (r/sidehustle) · 1 kaynak_
-------------------------------------
-
-*T05 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
-*llmfit: Donanımınızda Hangi LLM Çalışır? Tek Komutla Benchmark ve Dağıtım*
-GitHub'da trend olan 'llmfit' (AlexsJones), yüzlerce model ve sağlayıcı (Ollama, vLLM, llama.cpp) arasında, kullanıcının GPU/VRAM/RAM donanımını tarayarak 'hangisi çalışır, ne hızda çalışır' raporu veren ve tek komutla servis ayağa kaldıran bir CLI aracı.
-💡 *WHY IT MATTERS:* Lokal AI benimsemesinin en büyük engeli 'donanım uyumluluğu karmaşası'dır. Bu araç, Türkiye'de GPU sunucu kiralama (GPU cloud), iş istasyonu satışı yapan entegre çözüm ortakları ve 'Şirket İçi LLM Kurulum Paketleri' satan sistem entegratörleri için 'Müşteri Öncesi Keşif (Pre-sales Discovery)' otomasyon aracı olabilir.
-📌 _GitHub Trending (AlexsJones/llmfit) · 1 kaynak_
-------------------------------------
-
-*T06 | TEKNOLOJİ & DONANIM · TREND*
-*Apple'ın $100M'lik U2 Hatası ve 'Silme Aracı' Ürün Stratejisi Dersi*
-@aakashgupta, Apple'ın 500 milyon iPhone'a zorla U2 albümü yüklemesi ($100M maliyet) ve kullanıcı isyanı üzerine 6 günde 'nasıl silinir' özel bir araç geliştirmesi hikayesini anlattı. 'Bir ürünün geri alınması için başka bir ürün çıkarmak' anti-pattern'i.
-💡 *WHY IT MATTERS:* Ürün yönetiminde 'Kullanıcı İzni (Consent)' ve 'Rollback Stratejisi' ilkesi. Türkiye SaaS'leri için 'Feature Flag' altyapısı, 'Canary Release' ve 'Anlık Geri Alma (Kill Switch)' yeteneğinin, büyük lansmanlardan önce müşteri güvenini koruyan en kritik yatırım olduğunu hatırlatıyor.
+*Sam Altman 1 Trilyon $'lık IPO'yu Reddetti, AI Güvenliği İçin Dario Amodei ile Anlaştı*
+Aakash Gupta'nın paylaştığı bilgiye göre Sam Altman, OpenAI'nin olası 1 trilyon dolarlık bir IPO'yu masada bırakarak, Anthropic CEO'su Dario Amodei ile AI güvenliği standartları konusunda ortak bir zemin oluşturdu. Bu, endüstri liderlerinin 'yarıştan yönetişime' geçişinin sembolü.
+💡 *WHY IT MATTERS:* Yerel AI modelleri (llmfit, Intel AI Playground) ve 'güvenli AI' araçları (tiun, jurniti) için pazar doğrulama; Türkiye'de veri gizliliği (KVKK) odaklı, şirket içi (on-premise) LLM dağıtım çözümleri satış argümanı kazandı.
 📌 _Twitter / X (@aakashgupta) · 1 kaynak_
 ------------------------------------
 
-*T07 | TEKNOLOJİ & DONANIM · TREND*
-*RP2350 Üzerinde 386 PC Emülasyonu: Retro Donanım Yeniden Keşfediliyor*
-Hacker News'te öne çıkan 'frank-386' projesi, Raspberry Pi RP2350 (RP2040'un उत्तराधikari) mikrodenetleyici üzerinde tam bir 386 PC (DOS, Windows 3.1) emülasyonunu çalıştırıyor. Düşük maliyetli, düşük güçlü 'Retro Computing' donanımı.
-💡 *WHY IT MATTERS:* Endüstriyel otomasyonda hâlâ DOS/Win3.1 tabanlı eski makine kontrolcüleri (CNC, PLC) çalışıyor. RP2350 tabanlı bir 'Legacy Hardware Emulator' cihazı, bu makinelerin fiziksel PC/ISA kart bağımlılığını ortadan kaldırarak 'Retrofit IoT Gateway' pazarına (MRO - Bakım/Onarım/Operasyon) giriş fırsatı sunar.
-📌 _Hacker News / GitHub (rh1tech/frank-386) · 1 kaynak_
+*T03 | TEKNOLOJİ & DONANIM · TREND*
+*Yerel AI Demokratikleşiyor: Intel AI Playground, llmfit ve OpenVINO Audacity*
+Intel AI Playground (NPU/GPU optimizasyonlu yerel LLM arayüzü), AlexsJones/llmfit (donanımınıza hangi modelin sığacağını tek komutla bulan araç) ve OpenVINO Audacity eklentisi (yerel AI ses işleme), kodsuz/low-code yerel AI ekosistemini olgunlaştırıyor.
+💡 *WHY IT MATTERS:* İnternet bağlantısı olmadan, veri gizliliği sağlayarak çalışan 'Edge AI' uygulamaları (sağlık raporlama, yasal analiz, endüstriyel QA) için altyapı hazır; Türkiye pazarında 'AI PC' donanım satışlarını tetikleyecek killer-app eksikliği bu araçlarla kapanıyor.
+📌 _GitHub Trending / Releases · 3 kaynak_
+------------------------------------
+
+*T04 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
+*openpilot: 300+ Araçta Sürücü Asistanını Yükselten Robotik İşletim Sistemi*
+Comma.ai'nin openpilot projesi, desteklenen araçların fabrika ADAS sistemini değiştirerek 'end-to-end' öğrenme tabanlı otonom sürüş (L2+) sağlıyor. 300+ model desteği ve aktif topluluk ile donanım yazılım entegrasyonunun zirvesi.
+💡 *WHY IT MATTERS:* Türkiye'nin otomotiv yan sanayi ve retrofit pazarı için; mevcut araç filosuna (lojistik, taksi, özel araç) yazılım güncellemesiyle güvenlik ve verimlilik katma fırsatı. Yerel entegratörler için lisanssız, şeffaf bir temel.
+📌 _GitHub Trending · 1 kaynak_
+------------------------------------
+
+*T05 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
+*tiun: AI Builder'lar İçin Auth, Billing ve Ödemeler Altyapısı*
+Product Hunt'ta çıkan tiun, AI uygulamaları geliştiren ekiplerin 'user management, subscription billing, usage metering' ihtiyacını tek bir SDK ile çözüyor. Stripe/Paddle entegrasyonu üzerine kurulu, geliştirici deneyimi (DX) odaklı.
+💡 *WHY IT MATTERS:* Türkiye'de patlayan 'AI Wrapper' ve mikro-SaaS girişimleri için (örn. PDF analizci, CV yapıcı, kod asistanı) para kazanma ve kullanıcı yönetimi altyapısını haftalar içinde kurma imkanı; global pazara çıkış hızı artırıyor.
+📌 _Product Hunt · 1 kaynak_
+------------------------------------
+
+*T06 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
+*Arduino ile Kendi Kendine Bağlayan Nike Mag (Back to the Future) Gerçek Oldu*
+Reddit r/arduino'da bir maker, manyetik şarj, basınç sensörleri ve özel mekanik tasarım kullanarak filmden ilham alınan kendi kendine bağlayan ayakkabıyı prototipledi. Proje donanım (ESP32/Arduino), firmware ve mekanik tasarımı kapsıyor.
+💡 *WHY IT MATTERS:* Giyilebilir teknoloji, ortopedik rehabilitasyon (diyabetik ayak, felçli hastalar) ve spor performans pazarları için 'Proof of Concept'; Türkiye'deki makine mühendisliği/tekstil mühendisliği iş birlikleri ile ticarileştirilebilir donanım IP'si.
+📌 _Reddit (r/arduino) · 1 kaynak_
 ------------------------------------
