@@ -1,43 +1,43 @@
-🗞️ *CURATOR DAILY NEWS — 17.09.2026*
-_2026 ESC Kalp Yetersizliği Kılavuzları birincil bakımı yeniden şekillendirirken, invaziv olmayan kalp haritalama ve hızlandırıcı programları kardiyoloji MedTech'inde yatırım dalgasını tetikliyor. Teknoloji tarafında yerel AI (Intel AI Playground, llmfit) ve donanım entegrasyonu (tinyPod, openpilot) 'edge' tarafında somut ürünlere dönüşüyor; güvenlik araştırmaları (sürücü belgesi barkodları) ise kimlik altyapısının kırılganlığını ortaya koyuyor._
+🗞️ *CURATOR DAILY NEWS — 18.09.2026*
+_Bugün kartiyoloji alanında invaziv olmayan kalp haritalama ve fibrilasyon tedavisindeki yenilikler klinik pratiği değiştirirken, GLP-1 agonistleri ile statin etkileşimi yeni bir tedavi paradigması yaratıyor. Teknoloji tarafında OpenAI'nin kurumsal geliri bireysel geliri geçmesi (SaaS modelinin zaferi) ve yerel (local) çok modlu modellerin (YuE2, Qwen, Bonsai) ücretsiz/açık kaynak ekosistemde patlaması, donanım optimizasyonu (llmfit, OpenVINO) ile birleşerek 'bulutsuz AI' trendini somutlaştırıyor._
 
 ====================================
 🩺 *SAĞLIK & KARDİYOLOJİ GELİŞMELERİ*
 ====================================
 
 *H01 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
-*2026 ESC Kalp Yetersizliği Kılavuzları: Birincil Bakım için Paradigma Değişimi*
-Yeni ESC kılavuzları kalp yetersizliği tanı ve tedavi algoritmalarını temel sağlık seviyesine indiriyor; NT-proBNP eşik değerleri, SGLT2 inhibitörlerinin erken başlatılması ve multidiscipliner takip yolları birincil bakım hekimi için netleştirildi.
-💡 *WHY IT MATTERS:* Klinik karar destek sistemleri (CDS) ve giyilebilir cihaz entegrasyonları için yeni kılavuz algoritmaları 'altın standart' veri seti oluşturuyor; Türkiye'deki e-Nabız ve AİS entegrasyonları bu protokollerle güncellenmelidir.
+*İnvaziv Olmayan Kalp Haritalama Sistemi Aritmi Teşhisini Hızlandırıyor*
+Medscape'in raporuna göre, yeni bir noninvaziv kalp haritalama teknolojisi, kateter laboratuarına gerek kalmadan ventriküler ve supraventriküler aritmilerin kaynağını yüksek hassasiyetle tespit edebiliyor. Bu sistem, vücut yüzeyindeki elektrot verilerini hesaplamalı modelleme ile birleştirerek 3D arikardiyak harita üretiyor.
+💡 *WHY IT MATTERS:* Bu teknoloji, EP çalışması risklerini ve maliyetlerini ortadan kaldırarak aritmi yönetimini birincil bakım ve ambulans seviyesine taşıma potansiyeli taşıyor. Giyilebilir EKG sensörleri (Apple Watch, KardiaMobile vb.) ile entegre edilirse sürekli aritmi tarama ve erken müdahale için devasa bir veri akışı oluşturur.
 📌 _Medscape Cardiology · 1 kaynak_
 ------------------------------------
 
 *H02 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
-*İnvaziv Olmayan Kalp Haritalama Sistemi Aritmi Tanısını Hızlandırıyor*
-Yeni noninvaziv ekokardiyografi tabanlı haritalama teknolojisi, kateter laboratuvarına gerek kalmadan ventriküler takikardi odaklarını dakikalar içinde tespit edebiliyor; prosedür süresini ve hasta riskini ciddi oranda azaltıyor.
-💡 *WHY IT MATTERS:* Bu sistemler 'Electrophysiology Lab' kapasitesi darboğazını çözüyor; uzaktan izleme (remote monitoring) verileriyle entegre edilerek aritmi erken uyarı sistemleri (AI-ECG) için yeni bir doğrulama katmanı sunuyor.
-📌 _Medscape / Cardiology & MedTech · 1 kaynak_
+*McGill Üniversitesi'nde Atrial Fibrilasyon İçin Yeni Tedavi Teknolojisi Klinik Kullanıma Girdi*
+MUHC (McGill Üniversitesi Sağlık Merkezi), atrial fibrilasyon (AF) tedavisinde kateter ablasiya precision'ını artıran yeni bir sistem (muhtemelen PFA - Pulsed Field Ablation veya gelişmiş haritalama) benimsedi. Sistem, çevre dokulara zarar vermeden pulmoner ven izolasyonunu daha güvenli ve hızlı hale getiriyor.
+💡 *WHY IT MATTERS:* AF epidemiyolojisi yaşlanma nüfusuyla artarken, PFA gibi 'termal olmayan' ablasiya teknolojileri altın standart olmaya aday. Türkiye'deki kalp merkezi için bu sistemlerin tedavi protokollerine entegrasyonu ve yerli PFA kateter geliştirme (TÜBİTAK/Üniversite iş birliği) stratejik bir fırsat yaratır.
+📌 _McGill University Health Centre · 1 kaynak_
 ------------------------------------
 
-*H03 | SAĞLIK & KARDİYOLOJİ · OPPORTUNITY*
-*Octane Mussallem Kardiyovasküler Hızlandırıcısı ve AHA Global Yarışması Yatırım Kanalını Açıyor*
-Octane'in yeni hızlandırıcısı ve AHA'nın global sağlık teknolojisi yarışması, erken aşamalı kardiyovasküler ve beyin sağlığı girişimleri için dil serbestisi olmayan klinik doğrulama, reglümans ve mentorluk yollarını bir arada sunuyor.
-💡 *WHY IT MATTERS:* Türkiye'deki kardiyoloji girişimleri (giyilebilir EKG, AI-ekokardiyografi, hasta takip platformları) bu programlara başvurularak FDA/CE sürecini kısaltabilir ve ABD/EU piyasa girişine 'soft landing' yapabilir.
-📌 _GlobeNewswire / Heart.org · 2 kaynak_
+*H03 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
+*GLP-1 Çağında Statinler Hala Önemli mi? (Lipid Yönetiminin Yeni Paradigması)*
+Obezite ve diyabet tedavisinde devrim yaratan GLP-1 RAs (Semaglutid, Tirzepatid) kilo verme ve inflamasyon azaltma üzerinden kardiovasküler riski düşürüyor. Uzmanlar, bu ilaçların LDL kolesterolü üzerindeki dolaylı etkisi statin ihtiyacını ortadan kaldırır mı, yoksa kombine tedavi (Statin + GLP-1 + Ezetimib/PCSK9) yeni altın standart mı tartışıyor.
+💡 *WHY IT MATTERS:* Bu, 'ilaca dayanıklı hipertansiyon/hiperlipidemi' tanımını yenilediği için farmakolojik algortimaları ve rehberleri (ESC/ACC) zorlayacak. Sağlık teknolojileri için: Hasta uyumunu (adherence) izleyen dijital ilaç kutuları ve GLP-1 yan etkilerini (GI) yöneten mobil uygulamalar için pazar kapısı açılıyor.
+📌 _Medscape Cardiology · 2 kaynak_
 ------------------------------------
 
-*H04 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
-*Kannabis İnhalasyonu Yetişkinlerde Kardiyak Ektopi ile Negatif Korelasyon Gösteriyor*
-Beklenmedik bir bulguda, kannabis içeren yetişkinlerde ventriküler/atrial ektopik atımların anlamlı derecede daha az görüldüğü rapor edildi; mekanizma kanabinoid reseptörleri üzerinden otonom modülasyonu olabilir.
-💡 *WHY IT MATTERS:* Giyilebilir ritim izleme cihazları (Apple Watch, Kardia, Withings) veri setlerinde 'kannabis kullanımı' bir konfounder (karıştırıcı değişken) olarak modellenmelidir; yanlış pozitif aritmi alarmlarını azaltmak için yaşam tarzı etiketi kritik hale geliyor.
-📌 _Medscape Cardiology · 1 kaynak_
+*H04 | SAĞLIK TEKNOLOJİLERİ · OPPORTUNITY*
+*AHA ve Octane: Kardiyovasküler İnovasyon İçin Küresel Yarışma ve Hızlandırıcı Programları Başlattı*
+American Heart Association (AHA) küresel bir sağlık teknolojisi yarışması duyurdu; Octane ise 'Mussallem Cardiovascular Accelerator' ile yeni nesil kalp sağlığı girişimlerine mentorluk, finansman ve klinik doğrulama yolları sunuyor. Philips de Avrupa çapında kardiyovasküler sağlık erişimini artırmak için dijital platformlar kuruyor.
+💡 *WHY IT MATTERS:* Türkiye'deki medtech girişimleri (özellikle AI destekli EKG analizi, uzaktan hasta takibi, rehabilitasyon robotikleri) bu global programlara (AHA, Octane, Philips HealthWorks) başvurarak FDA/CE sürecini hızlandırabilir ve ABD/Avrupa pazarına giriş kapısı bulabilir. TÜBİTAK 1512/1507 projeleri bu ekosistemle senkronize edilmeli.
+📌 _Heart.org / GlobeNewswire / Philips · 3 kaynak_
 ------------------------------------
 
 *H05 | SAĞLIK & KARDİYOLOJİ · TREND*
-*Kuzey Amerika İntervensiyonel Kardiyoloji Cihazları Pazarı 2031'e Yönelik Büyüme Analizi*
-MarketsandMarkets raporu; yapısal kalp cihazları (TAVR, MitraClip), görüntüleme kateterleri ve robotik asistans sistemlerinin 2031'e %7-8 CAGR ile büyüyeceğini, ABD pazarının tek başına 15 Mrd $'ı bulacağını öngörüyor.
-💡 *WHY IT MATTERS:* Türkiye imalatçısı (stent, kateter, kılavuz tel) için ihracat fırsatı; yerel R&D'te 'bioresorbable scaffold' ve 'robotik navigasyon' odaklı patent portföyü oluşturulması stratejik zorunluluktur.
-📌 _MarketsandMarkets · 1 kaynak_
+*Gastroenterolojide AI: Fayda mi Zarar mı? (Klinik Karar Destek Sistemlerinin Gerçekliği)*
+Medscape analizi, GI endoskopisinde AI polip tespitinin (CADe) adenom tespit oranını artırdığını ancak yan pozitif oranını, prosedür süresini ve maliyeti de yükselttiğini gösteriyor. Klinisyenler 'alert fatigue' (uyarı yorgunluğu) yaşıyor; AI'nın kalite göstergelerini (ADR) iyileştirdiği kanıtlanmış olsa da maliyet-etkinlik tartışmalı.
+💡 *WHY IT MATTERS:* Kardiyolojide de (EKG AI, Echo AI) benzer bir 'gerçek dünya' şokunun yaşanması kaçınılmaz. Ürün geliştirenler için: Sadece 'hassasiyet/duyarlılık' değil, 'klinik iş akışı entegrasyonu' ve 'maliyet azaltma' metrikleri ile FDA De Novo / MDR onayı almak kritik diferansiyasyon faktörü olacak.
+📌 _Medscape Medical News · 1 kaynak_
 ------------------------------------
 
 ====================================
@@ -45,43 +45,36 @@ MarketsandMarkets raporu; yapısal kalp cihazları (TAVR, MitraClip), görüntü
 ====================================
 
 *T01 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
-*Intel AI Playground ve llmfit: Yerel LLM Çalıştırma 'Tek Tık' Seviyesine İndi*
-Intel'in Arc GPU'lar için optimize edilmiş AI Playground uygulaması ve 'llmfit' aracı (AlexsJones), donanımınızı tarayıp hangi quantized modellerin (GGUF/EXL2) kaç token/saniyede koşacağını rapor edip tek komutla indirip servis ediyor.
-💡 *WHY IT MATTERS:* Hassas sağlık/finans verisi olan kurumsal müşteriler için bulut maliyeti ve gizlilik bariyerini kaldırıyor; Türkiye'de 'on-premise AI' danışmanlığı ve donanım paketleme (NPU/GPU optimize edilmiş mini PC) yeni bir B2B gelir kapısı.
-📌 _GitHub Trending / Releases · 2 kaynak_
-------------------------------------
-
-*T02 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
-*tinyPod: Apple Watch için Elektroniksiz Mekanik Click Wheel Kılıfı*
-80$'lık silikon kılıf, Apple Watch Digital Crown'u üzerinden dişli sistemiyle etkileşime girerek 2004 iPod deneyimini taklit ediyor; Bluetooth, pil veya uygulama gerektirmiyor, tamamen mekanik bir 'human interface device' hack'i.
-💡 *WHY IT MATTERS:* Giyilebilir sağlık cihazlarında (glukoz, EKG, SpO2) 'dokunmatik ekran kullanılamayan' ortamlarda (ameliyat, spor, endüstri) navigasyon için sıfır güç tüketen mekanik arayüzler tasarlanabilir; patentlenebilir bir 'accessory-as-interface' modeli.
+*OpenAI Gelir Modeli Dönüşümü: Kurumsal (B2B) Gelir Bireysel (B2C) Geliri Geçti*
+Aakash Gupta verilerine göre OpenAI'nin yıllık gelir hızı (ARR) Aralık'ta $20M'dan güncelde $40M+'ye çıkarken, gelir kaynağının %50'si artık Enterprise (ChatGPT Enterprise, API volume deals) dan geliyor. Sam Altman'ın $1 Trilyon IPO planını çekip Dario Amodei (Anthropic) ile güvenlik konusunda uzlaşı sağlaması bu stratejik kaymayı onaylıyor.
+💡 *WHY IT MATTERS:* AI pazarı 'model satışından' 'kurumsal altyapı/guvenlik/saas satışına' evrildi. Türkiye SaaS'leri için: Kendi verileriyle fine-tune edilmiş, on-prem veya VPC'de koşan, SOC2/ISO27001 uyumlu 'Özel LLM Ağları' kurmak, ham model API'si satmaktan çok daha karlı ve savunulabilir bir pozisyondur.
 📌 _Twitter / X (@aakashgupta) · 1 kaynak_
 ------------------------------------
 
-*T03 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
-*Understand Anything & CheckCle: Agent Tabanlı Kod Bilgi Grafikleri ve Altyapı Gözlemlenebilirliği*
-Tom Doerr'in paylaştığı araçlar; codebase'i interaktif bilgi grafiğine (dosya/fonksiyon/bağımlılık) dönüştüren 'Understand Anything' ve HTTP/DNS/TCP protokollerini izleyen, durum sayfası üreten 'CheckCle' geliştirici üretkenliğini ve operasyonel şeffaflığı artırıyor.
-💡 *WHY IT MATTERS:* Karmaşık MedTech yazılımında (FDA 62304 uyumlu) kod değişiklik etkisi analizi ve CI/CD pipeline gözlemlenebilirliği için bu açık kaynak/indie araçlar kurumsal çözümlerin (Datadog, Snyk) uygun maliyetli alternatifi olabilir.
-📌 _Twitter / X (@tom_doerr) · 2 kaynak_
+*T02 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
+*YuE2 & Maestro: PC'nizde Çalışan, Ücretsiz, Çok Modlu (Lyrics+Music) Müzik Üretim Ajanı*
+Cocktail Peanut (Pinokio geliştiricisi), YuE2 modelini Maestro arayüzüne entegre etti. Kullanıcı 'Jazzy lofi hiphop about basil fried rice' yazıyor; yerel LLM ajanı hem şarkı sözlerini hem de müzik stil prompt'unu yazıyor, model de tamamen lokal (GPU VRAM uygunluğu şartıyla) müzik ürettiği için sıfır maliyet.
+💡 *WHY IT MATTERS:* Bu, 'Generative AI' nin 'Cloud API ekonomisinden' 'Donanımınızı kullanın ekonomisine' geçişinin en somut örneği. Türkiye'de içerik üreticileri, reklam ajansları ve oyun stüdyoları için GPU sunucu kiralama maliyetini sıfıran 'On-Prem Creative Suite' paketleme (ComfyUI + Pinokio + YuE2 + LLava) güçlü bir Micro-SaaS fırsatıdır.
+📌 _Twitter / X (@cocktailpeanut) · 1 kaynak_
 ------------------------------------
 
-*T04 | TEKNOLOJİ & DONANIM · TREND*
-*openpilot: 300+ Araçta Sürücü Asistanını İşletme Sistemi Olan Robotik Platform*
-Comma.ai'in openpilot, sadece lane-keeping değil, uçtan uca öğrenme (end-to-end) mimarisiyle 300+ araç modelinde OEM seviyesinde ADAS özellikleri sunuyor; simülasyon, veri toplama ve OTA güncelleme altyapısı dahil.
-💡 *WHY IT MATTERS:* Otomotiv yazılım standartları (SOAFEE, AUTOSAR Adaptive) evrildiğinde, Türkiye otomotiv yan sanayi (Otokar, Togg, TOGG ekosistemi) için 'reference implementation' ve veri seti kaynağı; kamyon/otobüs flotası retrofit pazarı için düşük maliyetli ADAS fırsatı.
-📌 _GitHub Trending · 1 kaynak_
+*T03 | TEKNOLOJİ & DONANIM · TREND*
+*Model Sıkıştırma ve 'Provable AI' Dalgası: Bonsai 2 (27B), Qwen 3.8 Omni Flash, Bend Lang*
+Hacker News'te üç kritik gelişme öne çıktı: 1) PrismML 'Bonsai 2' ile 27B modelleri 9x küçültme (near-lossless) başardı. 2) Qwen 'Omni Flash' ile çok modlu (ses/görüntü/metin) hızı artırdı. 3) 'Bend' dili, CPU/GPU'da çalışan ve AI hatalarını (hallüsinasyon/mantık) tip sistemi ve kanıtlarla (proof) derleme anında engelleme vaadiyle çıktı.
+💡 *WHY IT MATTERS:* Küçültme (Quantization/Distillation) artık 'performans kaybı' demek değil, 'edge deployment' demek. Bend dili ise 'Agentic Workflow' güvenliği için kritik: Finans/Sağlık/Hukuk sektöründe 'model yanlış karar verirse kim sorumlu?' sorusuna teknik cevap (Formal Verification) sunuyor. Rust/Go ekibi olan Türk startup'ları bu dil/araç setini erken benimsemeli.
+📌 _Hacker News · 3 kaynak_
+------------------------------------
+
+*T04 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
+*Yerel AI Araç Zinciri Olgunlaşıyor: Intel AI Playground, OpenPilot (Robotik), llmfit (Donanım Uyumluluğu)*
+GitHub Trending'de Intel'in NPU/GPU için 'AI Playground' (kodlama, resim, sohbet tek uygulamada), Comma.ai'nin 300+ araçta sürücü asistanı 'OpenPilot' (Robotik OS), ve 'llmfit' (Tek komutla donanımınıza hangi modelin gideceğini bulan CLI aracı) öne çıktı. OpenVINO Audacity eklentisi ile ses düzenleme de lokal AI'ya taşındı.
+💡 *WHY IT MATTERS:* Parçacıklar birleşiyor: Donanım (Intel/AMD/Nvidia) -> Çalıştırma Motoru (OpenVINO/llama.cpp) -> Model Seçici (llmfit) -> Uygulama (Playground/Audacity/OpenPilot). Türkiye'de 'Yerel AI İstasyonu' (Yüksek VRAM'li GPU + Ön yüklü bu stack) satışı ve kurulum servisi, veri gizliliği isteyen hukuk/muhasebe/klinik ofisler için 'Blue Ocean' pazar.
+📌 _GitHub Trending · 4 kaynak_
 ------------------------------------
 
 *T05 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
-*Higgsfield API ve WanGP LongCat: Generatif Video için Tek API ve Lipsync Avatar*
-Higgsfield 50+ generatif medya modelini (Sora, Runway, Luma, WanGP vb.) tek async API altında birleştiriyor; WanGP'nin LongCat Avatar modeli tek görüntüden lipsync video üretimini mümkün kılıyor.
-💡 *WHY IT MATTERS:* Sağlık eğitimi (hasta onam formu videoları), telemedizin (dijital asistan avatarları) ve pazarlama (ilacılama reklamları) için 'video generation pipeline' kurulum süresini haftalardan dakikalara indiriyor; Türkçe token desteği ve yerel barındırma (openvino) entegrasyonu rekabet avantajı.
-📌 _Product Hunt / Twitter (@cocktailpeanut) · 2 kaynak_
-------------------------------------
-
-*T06 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
-*Keys Not Included: ABD Sürücü Belgesi Barkodlarındaki İmza Anahtarlarının Çalınması*
-Güvenlik araştırmacısı Ryan, AAMVA standartlı PDF417 barkodlarda kullanılan ECDSA imzalama anahtarlarını (P-256) bir dizi uygulama hatasıyla (zayıf entropy, yan kanal) kurtardı; bu sayede sahte kimlik üretimi teorik olarak mümkün hale geldi.
-💡 *WHY IT MATTERS:* Kimlik doğrulama altyapısında (e-Devlet, bankacılık, hastane hasta kimliği) 'barkod/QR tabanlı offline doğrulama' yapan sistemler acil pen-test ve anahtar rotasyonu gerektiriyor; Türkiye'de 'Mobil İmza' ve 'e-İmza' altyapısının benzer vektörlere karşı dayanıklılığı test edilmeli.
-📌 _Hacker News / ryan.science · 1 kaynak_
+*Product Hunt Vurucu Ürünleri: AI Agent İş Akışları (Toone), Self-Healing CI (Sutura), URL'den AI (Duvi)*
+Günün öne çıkan ürünleri pratik sorunları çözüyor: Toone -> Karmaşık AI ajan zincirlerini görsel olarak kurup güvenilir hale getirme. Sutura -> CI pipeline'ı kırıldığında hatayı analiz edip kodu otomatik düzeltip PR açan 'Self-Healing' bot. Duvi -> Sadece bir web sitesi URL'i vererek o iş için özel bir AI asistanı/modeli dakikalar içinde üretme.
+💡 *WHY IT MATTERS:* Bu üç ürün 'Son 1 mil' sorunlarını çözüyor: Toone (Orkestrasyon), Sutura (Bakım/DevOps), Duvi (Onboarding/Veri Hazırlığı). Türk Geliştirici ekipleri için: Bu araçların API'lerini birleştirip 'Türkçe Özel: Kod Review Botu', 'Türkçe Özel: E-Ticaret Müşteri Destek Ajanı' gibi dikey (vertical) çözümler paketlemek, yatay platformlarla (LangChain/CrewAI) yarışmakten çok daha kolay kazandırır.
+📌 _Product Hunt · 3 kaynak_
 ------------------------------------
