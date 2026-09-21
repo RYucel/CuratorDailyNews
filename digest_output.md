@@ -1,42 +1,42 @@
-🗞️ *CURATOR DAILY NEWS — 20.09.2026*
-_Bugün kartiyoloji alanında ESC'nin ilk kardiyorenal rehberleri ve GLP-1 çağında statin tartışması klinik pratikleri şekillendirirken, sağlık teknolojisi tarafında AHA/Philips girişimcilik programları ve Elucid'ın PLAQUE-IQ ödülü inovasyon hızını gösteriyor. Teknoloji tarafında ise yerel LLM çalıştırma araçları (llmfit, Podroid, Maestro/YuE2), donanım seviyesinde düşük güçlü otomasyon (Arduino self-latching, Nixie LCD) ve mobil cihazları sunucu/ikinci ekran yapma trendleri (Podroid, iPhone monitor) 'Edge AI & Local Compute' paradigma değişimini somutlaştırıyor._
+🗞️ *CURATOR DAILY NEWS — 21.09.2026*
+_2026 ESC Kalp Yetersizliği rehberleri 'hafif fenotip' tanımını kaldırarak klinik pratikte paradigma değişimi yaratıyor; bu da erken teşhis ve giyilebilir takip teknolojileri için kritik bir fırsat penceresi açıyor. Teknoloji tarafında ise Google'ın AX (Agentic Orchestrator) ve 8GB VRAM'de çalışan Mini-AGI gibi yerel/şirket içi AI altyapı araçları, bulut bağımlılığını kırarak donanım odaklı otomasyon ve giyilebilir sağlık cihazları için yeni bir geliştirme standardı belirliyor._
 
 ====================================
 🩺 *SAĞLIK & KARDİYOLOJİ GELİŞMELERİ*
 ====================================
 
 *H01 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
-*ESC İlk Kardiyorenal Birlik Rehberlerini Yayınladı*
-Avrupa Kardiyoloji Derneği (ESC), kalp yetmezliği ve böbrek hastalığının kesişimini kapsayan ilk ortak klinik pratik rehberlerini yayınladı. Bu rehberler, kardiyologlar ve nefrologlar arasında standartlaştırılmış bir dil, tanı kriterleri ve tedavi algoritmaları (SGLT2 inhibitörleri, MR antagonisti dozajı vb.) oluşturuyor.
-💡 *WHY IT MATTERS:* Kardiyorenal sendrom piyasa boyutu ve klinik karmaşıklığı देखते हुए, bu rehberler dijital klinik karar destek sistemleri (CDS), uzaktan hasta izleme platformları ve kombine ilaç dozajlama algoritmaları geliştiren medtech girişimleri için altın standart referans noktası oluşturur.
+*2026 ESC Kalp Yetersizliği Rehberleri: 'Hafif Fenotip' Tanımı Kaldırıldı, İlk Basamak Odaklı Yeniden Yapılandırıldı*
+Avrupa Kalp Derneği (ESC) 2026 rehberlerinde kalp yetersizliği sınıflandırmasından 'hafif azalmış ejeksiyon fraksiyonlu (HFmrEF)' ve 'hafif fenotip' kavramları tamamen çıkarılmış; yerine klinik fenotiplere (ejeksiyon fraksiyonu bağımsız) dayalı, ilk basamak hekimlerinin erken tanı ve müdahale yapabilmesine odaklanan yeni bir algoritma getirilmiştir.
+💡 *WHY IT MATTERS:* Bu değişiklik, hastaların 'hafif' kategorisinde kaybolup tedavisiz kalmasını engellemek için sürekli EKG/ritim izleme ve BNP/NT-proBNP tabanlı erken uyarı sistemleri (giyilebilir cihazlar, ev tipi cihazlar) talep edecektir. Türkiye'deki Aile Hekimliği sistemine entegre edilebilecek, düşük maliyetli tarama algoritmaları geliştiricileri için doğrudan pazar girişi kapısıdır.
 📌 _Medscape Cardiology · 2 kaynak_
 ------------------------------------
 
 *H02 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
-*GLP-1 Ağonisti Çağında Statinlerin Yeri Tartışılıyor*
-Medscape analizi, obezite ve diyabet tedavisinde devrim niteliğindeki GLP-1 RAs (Semaglutid, Tirzepatid) kullanımının LDL kolesterolü ve kardiovasküler risk üzerindeki etkileriyle statin tedavisinin gerekliliğini ve dozajını nasıl değiştirdiğini sorguluyor. Klinik pratikte 'statin mi GLP-1 mi?' ikilemi yerine kombinasyon stratejileri öne çıkıyor.
-💡 *WHY IT MATTERS:* Bu paradigm değişimi, ilaç uyumluluğu takibi, yan etki profilini yöneten dijital terapi (DTx) uygulamaları ve AI destekli risk skorlaması (örn. PREVENT denklemi entegrasyonu) yapan platformlar için yeni bir pazar ve klinik doğrulama alanı yaratıyor.
-📌 _Medscape Cardiology · 2 kaynak_
+*Kanabis İnhalasyonu Yetişkinlerde Kardiyak Ektopi Riskini Azaltıyor (Medscape Çalışması)*
+Yeni bir gözlemsel çalışma, kanabis inhale eden yetişkinlerde kontrol grubuna göre ventriküler ektopik atımların (PVC/NSVT) anlamlı derecede daha az görüldüğünü rapor ediyor. Mekanizma kanabinoid reseptörleri üzerinden otoinomik modülasyonla açıklanıyor.
+💡 *WHY IT MATTERS:* Bu kontrovers bulgu, arritmi yönetiminde yeni farmakolojik hedefler (CB1/2 agonistleri) ve kanabinoid tabanlı terapeutiklerin klinik deneylerine girdiğini gösteriyor. Giyilebilir EKG cihazları (Apple Watch, Kardia vb.) üzerinden toplanan gerçek dünya verileri (RWE) ile bu popülasyonda arritmi yükünün uzun vadeli takibi, hem FDA onay sürecini hem de sigorta/ödeme politikalarını şekillendirecek kritik bir veri kaynağı oluşturur.
+📌 _Medscape Cardiology · 1 kaynak_
 ------------------------------------
 
-*H03 | SAĞLIK TEKNOLOJİLERİ · HIGH SIGNAL*
-*Elucid Plaque-IQ, 2026 MedTech Breakthrough Ödülünü Kazandı*
-Elucid Bioimaging'in FDA onaylı Plaque-IQ teknolojisi, koroner tomografi anjiyografisinden (CCTA) plazma fenotipini (lipid çekirdekli, fibroli, kalsifiye) non-invazif olarak nicelendirerek 'En İyi Yeni Kardiyoloji Teknolojisi' ödülünü aldı. Bu, stenoz şiddetinden plazma yapısına geçişi işaret ediyor.
-💡 *WHY IT MATTERS:* Görüntüleme tabanlı risk katmanlaması (plaque burden/phenotype), invazif anjiyo/iFR/FFR ihtiyacını azaltarak kateter laboratuvarı maliyetlerini düşürür. Türkiye'deki özel hastane grupları ve teleradyoloji platformları için erken benimseme (early adoption) rekabet avantajı sağlar.
-📌 _Business Wire / Cardiology MedTech · 1 kaynak_
+*H03 | SAĞLIK TEKNOLOJİLERİ · OPPORTUNITY*
+*AHA & MedTech Breakthrough: 8 Başlangıç Şirketi Kalp-Beyin Sağlığı İçin Seçildi, Elucid Plaque-IQ Ödüllendi*
+American Heart Association (AHA) global yarışması ve MedTech Breakthrough ödülleri, yapay zeka destekli plak karakterizasyonu (Elucid Plaque-IQ), kardiyovasküler hızlandırıcı programlar (Octane Mussallem) ve Philips/Avera gibi devlerin yenilik stratejilerini öne çıkardı. 8 startup klinik doğrulama ve ölçeklenme aşamasına taşındı.
+💡 *WHY IT MATTERS:* Koroner tomografi anjiyografisi (CCTA) verisi üzerine kurulan AI tabanlı plak analizi (FFRct, plak yükeği), invaziv anjiyo ihtiyacını %30-40 azaltıyor. Türkiye'de özel hastane zincirleri ve TÜBİTAK/ARDEB destekli R&D projeleri için 'FDA/CE onaylı AI modülleri' entegre edilebilir yazılım katmanı (SaaS) modeli, donanım satışından daha yüksek marjlı ve ölçeklenebilir bir girişim modeli sunar.
+📌 _Business Wire / News-Medical / Heart.org · 6 kaynak_
 ------------------------------------
 
-*H04 | SAĞLIK TEKNOLOJİLERİ · OPPORTUNITY*
-*AHA ve Philips, Kalp-Beyin Sağlığı Girişimciliği İçin Hızlandırma Programları Başlattı*
-American Heart Association (AHA) 'Global Health Tech Competition' ve Philips 'Cardiovascular Accelerator' programlarıyla 8 girişim seçildi. Odak alanları: erken tanı, uzaktan izleme, sağlık eşitliği ve klinik iş akışı optimizasyonu.
-💡 *WHY IT MATTERS:* Türkiye'deki kardiyoloji odaklı SaaS ve giyilebilir sensör girişimleri (AR-GE vergisi teşvikleriyle) bu global programlara (Octane/Mussallem Accelerator vb.) başvurup mentorluk, FDA/CE rehberliği ve ABD pazarı girişi kapısı açabilir. 'Cardio-Brain' axis (AFib-stroke, HF-dementia) veri entegrasyonu fırsatı.
-📌 _Heart.org / GlobeNewswire / News-Medical · 3 kaynak_
+*H04 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
+*AIDS 2026: İki Yeni HIV İyileşme Olgası Raporu (Stem Hücre Transplantasyonu Sonrası)*
+AIDS 2026 konferansında, CCR5-delta32 mutasyonlu donörden stem hücre transplantasyonu alan iki hastada virüsün tamamen eradike edildiği (iyileşme) bildirildi. Bu, 'Berlin Hastası' sonrası toplam iyileşme sayısını artırıyor.
+💡 *WHY IT MATTERS:* Gen tedavisi (CRISPR/CCR5 knockout) ve alojenik transplantasyon protokolleri artık 'fonksiyonel iyileşme'den 'steril iyileşme'ye evriliyor. Bu süreçte minimal invaziv kalp biyopsisi ve immün rejeksiyon takibi için giyilebilir biyosensörler (ilacın kalp toksisitesini izleme) ve uzaktan hasta izleme platformları kritik alt yapı haline geliyor.
+📌 _Medscape Medical News · 1 kaynak_
 ------------------------------------
 
 *H05 | SAĞLIK & KARDİYOLOJİ · TREND*
-*Kadın Biyolojisi ve Uzun Yaşam Araştırmaları Yeni İçgörüler Sunuyor*
-Medscape'in derleme haberinde, kadınların erkeklere göre daha uzun yaşamasının biyolojik temelleri (X kromozomu, hormonal koruma, mitokondrial fonksiyon) ve bu farkın klinik deney tasarımına (cinsiyet spesifik dozaj, endpoint) yansıması ele alındı.
-💡 *WHY IT MATTERS:* FDA'nın 2024 'Diversity Action Plan' zorunluluğu ve cinsiyet spesifik kardiyovasküler risk modelleri (POPEYE, PREVENT) geliştiren AI şirketleri için veri seti çeşitliliği ve model adililiği (bias mitigation) kritik bir ürün farklılaştırma faktörü haline geliyor.
+*Kadın Biyolojisi ve Uzun Yaşam: Kromozom X ve Hormonal Koruma Mekanizmaları Odaklanıyor*
+Medscape analizi, kadınların erkeklere göre ortalama 5-7 yıl daha uzun yaşamasının arkasındaki biyolojik nedenleri (X kromozomundaki tumör bastırıcı genlerin çift dozajı, östrojenin kardiyovasküler koruyucu etkisi, immün sistem dayanıklılığı) inceliyor.
+💡 *WHY IT MATTERS:* Cinsiyete özgü (sex-specific) tıp, kardiyoloji rehberlerinde (örn. HFpEF kadınlarda dominant) ve ilaç dozajlamasında artık zorunlu hale geliyor. Femtech ve kadın sağlığı odaklı giyilebilir teknolojiler (menopoz takibi, gebelikte preeklampsi erken uyarısı), 'Cinsiyete Duyarlı AI Modelleri' eğitimi için en değerli veri kümelerini üretecek alanlardır.
 📌 _Medscape Medical News · 1 kaynak_
 ------------------------------------
 
@@ -45,43 +45,43 @@ Medscape'in derleme haberinde, kadınların erkeklere göre daha uzun yaşaması
 ====================================
 
 *T01 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
-*Podroid: Root Olmadan Android'de Tam Linux Konteyner Çalıştırma*
-Tom Doerr (@tom_doerr) tarafından paylaşılan Podroid, Android cihazlarda root erişimi gerektirmeden tam bir Linux masaüstü ortamını ve konteyner (container) çalıştırma yeteneği sunuyor. Bu, mobil donanımı edge sunucu/gelştirme istasyonuna dönüştürüyor.
-💡 *WHY IT MATTERS:* Eski amiral gemisi telefonları (Snapdragon 8 Gen 1/2/3) düşük maliyetli, batarya yedekli edge AI inference sunucularına (llama.cpp, Ollama) dönüştürmek için devrim niteliğinde. Türkiye'de 'Bring Your Own Device' (BYOD) edge computing çözümleri (örn. fabrika/lojistik gateway) için donanım maliyetini %90 düşürebilir.
-📌 _Twitter / X (@tom_doerr) · 1 kaynak_
+*Google AX: Açık Kaynaklı 'Agentic Orchestrator' Çerçevesi Lansman Yaptı*
+Google, çoklu ajan (multi-agent) sistemlerin koordine edilmesi, durum yönetimi ve araç kullanımı için üretim hazırlığına odaklanmış 'AX' (Agent Executor) framework'ünü açık kaynak olarak yayınladı. LangGraph/CrewAI alternatifi olarak enterprise ölçeklenebilirliği ve gözlemlenebilirlik (observability) vurgulanıyor.
+💡 *WHY IT MATTERS:* Agentic AI artık 'demo' aşamasından 'production orchestration' aşamasına geçti. Türkiye'deki yazılım firmaları ve otomasyon entegratörleri, müşterilerine 'bulut bağımsız, şirket içinde çalışan, denetlenebilir AI iş akışları' satabilmek için AX veya benzeri (LangGraph) altyapıyı standartlaştırmalı. Bu, SaaS'dan 'Agent-as-a-Service' modeline geçişin altyapı taşıdır.
+📌 _Hacker News (agentexecutor.io) · 1 kaynak_
 ------------------------------------
 
 *T02 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
-*llmfit: Donanımınıza Uyan Modeli Tek Komutla Bulma*
-GitHub Trending'de yer alan AlexsJones/llmfit aracı, kullanıcının yerel donanımını (RAM, VRAM, CPU) tarayarak Hugging Face'den indirilebilecek en uygun quantized modeli (GGUF) ve çalıştırma komutunu otomatik öneriyor. 'Yüzlerce model, tek komut' mottosu ile yerel LLM giriş bariyerini kaldırıyor.
-💡 *WHY IT MATTERS:* Heterojen donanım envanteri (Mac M-serisi, Nvidia RTX 3060/4090, AMD ROCm, Intel Arc, hatta Raspberry Pi 5) olan Türk geliştiricileri ve KOBİleri için 'model seçimi -> quant seçimi -> parametre ayarı' sürecini otomatize ederek yerel AI benimsenmesini hızlandırır. Ürünleşme fırsatı: Kurumsal 'Local AI Readiness Assessment' aracı.
-📌 _GitHub Trending · 1 kaynak_
+*Mini-AGI: 8GB VRAM'de Sürekli Öğrenen (Continual Learning) Dinamik Model*
+GitHub'da yayınlanan Mini-AGI projesi, katman dondurma (layer freezing) ve LoRA adaptatörleri kullanarak, modelin yeni verilerden 'catastrophic forgetting' olmadan sürekli öğrenmesini sağlıyor. Sadece 8GB VRAM (RTX 3070/4060 seviyesi) ile çalışabiliyor.
+💡 *WHY IT MATTERS:* Bu, 'Edge AI' ve 'Personal AI' için kırılma noktasıdır. Giyilebilir sağlık cihazları (kalp monitörü, glikoz sensörü) hastaya özel ritim/glikoz modellerini cihazda (on-device) güncelleyebilir hale geliyor. Veri gizliliği (KVKK/GDPR) ve bant genişliği sorunlarını çözen bu mimari, Türk donanım girişimlerinin (ESP32-S3, RPi CM4 tabanlı) 'akıllı sensör' yerine 'öğrenen sensör' satmasını sağlar.
+📌 _Hacker News / GitHub (volotat/mini-AGI) · 1 kaynak_
 ------------------------------------
 
 *T03 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
-*Maestro + YuE2: Yerel LLM Ajanı ile Müzik/Şarkı Üretimi (100% Offline)*
-Cocktail Peanut (@cocktailpeanut), Maestro platformuna entegre edilen YuE2 modelinin, kullanıcı doğal dil girdisiyle (örn: 'Jazzy lofi hiphop about basil fried rice') hem şarkı sözlerini hem de müzik stil prompt'larını yazarak tam uzunlukta şarkı ürettiğini duyurdu. Tamamen lokal, ücretsiz, GPU gerektiren (VRAM ~8GB+).
-💡 *WHY IT MATTERS:* Generative AI'nin 'Chat' arayüzünden 'Agentic Workflow' arayüzüne (LLM -> Prompt Engineering -> Domain Model) geçişinin somut örneği. Türk medya/prodüksiyon şirketleri için telif hakları sorunu olmayan, offline çalışan 'Custom Jingle/Background Music Generator' mikro-SaaS fırsatı yaratır.
-📌 _Twitter / X (@cocktailpeanut) · 1 kaynak_
+*Project NOMAD: İnternetsiz, Yerel AI Destekli Bilgi/Eğitim Sunucusu (RPi/Mini PC)*
+Crosstalk Solutions tarafından geliştirilen NOMAD, Wikipedia, binlerce kitap, harita, kurs ve opsiyonel yerel LLM (Ollama/vLLM) içeren, Raspberry Pi veya Mini PC üzerinde tamamen offline çalışan, konteynerize (Docker/Podman) bir dağıtımdır.
+💡 *WHY IT MATTERS:* Afet yönetimi (AFAD), askeri lojistik, kırsal sağlık ocakları (Türkiye'de 1000+ ilçe sağlık ocağı interneti zayıf) ve gemi/platoform altyapısı için 'Air-gapped AI' kritik ihtiyaçtır. Bu proje, donanım (RPi 5 / Intel N100 box) + yazılım (NOMAD stack) + yerel model (Llama 3.1 8B Q4) paketi olarak 'Kesintisiz Bilgi Erişim Çözümü' B2B/G2B satış modeli için hazır bir üründür.
+📌 _GitHub (Crosstalk-Solutions/project-nomad) · 1 kaynak_
 ------------------------------------
 
 *T04 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
-*Arduino ile Kendi Kendini Kesen (Self-Latching) Düşük Güçlü Otomasyon*
-Reddit r/arduino'da paylaşılan proje, MOSFET/Transistör tabanlı bir 'self-latching power circuit' ile Arduino'nun sadece tetiklendiğinde (örn. araba kapısı açıldığında) uyanıp, görevi bitince (ışık söndüğünde) kendi beslemesini keserek mikroamper seviyesine düşürülmesini gösteriyor. Kod tarafında DFPlayer Pro 'kodsz' tetikleme de tartışıldı.
-💡 *WHY IT MATTERS:* Pil/akü ile çalışan, aylarca uyku modunda bekleyen IoT sensör düğümleri (tarım nem sensörü, su kaçağı, güvenlik manyetik sensör) için kritik bir donanım deseni (Hardware Pattern). Türkiye'de 'LoRaWAN/Helium' tabanlı akıllı tarım/şehir projelerinde batarya ömrünü yıla çıkaran bu devre tasarımı 'Reference Design' olarak paketlenip satılabilir.
-📌 _Reddit (r/arduino) · 1 kaynak_
-------------------------------------
-
-*T05 | TEKNOLOJİ & DONANIM · TREND*
-*iPhone/iPad'i USB/WiFi ile Mac İkinci Monitörü Yapma (Native/No App Store Limit)*
-Tom Doerr (@tom_doerr), iPhone/iPad'i macOS için 'Sidecar' alternatifi, kablosuz/kablolu ikinci monitör olarak kullanan bir çözüm paylaştı. Bu, Apple ekosistem kilidini (Sidecar'ın donanım kısıtlamalarını) aşarak eski iOS cihazlarını değerlendiriyor.
-💡 *WHY IT MATTERS:* Uzaktan çalışan geliştiriciler, sahte mühendisler ve dijital nomadlar için 'Eski iPad = Taşınabilir İkinci Ekran' dönüşümü, donanım yenileme döngüsünü uzatır. Türkiye pazarında 'Refurbished iPad + Bu Yazılım' paketi ile uygun fiyatlı çift ekran istasyonu satışı (B2B KOBI hedefli) niche bir e-ticaret fırsatı.
+*NetAlertX: Homelab/IT Ağ Envanteri ve Yetkisiz Donanım Tespiti (Self-Hosted)*
+Tom Doerr (@tom_doerr) tarafından paylaşılan NetAlertX, dağıtık ortamlardaki ağ varlıklarını keşfeden, cihaz değişikliklerini (yeni MAC, IP, hostname) izleyen ve merkezi envanter tutan, Docker ile dağıtılan açık kaynak bir ağ güvenliği/izleme aracıdır.
+💡 *WHY IT MATTERS:* OT (Operational Technology) ve IoT güvenliği (NIS2, KVKK 2. Madde uyumu) için 'agentless' ağ görünürlüğü zorunlu hale geliyor. Türk SIEM/SOC firmaları ve MSP'ler (Managed Service Providers), bu aracı müşteri sitelerine 'sıfır yapılandırma' ile dağıtarak 'Donanım Envanteri + Anomali Tespiti' hizmetini aylık abonelik (MRR) modeliyle satabilirler.
 📌 _Twitter / X (@tom_doerr) · 1 kaynak_
 ------------------------------------
 
+*T05 | TEKNOLOJİ & DONANIM · TREND*
+*Maestro + YuE2: Tam Yerel (Offline) LLM Ajansı ile Müzik/Şarkı Üretimi (Pinokio Ekosistemi)*
+Cocktail Peanut (@cocktailpeanut) ekibi, Pinokio yükleyicisi üzerinden 'Maestro' uygulamasını dağıtıyor. Maestro, yerel bir LLM ajansı kullanarak kullanıcının doğal dil isteğine (örn: 'bazlı pirinçli jazzy lofi') hem şarkı sözlerini hem de müzik stil prompt'larını yazıyor ve YuE2 modeli ile sesi üretiyor. 100% yerel, ücretsiz.
+💡 *WHY IT MATTERS:* Bu, 'Multimodal Local Agents' (Çok modlü yerel ajanlar) trendinin tüketici seviyesine indiğini gösterir. Aynı mimari (Yerel LLM Planner + Özel Model Worker), tıp alanında 'Hasta Anamnezi -> Yerel LLM -> Rapor Taslağı + ICD Kod Önerisi' veya 'EKG Görüntüsü -> Yerel Vision Model -> Ön Rapor' akışları için doğrudan uyarlanabilir. Pinokio, bu ajanları 'tek tıkla kur' paketi haline getirerek dağıtım engelini kaldırıyor.
+📌 _Twitter / X (@cocktailpeanut) · 1 kaynak_
+------------------------------------
+
 *T06 | TEKNOLOJİ & DONANIM · TREND*
-*OpenPilot: 300+ Araçta Sürücü Asistanını Geliştiren Açık Kaynak Robotik OS*
-Comma.ai'nin openpilot projesi, desteklenen 300+ araçta fabrika ADAS'ını (Adaptif Kruvaz, Şerit Takip) değiştirerek 'Level 2+' yetenekler (kavşak geçişi, şerit değiştirme) sunuyor. GitHub'da aktif geliştirme sürüyor.
-💡 *WHY IT MATTERS:* Türkiye'de 'Aftermarket ADAS Retrofit' pazarı (kamyonet, taksi, lojistik filolar) için lisanslı, destekli bir entegratör modeli (Hardware: Comma 3X / Fork: DragonPilot) kurulum/hizmet modeli ile girilebilir. Sigorta şirketleriyle veri paylaşımı (telematics) ile prim indirimi modeli iş modeli oluşturur.
+*llmfit: Donanımınızda Hangi Model Çalışır? Tek Komutla Benchmark ve Uyumluluk Testi*
+AlexsJones/llmfit aracı, kullanıcının GPU/CPU/RAM donanımını tarayarak Hugging Face'deki binlerce modeli (GGUF, EXL2, AWQ) filtreler ve 'bu model sizin kartınızda kaç token/saniye çalışır' tahmini verir. Tek CLI komutu ile en uygun quantizasyonu (Q4_K_M vs Q8) bulur.
+💡 *WHY IT MATTERS:* Yerel AI dağıtımındaki en büyük friksiyon 'model seçimi ve quantizasyon kararıdır'. llmfit, donanım satıcıları (Casper, Monster, özel sunucu integratörleri) ve yerel AI çözümleri geliştirenler için 'Müşteriye hangi GPU'yu tavsiye etmeliyim?' sorusunu veri odaklı cevaplayan bir ön-satış (pre-sales) aracı haline geliyor. Türkiye pazarında 'Yerel AI Hazır Donanım Paketleri' satışını hızlandıracak bir araçtır.
 📌 _GitHub Trending · 1 kaynak_
 ------------------------------------
