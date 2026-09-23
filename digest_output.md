@@ -1,4 +1,4 @@
-🗞️ *CURATOR DAILY NEWS — 22.09.2026*
+🗞️ *CURATOR DAILY NEWS — 23.09.2026*
 _Bugünün bülteninde solda sağlık & kardiyoloji gelişmeleri, sağda teknoloji, donanım ve otomasyon gündemi yer alıyor. (Not: AI özetleme şu an kullanılamadı, başlıklar ve özetler doğrudan kaynaklardan derlendi.)_
 
 ====================================
@@ -20,16 +20,16 @@ Do Statins Still Matter in the GLP-1 Era? Medscape
 ------------------------------------
 
 *H03 | SAĞLIK · TREND*
-*Normal Electrocardiography (ECG) Intervals - emedicine.medscape.com*
-Normal Electrocardiography (ECG) Intervals emedicine.medscape.com
-🔗 https://news.google.com/rss/articles/CBMiZkFVX3lxTE90VzBNVGRwdGpEbkhJdVNYZUpJaTJIVXQ5c2ktZFU5SGZKUE1CXzBEMzFqS292MVFOQ0FEa0NBczBxejZ4Mlo3dkNlRzl1QTQxNDRmZjFqSWF6RDVVd3ZXTXl5d0dxdw?oc=5
+*Latest Medical News, Clinical Trials, Guidelines - Today on Medscape - Medscape*
+Latest Medical News, Clinical Trials, Guidelines - Today on Medscape Medscape
+🔗 https://news.google.com/rss/articles/CBMiPkFVX3lxTE5RcVZ5NGpidHNKbU9ENVF0emdJVmJHTmpWS1pUM2Y2OG5POExzaHFMeF9qUzlmcWVjRGE5em5B?oc=5
 📌 _Medscape & Cardiology (Google News) · 18 kaynak_
 ------------------------------------
 
 *H04 | SAĞLIK · TREND*
-*Medical Calculators - Medscape*
-Medical Calculators Medscape
-🔗 https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5TaXdOWFhpNE50UHB4b3pwWmlKS3hwOGNVaHhBQ2ZmNVNaeTVjeWtjMWNRRnNWVkJxcWpMWTl2MUp0TUhZbU9SVE9iTEh3M245QmdDOW1nMGdaTjlxT0JaTGhGdGNvWVU?oc=5
+*Heart Failure: Background, Etiology, Pathophysiology - Medscape*
+Heart Failure: Background, Etiology, Pathophysiology Medscape
+🔗 https://news.google.com/rss/articles/CBMiZEFVX3lxTFBWLXVxNVhqc040YlNXaW92SElDbWdVa3FyZDhJZ1k4X0JrVXNvWFhRbHNtU1RRZDVad0R1N05qQVV0VWpzOGZoOXhrWkYyZ2owa0E5UnB5NDc2S3YybTQ3Q056MEM?oc=5
 📌 _Medscape & Cardiology (Google News) · 18 kaynak_
 ------------------------------------
 
@@ -38,36 +38,36 @@ Medical Calculators Medscape
 ====================================
 
 *T01 | TEKNOLOJİ · HIGH SIGNAL*
-*Can gzip be a language model?*
+*Jev in 25 Lines of Python*
 Comments
-🔗 https://nathan.rs/posts/gzip-lm/
-📌 _Hacker News Top Stories · 38 kaynak_
+🔗 https://www.nobodywho.ai/posts/jev-in-25-lines/
+📌 _Hacker News Top Stories · 36 kaynak_
 ------------------------------------
 
 *T02 | TEKNOLOJİ · OPPORTUNITY*
-*I said no and Apple said yes*
+*Abandoning Scientific Linux Was a Mistake*
 Comments
-🔗 https://dbushell.com/2026/09/22/apple-intelligence/
-📌 _Hacker News Top Stories · 38 kaynak_
+🔗 https://blog.melashri.net/posts/scientific-linux-mistake/
+📌 _Hacker News Top Stories · 36 kaynak_
 ------------------------------------
 
 *T03 | TEKNOLOJİ · OPPORTUNITY*
-*MiMo v2.6*
+*GPT-6 Sol and Luna*
 Comments
-🔗 https://mimo.xiaomi.com/mimo-v2-6
-📌 _Hacker News Top Stories · 38 kaynak_
+🔗 https://openai.com/index/introducing-gpt-6-sol-and-luna/
+📌 _Hacker News Top Stories · 36 kaynak_
 ------------------------------------
 
 *T04 | TEKNOLOJİ · OPPORTUNITY*
-*Spymarks, Not Watermarks*
+*Claude Opus 5.5*
 Comments
-🔗 https://brand.io/article/spymarks/
-📌 _Hacker News Top Stories · 38 kaynak_
+🔗 https://www.anthropic.com/claude-opus-5-5
+📌 _Hacker News Top Stories · 36 kaynak_
 ------------------------------------
 
 *T05 | TEKNOLOJİ · OPPORTUNITY*
-*Study: Young users (9 to 18Y) ditch Google for AI, with unknown consequences*
+*Transit rewards*
 Comments
-🔗 https://norwegianscitechnews.com/2026/09/young-users-ditch-google-for-ai-with-unknown-consequences/
-📌 _Hacker News Top Stories · 38 kaynak_
+🔗 https://waymo.com/blog/2026/09/transit-rewards/
+📌 _Hacker News Top Stories · 36 kaynak_
 ------------------------------------
