@@ -1,4 +1,4 @@
-🗞️ *CURATOR DAILY NEWS — 28.09.2026*
+🗞️ *CURATOR DAILY NEWS — 29.09.2026*
 _Bugünün bülteninde solda sağlık & kardiyoloji gelişmeleri, sağda teknoloji, donanım ve otomasyon gündemi yer alıyor. (Not: AI özetleme şu an kullanılamadı, başlıklar ve özetler doğrudan kaynaklardan derlendi.)_
 
 ====================================
@@ -13,23 +13,23 @@ Framingham Risk Score (2008) Medscape Reference
 ------------------------------------
 
 *H02 | SAĞLIK · TREND*
-*Best Cardiology/CV Surgery Hospitals in 2014 Rankings - Medscape*
-Best Cardiology/CV Surgery Hospitals in 2014 Rankings Medscape
-🔗 https://news.google.com/rss/articles/CBMiVkFVX3lxTE50ZlVRcDB5dDR6bzVXSUFGVEh4X21SLUFoU0dXeVQ4YkZ4MkNOQS1MaTN4Z1BDLTRtODdGbDhaMUVDWEJEYmxiM1JlMTZoZHdqN21HU1Z3?oc=5
+*What Happens When a Sick Physician Is At War With Her Doctor - Medscape*
+What Happens When a Sick Physician Is At War With Her Doctor Medscape
+🔗 https://news.google.com/rss/articles/CBMingFBVV95cUxPaDBaVVVFS2xrNW9XSkVsdUNqVHZNakFBSzhDdG1sZFR3bmxJaGYydi0zRHZIR241elJRbTdJV2l1MmozbHczNC1na2tmR2ZhWDFlMGlzOVQzMWVKZEtQcFN6OXp1MWpDMnV3NnY4UlpKOFo2cVV5Z2sxMVdWbFEwZHVzelR2VVRzaWlQNm0xOTZ5ZjRZZGYxSThuN3NsZw?oc=5
 📌 _Medscape & Cardiology (Google News) · 18 kaynak_
 ------------------------------------
 
 *H03 | SAĞLIK · TREND*
-*Cardiovascular System Anatomy - Medscape*
-Cardiovascular System Anatomy Medscape
-🔗 https://news.google.com/rss/articles/CBMiZkFVX3lxTE5PRzFWYjQ3Y3FwWVYtd3phMElPM2F1Y2o4b3dDdFhaT2toLVcyLUp2d0tmbTZxeVlVNmdhR2I0ckItMkxpaFQyekptb0tIZ2dZU1Z5ME1sVjh5Mll1S0MwSUxEbERMUQ?oc=5
+*Conference MDAngle: HFSA 2026 Amyloidosis/ATTR-CM - Medscape*
+Conference MDAngle: HFSA 2026 Amyloidosis/ATTR-CM Medscape
+🔗 https://news.google.com/rss/articles/CBMiowFBVV95cUxPLXJkMldaM0s0TjJJYVBEY0JuSklXSHNWNkpIVEhVRGlzV2c0N3F4RXFheFVDdFdDN2NfSXpQRTMzU2VFWDJwY3JNQVBEV0JvR1g1WmpGRHRXeWRySndMMDFrV1dsZENCN1pMbV8tcms1RHRTeDVIczhyQk9pd3IyYkpFaFd0ME5pWl9GV2k2QTNXdldSQ0JETFN2c0ZSbkVPcXV3?oc=5
 📌 _Medscape & Cardiology (Google News) · 18 kaynak_
 ------------------------------------
 
 *H04 | SAĞLIK · TREND*
-*Cardiac Amyloidosis Medication - Medscape*
-Cardiac Amyloidosis Medication Medscape
-🔗 https://news.google.com/rss/articles/CBMiaEFVX3lxTE9FbFRkWnBIM29ESm5SMHdqYVVIWnU0VHNNR3NLNWlyMm9GOHJHSFRmcGZWRGYxQmxwb0hOM3hBemxQWlVKekI0LWZ3UDJwRHdpcTdkbWdaa3lyXzB5eHozS3hjTmlYeTVj?oc=5
+*Best Cardiology/CV Surgery Hospitals in 2014 Rankings - Medscape*
+Best Cardiology/CV Surgery Hospitals in 2014 Rankings Medscape
+🔗 https://news.google.com/rss/articles/CBMiVkFVX3lxTE50ZlVRcDB5dDR6bzVXSUFGVEh4X21SLUFoU0dXeVQ4YkZ4MkNOQS1MaTN4Z1BDLTRtODdGbDhaMUVDWEJEYmxiM1JlMTZoZHdqN21HU1Z3?oc=5
 📌 _Medscape & Cardiology (Google News) · 18 kaynak_
 ------------------------------------
 
@@ -38,36 +38,36 @@ Cardiac Amyloidosis Medication Medscape
 ====================================
 
 *T01 | TEKNOLOJİ · HIGH SIGNAL*
-*Parley: Federated, decentralised chat that speaks plain IRC*
+*AI companies leak data to advertisers [pdf]*
 Comments
-🔗 https://git.mills.io/prologic/parley
-📌 _Hacker News Top Stories · 33 kaynak_
+🔗 https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-(clean).pdf
+📌 _Hacker News Top Stories · 32 kaynak_
 ------------------------------------
 
 *T02 | TEKNOLOJİ · OPPORTUNITY*
-*Owed a billion dollars in Nvidia stock*
+*Using any C++ library in Godot*
 Comments
-🔗 https://colo.to/nvidia-stock-narrative.html
-📌 _Hacker News Top Stories · 33 kaynak_
+🔗 https://blog.conan.io/cpp/conan/gamedev/godot/cmake/2026/09/29/Using-Any-Cpp-Library-In-Godot.html
+📌 _Hacker News Top Stories · 32 kaynak_
 ------------------------------------
 
 *T03 | TEKNOLOJİ · OPPORTUNITY*
-*Footguns with Postgres "at time zone 'UTC'"*
+*Phyllotaxis: An audio-reactive LED display*
 Comments
-🔗 https://bookofrevenue.com/blog/6ab81e9a97a13f0001f7e4e1/postgres-at-time-zone-u-does-not-do-what-you-think-it-does
-📌 _Hacker News Top Stories · 33 kaynak_
+🔗 https://jagi.studio/posts/phyllotaxis/
+📌 _Hacker News Top Stories · 32 kaynak_
 ------------------------------------
 
 *T04 | TEKNOLOJİ · OPPORTUNITY*
-*Thinking fast and slow in AI: The role of metacognition (2021)*
+*The systems that no one will test*
 Comments
-🔗 https://arxiv.org/abs/2110.01834
-📌 _Hacker News Top Stories · 33 kaynak_
+🔗 https://blog.christianperone.com/2026/09/the-systems-that-no-one-will-test/
+📌 _Hacker News Top Stories · 32 kaynak_
 ------------------------------------
 
 *T05 | TEKNOLOJİ · OPPORTUNITY*
-*Ember-1*
+*Booted up in 1993, this server still runs – but not for much longer (2017)*
 Comments
-🔗 https://fireworks.ai/blog/ember-1
-📌 _Hacker News Top Stories · 33 kaynak_
+🔗 https://www.computerworld.com/article/1673071/booted-up-in-1993-this-server-still-runs-but-not-for-much-longer-2.html
+📌 _Hacker News Top Stories · 32 kaynak_
 ------------------------------------
