@@ -1,43 +1,50 @@
-🗞️ *CURATOR DAILY NEWS — 02.10.2026*
-_Bugün klinik pratikleri değiştirecek güçlü kanıtlar (diüretikler, tirzepatide) ve FDA onayları (Parkinson) sağlık tarafını domine ederken, teknoloji tarafında yerel AI çalıştırma (Pinokio/YuE2), AI destekli reverse engineering ve otonom sürüş yazılımı (OpenPilot) gibi 'donanımda AI' trendleri öne çıkıyor. Kardiyoloji inovasyon ekosistemi (AHA/ESC/Octane) yapay zeka entegrasyonu ile ivme kazanıyor._
+🗞️ *CURATOR DAILY NEWS — 03.10.2026*
+_Bugün kardiyolojide diyuretik tedavi protokollerini değiştiren yeni çalışmalar ve yapay zeka entegrasyonu (ESC AI Summit, Elucid Plaque-IQ) öne çıkarken, teknoloji tarafında yerel LLM çalıştırma (Pinokio/YuE2, llmfit), AI agent ekonomisi (Meta vs OpenAI) ve çevrimdışı bilgi sunucuları (Project NOMAD) gibi 'local-first' donanım yazılım trendleri hakim. Sağlık teknolojileri yatırım hızlanıyor (AHA/Octane accelerator), geliştirici araçları ise tersine mühendislik ve kod ajanı otomasyonuna kaydırılıyor._
 
 ====================================
 🩺 *SAĞLIK & KARDİYOLOJİ GELİŞMELERİ*
 ====================================
 
 *H01 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
-*Yeni Diüretik Çalışmaları Klinik Pratiği Nasıl Değiştiriyor?*
-Medscape'in 'Diuretics: What New Trials Change' analizi, kalp yetersizliğinde diüretik tedavisinin dozajı, kombinasyon stratejileri ve direnç yönetimi üzerine güncel büyük çalışmaların (örn. TRANSFORM-HF, CLOROTIC) getirdiği kanıtları özetliyor. Klinisyenler için 'hangi hastaya, hangi diüretik, hangi dozda' sorusuna veri odaklı cevaplar sunuyor.
-💡 *WHY IT MATTERS:* Akut ve kronik kalp yetersizliği yönetiminde yeniden sevk ve mortaliteyi düşüren en maliyet-etkin müdahale diüretik optimizasyondur. Bu veriler, giyilebilir cihazlarla (hacim durumu takibi) entegre edilecek 'dijital diüretik titrasyon algoritmaları' için klinik temel oluşturur; SaaS tabanlı HF yönetim platformları için kritik giriş noktasıdır.
-📌 _Medscape Cardiology · 1 kaynak_
+*Diyuretik Tedavisini Yeniden Şekillendiren Yeni Klinik Çalışmalar*
+Medscape'in 'Diuretics: What New Trials Change' analizi, kalp yetmezliğinde ve hipertansiyonda yıllardır standart olan diyuretik kullanım protokollerini sorgulayan güncel randomize çalışmaların bulgularını özetliyor. Yeni veriler dozaj, kombinasyon seçimi ve hastaya özel başlatma zamanlamasında paradigma değişikliği gerektiriyor.
+💡 *WHY IT MATTERS:* Giyilebilir cihazlarla sürekli sıvı durumu ve böbrek fonksiyonu takibi (bioimpedans, BVP) artık mümkün. Yeni diyuretik protokoller, uzaktan hasta izleme platformlarına entegre edilebilecek 'akıllı dozaj algoritmaları' için klinik temel oluşturuyor; bu da kronik hastalık yönetimi SaaS'leri için büyük fırsat.
+📌 _Medscape Cardiology · 4 kaynak_
 ------------------------------------
 
 *H02 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
-*Tirzepatide: 3 Yıllık Veride Ağırlık Geri Kazanımı Minimal, Glisemik Kontrol Sürüyor*
-SURMOUNT-MMO çalışmasının 3 yıllık uzatma verileri, tirzepatide ile elde edilen kilo kaybının büyük oranda korunduğunu (ortalama %20+), ancak ilaç bırakıldığında kademeli geri dönüş olduğunu gösteriyor. Glisemik faydaların (HbA1c) sürdüğü vurgulanıyor. Bu, obeziteyi kronik bir hastalık olarak yönetme paradigmasını pekiştiriyor.
-💡 *WHY IT MATTERS:* GLP-1/GIP agonisti piyasası 2030'da $100B'yi bulacak. 'İlaç bırakma sonrası yönetim' boşluğu, sürekli glikoz takibi (CGM) ve davranışsal müdahale uygulamaları (DTx) için dev bir fırsat yaratır. Türkiye'de 'ilaç + dijital takip' kombine paketleri (Reimbursement odaklı) geliştirilebilir.
-📌 _Medscape Medical News · 1 kaynak_
+*ESC İlk Dijital ve AI Zirvesini Başlattı: Kardiyolojide Yapay Zeka Standartlaşması*
+Avrupa Kalp Derneği (ESC), kardiyolojik bakımda yapay zeka uygulamalarını hızlandırmak için ilk 'Digital & AI Summit'ini düzenledi. Zirve; klinik karar destek sistemleri, EKG/echo yorumlamasında derin öğrenme ve dijital ikiz modelleme konularında rehberlik ve düzenleyici çerçeve oluşturmayı hedefliyor.
+💡 *WHY IT MATTERS:* Kardiyoloji AI'ının 'yıldız proje' aşamasından klinik rutine geçişi için düzenleyici onay (CE/FDA) ve ödeme kodları (CPT) kritik. Bu zirve, Türkiye'deki yazılım firmalarının (örn. EKG analizi yapan startup'lar) AB pazarına girişi için standartlaştırma haritasını netleştiriyor.
+📌 _News-Medical / ESC · 3 kaynak_
 ------------------------------------
 
 *H03 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
-*FDA, Parkinson Hastalığı İçin İlk Sınıf İlaç (Crexont) Onayladı*
-FDA, levodopa/karbidopa formülasyonu olan Crexont'u (IPX203) onaylayarak Parkinson hastalarında 'off' dönemlerini azaltan ve dozlama sıklığını gündelik 3'ten 2'ye indiren ilk kez 'extended-release' kapsülü piyasaya sürdü. Bu, motor komplikasyon yönetiminde pratik bir devrim.
-💡 *WHY IT MATTERS:* Nörodejeneratif hastalıklarda 'dozlama yükü' hastalık observansının en büyük engelidir. Bu onay, parkinsonizmin yanında kardiyovasküler komorbidite (ortostatik hipotansiyon, aritmi riski) olan yaşlı popülasyonda, uzaktan izleme (wearable tremor/HRV) ve ilaç hatırlatıcı entegreli platformların klinik değerini artırır.
-📌 _Medscape Medical News · 1 kaynak_
+*Elucid Plaque-IQ™, 2026 MedTech Breakthrough Ödülünü Kazandı*
+Koroner tomo anjiyografi (CCTA) görüntülerinden plak kompozisyonunu ve riskini analiz eden FDA onaylı AI yazılımı Plaque-IQ, 'En İyi Yeni Kardiyoloji Teknolojisi' ödülünü aldı. Bu teknoloji, stenoz derecesinden ziyade plak vulnerebiliğini (yakalanma riskini) nicelendiriyor.
+💡 *WHY IT MATTERS:* Görüntüleme tabanlı risk katmanlandırması, önleyici kardiyolojide 'kimde statin/PCSK9 başlasın?' kararını değiştiriyor. Türkiye'de CCTA erişimi artarken, bu tip AI katmanları radyoloji raporlamasına entegre edilebilir 'SaaS-over-PACS' modeli ile hastane satışlarına kapı açıyor.
+📌 _Business Wire · 2 kaynak_
 ------------------------------------
 
 *H04 | SAĞLIK & KARDİYOLOJİ · OPPORTUNITY*
-*Elucid Plaque-IQ™, 2026 MedTech Breakthrough Ödülünü Kazandı (AI Koroer Plak Analizi)*
-Elucid Bioimaging'in Plaque-IQ teknolojisi, CTA (Koroner Tomografi Anjiyografisi) görüntülerinden plak kompozisyonunu (lipid çekirdek, lifroz kap, kalsifikasyon) ve vulnere plak yükünü AI ile nicelendiriyor. 'En Yeni Kardiyoloji Teknolojisi' ödülünü alarak klinik benimseme ivmesi kazandırdı.
-💡 *WHY IT MATTERS:* Koroner CT artık sadece 'stenoz var mı?' değil 'plak ne kadar tehlikeli?' sorusuna cevap veriyor. Bu, Türkiye'deki özel hastane ve tıp merkezi radyoloji departmanları için 'AI raporlama modülü' entegrasyonu (PACS/RIS) ve hastane bazlı risk stratifikasyonu SaaS modeli satış fırsatı yaratır. Reimbursement kodu (CPT) peşindedir.
-📌 _Business Wire / MedTech Innovations · 1 kaynak_
+*AHA ve Octane: Kardiyovasküler Inovasyon için Global Hızlandırıcılar Kuruldu*
+American Heart Association (AHA) global yarışma ve Octane'in 'Mussallem Cardiovascular Accelerator' programı ile erken aşama kardiyoloji medtech startup'larına mentorluk, klinik doğrulama yolları ve yatırım erişimi sağlanıyor. Odak alanlar: uzaktan izleme, AI destekli tanı, yeni cihazlar.
+💡 *WHY IT MATTERS:* Türkiye'de kardiyoloji cihaz/geliştirici ekosistemi (TEKMER, TÜBİTAK 1512) bu global programlarla senkronize edilirse, klinik deney (first-in-human) yolları ve FDA/CE danışmanlığı kısalır. Özellikle giyilebilir aritmi dedektörü ve kalp yetmezliği sensörü geliştiren ekipler için 'soft landing' fırsatı.
+📌 _GlobeNewswire / heart.org · 3 kaynak_
 ------------------------------------
 
 *H05 | SAĞLIK & KARDİYOLOJİ · TREND*
-*ESC İlk 'Dijital ve AI Zirvesi'ni Başlattı: Kardiyolojide AI Standartlaşması Geliyor*
-Avrupa Kardiyoloji Derneği (ESC), kardiyovasküler bakımda dijital sağlık ve yapay zeka uygulamalarını standartlaştırmak, klinik yol haritalarına entegre etmek ve düzenleyici çerçeveyi şekillendirmek için ilk 'Digital & AI Summit'ini düzenledi. Klinik karar destek sistemleri (CDSS) ve federated learning odaklı.
-💡 *WHY IT MATTERS:* ESC onayı, Avrupa pazarında (MDR 2017/745) AI tabanlı medikal cihaz (SaMD) onay sürecini ve klinik kılavuz entegrasyonunu hızlandıracaktır. Türkiye sağlık teknolojisi girişimleri için 'ESC uyumlu/onaylı' algoritma geliştirmek (örn. AFib taraması, HF tahmini), CE markı ve ihracet kapılarını aralar.
-📌 _News-Medical / ESC · 1 kaynak_
+*CAR T-Hücre Tedavilerinde Ölüm Vakaları: Otomimmün Uygulamalarda Güvenlik Zili Çaldı*
+Otomimmün hastalıklarda (Lupus, Miastenya) deneysel olarak kullanılan CAR T-hücre çalışmalarında ölümler raporlandı. Araştırmacılar, sitokin salgılama sendromu (CRS) ve nörotoksisite riskinin onkolojiden farklı olarak bu hastalarda nasıl yönetileceğini sorguluyor.
+💡 *WHY IT MATTERS:* Bu gelişme, 'off-the-shelf' (hazır, allojenik) CAR-T platformları ve güvenlik anahtarı (suicide gene) teknolojilerinin değerini artırıyor. Türk biyotek ekosistemi (örn. KOÇ/ACIBADEM ortaklıkları) için klinik güvenlik verisi üreten CRO hizmetleri ve biyomarker panel geliştirme pazarı büyüyecek.
+📌 _Medscape Medical News · 2 kaynak_
+------------------------------------
+
+*H06 | SAĞLIK & KARDİYOLOJİ · TREND*
+*Kuzey Amerika Kalp Asistan Cihazları Pazarı 2034 Tahmini: Büyüme İvmesi*
+Market Data Forecast raporu, LVAD, RVAD ve tam yapay kalp cihazları pazarının yaşlanma, kalp yetmezliği epidemisi ve cihaz küçülmesi (örn. Impella ECP) ile 2034'e kadar iki basamaklı büyüme kaydedeceğini öngörüyor.
+💡 *WHY IT MATTERS:* Cihaz küçülmesi ve perkütan yerleştirme, 'ambulatory LVAD' (dolaşımda kalabilir cihaz) konseptini getiriyor. Bu, pil yönetimi, driveline enfeksiyonu önleme ve mobil izleme uygulamaları için donanım+yazılım bütünleşik ürün fırsatı yaratıyor; Türk medtech ihracatçılar için niche alan.
+📌 _Market Data Forecast · 1 kaynak_
 ------------------------------------
 
 ====================================
@@ -45,36 +52,50 @@ Avrupa Kardiyoloji Derneği (ESC), kardiyovasküler bakımda dijital sağlık ve
 ====================================
 
 *T01 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
-*Tom Doerr: LLM Kılavuzlu 'Reverse Engineering' Aracı (Stripped Binary -> Fonksiyon/Çağrı Grafiği)*
-Tom Doerr, LLM'lerin (muhtemelen GPT-4o/Claude) dekompilasyon çıktılarını (Ghidra/IDA Pro) okuyarak, sembolleri kaldırılmış (stripped) binary'lerde fonksiyon isimlerini, tipleri ve çağrı grafiklerini otomatik kurtaran bir orkestrasyon aracı paylaştı. Bu, güvenlik araştırmaları ve legacy kod analizini aylardan saatlere indiriyor.
-💡 *WHY IT MATTERS:* OT/ICS (Endüstriyel Kontrol Sistemleri) ve IoT cihaz firmware analizi (ESP32/STM32 tabanlı) için kritik. Türkiye'de siber güvenlik danışmanlık firmaları ve beyaz şaplı hacker ekipleri için 'otomatik zafiyet keşfi' ürünü (SaaS/On-prem) geliştirilebilir. DevSecOps pipeline'larına entegre edilebilir 'Binary SBOM Generator' potansiyeli taşıyor.
-📌 _Twitter / X (@tom_doerr) · 1 kaynak_
+*LLM Rehberli Tersine Mühendislik: Soyutlanmış Binary'lerden Fonksiyon/Çağrı Grafisi Kurtarma*
+Tom Doerr, LLM'lerin (muhtemelen GPT-4o/Claude) decompiler çıktılarını (Ghidra/IDA) yorumlayarak, sembolleri silinmiş (stripped) binary dosyalarında fonksiyon isimlerini, tipleri ve çağrı grafilerini otomatik yeniden inşa eden bir araç paylaştı. Bu, güvenlik analizi ve legacy kod bakımını devrim niteliğinde hızlandırıyor.
+💡 *WHY IT MATTERS:* Türkiye'de siber güvenlik (Milli Savunma, bankacılık) ve eski sistem modernizasyonu (COBOL/C++ monolitler) büyük pazar. Bu araç türü 'AI-powered RE' yeteneği, yerli güvenlik firmalarının (örn. Cyberwise, Bilisim Vadisi ekosistemi) hizmet portföyüne 'otomatik kod anlama' katmanı ekleyerek yüksek marjlı danışmanlık kapısı açar.
+📌 _Twitter / X (@tom_doerr) · 6 kaynak_
 ------------------------------------
 
 *T02 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
-*OpenPilot (Comma.ai): 300+ Araçta Sürücü Yardımını Yükselten Robotik İşletim Sistemi*
-GitHub'da trend olan openpilot, desteklenen araçların (Toyota, Hyundai, Honda vb.) fabrika ADAS'ını (Adaptif Kruvaz, Şerit Takibi) 'Super Cruise' seviyesine taşıyan açık kaynak bir yazılım yığını. Donanım olarak Comma 3X (Snapdragon 845/8 Gen1 tabanlı) kullanıyor. 10M+ mil gerçek veri ile eğitilmiş end-to-end policy network çalıştırıyor.
-💡 *WHY IT MATTERS:* Türkiye'de 'Aftermarket Otonom Sürüş Kitleri' (Retrofit) pazarı (araç yaşı ort. 14 yıl) devasa. OpenPilot'in açık kaynaklı olması, yerel entegre atölyeleri (örn. Otobüs/Flot yönetimi) için lisanssız, özelleştirilebilir bir temel sunar. Donanım (Comma 3X) tedariki ve yerel kurulum/kalibrasyon servisi iş modeli kurulabilir.
-📌 _GitHub Trending · 1 kaynak_
+*Yerel AI Kod Ajansı Ofisi: Terminalleri Yöneten Çoklu Ajan Orkestrasyonu*
+Tom Doerr, birden fazla yerel kodlama ajansını (Claude Code, Aider vb. alternatifleri) koordine eden, terminal görevlerini dağıtan ve bağlam paylaşan bir 'ofis yöneticisi' aracı tanıttı. Bulut bağımlılığı olmadan, donanımınızda (GPU/CPU) tam otonom geliştirme döngüsü kuruyor.
+💡 *WHY IT MATTERS:* Kurumsal veri gizliliği (KVKK/GDPR) ve maliyet (API token) endişeleriyle bulut AI kod asistanlarını yasaklayan Türk kurumları (bankalar, telekom, savunma) için 'on-premise AI developer platformu' pazarı oluşuyor. Bu araç türü, yerli IDE/entegre geliştirme ortamlarına (örn. Kodlama.io, yerli VS Code forkları) entegre edilebilir 'motor' olabilir.
+📌 _Twitter / X (@tom_doerr) · 5 kaynak_
 ------------------------------------
 
 *T03 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
-*Cocktail Peanut (Pinokio): YuE2 Müzik Modelini 1-Tıklama Yerel Eğitimi (Fine-tune) İçin Dağıtıyor*
-Pinokio ekosistemi, o1/ostrisai katkılarıyla YuE2 (müzik üretimi LLM) modelinin kullanıcının kendi verisiyle (şarkı sözleri, melodiler) fine-tune edilmesini, tamamen yerel (RTX 3090/4090) ve Docker/Pinokio scripti ile '1-click' hale getirdi. Model ağırlıkları ve eğitim pipeline'ı açık.
-💡 *WHY IT MATTERS:* Yerel AI eğitimi (Fine-tuning/LoRA) artık 'ML Engineer' gerektirmiyor. Türkiye pazarı için: 'Marka Jingle Üretici', 'Dini/Özel Gün Şarkı Motoru' gibi niche B2C/B2B2C mikro-SaaS'ler GPU kiralama (RunPod/Modal) + Pinokio scripti ile haftalar içinde prototiplenip lansman yapılabilir. 'AI Uygulama Katmanı' girişimciliği için sıfır maliyet giriş kapısı.
-📌 _Twitter / X (@cocktailpeanut) · 1 kaynak_
+*YuE2 Müzik Modeli: Pinokio ile Tek Tıkta Yerel Eğitim ve Çıkarım*
+Cocktail Peanut, açık kaynak müzik üretim modeli YuE2'nin, Pinokio (yerel AI uygulama yükleyici) aracılığıyla kişisel bilgisayarda (RTX 3090/4090 seviyesinde) fine-tune edilip çalıştırılabileceğini gösterdi. Kullanıcı kendi veri setiyle modeli kişiselleştiriyor.
+💡 *WHY IT MATTERS:* Türkiye'de dijital içerik üreticileri (YouTuber, podcaster, reklam ajansları) telif sorunu olmadan, marka kimliğine uygun 'signature sound' üretmek için yerel modelleri arıyor. Pinokio gibi 'app store for local AI' dağıtım kanalı, model geliştiricilerin (TÜBİTAK/Üniversite labları) Türkçe/Özel veri setli modelleri son kullanıcıya ulaştırması için sıfır dağıtım maliyetli bir kanal sunuyor.
+📌 _Twitter / X (@cocktailpeanut) · 7 kaynak_
 ------------------------------------
 
-*T04 | TEKNOLOJİ & DONANIM · TREND*
-*Intel AI Playground & OpenVINO Audacity: Yerel NPU/GPU Hızlandırılı AI Uygulamaları Yaygınlaşıyor*
-Intel, Core Ultra (Meteor Lake/Lunar Lake) NPU'larını hedefleyen 'AI Playground' uygulamasını (LLM chat, Stable Diffusion, RAG) ve popüler ses editörü Audacity için OpenVINO eklentilerini (noise suppression, transcription, music separation) GitHub Releases üzerinden dağıtıyor. Donanım satışını yazılım ekosistemiyle besliyor.
-💡 *WHY IT MATTERS:* AI PC dönemi başlıyor. Türkiye'de sistem integratörleri ve beyaz eşya perakendecileri için 'AI Hazır' bilgisayar satışı, bu uygulamaların ön yüklü gelmesiyle farklılaşma faktörü olur. Yerel işleme (Offline/Privacy) odaklı kurumsal müşteriler (Hukuk, Sağlık, Finans) için 'Cloud'a veri gitmeyen' RAG/Transkripsiyon çözümleri (Intel vPro + OpenVINO) satılabilir.
-📌 _GitHub Releases (Intel) · 1 kaynak_
+*T04 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
+*Project NOMAD: İnternetsiz, Yerel AI Destekli Bilgi ve Eğitim Sunucusu (RPi/Mini PC)*
+GitHub'da trend olan Project NOMAD, Wikipedia, binlerce kitap, harita, kurs ve opsiyonel yerel LLM'i (llama.cpp/ollama) barındıran, Raspberry Pi veya Mini PC üzerinde tamamen çevrimdışı çalışan bir 'bilgi cihazı' dağıtımı. Kafesli/uzak bölgeler, okullar, afet senaryoları için tasarlandı.
+💡 *WHY IT MATTERS:* Türkiye'de köy okulları, OIZ'lerde internet kesintisi riski olan fabrikalar, askeri birimler ve afet yönetimi (AFAD) için 'air-gapped' bilgi altyapısı kritik. Bu proje, yerli donanım (örn. Raspberry Pi 5 Türkiye distiribütörleri, mini PC montajcıları) ile paketlenip 'NOMAD Kutusu' olarak SAT/kira modeliyle kamu/özel kurumlara satılabilir. Düşük BOM maliyeti, yüksek değer.
+📌 _GitHub Trending (Crosstalk-Solutions) · 8 kaynak_
 ------------------------------------
 
 *T05 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
-*Aakash Gupta: Harvey AI ($15.5B Değerleme) ve Saatlik Faturalama Modelinin Çöküşü*
-Harvey (Yasal AI), Thomson Reuters verisiyle: AI 1 saati 12 dakikaya indiriyor. Avukatlar saatlik faturalandırırsa, verimlilik artışı gelirlerini kesiyor. Bu 'Saatlik Faturalama vs Değer Tabanlı Fiyatlandırma' çatışması, yasal teknolojide (LegalTech) iş modeli dönüşümünü zorluyor.
-💡 *WHY IT MATTERS:* Bu dinamik Türkiye'deki Hukuk, Muhasebe, Danışmanlık sektörleri için de birebir geçerlidir. 'Saat satan' meslek gruplarına AI araçları satmak (SaaS) zordur; 'Sonuç/Çıktı satan' (örn. Sözleşme inceleme başına, Beyanname başına) modele geçiş şart. Türkiye LegalTech/AccountTech SaaS girişimleri için 'Fiyatlandırma Modeli' stratejik bir diferansiyasyon ve yatırımcı pitch'i unsuru.
-📌 _Twitter / X (@aakashgupta) · 1 kaynak_
+*openpilot: 300+ Araçta Sürücü Asistanını Yükselten Robotik İşletim Sistemi*
+Comma.ai'nin openpilot, desteklenen araçların fabrika ADAS'ını (adaptif cruise, lane keep) güncelleyerek 'hands-free' seviyesine taşıyan açık kaynak robotik OS. Kullanıcı donanımı (Comma 3X) aracı CAN şebekesine bağlayarak model güncellemeleri alıyor.
+💡 *WHY IT MATTERS:* Türkiye'de 25+ milyon araç parkı ve yaşlı araçlarda ADAS retrofit pazarı devasa. openpilot'un açık kaynaklı modeli, yerli otomotiv yazılım firmalarının (örn. Ford Otosan, Tofaş, veya aftermarket retrofit firmaları) 'yazılım tanımlı araç' yeteneği kazanması için referans mimari sunuyor. Donanım (Comma cihazı) + Yerel Destek + Harita/İşaret entegrasyonu = Yeni iş modeli.
+📌 _GitHub Releases (commaai/openpilot) · 5 kaynak_
+------------------------------------
+
+*T06 | TEKNOLOJİ & DONANIM · TREND*
+*Meta vs OpenAI: AI Agent Ekonomisinde 'Ücretsiz' vs '$100/ay' Savaş Açıklandı*
+Aakash Gupta analizi: Meta, Llama tabanlı AI ajanlarını (coding, reasoning) ücretsiz/açık ağırlık olarak sunarken, OpenAI benzer yetenekli 'Operator' ajanı için $200/ay (Pro) / $100/ay (Plus) talep ediyor. Meta, modeli kaybederek ekosistem kilidi (WhatsApp/IG/Ads entegrasyonu) kuruyor; OpenAI doğrudan gelir modeli seçiyor.
+💡 *WHY IT MATTERS:* Türkiye SaaS/Startup ekosistemi için kritik stratejik karar: 'Meta'nın ücretsiz ajanı üzerine mi build edelim (vendor lock-in riski), yoksa kendi in-house/yerel modelleri (llmfit ile donanım uygunluğu test ederek) mi geliştirelim?' Karar, 2025-2026 maliyet yapısını ve IP mülkiyetini belirleyecek. Yerel GPU bulut sağlayıcıları (Örn. Nvidia DGX kiralayan Türk firmaları) için 'Meta ajanı hosting' yeni bir gelir hattı.
+📌 _Twitter / X (@aakashgupta) · 9 kaynak_
+------------------------------------
+
+*T07 | TEKNOLOJİ & DONANIM · TREND*
+*llmfit: Donanımınızda Hangi Model Çalışır? Tek Komutla Benzin İstasyonu*
+AlexsJones'in 'llmfit' aracı, kullanıcının GPU VRAM/CPU RAM'ini tarayarak Hugging Face'deki yüzlerce modelin (GGUF, EXL2, AWQ) hangilerinin o donanımda kaç token/saniyede çalışacağını rapor ediyor. 'Hangi modeli indirmeliyim?' kâbusunu çözüyor.
+💡 *WHY IT MATTERS:* Yerel AI benimsenmesinin en büyük engeli 'donanım uyumsuzluğu ve deneme yanılma maliyetidir'. llmfit, Türkiye'de yerel LLM dağıtım yapan sistem entegratörlerine (örn. Akademik laboratuvarlar, özel bankalar, hukuk firmaları) 'donanım satışı + model önerisi + kurulum scripti' paketi satma fırsatı veriyor. Basit bir CLI aracı, danışmanlık satışını ölçeklendiriyor.
+📌 _GitHub Trending (AlexsJones) · 4 kaynak_
 ------------------------------------
