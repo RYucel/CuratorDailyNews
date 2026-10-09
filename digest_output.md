@@ -1,4 +1,4 @@
-🗞️ *CURATOR DAILY NEWS — 08.10.2026*
+🗞️ *CURATOR DAILY NEWS — 09.10.2026*
 _Bugünün bülteninde solda sağlık & kardiyoloji gelişmeleri, sağda teknoloji, donanım ve otomasyon gündemi yer alıyor. (Not: AI özetleme şu an kullanılamadı, başlıklar ve özetler doğrudan kaynaklardan derlendi.)_
 
 ====================================
@@ -27,9 +27,9 @@ Experts Say It’s Too Early to Ditch the Lp(a) Hypothesis Medscape
 ------------------------------------
 
 *H04 | SAĞLIK · TREND*
-*Framingham Risk Score (2008) - Medscape Reference*
-Framingham Risk Score (2008) Medscape Reference
-🔗 https://news.google.com/rss/articles/CBMifEFVX3lxTE9aS0c0bk1faGFKZ2xNT19fUlV2ZU1jNFlZUzRYS3Y3dDBITnAxZjNLc29WTzdVaFRzN3RxcGg1b1Q4UVZ4V1JaTmJCRUdrREhTQkp4Vl82bWFMX3hVWDZSQnpoV0FkRXE0ai1JWUh3UEh3VjBaNTMtekdMM1Q?oc=5
+*Medical Calculators - Medscape Reference*
+Medical Calculators Medscape Reference
+🔗 https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5TaXdOWFhpNE50UHB4b3pwWmlKS3hwOGNVaHhBQ2ZmNVNaeTVjeWtjMWNRRnNWVkJxcWpMWTl2MUp0TUhZbU9SVE9iTEh3M245QmdDOW1nMGdaTjlxT0JaTGhGdGNvWVU?oc=5
 📌 _Medscape & Cardiology (Google News) · 18 kaynak_
 ------------------------------------
 
@@ -38,36 +38,36 @@ Framingham Risk Score (2008) Medscape Reference
 ====================================
 
 *T01 | ÜRÜN & YAZILIM · HIGH SIGNAL*
-*tide*
-A Jitsi alternative that does a few things really well Discussion | Link
-🔗 https://www.producthunt.com/products/tide-simple-self-hostable-video-calls
-📌 _ProductHunt Daily Products · 25 kaynak_
+*HeyPi*
+Build and ship anything live, in-meetings Discussion | Link
+🔗 https://www.producthunt.com/products/heypi
+📌 _ProductHunt Daily Products · 26 kaynak_
 ------------------------------------
 
 *T02 | ÜRÜN & YAZILIM · OPPORTUNITY*
-*Epilude Narrator*
-Listen to any article, doc or text on your Mac Discussion | Link
-🔗 https://www.producthunt.com/products/epilude
-📌 _ProductHunt Daily Products · 25 kaynak_
+*Playground by Google Labs*
+Create, play, and share your own games with Google AI Discussion | Link
+🔗 https://www.producthunt.com/products/google-labs
+📌 _ProductHunt Daily Products · 26 kaynak_
 ------------------------------------
 
 *T03 | ÜRÜN & YAZILIM · OPPORTUNITY*
-*Leanback*
-Personal AI assistant for managing engineering teams Discussion | Link
-🔗 https://www.producthunt.com/products/leanback
-📌 _ProductHunt Daily Products · 25 kaynak_
+*Amazon Alexa Tablets*
+Full Google Play, Alexa+ and a Kindle reading mode Discussion | Link
+🔗 https://www.producthunt.com/products/amazon-alexa-tablets
+📌 _ProductHunt Daily Products · 26 kaynak_
 ------------------------------------
 
 *T04 | ÜRÜN & YAZILIM · OPPORTUNITY*
-*Drunken Penguins*
-Party card games on everyone's phone. No app. Discussion | Link
-🔗 https://www.producthunt.com/products/drunken-penguins
-📌 _ProductHunt Daily Products · 25 kaynak_
+*Zernio*
+Marketing infrastructure for products and agents Discussion | Link
+🔗 https://www.producthunt.com/products/zernio
+📌 _ProductHunt Daily Products · 26 kaynak_
 ------------------------------------
 
 *T05 | ÜRÜN & YAZILIM · OPPORTUNITY*
-*Udon*
-Control deck for your Mac home server with AI sysadmin. Discussion | Link
-🔗 https://www.producthunt.com/products/udon
-📌 _ProductHunt Daily Products · 25 kaynak_
+*OpenPilot*
+Open-source desktop AI agent for any model you choose Discussion | Link
+🔗 https://www.producthunt.com/products/openpilot
+📌 _ProductHunt Daily Products · 26 kaynak_
 ------------------------------------
