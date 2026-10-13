@@ -1,4 +1,4 @@
-🗞️ *CURATOR DAILY NEWS — 12.10.2026*
+🗞️ *CURATOR DAILY NEWS — 13.10.2026*
 _Bugünün bülteninde solda sağlık & kardiyoloji gelişmeleri, sağda teknoloji, donanım ve otomasyon gündemi yer alıyor. (Not: AI özetleme şu an kullanılamadı, başlıklar ve özetler doğrudan kaynaklardan derlendi.)_
 
 ====================================
@@ -20,16 +20,16 @@ Experts Say It’s Too Early to Ditch the Lp(a) Hypothesis Medscape
 ------------------------------------
 
 *H03 | SAĞLIK · TREND*
-*Why Can Heart Damage Appear Years After Cancer Treatment? - Medscape*
-Why Can Heart Damage Appear Years After Cancer Treatment? Medscape
-🔗 https://news.google.com/rss/articles/CBMiqgFBVV95cUxNS3k5TGxxRWhZRTdnOXF5UE5ta3NZVlJXN1RKektyd1IxdjdGV0dOY2FiaHE5clZhN2NycjNTZGdSNzlTUDhzUU8zOXVFbzhoX1dqN09fQk52Nk5PNFhJUklzTUxhWmhUWk5rYTctcU4zMnNURjZ3dUc5T28xekxsa0dydlJRZ1VoN1hmcFA4Z0xXV05JM0tzTjBGWDJsQnJXS1pvOUowQ0VCUQ?oc=5
+*Beet Supplements: A Hypertensive Cardiologist Confesses All - Medscape*
+Beet Supplements: A Hypertensive Cardiologist Confesses All Medscape
+🔗 https://news.google.com/rss/articles/CBMiqgFBVV95cUxNQnc2Tmctb2tOZk8wVHp6bDk2TnliTkRETkkzUy1uUFBFbmZuN2dvNS1jQnh0R2NaOXZ3cHZSc0lFQ0x3WkZNTEtwQ2ZHc1NXZkdEZW5nMnFYRnMzRjNDdWRUQ1o2Nlc0Yi0xcFUtQmZPR01BcnhKSVczQThKT3ZwNk5CNHRVSUt2UHpGc2hmdWk4eGJ0cmp5d0Q3NnZGMnFlMTdtTndXWWNoZw?oc=5
 📌 _Medscape & Cardiology (Google News) · 18 kaynak_
 ------------------------------------
 
 *H04 | SAĞLIK · TREND*
-*Statin Side Effects: What the Evidence Shows - Medscape*
-Statin Side Effects: What the Evidence Shows Medscape
-🔗 https://news.google.com/rss/articles/CBMikwFBVV95cUxPZUN2WEx2UEZjaEVfOVZsRzgtYWN4Zll5Yl9wZ3NHOFl2Q01RVVY2VWl5Qm1oZkthaE9pcmlpSHY1dEpGYlhGM3R6TlM4dkFiTk5TcTRuOFpsOEs5bjVJV0F5MDRtSkFNcEg3clJuVF9DQnJERHgwVFMydjdWcndDVXh0V2VJc3A4NlJJNEpFdDc5Yzg?oc=5
+*Hypertension: Background, Etiology, Pathophysiology - Medscape*
+Hypertension: Background, Etiology, Pathophysiology Medscape
+🔗 https://news.google.com/rss/articles/CBMiZEFVX3lxTFA3MlkzN3NLUGlPc3dnWkZOUVM5SGhNa2RnNXBScVVuZmF1TUNXUEU0VmdqTzVHQ1NSQld5VTVoemk5QnFVdmdWZ1o5alZRZzNNMHJJV0kxX0t3bEtUS3ZMY0MtM3o?oc=5
 📌 _Medscape & Cardiology (Google News) · 18 kaynak_
 ------------------------------------
 
@@ -38,36 +38,36 @@ Statin Side Effects: What the Evidence Shows Medscape
 ====================================
 
 *T01 | ÜRÜN & YAZILIM · HIGH SIGNAL*
-*Milepost*
-An iOS driving journal for your car, with an MCP server Discussion | Link
-🔗 https://www.producthunt.com/products/milepost-2
-📌 _ProductHunt Daily Products · 30 kaynak_
+*OpenWhispr for iOS*
+100% open source, free & on device transcription Discussion | Link
+🔗 https://www.producthunt.com/products/openwispr-open-source-ai-speech-to-text
+📌 _ProductHunt Daily Products · 24 kaynak_
 ------------------------------------
 
 *T02 | ÜRÜN & YAZILIM · OPPORTUNITY*
-*Scrape Anything by Context.dev*
-Turn any website into clean data with one API call. Discussion | Link
-🔗 https://www.producthunt.com/products/context-dev
-📌 _ProductHunt Daily Products · 30 kaynak_
+*Music Dawn*
+A recorder for musicians. Every idea sounds finished. Discussion | Link
+🔗 https://www.producthunt.com/products/music-dawn
+📌 _ProductHunt Daily Products · 24 kaynak_
 ------------------------------------
 
 *T03 | ÜRÜN & YAZILIM · OPPORTUNITY*
-*Manifold MCP*
-SEO, AI answers, social, ads and leads data for your agent Discussion | Link
-🔗 https://www.producthunt.com/products/manifold-mcp
-📌 _ProductHunt Daily Products · 30 kaynak_
+*Articos MCP*
+See how simulated buyers react, right in your agent Discussion | Link
+🔗 https://www.producthunt.com/products/articos
+📌 _ProductHunt Daily Products · 24 kaynak_
 ------------------------------------
 
 *T04 | ÜRÜN & YAZILIM · OPPORTUNITY*
-*ExcaliClaw*
-Hand-drawn diagrams your AI agent can draw with you Discussion | Link
-🔗 https://www.producthunt.com/products/excaliclaw
-📌 _ProductHunt Daily Products · 30 kaynak_
+*OpenFlowKit 2*
+Free, open-source diagrams you and your agent edit together Discussion | Link
+🔗 https://www.producthunt.com/products/openflowkit
+📌 _ProductHunt Daily Products · 24 kaynak_
 ------------------------------------
 
 *T05 | ÜRÜN & YAZILIM · OPPORTUNITY*
-*guilds.run*
-Design multi-agent systems that you can trust Discussion | Link
-🔗 https://www.producthunt.com/products/guilds-run
-📌 _ProductHunt Daily Products · 30 kaynak_
+*Upsolve Row-Level Security*
+Data permissions your AI agent can't talk its way past Discussion | Link
+🔗 https://www.producthunt.com/products/upsolve-ai
+📌 _ProductHunt Daily Products · 24 kaynak_
 ------------------------------------
