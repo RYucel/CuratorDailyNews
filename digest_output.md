@@ -1,4 +1,4 @@
-🗞️ *CURATOR DAILY NEWS — 13.10.2026*
+🗞️ *CURATOR DAILY NEWS — 14.10.2026*
 _Bugünün bülteninde solda sağlık & kardiyoloji gelişmeleri, sağda teknoloji, donanım ve otomasyon gündemi yer alıyor. (Not: AI özetleme şu an kullanılamadı, başlıklar ve özetler doğrudan kaynaklardan derlendi.)_
 
 ====================================
@@ -13,9 +13,9 @@ Intensive BP Control Cuts Heart Risk, but May Affect Kidneys Medscape
 ------------------------------------
 
 *H02 | SAĞLIK · TREND*
-*Experts Say It’s Too Early to Ditch the Lp(a) Hypothesis - Medscape*
-Experts Say It’s Too Early to Ditch the Lp(a) Hypothesis Medscape
-🔗 https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeUxVV29vTlRnMUVCRG1PSXBXNHVyQTFRSHFmUmNfRWlod3FBdUtOeHlJVGFHWWNPRFh1OW9HWTlxYjNzZy1JRy1vdDBqYVgwTi1VTldUVDFBM1VlVDBnQVBnOWtpdEpGaUZkNl92b2tvZ2RZMjNCYk1pOGdFb0pEblBsc2xWdXB3TjljQ2dVSGZ2SFVGWGVnbjQySFEwZi16QlZSREpXOEVWUQ?oc=5
+*Hypertension: Background, Etiology, Pathophysiology - Medscape*
+Hypertension: Background, Etiology, Pathophysiology Medscape
+🔗 https://news.google.com/rss/articles/CBMiZEFVX3lxTFA3MlkzN3NLUGlPc3dnWkZOUVM5SGhNa2RnNXBScVVuZmF1TUNXUEU0VmdqTzVHQ1NSQld5VTVoemk5QnFVdmdWZ1o5alZRZzNNMHJJV0kxX0t3bEtUS3ZMY0MtM3o?oc=5
 📌 _Medscape & Cardiology (Google News) · 18 kaynak_
 ------------------------------------
 
@@ -27,9 +27,9 @@ Beet Supplements: A Hypertensive Cardiologist Confesses All Medscape
 ------------------------------------
 
 *H04 | SAĞLIK · TREND*
-*Hypertension: Background, Etiology, Pathophysiology - Medscape*
-Hypertension: Background, Etiology, Pathophysiology Medscape
-🔗 https://news.google.com/rss/articles/CBMiZEFVX3lxTFA3MlkzN3NLUGlPc3dnWkZOUVM5SGhNa2RnNXBScVVuZmF1TUNXUEU0VmdqTzVHQ1NSQld5VTVoemk5QnFVdmdWZ1o5alZRZzNNMHJJV0kxX0t3bEtUS3ZMY0MtM3o?oc=5
+*Low-Calorie Diet/Exercise Intervention May Drive Diabetes Into Remission - Medscape*
+Low-Calorie Diet/Exercise Intervention May Drive Diabetes Into Remission Medscape
+🔗 https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZHZMZmptUm00ZEtJRFpjMXEwM2Jkd0VMOFZUcHRRSGhmQWxIZXlyQzlNak4zN0NBQTQ1ZkVzR1RPTTZTVXZrdWU2bWZpTXZJbmo3dC16bVUxS081QUJfbkFiX2dmMG1hLWZxWm9xN3NJb296UDhmZ0FMN1N5aDQybkhJRFVqX1UxZ0J5V0E4c0xkLXU5dWoxTkgzYVRaOFh1dG8zVjlBT3dodm8?oc=5
 📌 _Medscape & Cardiology (Google News) · 18 kaynak_
 ------------------------------------
 
@@ -38,36 +38,36 @@ Hypertension: Background, Etiology, Pathophysiology Medscape
 ====================================
 
 *T01 | ÜRÜN & YAZILIM · HIGH SIGNAL*
-*OpenWhispr for iOS*
-100% open source, free & on device transcription Discussion | Link
-🔗 https://www.producthunt.com/products/openwispr-open-source-ai-speech-to-text
-📌 _ProductHunt Daily Products · 24 kaynak_
+*Hindsight 1.0 + Memlake*
+Open source memory for AI agents to learn from experience Discussion | Link
+🔗 https://www.producthunt.com/products/vectorize
+📌 _ProductHunt Daily Products · 26 kaynak_
 ------------------------------------
 
 *T02 | ÜRÜN & YAZILIM · OPPORTUNITY*
-*Music Dawn*
-A recorder for musicians. Every idea sounds finished. Discussion | Link
-🔗 https://www.producthunt.com/products/music-dawn
-📌 _ProductHunt Daily Products · 24 kaynak_
+*SupoClip*
+Open-source AI clipper: long videos into viral shorts Discussion | Link
+🔗 https://www.producthunt.com/products/supoclip
+📌 _ProductHunt Daily Products · 26 kaynak_
 ------------------------------------
 
 *T03 | ÜRÜN & YAZILIM · OPPORTUNITY*
-*Articos MCP*
-See how simulated buyers react, right in your agent Discussion | Link
-🔗 https://www.producthunt.com/products/articos
-📌 _ProductHunt Daily Products · 24 kaynak_
+*FamRelay*
+Share facts between AI assistants — only what you approve Discussion | Link
+🔗 https://www.producthunt.com/products/famrelay
+📌 _ProductHunt Daily Products · 26 kaynak_
 ------------------------------------
 
 *T04 | ÜRÜN & YAZILIM · OPPORTUNITY*
-*OpenFlowKit 2*
-Free, open-source diagrams you and your agent edit together Discussion | Link
-🔗 https://www.producthunt.com/products/openflowkit
-📌 _ProductHunt Daily Products · 24 kaynak_
+*Make0 Brain*
+A memory store that works across all of your AI agents. Discussion | Link
+🔗 https://www.producthunt.com/products/make0-brain
+📌 _ProductHunt Daily Products · 26 kaynak_
 ------------------------------------
 
 *T05 | ÜRÜN & YAZILIM · OPPORTUNITY*
-*Upsolve Row-Level Security*
-Data permissions your AI agent can't talk its way past Discussion | Link
-🔗 https://www.producthunt.com/products/upsolve-ai
-📌 _ProductHunt Daily Products · 24 kaynak_
+*Etchv*
+API for invisible watermarks in images, PDFs and videos Discussion | Link
+🔗 https://www.producthunt.com/products/etchv
+📌 _ProductHunt Daily Products · 26 kaynak_
 ------------------------------------
