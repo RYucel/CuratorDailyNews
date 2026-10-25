@@ -1,36 +1,43 @@
-🗞️ *CURATOR DAILY NEWS — 24.10.2026*
-_Günün baskın teması, yapay zekanın 'buluttan cihaza' (Local AI) geçişinin hızlanması ve donanım seviyesinde kesinleşmesidir (colibri, llmfit, ESP32-S3 SDR). Sağlık tarafında ise Kardiyo-Renal-Metabolik (CKM) sendromu ve yeni nesil GLP-1/GIP/Glukagon üçlü agonistleri (Retatrutide) klinik pratikteki yerlerini ve güvenlik profillerini tartışırken, ESC'nin Dijital/AI Zirvesi ile kardiyolojide yapay zeka standardizasyonu gündeme gelmiştir. Kritik bir risk sinyali olarak: ESP32 tedarik zincirinde uluslararası sevkiyat kısıtlamaları (Global Entry iptali) ve NSA'nın AI ile keşfedilen 14 yıllık sıfır gün açığı siber güvenlik ve IoT dağıtımları için acil eylem gerektiriyor._
+🗞️ *CURATOR DAILY NEWS — 25.10.2026*
+_Sağlık tarafında Kardiyal-Kidney-Metabolik (CKM) sendromu ve GLP-1 agonistlerinin (Retatrutide) klinik kullanım alanlarının şizofreni ve plato kırma gibi yeni endikasyonlara genişlemesi, kardiyoloji pratiğinin paradigmasını değiştiriyor. Avrupa'da kalp rehabilitasyon rehberlerinin genişlemesi ve noninvasif kalp haritalama sistemlerinin onayı, teknoloji entegrasyonunu klinik standarta taşıyor. Teknoloji tarafında ise 'Local AI' ve 'Edge Computing' (Colibri, Project Nomad, Intel Playground) donanım verimliliği (RPi CM5 şematikleri, MoE modeller) ile birleşerek merkezi bulut bağımlılığını kırıyor; NSA'nın 14 yıllık sıfır gün açığını AI ile tespiti ise siber güvenlikte AI'nin saldırgan ve koruyucu aktörünü aynı anda oynadığını kanıtlıyor._
 
 ====================================
 🩺 *SAĞLIK & KARDİYOLOJİ GELİŞMELERİ*
 ====================================
 
 *H01 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
-*ESC İlk Dijital ve AI Zirvesini Başlattı: Kardiyolojide Yapay Zeka Standartlaşması Hızlanıyor*
-Avrupa Kardiyoloji Derneği (ESC), kardiyovasküler inovasyonda dijital sağlık ve yapay zekayı merkeze alan ilk 'Digital & AI Summit'ini düzenledi. Bu zirve, klinik karar destek sistemleri, giyilebilir cihaz verilerinin entegrasyonu ve AI tabanlı risk stratifikasyonu için regulatórik ve klinik çerçeveyi şekillendirmeyi hedefliyor.
-💡 *WHY IT MATTERS:* Kardiyoloji, radyoloji ve patolojiden sonra AI standardizasyonuna en yakın tıp dalıdır. ESC'nin bu girişimi, CE onaylı AI tabanlı aritmi/kalp yetmezliği algoritmalarının klinik yol haritalarına girmesini hızlandıracak; Türkiye'deki yazılım/medikal cihaz girişimleri için 'klinik doğrulama + MDR uyumluluğu' ikilisini zorunlu kılacak.
-📌 _News-Medical / ESC · 1 kaynak_
+*CKM Sendromunda Adipozyte Bağlı Enflamasyon Artışı ve Klinik Etkileri*
+Medscape verilerine göre Kardiyal-Kidney-Metabolik (CKM) sendromlu hastalarda adipozi dokusu, sistemik enflamasyon belirteçlerinde belirgin bir artışa neden oluyor. Bu bulgu, obeziti sadece bir risk faktörü olmaktan çıkarıp, CKM patofizyolojisinin merkezi sürücüsü olarak konumlandırıyor.
+💡 *WHY IT MATTERS:* Giyilebilir sensörler ve sürekli glikoz/keton monitörizasyonu sağlayan cihazlar, adipozi dokusu enflamasyonunu erken tespit etmek için metabolik biyobelirteç takibine entegre edilebilir. Bu, 'Kardiyometabolik Sağlık' odaklı yeni bir SaaS/Donanım pazarı (Remote Patient Monitoring) yaratır.
+📌 _Medscape Cardiology · 1 kaynak_
 ------------------------------------
 
 *H02 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
-*Retatrutide (Üçlü Agonist) GLP-1 Platosunu Kırıyor mu? Güvenlik Sinyalleri Reddit'te Tartışılıyor*
-Medscape analizi, Eli Lilly'nin Retatrutide'ın (GIP/GLP-1/Glukagon agonist) semaglutide/tirzepatide ile sağlanan kilo kaybında 'plato' yaşayan hastalarda ek etki gösterdiğini vurguluyor. Paralel olarak, Reddit kullanıcıları tarafından bildirilen beklenmedik yan etkiler (GI dışı nörolojik/psikiyatrik bulgular) literatürde henüz yer almayan gerçek dünya verisi (RWE) sinyali oluşturuyor.
-💡 *WHY IT MATTERS:* Obezite tedavisinde 'plato kırma' bir sonraki milyar dolar pazar fırsatıdır. Ancak Reddit tabanlı farmakovijilans sinyalleri, FDA/EMA onay sonrası güvenlik takibinde sosyal dinlemenin (social listening) kritik olduğunu kanıtlıyor. Sağlık teknolojisi girişimleri için: GLP-1 takip uygulamalarına yan etik raporlama modülleri entegre etmek diferansiyasyon sağlar.
-📌 _Medscape Cardiology · 2 kaynak_
+*Retatrutide: GLP-1 Ağırlık Kaybı Platoşunu Kırma Potansiyeli ve Yan Etki Profili*
+Üçlü agonist (GIP/GLP-1/Glukagon) Retatrutide, mevcut GLP-1 RA tedavilerinde görülen ağırlık kaybı platoşunu aşma potansiyeliyle öne çıkıyor. Ancak Reddit tabanlı gerçek dünya verileri (RWD), beklenmedik yan etkilerin (özellikle GI dışı) klinik çalışmalardan farklı olabileceğini gösteriyor.
+💡 *WHY IT MATTERS:* İlaç geliştirme sürecinde 'Real World Evidence' (RWE) toplama araçları (mobil uygulamalar, giyilebilirler) kritik hale geliyor. Türkiye'deki klinik araştırma organizasyonları (CRO) ve dijital sağlık girişimleri için RWE altyapısı kurma fırsatı doğuyor.
+📌 _Medscape Medical News · 2 kaynak_
 ------------------------------------
 
-*H03 | SAĞLIK & KARDİYOLOJİ · OPPORTUNITY*
-*GLP-1 Reseptör Agonistleri Şizofreni Hastalarının Hastaneye Yatışını Azaltıyor mu?*
-Yeni bir gözlemsel çalışma, GLP-1 RAs'ların tip 2 diyabeti olan şizofreni hastalarında psikiyatrik hastane yatışlarını anlamlı oranda azalttığını öne sürüyor. Mekanizma, metabolik iyileşmenin ötesinde nöroenflamasyon ve dopaminerjik modülasyon üzerinden açıklanıyor.
-💡 *WHY IT MATTERS:* Bu 'drug repurposing' (ilaç yeniden yönlendirme) fırsatı, psikiyatri ve metabolik sağlık köprüsünde dijital terapi (DTx) geliştiricileri için kapı açıyor. Şizofreni takip platformlarına metabolik parametreler (HbA1c, bel çevresi) entegre ederek 'bütünsel hasta yönetimi' SaaS modelleri oluşturulabilir.
-📌 _Medscape Medical News · 1 kaynak_
+*H03 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
+*Noninvasif Kalp Haritalama Sistemi Aritmi Teşhisini Hızlandırıyor*
+Yeni onaylanan noninvasif ektopik odak haritalama teknolojisi, invazif elektrofizyoloji çalışmasına gerek kalmadan ventriküler aritmi odaklarını milimetrik hassasiyetle tespit edebiliyor. Bu, EP laboratuvarı iş yükünü ve hasta riskini ciddi oranda azaltıyor.
+💡 *WHY IT MATTERS:* Bu sistem, 'AI Destekli EKG/MCG Analizi' yazılım modülleriyle birleştirilerek ilave donanım maliyeti olmadan birincil sağlıkta aritmi tarama programlarına entegre edilebilir. Türkiye'de aritmoloji uzmanı eksikliğini kapatacak tele-kardiyoloji modelleri için stratejik bir giriş kapısı.
+📌 _Medscape / Cardiology Innovations · 1 kaynak_
 ------------------------------------
 
-*H04 | SAĞLIK & KARDİYOLOJİ · HIGH SIGNAL*
-*Envazif Olmayan Kalp Haritalama Sistemi Aritmi Teşhisini Hızlandırıyor*
-Yeni bir envazif olmayan epikardiyal kalp haritalama teknolojisi, kateter laboratuvarına gitmeden ventriküler takikardi (VT) odağı tespitinde yüksek hassasiyet gösterdi. Sistem, vücut yüzey potansiyellerinden (ECGi) invazif elektrofizyolojik çalışma (EPS) kalitesinde haritalar üretiyor.
-💡 *WHY IT MATTERS:* Bu teknoloji, aritmi ablasyonu öncesi planlamayı ve risk stratifikasyonunu kökten değiştiriyor. Türkiye'de EP uzmanı sayısının sınırlı olduğu bölgelerde 'uzaktan aritmi triyajı' servis modeli (Tele-EP) kurmak için donanım (yüksek çözünürlüklü EKG besteleri) + bulut AI altyapısı yatırımı stratejiktir.
-📌 _Medscape Cardiology · 1 kaynak_
+*H04 | SAĞLIK & KARDİYOLOJİ · TREND*
+*ESC Dijital & AI Zirvesi: Kardiyolojide Yapay Zeka Standartlaşması Başlıyor*
+Avrupa Kalp Derneği (ESC), kardiyovasküler inovasyonda dijital sağlık ve AI'yi merkeze alan ilk zirvesini başlattı. Rehberlerde AI tabanlı risk skorlama, görüntüleme analizi ve klinik karar destek sistemleri için standartlaşma çabaları hızlanıyor.
+💡 *WHY IT MATTERS:* Klinik onaylı (CE/FDA) AI modülleri geliştiren Türk yazılım şirketleri (örn. EKG analizi, ekokardiyografi segmentasyonu) için Avrupa pazarına giriş kapısı (MDR 2017/745 uyumluluğu) açılıyor. 'Clinical Grade AI' sertifikasyonu yeni bir moat (rekabet bariyeri) oluşturuyor.
+📌 _News-Medical / ESC · 1 kaynak_
+------------------------------------
+
+*H05 | SAĞLIK & KARDİYOLOJİ · OPPORTUNITY*
+*AHA Girişimcilik Programları ve Asya-Pasifik Kardiyoloji Devrimi*
+American Heart Association (AHA), kardiyovasküler inovasyon için seçtiği startup kovanını genişletirken, Asya-Pasifik bölgesi 'Global Kanıt Boşluğundan' 'Global İnovasyon Gücüne' geçiş yapıyor. Bölgesel klinik veri üretimi ve yerel üretim odaklı medtech ekosistemi büyüüyor.
+💡 *WHY IT MATTERS:* Türkiye, coğrafi konumu ve üretilen mühendislik yeteneğiyle (örn. kalp damar stentleri, kateterler) Asya-Pasifik ve MENA pazarları için 'Clinical Validation Hub' ve 'Contract Manufacturing' merkezi olma potansiyeli taşıyor. TÜBİTAK/ARDEB ve KOSGEB destekleri bu vektöre yönlendirilmeli.
+📌 _Heart.org / BioSpectrum Asia · 2 kaynak_
 ------------------------------------
 
 ====================================
@@ -38,43 +45,43 @@ Yeni bir envazif olmayan epikardiyal kalp haritalama teknolojisi, kateter labora
 ====================================
 
 *T01 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
-*Raspberry Pi Compute Module 5 Şematikleri Tersine Mühendislik Yapıldı*
-Tom Doerr (@tom_doerr), henüz resmi olarak piyasaya sürülmemiş veya detayları kapalı olan RPi CM5'in şematiklerini tersine mühendislik yaparak açık kaynaklı hale getirdi. Bu, CM4'e göre PCIe Gen 3, daha hızlı CPU/GPU ve yeni PMIC (DAC) entegrasyonunu doğruluyor.
-💡 *WHY IT MATTERS:* Endüstriyel IoT ve Edge AI geliştiricileri için CM5, Jetson Orin Nano'ya rakip maliyet/performans oranı sunacak. Şematiklerin erken erişimi, Türkiye'deki donanım tasarım evlerinin (Örn: Savunma, Beyaz Eşya, Otomasyon) carrier board geliştirme sürecini 3-6 ay kısaltır. Tedarik riski (CM4 krizini hatırlatarak) erken stok planlaması gerektirir.
-📌 _Twitter / X (@tom_doerr) · 1 kaynak_
+*Colibri: Sıfır Bağımlılıklı C ile Consumer Donanımda Frontier MoE Çalıştırma*
+JustVugg/colibri projesi, uzman modelleri (Experts) diskten akışlı (streaming) olarak yükleyerek, devasa Mixture-of-Experts (MoE) modellerin (örn. Mixtral 8x7B+) sadece CPU ve standart RAM ile, GPU olmadan bile çalıştırılmasını sağlıyor. Pure C implementasyonu, Python/GIL overhead'ini eliyor.
+💡 *WHY IT MATTERS:* Bu, 'Local AI' için bir paradigm shift: Maliyeti $2000+ GPU'lardan $200 Raspberry Pi / Mini PC'lere indiriyor. Türkiye'de veri gizliliği (KVKK) zorunlu olan bankacılık, sağlık ve savunma sektörleri için 'Air-gapped LLM' dağıtım stratejisi (On-premise RAG) artık donanım kısıtlaması olmaksızın uygulanabilir.
+📌 _GitHub Trending (JustVugg) · 1 kaynak_
 ------------------------------------
 
 *T02 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
-*ESP32-S3 ile 80 MS/s Ham I/Q Akışı Başarıldı: Düşük Maliyetli SDR Gerçek Oldu*
-Bir geliştirici, ESP32-S3'ün I2S/ADC yollarını optimize ederek 80 Mega Samples/saniye ham I/Q (In-phase/Quadrature) veri akışı elde etti. Bu, HackRF One veya RTL-SDR seviyesinde spektrum analizi, GSM/LTE/Bluetooth protokol tersine mühendisliği ve radar uygulamalarını $10 altı bir çipte mümkün kılıyor.
-💡 *WHY IT MATTERS:* Bu bir 'paradigm shift'tir. Endüstriyel IoT, güvenlik (RF intrusion detection) ve tarım (toprak nemi/bitki hastalığı RF sensörü) için özel RF ASIC tasarımı yapmak yerine ESP32-S3 tabanlı modüler SDR donanımları geliştirilebilir. Türkiye'de siber güvenlik ve savsanayh için 'yerli RF gözlem istasyonu' prototipleme fırsatı doğar.
-📌 _Reddit (r/esp32) · 1 kaynak_
+*NSA Uyarısı: 14 Yıllık Sıfır Gün Açığı (0-day) AI ile Tek Gecede Keşfedildi*
+NSA, web sitelerinin %70'ini etkileyen 14 yıllık bir RCE (Remote Code Execution) açığı için 'patch yapamazsanız siteyi kapatın' uyarısı yayınladı. Açık, bir güvenlik araştırmacısı tarafından LLM'e 5 kelimelik bir prompt verilerek bir akşam üstü tespit edildi.
+💡 *WHY IT MATTERS:* Siber güvenlikte 'AI-Augmented Vulnerability Research' yeni standart haline geliyor. Türk siber güvenlik firmaları (örn. Biznet, Kron, yerel SOC sağlayıcıları) için: Otomatik kod denetimi (SAST/DAST) araçlarına LLM entegrasyonu yapmak artık opsiyonel değil, hayatta kalma şartı. 'DevSecOps' araç pazarı patlayacak.
+📌 _Twitter/X (@aakashgupta) · 1 kaynak_
 ------------------------------------
 
 *T03 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
-*NSA Uyarısı: 14 Yıllık Sıfır Gün Açığı AI ile Bir Akşamda Bulundu, 70% Web Sitesi Risk Altında*
-NSA, yaygın bir kütüphanede 14 yıldır yatan kritik bir uzaktan kod çalıştırma (RCE) açığının, bir araştırmacı tarafından AI asistanına 'beş kelimelik' bir prompt verilerek keşfedildiğini açıkladı. Kurumlar, yama uygulanana kadar web sitelerini çevrimdışı almaya çağrıldı.
-💡 *WHY IT MATTERS:* AI destekli güvenlik açığı keşfi (AI-assisted vulnerability research) artık script kiddie seviyesinden çıkıp sıfır gün avcılığına geçti. Türkiye'deki SaaS ve web ajansları için: 'DevSecOps'a statik analiz (SAST) ve AI tabanlı dinamik tarama (DAST) entegrasyonu artık opsiyonel değil, hukuki yükümlülük (KVKK/GDPR) ve sigorta önkoşulu haline geliyor.
-📌 _Twitter / X (@aakashgupta) · 1 kaynak_
+*Project NOMAD: İnternetsiz, Yerel AI Destekli Bilgi/Eğitim Sunucusu*
+Crosstalk Solutions tarafından geliştirilen NOMAD, Wikipedia, binlerce kitap, harita, kurs ve opsiyonel yerel LLM'yi (Ollama/Llama.cpp uyumlu) tek bir offline-first cihazda (RPi/Intel NUC) barındırıyor. Kablosuz erişim noktası (AP) modunda çalışıyor.
+💡 *WHY IT MATTERS:* Afet yönetimi (AFAD), askeri lojistik, kırsal eğitim (köy okulları) ve veri egemenliği gerektiren kurumlar için 'Air-gapped Knowledge Infrastructure' çözümü. Türkiye pazarında 'Kutu İçinde Dijital Kütüphane + AI Asistan' donanım paketi (Hardware Appliance) olarak paketlenip satılabilecek yüksek marjlı bir ürün fırsatı.
+📌 _GitHub (Crosstalk-Solutions) · 1 kaynak_
 ------------------------------------
 
 *T04 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
-*Colibri: Sıfır Bağımlılıklı, Diskten Uzman Akışlı (MoE) Çalıştıran C Motoru*
-GitHub Trending'de 1. sırada yer alan 'colibri' (JustVugg), Mixtral/Grok-1 gibi Mixture-of-Experts (MoE) modelleri, GPU olmadan sadece CPU ve RAM üzerinde, uzmanları diskten akışlı olarak (streaming) çalıştıran minimal bir C motoru. Python/ML framework bağımlılığı yok.
-💡 *WHY IT MATTERS:* Bu, 'Local AI' hareketinin 'llama.cpp' aşamasını geçip, üretim seviyesinde C/C++/Rust/Embedded entegrasyonuna (firmware seviyesine) indiğini gösteriyor. Beyaz eşya, otomotiv (ECU), robotik kontrolcüleri için model boyutu RAM'in çok üzerindeyken bile inference yapabilen bu mimari, 'Edge AGI' için kritik bir altyapı taşıdır. Türk R&D ekipleri bu motoru fork edip donanım hızlandırıcıları (NPU/TPU) için optimize edebilir.
-📌 _GitHub Trending · 1 kaynak_
+*Raspberry Pi Compute Module 5 Şematikleri Tersine Mühendislikle Açıklandı*
+Tom Doerr tarafından RPi CM5'in resmi dokümantasyonu yayınlanmadan önce şematikleri tersine mühendislik yapılarak paylaşıldı. Bu, endüstriyel IoT ve gömülü sistem tasarımcıların carrier board geliştirme sürecini aylarca kısaltıyor.
+💡 *WHY IT MATTERS:* Türkiye'deki gömülü sistem tasarım evleri (örn. Arçelik, Vestel, beyaz eşya/otomotiv alt yan sanayi) ve IoT startup'ları için 'Time-to-Market' kritik avantaj. CM5 tabanlı özel carrier board (yönetim kartı) tasarımı ve üretimi (PCB Assembly) için yerli EMS (Electronics Manufacturing Services) firmalarına sipariş hacmi artışı beklenir.
+📌 _Twitter/X (@tom_doerr) · 1 kaynak_
 ------------------------------------
 
-*T05 | TEKNOLOJİ & DONANIM · HIGH SIGNAL*
-*ESP32 Tedarik Zinciri Riski: Çin'den Siparişlerde 'Global Entry' İptali ve Gümruk Blokajı*
-Reddit topluluğunda, Çin'den (LCSC, AliExpress vb.) yapılan ESP32 siparişlerinin ABD gümrüğünde 'Global Entry' programı iptali sebebiyle durdurulduğu, hatta hesapların kara listeye alındığı rapor ediliyor. Bu, CHIPs Act ve Uyghur Forced Labor Prevention Act (UFLPA) kapsamında yarı iletken ithalat darbesinin genişlediğini gösteriyor.
-💡 *WHY IT MATTERS:* Türkiye tabanlı IoT/akıllı cihaz üreticileri için kritik uyarı: Tek kaynaklı (single-source) Espressif/Çin tedarik stratejisi operasyonel risk barındırıyor. Alternatif: 1) Espressif yetkili dağıtıcılar (Mouser, DigiKey, Türkiye yetkilileri) üzerinden resmi kanalla stoklama. 2) STM32 (STMicro) veya RP2040/RP2350 (Raspberry Pi) tabanlı ikinci kaynak (second source) donanım varyantları tasarlama (Pin-to-pin uyumlu olmayabilir, yazılım abstraksiyon katmanı şart).
-📌 _Reddit (r/esp32) · 1 kaynak_
+*T05 | TEKNOLOJİ & DONANIM · TREND*
+*LLM Wiki: Chain-of-Thought ile Kalıcı Bilgi Grafiği Oluşturan Açık Kaynak RAG Alternatifi*
+Tom Doerr'in paylaştığı LLM Wiki, belgelerden zincirleme düşünce (CoT) ingest süreciyle kalıcı bir bilgi grafiği (Knowledge Graph) inşa ediyor. Multimodal çıkarma yeteneğiyle PDF, resim, tablo verilerini yapılandırılmış bilgiye dönüştürüyor. Tek Docker komutuyla kurulum.
+💡 *WHY IT MATTERS:* Kurumsal bilgi yönetiminde (KM) 'Vector DB + Chunking' yaklaşımlarının hallolamadığı 'hallüsinasyon' ve 'güncelleme zorluğu' sorunlarını Knowledge Graph tabanlı RAG çözüyor. Türkçe NLP destekli (BERTurk/T5-Turkish) yerel bir fork ile kamu/kurumsal الأرشيف (arşiv) dijitalleştirme projelerinde (T.C. Arşivi, Anayasa Mahkemesi kararları) anında değer yaratır.
+📌 _Twitter/X (@tom_doerr) · 1 kaynak_
 ------------------------------------
 
 *T06 | TEKNOLOJİ & DONANIM · OPPORTUNITY*
-*San Francisco Girişimi (Varda Space?) Çivi Transmutasyonu ile Altın ve Kanser İlaçı Hammaddesi Ürettiği İddia Ediliyor*
-Aakash Gupta paylaşımlarına göre, bir uzay/derin teknoloji girişimi nükleer transmutasyon (muhtemelen nötron yakıtlı reaktör veya parçacık hızılandırıcı yöntemiyle) ile çividen altın ve onbinlerce dolar/gram değerinde kanser ilacı izotopları (örn. Ac-225, Pb-212) ürettiğini iddia ediyor.
-💡 *WHY IT MATTERS:* Eğer doğrulanırsa (Varda Space Industries veya benzeri), bu 'uzayda üretim' (In-Space Manufacturing) ve 'nükleer kimya' birleşiminin ticarileşmesi anlamına gelir. Türkiye için: Nükleer tıp izotopları (Ac-225, Lu-177) ithal bağımlılığını kırarak, TENMAK/TAEK altyapısı ile üniversite-hastane-özel sektör konsorsiyumu kurarak 'radyofarmasötik üretim merkezi' olmak stratejik bir fırsattır.
-📌 _Twitter / X (@aakashgupta) · 1 kaynak_
+*Papermark VDR & MRRaudit: AI Ajanı Uyumlu SaaS Altyapı Araçları*
+Product Hunt'ta öne çıkan Papermark, AI ajanlarının (agents) güvenli veri odalarında (VDR) çalışmasına izin veren açık kaynaklı bir altyapı sunuyor. MRRaudit ise SaaS metriklerindeki (MRR) tutarsızlıkları otomatik tespit edip 'tek doğru sayıyı' veriyor.
+💡 *WHY IT MATTERS:* Yatırım fonları (VC), hızla büyüyen 'AI Agent Economy' için due diligence araçlarına ihtiyaç duyuyor. Papermark, Türkiye'de yatırım alan startup'lar için 'Investor Data Room' kurulum maliyetini sıfırlıyor. MRRaudit ise Türk SaaS'lerinin (örn. Insider, Pepapp, Databeat) global yatırımcılara raporlama standartlarını artırması için kritik bir iç kontrol aracı.
+📌 _Product Hunt · 2 kaynak_
 ------------------------------------
