@@ -1,0 +1,7 @@
+name = "curator-daily-trigger"
+main = "worker.js"
+compatibility_date = "2026-11-01"
+
+# Cloudflare cron ile tetiklemek istersen aç (UTC). 05:00 UTC = 08:00 TSİ
+# [triggers]
+# crons = ["0 5 * * *"]
